@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     content: [
         './_drafts/**/*.html',
@@ -8,14 +10,26 @@ module.exports = {
         './*.html',
     ],
     theme: {
-        fontFamily: {
-            'sans': ["Arial", 'ui-sans-serif', 'system-ui',],
-            'serif': ["Cambria", 'ui-serif',],
-            'mono': ['ui-monospace', 'SFMono-Regular',],
-            'display': ['Oswald',],
-            'body': ['"Open Sans"',],
-        },
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: [
+                    "Open Sans",
+                    'Roboto',
+                    'BlinkMacSystemFont',
+                    'system-ui',
+                    'sans-serif',
+                    '"Noto Sans"',
+                    '-apple-system',
+                    '"Segoe UI"',
+                    '"Helvetica Neue"',
+                    '"Apple Color Emoji"',
+                    '"Segoe UI Emoji"',
+                    '"Segoe UI Symbol"',
+                    '"Noto Color Emoji"',
+                    'Arial',
+                ],
+            }
+        }
     },
     plugins: []
 };
