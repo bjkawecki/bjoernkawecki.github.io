@@ -8,9 +8,14 @@ module.exports = {
         './*.html',
     ],
     theme: {
-        theme: {
-            extend: {},
+        fontFamily: {
+            'sans': ["Arial", 'ui-sans-serif', 'system-ui',],
+            'serif': ["Cambria", 'ui-serif',],
+            'mono': ['ui-monospace', 'SFMono-Regular',],
+            'display': ['Oswald',],
+            'body': ['"Open Sans"',],
         },
+        extend: {},
     },
     plugins: []
 };
