@@ -319,12 +319,12 @@ img, video {
   display: flex;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
 .h-7 {
   height: 1.75rem;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .w-1\/5 {
