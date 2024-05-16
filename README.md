@@ -1,3 +1,5 @@
 # Hello there
 
-Check out my spaced repetition web app for Russian vocabulary at <a target="_blank" rel="noopener" href="https://bajkal-app.de">bajkal-app.de</a>.
+Check out my website powered by GitHub Pages and Jekyll at <a target="_blank" rel="noopener noreferrer" href="http://bjoernkawecki.de">bjoernkawecki.de</a>.
+
+
