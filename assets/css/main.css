@@ -423,6 +423,11 @@ img, video {
   border-right-width: 0;
 }
 
+.bg-gray-50 {
+  --tw-bg-opacity:1;
+  background-color: rgb(249 250 251/var(--tw-bg-opacity));
+}
+
 .fill-gray-700 {
   fill: #374151;
 }
