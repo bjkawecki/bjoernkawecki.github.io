@@ -474,6 +474,11 @@ img, video {
   color: rgb(59 130 246/var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity:1;
+  color: rgb(55 65 81/var(--tw-text-opacity));
+}
+
 .hover\:fill-gray-500:hover {
   fill: #6b7280;
 }
