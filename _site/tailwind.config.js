@@ -12,24 +12,12 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: [
-                    "Open Sans",
-                    'Roboto',
-                    'BlinkMacSystemFont',
-                    'system-ui',
-                    'sans-serif',
-                    '"Noto Sans"',
-                    '-apple-system',
-                    '"Segoe UI"',
-                    '"Helvetica Neue"',
-                    '"Apple Color Emoji"',
-                    '"Segoe UI Emoji"',
-                    '"Segoe UI Symbol"',
-                    '"Noto Color Emoji"',
-                    'Arial',
-                ],
-            }
-        }
+                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            },
+        },
     },
-    plugins: []
+    plugins: [
+        require('@tailwindcss/typography'),
+        // ...
+    ],
 };
