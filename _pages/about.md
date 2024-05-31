@@ -6,10 +6,10 @@ permalink: /about/
 # {{ site.title }}
 
 ## Kenntnisse
-- *Sprachen*: Python, JavaScript
-- *Frontend*: Htmx, Tailwind CSS
-- *Backend*: Django
-- *Plattformen*: GitHub, Docker
+- Sprachen: Python, JavaScript
+- Frontend: Htmx, Tailwind CSS
+- Backend: Django
+- Plattformen: GitHub, Docker
 
 ## Abschlüsse
 - *Bachelor of Arts*: Russlandstudien, Nebenfach Philosophie, Universität Freiburg
