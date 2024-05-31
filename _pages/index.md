@@ -10,7 +10,7 @@ Kein Einträge vorhanden.
 {% else %}
 {% for post in site.posts %}
 <div class="text-lg">{{ post.category | capitalize }}</div>
-<div class="my-1"><a href="{{ post.url }}" class="text-xl text-gray-600">{{ post.title }}</a></div>
+<div class="my-1"><a href="{{ post.url }}" class="text-2xl text-gray-600">{{ post.title }}</a></div>
 <div class="text-base">{{ post.date | date: "%-d.%m.%Y" }}</div>
 {% endfor %}
 {% endif %}
