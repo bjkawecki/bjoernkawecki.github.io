@@ -3,8 +3,17 @@ layout: default
 title: Projekte
 permalink: /projects/
 ---
+# Projekte
 ## Russisch-Vokabeltrainer
+### Tech-Stack
+Django, PostgreSQL, Tailwind CSS, htmx
 
-Mein Hauptprojekt ist Bajkal, eine Webapp, um Russisch zu lernen. Die Hauptfunktion ist ein Vokabeltrainer nach der Methode der verteilten Wiederholung (“spaced repetition”).
+### Funktionen
+- Vokabeltrainer ([verteilte Wiederholung](https://de.wikipedia.org/wiki/Spaced_repetition)) für Russisch Stufe A1
+- Audiodateien zum Anhören der richtigen Aussprache
+- Wörterbuch zum Nachschlagen grammatischer Formen
+- Nutzerkonto anlegen und löschen
+- Diagramme zur Visualisierung des Lernfortschritts
 
-Seit Mai 2024 ist Bajkal in der Beta-Version verfügbar. Die Vorarbeit, wie die Konzeption des Datenmodells und die Auswahl und Erarbeitung des Technologie-Stacks, begann bereits 2020.
+### Status
+Mai 2024: Beta-Version abrufbar unter [bajkal-app.de](https://bajkal-app.de)

@@ -3,6 +3,7 @@ layout: default
 title: Über
 permalink: /about/
 ---
+# {{ site.title }}
 
 ## Kenntnisse
 - *Sprachen*: Python, JavaScript
