@@ -981,18 +981,20 @@ video {
   margin-right: auto;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
   margin-bottom: 1.5rem;
 }
 
@@ -1000,36 +1002,8 @@ video {
   margin-top: 2.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-1\.5 {
-  margin-bottom: 0.375rem;
 }
 
 .flex {
@@ -1056,14 +1030,6 @@ video {
   width: 100%;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1088,52 +1054,10 @@ video {
   margin-left: calc(0.5rem * (1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * (1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * (1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * (1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * (1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * (1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * (1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * (1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * (1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1146,6 +1070,18 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.125rem * (1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.125rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * (1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * (1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -1180,10 +1116,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .font-sans {
   font-family: Inter var, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1198,12 +1130,12 @@ video {
   line-height: 1.25rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-blue-500 {
@@ -1214,10 +1146,6 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81/var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .hover\:fill-gray-500:hover {
@@ -1238,10 +1166,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
