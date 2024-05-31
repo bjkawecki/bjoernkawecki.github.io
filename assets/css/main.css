@@ -813,6 +813,11 @@ img, video {
   margin-right: auto;
 }
 
+.my-1 {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -946,9 +951,24 @@ img, video {
   line-height: 2rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -959,9 +979,18 @@ img, video {
   font-weight: 500;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .text-blue-500 {
   --tw-text-opacity:1;
   color: rgb(59 130 246/var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity:1;
+  color: rgb(75 85 99/var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -977,13 +1006,22 @@ img, video {
   text-decoration-line: underline;
 }
 
-.prose-headings\:mb-1 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  margin-bottom: 0.25rem;
-}
-
 .prose-headings\:text-gray-700 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~=not-prose], [class~=not-prose] *))) {
   --tw-text-opacity:1;
   color: rgb(55 65 81/var(--tw-text-opacity));
+}
+
+.prose-a\:text-blue-500 :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  --tw-text-opacity:1;
+  color: rgb(59 130 246/var(--tw-text-opacity));
+}
+
+.prose-a\:no-underline :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  text-decoration-line: none;
+}
+
+.hover\:prose-a\:underline :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))):hover {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 768px) {
