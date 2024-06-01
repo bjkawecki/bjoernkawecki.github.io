@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Über
+title: Über mich
 permalink: /about/
 ---
-# {{ site.title }}
+# {{ page.title }}
 
 ## Kenntnisse
 - Sprachen: <span class="font-medium">Python</span>, <span class="font-medium">JavaScript</span>
