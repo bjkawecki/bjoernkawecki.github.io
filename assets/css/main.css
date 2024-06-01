@@ -857,6 +857,10 @@ img, video {
   width: 100%;
 }
 
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -867,6 +871,10 @@ img, video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -935,6 +943,10 @@ img, video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-sans {
