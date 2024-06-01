@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Eine Webapp zum Russisch lernen I"
 category: Projekte
 ---
