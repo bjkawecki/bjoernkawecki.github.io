@@ -7,7 +7,7 @@ Arbeitshefte sind zunächst eine wunderbare Ergänzung zu Lehrbüchern. Lehrbüc
 
 Die Art der Aufgaben im Arbeitsheft ist natürlich begrenzt und beschränkt sich auf eher simple Methoden wie "Ergänze", "Setze ein" oder "Wähle aus". Ein Nachteil ist das nicht, denn viel Wissen, das wir uns aneignen, besteht aus Bedeutungspaaren. ("Tisch" bedeutet auf Englisch "table", das erste Element im Periodensystem ist Wasserstoff.)
 
-Die Aufgaben in einem Arbeitsheft sind darauf ausgerichtet, durch Wiederholungsaufgaben unser Gedächtnis anzusprechen. Das bedeutet aber auch, dass Arbeitshefte im Gegensatz zu Lehrbüchern dem dem Medium geschuldeten Problem der Endlichkeit weitaus stärker betroffen sind als Lehrbücher.
+Die Aufgaben in einem Arbeitsheft sind darauf ausgerichtet, durch Wiederholungsaufgaben unser Gedächtnis anzusprechen. Das bedeutet aber auch, dass Arbeitshefte im Gegensatz zu Lehrbüchern vom dem Medium geschuldeten Problem der Endlichkeit weitaus stärker betroffen sind als Lehrbücher.
 
 Stellen wir uns nämlich den Fall vor, dass das Arbeitsheft durchgearbeitet wurde, der Lernstoff aber noch nicht sitzt. Oder dass man den Stoff zu einem späteren Zeitpunkt erneut wiederholen möchte. Kein Verlag wird für diesen Fall vorsorgen können (oder wollen) und unendlich viele Aufgaben erstellen.
 
