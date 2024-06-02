@@ -1003,6 +1003,10 @@ img, video {
   color: rgb(55 65 81/var(--tw-text-opacity));
 }
 
+.prose-h4\:font-medium :is(:where(h4):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-weight: 500;
+}
+
 .prose-a\:text-blue2-600 :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
   --tw-text-opacity:1;
   color: rgb(6 152 255/var(--tw-text-opacity));
