@@ -9,7 +9,7 @@ Wir können ein Buch zwar in der Mitte aufschlagen und die letzten Seiten könne
 
 Ein Buch ist ein abgeschlossenes Ding, und um den Inhalt neu anzuordnen oder zu erweitern, muss es neu gedruckt oder sogar erneut verlegt werden.
 
-Hinzu kommt, dass Umfang und Übersichtlichkeit der Inhalt eines Buches negativ korrelieren. Je mehr Informationen ein Buch enthält, je mehr Seiten zwischen seine Buchdecke gepresst wurden, desto schwieriger lässt es sich überblicken (oder nur aufschlagen). Dem gegenüber liegt ein dünnes Buch zwar leichter in der Hand, ist aber rasch ausgelesen.
+Hinzu kommt, dass Umfang und Übersichtlichkeit der Inhalt eines Buches negativ korrelieren. Je mehr Informationen ein Buch enthält, je mehr Seiten zwischen seine Buchdeckel gepresst wurden, desto schwieriger lässt es sich überblicken (oder nur aufschlagen). Dem gegenüber liegt ein dünnes Buch zwar leichter in der Hand, ist aber rasch ausgelesen.
 
 Für die meisten Arten von Büchern ist das auch in Ordnung. Romane und Sachbücher sollen auf Seite 1 begonnen werden. Es gibt einen Anfang und einen Schluss und dazwischen miteinander vernetzte Inhalte, die scheibchenweise vermittelt werden. In anderen Fällen ist die lineare Beschaffenheit und Begrenztheit von Büchern ein Hindernis.
 
