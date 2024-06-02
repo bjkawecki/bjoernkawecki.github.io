@@ -1679,6 +1679,11 @@ img, video {
   font-weight: 500;
 }
 
+.prose-p\:text-lg :is(:where(p):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .prose-a\:font-bold :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
   font-weight: 700;
 }
