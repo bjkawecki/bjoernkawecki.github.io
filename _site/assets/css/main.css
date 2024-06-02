@@ -1228,16 +1228,6 @@ video {
   margin-right: auto;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1254,12 +1244,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-5 {
@@ -1848,32 +1838,31 @@ video {
   color: rgb(55 65 81/var(--tw-text-opacity));
 }
 
-.prose-h2\:font-serif :is(:where(h2):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+.prose-h1\:text-2xl :is(:where(h1):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.prose-h2\:font-bold :is(:where(h2):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-weight: 700;
+.prose-h1\:text-3xl :is(:where(h1):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
-.prose-h2\:font-black :is(:where(h2):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-weight: 900;
+.prose-h1\:text-4xl :is(:where(h1):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
-.prose-h2\:font-extralight :is(:where(h2):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-weight: 200;
+.prose-h3\:font-medium :is(:where(h3):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-weight: 500;
 }
 
-.prose-h2\:font-extrabold :is(:where(h2):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-weight: 800;
+.prose-h3\:font-normal :is(:where(h3):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-weight: 400;
 }
 
 .prose-h4\:font-medium :is(:where(h4):not(:where([class~=not-prose], [class~=not-prose] *))) {
   font-weight: 500;
-}
-
-.prose-a\:font-bold :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-weight: 700;
 }
 
 .prose-a\:font-semibold :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
@@ -1893,16 +1882,6 @@ video {
   text-decoration-line: underline;
 }
 
-@media (min-width: 640px) {
-  .sm\:prose-h1\:text-xl :is(:where(h1):not(:where([class~=not-prose], [class~=not-prose] *))) {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  .sm\:prose-h1\:text-lg :is(:where(h1):not(:where([class~=not-prose], [class~=not-prose] *))) {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
 @media (min-width: 768px) {
   .md\:mb-20 {
     margin-bottom: 5rem;
