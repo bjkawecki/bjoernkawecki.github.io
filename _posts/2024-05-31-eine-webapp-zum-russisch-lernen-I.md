@@ -3,9 +3,6 @@ layout: post
 title: "Eine Webapp zum Russisch lernen I"
 category: Projekte
 ---
-{{ page.date | date: "%-d.%m.%Y" }} | {{ page.category }}
-# {{ page.title }}
-
 2020 habe ich mit der Konzeption einer Webapp begonnen, die Russisch-Sprachschüler beim Lernen unterstützen sollte. Die Idee entstand aus meiner eigenen Erfahrung als Slawistik-Student. Ich fand es immer mühsam, mir das geeignete Lernmaterial für Russisch zusammenzusammeln.
 
 Russisch ist in Europa (wie eigentlich alle Sprachen außer den romanischen und Englisch) eher exotisch. Und im Gegensatz zu Englisch und Französisch gibt es praktisch keine russischen Wörter im deutschen Sprachgebrauch, da der kulturelle Einfluss aus Russland weitaus geringer war.

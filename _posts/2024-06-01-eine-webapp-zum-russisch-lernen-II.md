@@ -3,10 +3,6 @@ layout: post
 title: "Eine Webapp zum Russisch lernen II"
 category: Projekte
 ---
-
-{{ page.date | date: "%-d.%m.%Y" }} | {{ page.category }}
-# {{ page.title }}
-
 Ein weiterer Nachteil, den Bücher gegenüber digitalen Lernmaterial haben, ist ihre Begrenztheit. Wie bereits erwähnt, können Informationen in Büchern nur linear angeordnet und gedruckt ("gespeichert") werden und ein Lehrbuch kann eben nur eine begrenzte Anzahl an Seiten haben.
 
 Wir können ein Buch zwar in der Mitte aufschlagen und die letzten Seiten können ein Sachregister enthalten. Blättern können wir aber nur nach vorne oder zurück. Ein spontane Neuordnung ist ebenfalls in den meisten Fällen ausgeschlossen. Wir können nicht Seiten an der einen Stelle herausnehmen und an der anderen Stelle hinzufügen.
