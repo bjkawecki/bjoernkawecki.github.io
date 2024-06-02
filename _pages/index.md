@@ -9,9 +9,8 @@ permalink: /
 Kein Einträge vorhanden.
 {% else %}
 {% for post in site.posts %}
-<h4>{{ post.category | capitalize }}</h4>
-<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-<p>{{ post.date | date: "%d.%m.%Y" }}</p>
+<h4>{{ post.date | date: "%d.%m.%Y" }} | {{ post.category | capitalize }}</h4>
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 {% if forloop.last == false %}
 ---
 {% endif %}
