@@ -1856,6 +1856,11 @@ video {
   line-height: 1.75rem;
 }
 
+.prose-a\:text-base :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .prose-a\:font-bold :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
   font-weight: 700;
 }
