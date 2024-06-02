@@ -1869,6 +1869,10 @@ video {
   color: rgb(6 152 255/var(--tw-text-opacity));
 }
 
+.prose-a\:underline :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  text-decoration-line: underline;
+}
+
 .prose-a\:no-underline :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
   text-decoration-line: none;
 }
