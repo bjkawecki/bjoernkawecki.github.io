@@ -813,6 +813,11 @@ img, video {
   margin-right: auto;
 }
 
+.my-8 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -827,10 +832,6 @@ img, video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .mt-10 {
@@ -991,6 +992,10 @@ img, video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.prose-headings\:font-bold :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-weight: 700;
 }
 
 .prose-headings\:text-gray-700 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~=not-prose], [class~=not-prose] *))) {
