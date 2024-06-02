@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Eine Webapp zum Russisch lernen III"
-category: Digital Lernen
+title: "Digital lernen III: "
+category: Didaktik
 ---
 Arbeitshefte und Lehrbücher ergänzen sich
 
