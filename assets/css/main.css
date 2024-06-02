@@ -1092,6 +1092,10 @@ img, video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .h-7 {
   height: 1.75rem;
 }
