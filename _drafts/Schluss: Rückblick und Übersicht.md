@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Digital lernen III: "
+title: "Digital lernen : "
 category: Didaktik
 ---
 
