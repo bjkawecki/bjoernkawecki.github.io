@@ -11,4 +11,6 @@ Eine Alternative zu den Papierbögen gab es aber doch: den Führerschein-Theorie
 
 Ich musste die Fragebögen nur noch so oft durchgehen, bis ich alle Fragen auswendig beantworten konnte. Möglich war dies, da es für einen Fahrschüler unerheblich ist, ob er den Sinn hinter einer Verkehrsregel versteht. Er muss nur wissen, dass sie gilt.
 
-Dasselbe Prinzip gilt für das Lernen von Vokabeln einer Fremdsprache.
+Dasselbe Prinzip gilt für das Lernen von Vokabeln einer Fremdsprache. Natürlich ist es hilfreich, wenn wir uns beim Vokabelnlernen ein Wort mithilfe eines bekannten Dinges herleiten können.
+
+Die Vokabeln, bei denen das möglich ist, sind allerdings die Ausnahme (und je exotischer die Fremdsprache desto weniger Ausnahmen). In den meisten Fällen hilft nur das Auswendiglernen.

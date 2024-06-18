@@ -1,18 +1,17 @@
 ---
 layout: post
-title: "Digital lernen : "
+title: "Digital lernen V: Vokabeln"
 category: Didaktik
 ---
-
-
-Natürlich ist es hilfreich, wenn wir uns ein Wort mithilfe eines bekannten Dinges herleiten können. Die Vokabeln, bei denen das möglich ist, sind allerdings die Ausnahme (je exotischer die Fremdsprache desto weniger Ausnahmen). In den meisten Fällen hilft nur das Auswendiglernen.
-
-
 Lernen mit dem Vokabelheft war schrecklich, da besonders stumpf. Das Notieren der Vokabel und seiner Bedeutung in eine zweispaltige Tabelle war der einzige interaktive Teil. Danach lernte man, indem man eine Spalte zuhielt und in seinem Gedächtnis nach der Übersetzung kramte.
 
 Eine besonders effektive Methode war das Vokabelheft also nicht. Nach zehn Minuten war das Wort im Kurzzeitgedächtnis. Nach zwei Stunden war es vergessen.
 
-Vokabeln lernen funktioniert meiner Erfahrung nach am besten synästhetisch, das heißt, mehrere Arten der Wahrnehmung vereinend, und interaktiv.
+Vokabeln lernen funktioniert besonders gut interaktiv und synästhetisch, das heißt, mehrere Arten der Wahrnehmung vereinend.
+
+
+
+
 
 
 In Latein habe ich mir Vokabeln am besten eingeprägt, wenn ich sie nachgeschlagen habe oder wenn sie wiederholt in einem Text auftraten, den man übersetzen musste. 
