@@ -9,11 +9,6 @@ Eine besonders effektive Methode war das Vokabelheft also nicht. Nach zehn Minut
 
 Vokabeln lernen funktioniert besonders gut interaktiv und synästhetisch, das heißt, mehrere Arten der Wahrnehmung vereinend.
 
-
-
-
-
-
 In Latein habe ich mir Vokabeln am besten eingeprägt, wenn ich sie nachgeschlagen habe oder wenn sie wiederholt in einem Text auftraten, den man übersetzen musste. 
 
 Meinen aktiven Englischwortschatz habe ich, wie wahrscheinlich die meisten jungen Leute heute, mit dem Schauen von amerikanischen Serien gebaut.
