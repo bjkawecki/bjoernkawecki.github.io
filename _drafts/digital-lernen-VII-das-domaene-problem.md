@@ -4,6 +4,7 @@ title: "Digital lernen VII: Das Domäne-Problem"
 category: Didaktik
 ---
 
+Was ich noch nicht erwähnt habe, sind diverse Apps, die Nutzer mit einem großen Angebot verschiedener Sprachen locken, dazu *Gamification*, knallige Farben und ein viele kostenlose Funktionen. Sie versprechen, eine Sprache zu lernen – und dabei auch noch Spaß haben! (Für normale Menschen ein echter Widerspruch.)
 
 Tiefe vs Breite
 
