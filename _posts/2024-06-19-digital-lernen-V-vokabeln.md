@@ -23,6 +23,6 @@ Meine persönlichen Erfahrung beschränkt sich auf Russisch.
 Aufgrund des fremden Klangbilds, teils anderer Buchstaben und kaum mit dem Deutschen geteilte Wortwurzeln, gehe ich aber von einer ähnlich steilen Lernkurve aus.
 
 Im Russischen trifft man zwar ab und zu auf den Einfluss der deutschen Kultur in *Gestalt* entsprechender Lexeme.
-Die slawischen Sprachen hatten einfach nie denselben Einfluss auf die deutsche (bzw. europäische) Kultur wie Latein, Französisch und später Englisch.
+Die slawischen Sprachen hatten aber einfach nie denselben Einfluss auf die deutsche (bzw. europäische) Kultur wie Latein, Französisch und heute Englisch.
 
 Dies alles trägt zu einer relativen Unbeliebtheit slawischer Sprachen bei – und zu ungenügend verfügbarem Lernmaterial.
