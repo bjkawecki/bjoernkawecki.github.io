@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Digital lernen : "
+title: "Digital lernen VII: Das Domäne-Problem"
 category: Didaktik
 ---
 

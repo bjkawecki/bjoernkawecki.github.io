@@ -1,17 +1,15 @@
 ---
 layout: post
-title: "Digital lernen : "
-category: Digital Lernen
+title: "Digital lernen VI: Lernmaterial"
+category: Didaktik
 ---
 
 
 
-Da Französisch jedoch relativ beliebt ist, gibt es ausreichend gutes Lernmaterial.
+Da Französisch jedoch relativ beliebt ist, gibt es ausreichend gutes Lernmaterial, seien es Arbeitshefte, Lehrbücher oder Lernprogramme.
 
 
-Auf die etwas lange Vorrede mit einigen offensichtlichen Bemerkungen, kommt der etwas erwartbare Schluss, dass digitals Lehrmaterial dem Papier in bestimmten Fällen überlegen ist.
 
-Was ist digitales Lernmaterial? Was ist digitale Bildung?
 
 freie-Bildungsmaterialien
 
