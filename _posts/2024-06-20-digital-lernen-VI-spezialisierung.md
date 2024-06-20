@@ -25,6 +25,6 @@ Dann fehlten jedoch die Vertonungen, und die Qualität der Sammlungen konnte sta
 Damit war der Langenscheidt-Vokabeltrainer auf drei Arten spezialisiert:
 - in Bezug auf den Umfang für die jeweilige Sprache (gut)
 - in Begrenzung auf wenige, beliebte Sprachen (schlecht)
-- in Bezug auf nur ein Betriebssystem (schlecht).
+- in Bezug auf nur ein verfügbares Betriebssystem (schlecht).
 
 
