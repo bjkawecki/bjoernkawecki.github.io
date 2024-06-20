@@ -16,7 +16,8 @@ In Bezug auf das Lernen von Fremdsprachen habe ich bereits den kostenpflichtigen
 Ein weiteres Plus war, dass man die Wörter beim Lernen händisch eintippen musste (interaktiv), und zwar so oft, bis die Antwort richtig war.
 Abgesehen davon, dass das Programm nur unter Windows lief, war der größte Nachteil, dass zum Angebot nur wenige, sowieso beliebte Fremdsprachen gehörten.
 
-Damit war der Langenscheidt-Vokabeltrainer zwar spezialisiert, spiegelte jedoch die Marktsituation für lineares Lernmaterial wider und erfüllte nicht das Potential digitalen Lernmaterials in Bezug auf exotische Sprachen.
+Auf der einen Seite schöpfte der Langenscheidt-Vokabeltrainer sein digitales Potential gegenüber linearen Lernmaterials aus.
+Auf der anderen Seite spiegelte er die Marktsituation für lineares Lernmaterial wider und erfüllte blieb damit in Bezug auf exotische Sprachen hinter dem Möglichen zurück.
 
 Man konnte sich zwar seine eigene Vokabelsammlung erstellen oder sich eine von anderen Nutzern herunterladen.
 Dann fehlten jedoch die Vertonungen, und die Qualität der Sammlungen konnte stark variieren.
