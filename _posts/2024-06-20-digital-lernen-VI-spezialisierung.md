@@ -21,3 +21,10 @@ Auf der anderen Seite spiegelte er die Marktsituation für lineares Lernmaterial
 
 Man konnte sich zwar seine eigene Vokabelsammlung erstellen oder sich eine von anderen Nutzern herunterladen.
 Dann fehlten jedoch die Vertonungen, und die Qualität der Sammlungen konnte stark variieren.
+
+Damit war der Langenscheidt-Vokabeltrainer auf drei Arten spezialisiert:
+- in Bezug auf den Umfang für die jeweilige Sprache (gut)
+- in Begrenzung auf wenige, beliebte Sprachen (schlecht)
+- in Bezug auf nur ein Betriebssystem (schlecht).
+
+
