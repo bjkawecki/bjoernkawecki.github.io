@@ -1228,6 +1228,11 @@ video {
   margin-right: auto;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2142,6 +2147,20 @@ video {
 
 .hover\:prose-a\:underline :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))):hover {
   text-decoration-line: underline;
+}
+
+.prose-li\:text-base :is(:where(li):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.prose-li\:text-lg :is(:where(li):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.prose-li\:font-normal :is(:where(li):not(:where([class~=not-prose], [class~=not-prose] *))) {
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
