@@ -1112,8 +1112,8 @@ img, video {
   width: 50%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-7 {
@@ -1218,11 +1218,6 @@ img, video {
 .object-cover {
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-2 {
