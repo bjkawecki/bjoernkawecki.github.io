@@ -23,8 +23,6 @@ Man konnte sich zwar seine eigene Vokabelsammlung erstellen oder sich eine von a
 Dann fehlten jedoch die Vertonungen, und die Qualität der Sammlungen konnte stark variieren.
 
 Damit war der Langenscheidt-Vokabeltrainer auf drei Arten spezialisiert:
-- in Bezug auf den Umfang für die jeweilige Sprache (gut)
-- in Begrenzung auf wenige, beliebte Sprachen (schlecht)
-- in Bezug auf nur ein verfügbares Betriebssystem (schlecht).
-
-
+- in Bezug den Umfang des Lernstoffs pro Sprache
+- in Begrenzung auf wenige (beliebte) Sprachen
+- in Bezug auf nur ein verfügbares Betriebssystem.
