@@ -16,7 +16,7 @@ Kein Einträge vorhanden.
 <!-- Pagination links -->
 <div>
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
+    <a href="{{ paginator.previous_page_path }}">
         Zurück
     </a>
     {% endif %}
@@ -24,7 +24,7 @@ Kein Einträge vorhanden.
         Seite {{ paginator.page }} von {{ paginator.total_pages }}
     </span>
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Vorwärts</a>
+    <a href="{{ paginator.next_page_path }}">Vorwärts</a>
     {% endif %}
 </div>
 {% endif %}
