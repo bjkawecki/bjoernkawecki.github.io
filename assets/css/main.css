@@ -1784,6 +1784,9 @@ img, video {
   .md\:flex-row {
     flex-direction: row;
   }
+  .md\:justify-normal {
+    justify-content: normal;
+  }
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse:0;
     margin-left: calc(2.5rem * (1 - var(--tw-space-x-reverse)));
