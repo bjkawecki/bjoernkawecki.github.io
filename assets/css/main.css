@@ -1702,10 +1702,6 @@ img, video {
   line-height: 1.5rem;
 }
 
-.prose-a\:font-bold :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
-  font-weight: 700;
-}
-
 .prose-a\:font-semibold :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))) {
   font-weight: 600;
 }
