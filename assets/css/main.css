@@ -1096,6 +1096,10 @@ img, video {
   display: table;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -1106,6 +1110,10 @@ img, video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-7 {
@@ -1203,9 +1211,18 @@ img, video {
   fill: #374151;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .object-cover {
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -1221,11 +1238,6 @@ img, video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-1 {
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
 }
 
 .text-right {
@@ -1697,6 +1709,10 @@ img, video {
 
 .hover\:fill-gray-500:hover {
   fill: #6b7280;
+}
+
+.hover\:fill-white:hover {
+  fill: #fff;
 }
 
 .hover\:underline:hover {
