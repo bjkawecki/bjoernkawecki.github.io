@@ -2138,6 +2138,12 @@ video {
   .md\:flex-row {
     flex-direction: row;
   }
+  .md\:justify-normal {
+    justify-content: normal;
+  }
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
