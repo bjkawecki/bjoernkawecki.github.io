@@ -1,0 +1,21 @@
+<div class="mt-10">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">
+        <button
+            class="text-white bg-blue2-600 hover:bg-blue2-700 focus:ring-2 focus:ring-blue2-500 font-medium rounded text-sm px-2 py-1 focus:outline-none">
+            Zurück
+        </button>
+    </a>
+    {% endif %}
+    <span class="px-2">
+        Seite {{ paginator.page }} von {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">
+        <button
+            class="text-white bg-blue2-600 hover:bg-blue2-700 focus:ring-2 focus:ring-blue2-500 font-medium rounded text-sm px-2 py-1 focus:outline-none">
+            Vorwärts
+        </button>
+    </a>
+    {% endif %}
+</div>

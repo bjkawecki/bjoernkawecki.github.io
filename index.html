@@ -13,18 +13,4 @@ Kein Einträge vorhanden.
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 <hr>
 {% endfor %}
-<!-- Pagination links -->
-<div>
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">
-        Zurück
-    </a>
-    {% endif %}
-    <span class="px-2">
-        Seite {{ paginator.page }} von {{ paginator.total_pages }}
-    </span>
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Vorwärts</a>
-    {% endif %}
-</div>
 {% endif %}
