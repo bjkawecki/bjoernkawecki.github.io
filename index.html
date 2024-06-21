@@ -1,0 +1,30 @@
+---
+layout: default
+title: Start
+---
+
+<h1>Weblog</h1>
+{% assign psize = site.posts | size %}
+{% if psize == 0 %}
+Kein Einträge vorhanden.
+{% else %}
+{% for post in paginator.posts %}
+<h4>{{ post.date | date: "%d.%m.%Y" }} | {{ post.category | capitalize }}</h4>
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<hr>
+{% endfor %}
+<!-- Pagination links -->
+<div>
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+        Zurück
+    </a>
+    {% endif %}
+    <span class="page_number ">
+        Seite {{ paginator.page }} von {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Vorwärts</a>
+    {% endif %}
+</div>
+{% endif %}

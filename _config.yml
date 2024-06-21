@@ -31,6 +31,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/page:num/"
 
 sass:
   load_paths:
