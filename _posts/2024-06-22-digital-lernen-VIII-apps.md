@@ -22,4 +22,4 @@ Spielerische Elemente können für Anfänger motivierend wirken.
 Doch wer ernsthaft eine Fremdsprache lernen will, wird irgendwann einsehen, dass es ein insgesamt langwieriger und mühevoller Prozess ist – zumindest für die meisten Menschen.
 
 Hinzu kommt, dass sich Sprachen sehr stark voneinander unterscheiden und eigene, spezifische Anforderungen haben.
-Eine Anwendung, das für möglichst viele Fremdsprachen ausgelegt sein soll, verliert hierdurch notwendig an Spezialisierung.
+Eine Anwendung, die für möglichst viele Fremdsprachen ausgelegt sein soll, verliert hierdurch notwendig an Spezialisierung.
