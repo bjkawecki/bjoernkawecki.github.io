@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Digital lernen X: Resümee"
+category: Didaktik
+---
+Nach dieser exkursreichen Vorrede möchte ich nun noch einmal die wichtigsten Punkte festhalten.
+
+1. Aufgrund der extensiven und preiswerten Möglichkeit von Computern Daten zu speichern, zu verarbeiten, abzurufen und darzustellen ist digitals Lernmaterial dem analogen in bestimmten Fällen überlegen. Besonders eignet es sich für die Vermittlung relativ primitiven oder repetitiven und exotischen Wissens.
+
+2. Im Bereich Lernsoftware ist Spezialisierung in der Regel besser als Offenheit. Anki ist hier ein Musterbeispiel für ein offenes Programm, da es kostenlos auf allen Plattformen verfügbar ist, seinen Nutzern aber kein eigenes Lernmaterial bereitstellt.
+
+    (Man sollte jedoch nicht vergessen, dass es nichts "umsonst" gibt. Auch ein kostenloses Programm wie Anki muss entwickelt und instand gehalten werden.)
+
+3. Ein an Spezialisierung ausgerichtete Lernanwendung muss Lernmaterial mitliefern, das von Experten der jeweiligen Domäne erstellt wurde, den Lernprozess des Nutzers optimal fördern (interaktiv und synästehtisch), eindeutige Rückmeldung über die Eingabe des Nutzers geben und trotzdem auf allen Betriebssystemen verfügbar sein.
