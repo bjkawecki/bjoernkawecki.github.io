@@ -5,7 +5,7 @@ category: Didaktik
 ---
 Nach dieser Einleitung in meine Gedanken zum Thema "Digital Lernen" möchte ich nun noch einmal die wichtigsten Punkte festhalten.
 
-1. Aufgrund der extensiven und preiswerten Fähigkeit von Computern Daten zu speichern, zu verarbeiten, abzurufen und darzustellen ist digitals Lernmaterial dem analogen in bestimmten Fällen überlegen. Besonders eignet es sich für die Vermittlung relativ primitiven oder repetitiven und exotischen Wissens.
+1. Aufgrund der extensiven und preiswerten Fähigkeit von Computern Daten zu speichern, zu verarbeiten, abzurufen und darzustellen ist digitales Lernmaterial dem analogen in bestimmten Fällen überlegen. Besonders eignet es sich für die Vermittlung relativ primitiven oder repetitiven und exotischen Wissens.
 
 2. Im Bereich Lernsoftware ist Spezialisierung in der Regel besser als Offenheit. Anki ist hier ein Musterbeispiel für ein offenes Programm, da es kostenlos auf allen Plattformen verfügbar ist, seinen Nutzern aber kein eigenes Lernmaterial bereitstellt.
 
