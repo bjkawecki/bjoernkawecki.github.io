@@ -1088,10 +1088,6 @@ img, video {
   display: flex;
 }
 
-.table {
-  display: table;
-}
-
 .h-6 {
   height: 1.5rem;
 }
