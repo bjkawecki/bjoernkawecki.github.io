@@ -43,10 +43,7 @@ sass:
 
 include:
   - node_modules/tailwindcss
-  - node_modules/
   - _pages
-  - .sass-cache/
-  - .jekyll-cache/
 
 kramdown:
   smart_quotes: sbquo,rsquo,bdquo,rdquo
@@ -64,6 +61,7 @@ kramdown:
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
+#   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
