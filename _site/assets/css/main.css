@@ -1315,6 +1315,10 @@ video {
   align-items: center;
 }
 
+.justify-normal {
+  justify-content: normal;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
