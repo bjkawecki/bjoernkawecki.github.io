@@ -3,10 +3,16 @@
 {% include head.html %}
 
 <body class="text-gray-700 bg-gray-50 dark:bg-zinc-900 dark:text-gray-200">
-    <main class="px-5 mx-auto mb-10 w-full md:w-3/4 lg:w-4/5 xl:w-2/3 md:px-0" aria-label="Content">
-        <div class="flex flex-col justify-center mt-10 space-x-0 md:flex-row md:space-x-20">
+    <main class="px-5 mx-auto mb-10 w-full md:px-0" aria-label="Content">
+        <div class="flex flex-col justify-end mt-10 space-x-0 md:flex-row md:space-x-20">
             {% include aside.html %}
-            {% include blog-list.html %}
+            <div class="w-1/2">
+                <div
+                    class="prose prose-sm md:prose prose-a:text-blue2-600 prose-a:no-underline hover:prose-a:underline prose-headings:text-gray-700 prose-h2:mt-0 prose-h2:pb-5 prose-a:font-semibold dark:prose-headings:text-gray-200">
+                    {{ content }}
+                </div>
+                {% include pagination.html %}
+            </div>
         </div>
     </main>
 </body>
