@@ -1991,6 +1991,11 @@ ol {
     padding-right: 0px;
   }
 }
+.dark\:bg-emerald-500:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129/var(--tw-bg-opacity));
+}
+
 .dark\:bg-zinc-900:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27/var(--tw-bg-opacity));
@@ -2004,6 +2009,11 @@ ol {
   fill: #18181b;
 }
 
+.dark\:text-emerald-500:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129/var(--tw-text-opacity));
+}
+
 .dark\:text-gray-200:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235/var(--tw-text-opacity));
@@ -2014,12 +2024,22 @@ ol {
   color: rgb(209 213 219/var(--tw-text-opacity));
 }
 
+.dark\:hover\:bg-emerald-400:hover:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 211 153/var(--tw-bg-opacity));
+}
+
 .dark\:hover\:fill-gray-50:hover:where(.dark, .dark *) {
   fill: #f9fafb;
 }
 
 .dark\:hover\:fill-zinc-900:hover:where(.dark, .dark *) {
   fill: #18181b;
+}
+
+.dark\:focus\:ring-emerald-600:focus:where(.dark, .dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(5 150 105 / var(--tw-ring-opacity));
 }
 
 .dark\:prose-headings\:text-gray-200 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
@@ -2030,6 +2050,11 @@ ol {
 .dark\:prose-p\:text-gray-200 :is(:where(p):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235/var(--tw-text-opacity));
+}
+
+.dark\:prose-a\:dark\:text-emerald-500:where(.dark, .dark *) :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129/var(--tw-text-opacity));
 }
 
 .dark\:prose-ol\:text-gray-200 :is(:where(ol):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
