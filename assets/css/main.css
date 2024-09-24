@@ -1801,6 +1801,9 @@ img, video {
   .md\:w-1\/2 {
     width: 50%;
   }
+  .md\:w-\[56vw\] {
+    width: 56vw;
+  }
   .md\:flex-row {
     flex-direction: row;
   }
