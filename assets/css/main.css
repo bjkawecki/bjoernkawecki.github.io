@@ -1811,6 +1811,11 @@ img, video {
     margin-left: calc(2.5rem * (1 - var(--tw-space-x-reverse)));
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   }
+  .md\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse:0;
+    margin-left: calc(7rem * (1 - var(--tw-space-x-reverse)));
+    margin-right: calc(7rem * var(--tw-space-x-reverse));
+  }
   .md\:px-0 {
     padding-left: 0;
     padding-right: 0;
