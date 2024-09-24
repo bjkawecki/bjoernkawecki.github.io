@@ -1992,6 +1992,18 @@ video {
   .md\:w-full {
     width: 100%;
   }
+  .md\:w-\[10vw\] {
+    width: 10vw;
+  }
+  .md\:w-\[30vw\] {
+    width: 30vw;
+  }
+  .md\:w-\[50vw\] {
+    width: 50vw;
+  }
+  .md\:w-\[56vw\] {
+    width: 56vw;
+  }
   .md\:flex-row {
     flex-direction: row;
   }
