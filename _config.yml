@@ -43,7 +43,10 @@ sass:
 
 include:
   - node_modules/tailwindcss
+  - node_modules/
   - _pages
+  - .sass-cache/
+  - .jekyll-cache/
 
 kramdown:
   smart_quotes: sbquo,rsquo,bdquo,rdquo
@@ -55,13 +58,12 @@ kramdown:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-  #   - .sass-cache/
-  #   - .jekyll-cache/
-  #   - gemfiles/
-  #   - Gemfile
-  #   - Gemfile.lock
-  - node_modules/
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
