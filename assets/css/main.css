@@ -1823,5 +1823,33 @@ img, video {
     width: 66.666667%;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-zinc-900 {
+    --tw-bg-opacity:1;
+    background-color: rgb(24 24 27/var(--tw-bg-opacity));
+  }
+  .dark\:fill-gray-200 {
+    fill: #e5e7eb;
+  }
+  .dark\:text-gray-200 {
+    --tw-text-opacity:1;
+    color: rgb(229 231 235/var(--tw-text-opacity));
+  }
+  .dark\:hover\:fill-gray-50:hover {
+    fill: #f9fafb;
+  }
+  .dark\:prose-headings\:text-gray-200 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~=not-prose], [class~=not-prose] *))) {
+    --tw-text-opacity:1;
+    color: rgb(229 231 235/var(--tw-text-opacity));
+  }
+  .dark\:prose-p\:text-gray-200 :is(:where(p):not(:where([class~=not-prose], [class~=not-prose] *))) {
+    --tw-text-opacity:1;
+    color: rgb(229 231 235/var(--tw-text-opacity));
+  }
+  .dark\:prose-ul\:text-gray-200 :is(:where(ul):not(:where([class~=not-prose], [class~=not-prose] *))) {
+    --tw-text-opacity:1;
+    color: rgb(229 231 235/var(--tw-text-opacity));
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
