@@ -1295,6 +1295,10 @@ video {
   width: 100%;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -1971,9 +1975,6 @@ video {
   }
   .md\:justify-end {
     justify-content: flex-end;
-  }
-  .md\:justify-center {
-    justify-content: center;
   }
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
