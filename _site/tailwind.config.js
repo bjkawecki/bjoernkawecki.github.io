@@ -12,9 +12,9 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
-            },
+            // fontFamily: {
+            //     'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+            // },
             colors: {
                 "blue2": {
                     '50': '#edfbff',
