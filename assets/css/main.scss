@@ -13,3 +13,10 @@
 }
 
 @tailwind utilities;
+
+
+@layer base {
+   ol {
+    list-style: decimal;
+  }
+}

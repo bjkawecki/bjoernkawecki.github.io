@@ -371,6 +371,10 @@ video {
   font-family: "Inter";
   src: local("Inter"), url("/assets/fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+ol {
+  list-style: decimal;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1299,14 +1303,6 @@ video {
   width: 100%;
 }
 
-.min-w-\[60rem\] {
-  min-width: 60rem;
-}
-
-.min-w-\[50vw\] {
-  min-width: 50vw;
-}
-
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -1321,10 +1317,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1369,10 +1361,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * (1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.self-center {
-  align-self: center;
 }
 
 .rounded {
@@ -1979,26 +1967,8 @@ video {
   .md\:h-72 {
     height: 18rem;
   }
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-  .md\:w-\[56rem\] {
-    width: 56rem;
-  }
-  .md\:w-\[52rem\] {
-    width: 52rem;
-  }
-  .md\:w-\[60rem\] {
-    width: 60rem;
-  }
   .md\:w-1\/3 {
     width: 33.333333%;
-  }
-  .md\:min-w-\[60rem\] {
-    min-width: 60rem;
-  }
-  .md\:min-w-\[50vw\] {
-    min-width: 50vw;
   }
   .md\:flex-row {
     flex-direction: row;
@@ -2006,21 +1976,10 @@ video {
   .md\:justify-normal {
     justify-content: normal;
   }
-  .md\:justify-end {
-    justify-content: flex-end;
-  }
-  .md\:justify-center {
-    justify-content: center;
-  }
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * (1 - var(--tw-space-x-reverse)));
-  }
-  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * (1 - var(--tw-space-x-reverse)));
   }
   .md\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
@@ -2069,6 +2028,11 @@ video {
 }
 
 .dark\:prose-p\:text-gray-200 :is(:where(p):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235/var(--tw-text-opacity));
+}
+
+.dark\:prose-ol\:text-gray-200 :is(:where(ol):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235/var(--tw-text-opacity));
 }
