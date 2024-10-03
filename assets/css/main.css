@@ -1898,4 +1898,9 @@ ol {
   color: rgb(229 231 235/var(--tw-text-opacity));
 }
 
+.dark\:prose-td\:text-gray-200 :is(:where(td):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
+  --tw-text-opacity:1;
+  color: rgb(229 231 235/var(--tw-text-opacity));
+}
+
 /*# sourceMappingURL=main.css.map */
