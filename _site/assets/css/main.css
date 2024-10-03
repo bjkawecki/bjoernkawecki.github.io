@@ -2052,11 +2052,6 @@ ol {
   color: rgb(229 231 235/var(--tw-text-opacity));
 }
 
-.dark\:prose-p\:text-white :is(:where(p):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255/var(--tw-text-opacity));
-}
-
 .dark\:prose-a\:dark\:text-emerald-500:where(.dark, .dark *) :is(:where(a):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129/var(--tw-text-opacity));
@@ -2068,6 +2063,11 @@ ol {
 }
 
 .dark\:prose-ul\:text-gray-200 :is(:where(ul):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235/var(--tw-text-opacity));
+}
+
+.dark\:prose-td\:text-gray-200 :is(:where(td):not(:where([class~=not-prose], [class~=not-prose] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235/var(--tw-text-opacity));
 }
