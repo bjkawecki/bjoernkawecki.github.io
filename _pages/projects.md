@@ -25,5 +25,5 @@ Django, PostgreSQL, Tailwind CSS, htmx
 #### 2024
 
 | Mai | Beta-Version abrufbar unter [bajkal-app.de](https://bajkal-app.de) |
-| Oktober | Wechsel von Cloud-Service auf VPS |
+| Oktober | Umzug von Cloud-Service zu VPS |
 | |
