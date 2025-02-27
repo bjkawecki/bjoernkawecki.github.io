@@ -5,13 +5,12 @@ permalink: /about/
 ---
 # {{ page.title }}
 
-## Kenntnisse
-- Sprachen:     <span class="font-medium">Python, JavaScript</span>
-- Frontend:     <span class="font-medium">htmx, Tailwind</span>
-- Backend:      <span class="font-medium">Django</span>
-- Plattformen:  <span class="font-medium">GitHub, Docker</span>
-- OS:           <span class="font-medium">GNU/Linux</span>
+## Programmierkenntnisse
+- <span class="font-bold">Sprachen</span>:     <span class="font-medium">Python, JavaScript, Bash</span>
+- <span class="font-bold">Frontend</span>:     <span class="font-medium">HTML, CSS, Tailwind, HTMX</span>
+- <span class="font-bold">Backend</span>:      <span class="font-medium">Django, REST, SQL</span>
+- <span class="font-bold">DevOps</span>:  <span class="font-medium">Linux, Docker, AWS, GitHub</span>
 
 ## Abschlüsse
-- *Bachelor of Arts*: Russlandstudien, Nebenfach Philosophie, Universität Freiburg
-- *Master of Arts*: Russlandstudien, Universität Freiburg und RGGU Moskau
+- B.A. Russlandstudien/Philosophie, Universität Freiburg
+- M.A. Russlandstudien, Universität Freiburg/RGGU Moskau

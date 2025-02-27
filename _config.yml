@@ -27,11 +27,14 @@ twitter_username:
 github_username: bjkawecki
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-postcss
   - jekyll-paginate
+
+postcss:
+  cache: false
 
 paginate: 5
 paginate_path: "/page:num/"
