@@ -2,7 +2,7 @@
 layout: project
 title: Russisch-Vokabeltrainer "Bajkal"
 projectname: Bajkal
-description: E-Learning-Anwendung für Russisch-Sprachschüler, Methode der verteilten Wiederholung und viele Features.
+description: E-Learning-Anwendung für Russisch-Sprachschüler, verteilte Wiederholung, Wörterbuch und weitere nützliche Features
 started: 2020
 status: Beta
 uri: https://bajkal-app.de
