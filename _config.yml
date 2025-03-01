@@ -20,7 +20,6 @@
 
 title: Björn Kawecki | Persönliche Webseite
 email: bkawecki@mailbox.org
-description:
 url: "https://bjoernkawecki.de" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username:
@@ -28,6 +27,10 @@ github_username: bjkawecki
 
 # Build settings
 # theme: minima
+
+theme_name: bluegreen
+description: Simple theme with tailwind for a personal website with a blog and and a page for your projects.
+author: Björn Kawecki
 plugins:
   - jekyll-feed
   - jekyll-postcss

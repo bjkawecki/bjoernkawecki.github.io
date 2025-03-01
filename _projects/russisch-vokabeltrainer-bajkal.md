@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Projekte | Russisch-Vokabeltrainer "Bajkal"
-projectname: Bajkal
+title: Russisch-Vokabeltrainer "Bajkal"
+projectname: Projekte | Russisch-Vokabeltrainer "Bajkal"
 description: E-Learning-Anwendung für Russisch-Sprachschüler, verteilte Wiederholung, Wörterbuch und weitere nützliche Features
 started: 2020
 status: Beta

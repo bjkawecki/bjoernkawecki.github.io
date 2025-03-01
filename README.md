@@ -2,16 +2,17 @@
 
 ## Summary
 
-I started from Jekyll's minima theme and created a simple design according to my taste with pages for a blog, about me and projects.
+Starting from Jekyll's minima theme, I created a simple design according to my taste with pages for a blog, about me and projects.
 
 ## Features
 
+- Tailwind v3
 - Simple layout
+- Light/dark theme toggle
 - Blog page with pagination
 - Projects page with pagination
 - Other pages: about, 404
 - Several layouts
-- Tailwind v3
 
 ## Install
 
