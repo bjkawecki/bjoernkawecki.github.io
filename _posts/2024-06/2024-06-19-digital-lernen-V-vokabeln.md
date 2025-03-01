@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Digital lernen V: Vokabeln"
+title: "Blog | Digital lernen V: Vokabeln"
 category: Didaktik
 ---
 Vokabeln lernen funktioniert besonders gut interaktiv und synästhetisch, das heißt, mehrere Arten der Wahrnehmung vereinend.

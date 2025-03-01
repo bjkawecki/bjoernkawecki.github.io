@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Digital lernen X: Resümee"
+title: "Blog | Digital lernen X: Resümee"
 category: Didaktik
 ---
 Nach dieser Einleitung in meine Gedanken zum Thema "Digital Lernen" möchte ich nun noch einmal die wichtigsten Punkte festhalten.

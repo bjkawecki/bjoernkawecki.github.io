@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Webseite von Björn Kawecki
+title: Björn Kawecki | Persönliche Webseite
 email: bkawecki@mailbox.org
 description:
 url: "https://bjoernkawecki.de" # the base hostname & protocol for your site, e.g. http://example.com
