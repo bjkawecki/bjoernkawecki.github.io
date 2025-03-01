@@ -15,7 +15,8 @@ permalink: /projects/
       <h6>Start: {{ project.started }} | Status: {{ project.status }}</h6>
       <h2>{{ project.title }}</h2>
       <div class="flex flex-col dark:text-gray-200 text-gray-700 space-y-2.5">
-        <div class="text-lg">{{ project.description }}</div>
+        <div class="md:text-lg text-base">{{ project.description }}</div>
+        <div class="md:text-lg text-base">Gebaut mit: {{ project.techstack }}</div>
       </div>
     </div>
   </a>

@@ -8,7 +8,7 @@ status: Beta
 uri: https://bajkal-app.de
 uri_h: bajkal-app.de
 category: Web App
-techstack: Django, PostgreSQL, Tailwind, HTMX
+techstack: Django, HTMX
 ---
 
 Online: [bajkal-app.de](https://bajkal-app.de)
