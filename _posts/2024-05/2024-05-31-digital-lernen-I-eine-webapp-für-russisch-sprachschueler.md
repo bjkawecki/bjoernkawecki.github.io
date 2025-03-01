@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog | Digital lernen I: Eine Webapp für Russisch-Sprachschüler"
+title: "Digital lernen I: Eine Webapp für Russisch-Sprachschüler"
 category: Didaktik
 ---
 2020 habe ich mit der Konzeption einer Webapp begonnen, die Russisch-Sprachschüler beim Lernen unterstützen sollte. Die Idee entstand aus meiner eigenen Erfahrung als Slawistik-Student. Ich fand es immer mühsam, mir das geeignete Lernmaterial für Russisch zusammenzusammeln.

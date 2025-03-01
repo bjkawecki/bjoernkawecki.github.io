@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog | Digital lernen VI: Spezialisierung"
+title: "Digital lernen VI: Spezialisierung"
 category: Didaktik
 ---
 Für Französisch oder Italienisch gibt es eine ausreichend große Nachfrage.
