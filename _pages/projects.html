@@ -7,19 +7,18 @@ permalink: /projects/
 <h1>Projekte</h1>
 
 {% if site.projects.size == 0 %}
-  <p>Keine Einträge vorhanden.</p>
+<p>Keine Einträge vorhanden.</p>
 {% else %}
-    {% for project in site.projects %}
-    <a href="{{ project.url }}">
-      <div class="dark:hover:bg-zinc-800 hover:bg-gray-200 py-4 px-4 rounded">
-      <h6>Start: {{ project.started }} | Status: {{ project.status }}</h6>
-      <h2>{{ project.title }}</h2>
-      <div class="flex flex-col dark:text-gray-200 text-gray-700 space-y-2.5">
-        <div class="md:text-lg text-base">{{ project.description }}</div>
-        <div class="md:text-lg text-base">Gebaut mit: {{ project.techstack }}</div>
-      </div>
+{% for project in site.projects %}
+<a href="{{ project.url }}">
+  <div class="px-4 py-4 rounded dark:hover:bg-zinc-800 hover:bg-gray-200">
+    <h6>Start: {{ project.started }} | Status: {{ project.status }}</h6>
+    <h2>{{ project.title }}</h2>
+    <div class="flex flex-col space-y-2.5 text-gray-700 dark:text-gray-200">
+      <div class="text-base font-normal md:text-lg">{{ project.description }}</div>
+      <div class="text-base font-normal md:text-lg">Gebaut mit: {{ project.techstack }}</div>
     </div>
-  </a>
-    {% endfor %}
+  </div>
+</a>
+{% endfor %}
 {% endif %}
-
