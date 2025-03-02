@@ -5,6 +5,11 @@ permalink: /about/
 ---
 # {{ page.title }}
 
+Quereinsteiger im Bereich Webentwicklung mit Bildungsweg in den schönen Wissenschaften.
+Drei Jahre Erfahrung mit dem Python-Framework Django und verbundenen Technologien.
+Begeisterter langjähriger Linux-Anwender.
+Interesse an Fragen zum Thema digitales Lernen.
+
 ## Programmierkenntnisse
 
 - **Sprachen**: Python, JavaScript, Bash    
