@@ -9,16 +9,21 @@ permalink: /projects/
 {% if site.projects.size == 0 %}
 <p>Keine Einträge vorhanden.</p>
 {% else %}
-{% for project in site.projects %}
-<a href="{{ project.url }}">
-  <div class="px-4 py-4 rounded dark:hover:bg-zinc-800 hover:bg-gray-200">
-    <h6>Start: {{ project.started }} | Status: {{ project.status }}</h6>
-    <h2>{{ project.title }}</h2>
-    <div class="flex flex-col space-y-2.5 text-gray-700 dark:text-gray-200">
-      <div class="text-base font-normal md:text-lg">{{ project.description }}</div>
-      <div class="text-base font-normal md:text-lg">Gebaut mit: {{ project.techstack }}</div>
+<div class="flex flex-col space-y-2.5">
+  {% assign projects = site.projects | sort: "started" %}
+  {% for project in projects %}
+  <a href="{{ project.url }}">
+    <div class="px-4 py-4 rounded dark:hover:bg-zinc-800 hover:bg-gray-200">
+      <div class="pb-0.5 text-base font-normal dark:text-gray-300">
+        {{ project.category }} | {{ project.started }}{% if project.status %} | Status: {{ project.status }}{% endif %}
+      </div>
+      <h2>{{ project.title }}</h2>
+      <div class="flex flex-col text-gray-700 dark:text-gray-200">
+        <div class="text-base font-normal md:text-lg">{{ project.description }}</div>
+        <!-- <div class="text-base font-normal md:text-lg">Gebaut mit: {{ project.techstack }}</div> -->
+      </div>
     </div>
-  </div>
-</a>
-{% endfor %}
+  </a>
+  {% endfor %}
+</div>
 {% endif %}
