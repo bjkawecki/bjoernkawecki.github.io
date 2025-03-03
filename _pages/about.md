@@ -21,4 +21,4 @@ Beschäftigt mit Fragen zum Thema digitales Lernen.
 - B.A. Russlandstudien/Philosophie, Universität Freiburg
 - M.A. Russlandstudien, Universität Freiburg/RGGU Moskau
 
-📄 [Mein Résumé als PDF](/assets/files/bjoern-kawecki-resume.pdf)
+📄 [Mein Resume als PDF](/assets/files/bjoern-kawecki-resume.pdf)
