@@ -2186,6 +2186,11 @@ video {
   text-decoration-line: underline;
 }
 
+.prose-ul\:text-lg :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .prose-li\:text-lg :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2244,6 +2249,16 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:prose-p\:text-base :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:prose-ul\:text-base :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -2339,11 +2354,6 @@ video {
 }
 
 .dark\:prose-table\:text-gray-200 :is(:where(table):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
-.dark\:prose-td\:text-gray-200 :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
