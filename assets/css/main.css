@@ -2186,9 +2186,17 @@ video {
   text-decoration-line: underline;
 }
 
+.prose-ul\:pl-0 :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  padding-left: 0px;
+}
+
 .prose-ul\:text-lg :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.prose-li\:list-disc :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  list-style-type: disc;
 }
 
 .prose-li\:text-lg :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2246,6 +2254,11 @@ video {
     padding-right: 0px;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2254,6 +2267,10 @@ video {
   .md\:prose-p\:text-base :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:prose-ul\:pl-5 :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    padding-left: 1.25rem;
   }
 
   .md\:prose-ul\:text-base :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
