@@ -5,7 +5,7 @@ permalink: /about/
 ---
 # {{ page.title }}
 
-Quereinsteiger im Bereich Webentwicklung mit Bildungsweg in den Geisteswissenschaften.
+Ambitionierter Quereinsteiger im Bereich Webentwicklung mit Bildungsweg in den Geisteswissenschaften.
 Drei Jahre Erfahrung mit dem Python-Framework Django und verbundenen Technologien.
 Begeisterter langjähriger Linux-Anwender.
 Beschäftigt mit Fragen zum Thema digitales Lernen.
