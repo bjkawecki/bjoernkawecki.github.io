@@ -5,7 +5,7 @@ layout: blog
 <h1>Weblog</h1>
 <div class="flex items-center mb-5 space-x-2">
     {% for category in site.categories %}
-    <a href="/blog/category/{{ category[0] | downcase | url_encode }}"
+    <a href="/blog/category/{{ category[0] | downcase | url_encode | slugify }}"
         class="px-1.5 py-0.5 text-sm font-medium text-center text-white no-underline rounded-full cursor-pointer bg-blue2-600 hover:bg-blue2-800 focus:outline-none focus:ring-4 focus:ring-blue2-300 me-2 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800">
         {{ category[0] }}
     </a>
@@ -20,7 +20,7 @@ Kein Einträge vorhanden.
     <div class="flex flex-col px-4 py-4 space-y-1 bg-gray-100 rounded dark:bg-zinc-800">
         <div class="pb-0.5 text-sm font-medium text-gray-600 dark:text-gray-300">
             {{ post.date | date: "%d.%m.%Y" }} |
-            <a href="/blog/category/{{ post.category | downcase | url_encode }}"
+            <a href="/blog/category/{{ post.category | downcase | url_encode | slugify }}"
                 class="font-medium text-gray-600 no-underline dark:hover:text-gray-200 hover:underline dark:text-gray-300">
                 {{ post.category | capitalize }}
             </a>
