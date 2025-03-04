@@ -1469,6 +1469,16 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .fill-gray-700 {
   fill: #374151;
 }
@@ -2165,6 +2175,10 @@ video {
   line-height: 1.5rem;
 }
 
+.prose-a\:font-bold :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-weight: 700;
+}
+
 .prose-a\:font-semibold :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-weight: 600;
 }
@@ -2186,8 +2200,8 @@ video {
   text-decoration-line: underline;
 }
 
-.prose-ul\:pl-0 :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  padding-left: 0px;
+.prose-a\:hover\:underline:hover :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  text-decoration-line: underline;
 }
 
 .prose-ul\:text-lg :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2269,10 +2283,6 @@ video {
     line-height: 1.5rem;
   }
 
-  .md\:prose-ul\:pl-5 :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    padding-left: 1.25rem;
-  }
-
   .md\:prose-ul\:text-base :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2287,6 +2297,11 @@ video {
 .dark\:bg-zinc-900:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-zinc-800:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 .dark\:fill-gray-200:where(.dark, .dark *) {
@@ -2351,6 +2366,11 @@ video {
 }
 
 .dark\:prose-a\:dark\:text-emerald-500:where(.dark, .dark *) :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+
+.dark\:prose-a\:text-emerald-500 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
 }
