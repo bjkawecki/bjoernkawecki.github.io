@@ -17,7 +17,7 @@ permalink: /projects/
       {{ project.category }} | {{ project.started }}{% if project.status %} | Status: {{ project.status }}{% endif %}
     </div>
     <h2 class="w-fit"><a href="{{ post.url }}" class="hover:underline">
-        <a href="{{ project.url }}">{{ project.title }}</a>
+        <a href="{{ project.url }}" class="hover:underline">{{ project.title }}</a>
     </h2>
     <div class="flex flex-col text-gray-700 dark:text-gray-200">
       <div class="text-base font-normal md:text-lg">{{ project.description }}</div>
