@@ -10,11 +10,12 @@
     </div>
     <div class="flex justify-center mb-6 space-x-2">
         <a href="/"
-            class="{% if page.url == '/' or page.url contains '/page' %}font-bold {% endif %}text-blue2-600 dark:text-emerald-500 hover:underline">Weblog</a><span>&middot;</span>
+            class="{% if page.url == '/' or page.url contains '/page' or page.url contains '/category/' %}font-bold {% endif %}text-blue2-600 dark:text-emerald-500 hover:underline">Weblog</a><span>&middot;</span>
         <a href="/projects/"
             class="{% if page.url == '/projects/' %}font-bold {% endif %}text-blue2-600 hover:underline dark:text-emerald-500">Projekte</a>
         <span>&middot;</span>
-        <a href="/about/" class="{% if page.url == '/about/' %}font-bold {% endif %}text-blue2-600 hover:underline dark:text-emerald-500">Über
+        <a href="/about/"
+            class="{% if page.url == '/about/' %}font-bold {% endif %}text-blue2-600 hover:underline dark:text-emerald-500">Über
             mich</a>
     </div>
     {% include footer.html %}

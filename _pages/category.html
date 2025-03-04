@@ -1,0 +1,24 @@
+---
+layout: projects
+title: Kategorien
+---
+
+<h1>Beiträge in der Kategorie "{{ page.title }}"</h1>
+
+
+<div class="flex flex-col space-y-2.5">
+    {% assign category = page.title %}
+    {% for post in site.posts %}
+    {% if post.categories contains category %}
+    <div class="px-4 py-4 bg-gray-100 rounded dark:bg-zinc-800">
+        <div class="pb-0.5 text-base font-normal dark:text-gray-300">
+            {{ post.date | date: "%d.%m.%Y" }} | <a href="">{{ post.category | capitalize }}</a>
+        </div>
+        <a href="{{ post.url }}" class="font-bold hover:underline dark:text-emerald-500">
+            <h2 class="font-bold w-fit hover:underline dark:text-emerald-500">{{ post.title }}
+            </h2>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

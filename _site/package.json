@@ -10,8 +10,8 @@
     "@fontsource/inter": "^5.0.18"
   },
   "scripts": {
-    "build": "npx tailwindcss -o ./assets/css/main.css && bundle exec jekyll build",
-    "serve": "npx tailwindcss -o ./assets/css/main.css && bundle exec jekyll serve",
-    "watch": "npx tailwindcss -o ./assets/css/main.css --watch"
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && bundle exec jekyll build",
+    "serve": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && bundle exec jekyll serve",
+    "watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
   }
 }

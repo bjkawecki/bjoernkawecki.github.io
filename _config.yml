@@ -35,6 +35,14 @@ plugins:
   - jekyll-feed
   - jekyll-postcss
   - jekyll-paginate
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: 
+    - categories
+  layout: category
+  permalinks:
+    category: '/blog/category/:name/'
 
 postcss:
   cache: false
@@ -46,6 +54,7 @@ collections:
   projects:
     output: true   # Falls du möchtest, dass jedes Projekt eine eigene Seite hat
     permalink: /projects/:path
+
 
 sass:
   load_paths:

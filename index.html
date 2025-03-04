@@ -9,11 +9,20 @@ Kein Einträge vorhanden.
 {% else %}
 <div class="flex flex-col space-y-2.5">
     {% for post in paginator.posts %}
-    <div class="px-4 py-4 bg-gray-100 rounded dark:bg-zinc-800">
-        <div class="pb-0.5 text-base font-normal dark:text-gray-300">{{ post.date | date: "%d.%m.%Y" }} | {{
-            post.category | capitalize }}</div>
-        <h2 class="w-fit"><a href="{{ post.url }}" class="hover:underline">{{ post.title }}</a>
-        </h2>
+    <div class="flex flex-col px-4 py-4 space-y-1 bg-gray-100 rounded dark:bg-zinc-800">
+        <div class="pb-0.5 text-sm font-medium text-gray-600 dark:text-gray-300">
+            {{ post.date | date: "%d.%m.%Y" }} |
+            <a href="/blog/category/{{ post.category | downcase | url_encode }}"
+                class="font-medium text-gray-600 no-underline dark:hover:text-gray-200 hover:underline dark:text-gray-300">
+                {{ post.category | capitalize }}
+            </a>
+        </div>
+        <a href="{{ post.url }}" class="font-bold no-underline dark:text-emerald-500 text-blue2-600">
+            <h2 class="font-bold w-fit hover:underline dark:text-emerald-500 text-blue2-600">
+                {{ post.title }}
+            </h2>
+        </a>
+
     </div>
     {% endfor %}
 </div>
