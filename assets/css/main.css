@@ -1490,11 +1490,6 @@ ul, ol {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .fill-gray-700 {
   fill: #374151;
 }
@@ -2151,11 +2146,6 @@ ul, ol {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .hover\:fill-gray-500:hover {
   fill: #6b7280;
 }
@@ -2431,27 +2421,12 @@ ul, ol {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
-.dark\:hover\:bg-zinc-900:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
-}
-
-.dark\:hover\:bg-gray-800:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
 .dark\:hover\:fill-gray-50:hover:where(.dark, .dark *) {
   fill: #f9fafb;
 }
 
 .dark\:hover\:fill-zinc-900:hover:where(.dark, .dark *) {
   fill: #18181b;
-}
-
-.dark\:hover\:text-gray-200:hover:where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .dark\:focus\:ring-emerald-600:focus:where(.dark, .dark *) {
