@@ -20,7 +20,7 @@ Kein Einträge vorhanden.
     <a href="{{ post.url }}"
         class="flex flex-col px-4 py-4 space-y-1 bg-gray-100 rounded hover:bg-gray-200 dark:bg-zinc-800 dark:hover:bg-zinc-700">
         <div class="pb-0.5 text-sm font-medium text-gray-600 dark:text-gray-300">
-            {{ post.date | date: "%d.%m.%Y" }} | {{ post.category | capitalize }}
+            {{ post.date | date: "%d.%m.%Y" }} | {{ post.category }}
         </div>
         <h2 class="font-bold w-fit dark:text-emerald-500 text-blue2-600">
             {{ post.title }}
