@@ -15,4 +15,4 @@ Eine weitere Bedingung wird sein, dass sich das Angebot an ein deutschsprachiges
 
 |Produkt|Typ|seit|spezialisiert|Kosten|Plattform|
 |:---|:---|:---|:---|:---|:---|
-|[Anki](#)|-|-|-|-|-|
+|**Anki**|-|-|-|-|-|
