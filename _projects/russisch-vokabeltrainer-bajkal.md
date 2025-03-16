@@ -36,7 +36,7 @@ Mein Ziel ist eine Web-App, die es ermöglicht, mit minimalem Aufwand eine umfas
 
 - 05/2024: Beta-Version abrufbar unter [bajkal-app.de](https://bajkal-app.de)
 - 10/2024: Umzug von PaaS-Anbieter auf VPS
-- 03/2025: Version 0.5.0
+- 03/2025: Version 0.5.0, Update des Layouts
 
 
 ### Vorschau mobile Ansicht
