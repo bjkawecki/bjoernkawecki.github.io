@@ -15,7 +15,7 @@ Beschäftigt mit Fragen zum Thema digitales Lernen.
 - **Sprachen**: Python, JavaScript, Bash
 - **Frontend**: HTML, CSS, Tailwind, HTMX
 - **Backend**: Django, REST, SQL
-- **DevOps**: Linux, Docker, AWS, GitHub
+- **DevOps**: Linux, Docker, AWS, GitHub, Coolify
 
 ## Zertifikate
 - AWS Certified Cloud Practitioner
