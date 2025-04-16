@@ -12,10 +12,13 @@ Beschäftigt mit Fragen zum Thema digitales Lernen.
 
 ## Programmierkenntnisse
 
-- **Sprachen**: Python, JavaScript, Bash    
-- **Frontend**: HTML, CSS, Tailwind, HTMX   
-- **Backend**: Django, REST, SQL   
-- **DevOps**: Linux, Docker, AWS, GitHub   
+- **Sprachen**: Python, JavaScript, Bash
+- **Frontend**: HTML, CSS, Tailwind, HTMX
+- **Backend**: Django, REST, SQL
+- **DevOps**: Linux, Docker, AWS, GitHub
+
+## Zertifikate
+- AWS Certified Cloud Practitioner
 
 ## Abschlüsse
 - B.A. Russlandstudien/Philosophie, Universität Freiburg
