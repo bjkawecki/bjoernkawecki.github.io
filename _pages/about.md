@@ -5,7 +5,7 @@ permalink: /about/
 ---
 # {{ page.title }}
 
-Junior-Webentwickler mit Bildungsweg in den Geisteswissenschaften.
+Junior-Webentwickler mit Bildungsweg in den Geisteswissenschaften.<br>
 Drei Jahre Erfahrung mit dem Python-Framework Django und verbundenen Technologien.
 Langjähriger, begeisterter Linux-Anwender.
 Beschäftigt mit Fragen rund ums Thema digitales Lernen.
