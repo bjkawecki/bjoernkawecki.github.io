@@ -12,7 +12,7 @@ Eine weitere Bedingung wird sein, dass sich das Angebot an ein deutschsprachiges
 
 
 ## Übersicht
-
+{% assign target = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
 |Produkt|Typ|seit|spezialisiert|Kosten|Plattform|
 |:---|:---|:---|:---|:---|:---|
-|**Anki**|-|-|-|-|-|
+| [Anki]({{ site.baseurl }}{{ target.url }}) | Lern-App | 2006 | Nein | Kostenlos (außer iOS-App) | alle |
