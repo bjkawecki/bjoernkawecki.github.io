@@ -1603,6 +1603,11 @@ ul, ol {
   line-height: 1.25rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2258,14 +2263,14 @@ ul, ol {
   line-height: 1.75rem;
 }
 
-.prose-a\:text-base :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .prose-a\:text-lg :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.prose-a\:text-base :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .prose-a\:font-bold :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2305,6 +2310,11 @@ ul, ol {
 .prose-li\:text-lg :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.prose-table\:text-base :is(:where(table):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .prose-td\:text-gray-700 :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2377,6 +2387,16 @@ ul, ol {
   }
 
   .md\:prose-p\:text-base :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:prose-a\:text-lg :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:prose-a\:text-base :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     font-size: 1rem;
     line-height: 1.5rem;
   }

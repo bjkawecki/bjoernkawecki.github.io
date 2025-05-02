@@ -11,8 +11,10 @@ In den kommenden Beiträgen dieser Serie stelle ich daher jeweils eine App oder 
 Eine weitere Bedingung wird sein, dass sich das Angebot an ein deutschsprachiges Publikum richtet. Die Ausgangssprache der Inhalte muss also Deutsch sein. Eine Übersicht der bereits getesteten Angebote befindet sich in der folgenden Tabelle.
 
 
-## Übersicht
+## Getestete Lern-Apps
+
 {% assign target = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
-|Produkt|Typ|seit|spezialisiert|Kosten|Plattform|
+
+|Produkt|seit|Russisch-Fokus|Kosten|Plattform|
 |:---|:---|:---|:---|:---|:---|
-| [Anki]({{ site.baseurl }}{{ target.url }}) | Lern-App | 2006 | Nein | Kostenlos (außer iOS-App) | alle |
+| [Anki]({{ site.baseurl }}{{ target.url }}) | 2006 | Nein | Nein (außer iOS) | alle |
