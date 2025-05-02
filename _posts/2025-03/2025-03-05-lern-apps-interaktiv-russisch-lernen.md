@@ -15,6 +15,6 @@ Eine weitere Bedingung wird sein, dass sich das Angebot an ein deutschsprachiges
 
 {% assign target = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
 
-|Produkt|seit|Russisch-Fokus|Kosten|Plattform|
+|Produkt|Russisch-Fokus|Kosten|Plattform|
 |:---|:---|:---|:---|:---|:---|
-| [Anki]({{ site.baseurl }}{{ target.url }}) | 2006 | Nein | Nein (außer iOS) | alle |
+| [Anki]({{ site.baseurl }}{{ target.url }}) | Nein | Nein (außer iOS) | alle |
