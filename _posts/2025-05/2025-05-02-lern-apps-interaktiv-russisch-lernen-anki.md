@@ -39,4 +39,4 @@ Insbesondere für Anfänger und Autodidakten ohne Vorkenntnisse oder Lernroutine
 
 {% assign target = site.posts | where: "title", "Lern-Apps: Interaktiv Russisch lernen" | first %}
 ---
-Eine Übersicht über alle getesteten Lern-Apps gibt es [hier]({{ site.baseurl }}{{ target.url }}).
+*Eine Übersicht über alle bislang getesteten Lern-Apps findest du [hier]({{ site.baseurl }}{{ target.url }}).*
