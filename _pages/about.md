@@ -5,10 +5,10 @@ permalink: /about/
 ---
 # {{ page.title }}
 
-Ambitionierter Quereinsteiger im Bereich Webentwicklung mit Bildungsweg in den Geisteswissenschaften.
+Webentwickler und Sysadmin mit Bildungsweg in den Geisteswissenschaften.
 Drei Jahre Erfahrung mit dem Python-Framework Django und verbundenen Technologien.
-Begeisterter langjähriger Linux-Anwender.
-Beschäftigt mit Fragen zum Thema digitales Lernen.
+Langjähriger, begeisterter Linux-Anwender.
+Beschäftigt mit Fragen rund ums Thema digitales Lernen.
 
 ## Programmierkenntnisse
 
