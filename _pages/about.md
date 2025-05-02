@@ -5,7 +5,7 @@ permalink: /about/
 ---
 # {{ page.title }}
 
-Webentwickler und Sysadmin mit Bildungsweg in den Geisteswissenschaften.
+Junior-Webentwickler mit Bildungsweg in den Geisteswissenschaften.
 Drei Jahre Erfahrung mit dem Python-Framework Django und verbundenen Technologien.
 Langjähriger, begeisterter Linux-Anwender.
 Beschäftigt mit Fragen rund ums Thema digitales Lernen.
