@@ -11,19 +11,12 @@ category: Web App
 techstack: Django, HTMX
 ---
 
-Online: [bajkal-app.de](https://bajkal-app.de)
+**Online**: [bajkal-app.de](https://bajkal-app.de)
 
-Während meines Studiums stellte ich fest, dass es kaum gutes Lernmaterial, gibt um Russisch zu lernen. 
+**Beschreibung**: Während meines Studiums stellte ich fest, dass es kaum gutes Lernmaterial, gibt um Russisch zu lernen. 
 Anfang 2020 entschied ich mich, dieses Problem selbst zu lösen, und begann mit der Konzeption einer eigenen Lern-App.
 
 Mein Ziel ist eine Web-App, die es ermöglicht, mit minimalem Aufwand eine umfassende Sammlung russischer Vokabeln zu lernen.
-
-### Features
-
-- Vokabeltrainer basierend auf der Methode der verteilten Wiederholung
-- rund 1.500 Wörter in zwei thematisch gegliederten Kursen
-- durchsuchbares Wörterbuch mit grammatischen Formen
-- Lernfortschritt anschaulich visualisiert durch Diagramme
 
 ### Techstack
 
@@ -31,6 +24,14 @@ Mein Ziel ist eine Web-App, die es ermöglicht, mit minimalem Aufwand eine umfas
 - **Datenbank**: PostgreSQL, Redis
 - **Frontend**: HTMX, Tailwind/Flowbite
 - **Deployment**: Docker, Github, Coolify
+
+
+### Features
+
+- Vokabeltrainer basierend auf der Methode der verteilten Wiederholung
+- rund 1.500 Wörter in zwei thematisch gegliederten Kursen
+- durchsuchbares Wörterbuch mit grammatischen Formen
+- Lernfortschritt anschaulich visualisiert durch Diagramme
 
 ### Neuigkeiten
 

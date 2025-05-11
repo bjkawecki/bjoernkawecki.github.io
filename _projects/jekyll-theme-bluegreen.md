@@ -2,18 +2,20 @@
 layout: project
 title: Jekyll-Thema "Blue-Green" 
 projectname: Projekte | Jekyll-Thema "Blue-Green"
-description: Template für den Static-Site-Generator Jekyll, mit Tailwind und Hell- und Dunkelmodus
+description: Template für den Static-Site-Generator Jekyll, mit Tailwind und Hell-/Dunkelmodus
 started: 2024
 uri: https://bjkawecki.github.io/jekyll-theme-bluegreen
 uri_h: bjkawecki.github.io/jekyll-theme-bluegreen
 category: Blog
-techstack: Jekyll
+techstack: Jekyll, GitHub Pages
 ---
-Online: [{{ page.uri_h }}]({{ page.uri }})
+**Online**: [{{ page.uri_h }}]({{ page.uri }})
 
-Code: [github.com/bjkawecki/jekyll-theme-bluegreen](https://github.com/bjkawecki/jekyll-theme-bluegreen)
+**Techstack**: {{ page.techstack }}
 
-Ausgehend von Jekkyls Minima-Theme habe ich ein einfaches Design nach meinem Geschmack erstellt, mit Seiten für einen Blog, "Über mich" und Projekte.
+**Code**: [github.com/bjkawecki/jekyll-theme-bluegreen](https://github.com/bjkawecki/jekyll-theme-bluegreen)
+
+**Beschreibung**: Ausgehend von Jekkyls Minima-Theme habe ich ein einfaches Design nach meinem Geschmack erstellt, mit Seiten für einen Blog, "Über mich" und Projekte.
 
 ### Features
 

@@ -10,7 +10,7 @@ permalink: /projects/
 <p>Keine Einträge vorhanden.</p>
 {% else %}
 <div class="flex flex-col space-y-2.5">
-  {% assign projects = site.projects | sort: "started" %}
+  {% assign projects = site.projects | sort: "started" | reverse %}
   {% for project in projects %}
   <a href="{{ project.url }}"
     class="px-4 py-4 bg-gray-100 rounded dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700">
