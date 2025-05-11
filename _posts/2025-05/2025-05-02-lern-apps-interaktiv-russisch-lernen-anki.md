@@ -3,7 +3,7 @@ layout: post
 title: "Lern-Apps im Test: Anki"
 category: Russisch
 ---
-<a class="inline-flex items-center" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki<svg class=" dark:fill-emerald-500 fill-blue2-500 h-[1.1em] w-auto ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>anki-webpage</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a> ist ein Paradebeispiel für ein hochgradig flexibles Lernwerkzeug. Es eignet sich nicht nur zum Russischlernen, sondern für praktisch jedes Lernziel, bei dem es darum geht, sich viel Lernstoff effizient einzuprägen. Das kann sowohl Vor- als auch Nachteile haben.
+<a class="inline-flex items-center" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki<svg class="dark:fill-emerald-500 fill-blue2-600 h-[1.1em] w-auto ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>anki-webpage</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a> ist ein Paradebeispiel für ein hochgradig flexibles Lernwerkzeug. Es eignet sich nicht nur zum Russischlernen, sondern für praktisch jedes Lernziel, bei dem es darum geht, sich viel Lernstoff effizient einzuprägen. Das kann sowohl Vor- als auch Nachteile haben.
 
 Die App basiert auf dem Prinzip der "verteilten Wiederholung" (spaced repetition), also der systematischen Wiederholung mit zunehmenden Zeitabständen, was das Langzeitgedächtnis besonders effizient trainiert.
 
