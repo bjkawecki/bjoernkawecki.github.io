@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
-    <meta property="og:locale" content="de_DE" />
-    <meta property="og:image" content="/assets/img/profil-1.webp" />
     <meta property="og:title" content="{{ page.title | escape }}" />
     <meta
       property="og:description"
-      content="{{ page.description | site.description | default: site.description | escape }}"
+      content="{{ page.description | site.title | default: site.description | escape }}"
     />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     {% include head.html %}
