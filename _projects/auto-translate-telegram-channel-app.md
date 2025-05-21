@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Translate Telegram Channel
-projectname: Projekte | Translate Telegram Channel
+title: Telegram GPT Translator App
+projectname: Projekte | Telegram GPT Translator App
 description: Automatisierte, GPT-gestützte Übersetzung und Veröffentlichung von Inhalten in Telegram-Kanälen.
 started: 2025
 uri: https://github.com/bjkawecki/Auto-Translate-Telegram-Channel
