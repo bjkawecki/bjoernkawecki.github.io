@@ -2,11 +2,10 @@
 <html lang="de">
   <head>
     <meta property="og:type" content="website" />
-
     <meta property="og:title" content="{{ page.title | escape }}" />
     <meta
       property="og:description"
-      content="{{ page.description | site.title | default: site.description | escape }}"
+      content="{{ page.description | default: site.description | escape }}"
     />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     {% include head.html %}
