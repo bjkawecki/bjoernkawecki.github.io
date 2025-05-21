@@ -29,7 +29,7 @@ github_username: bjkawecki
 # theme: minima
 
 theme_name: bluegreen
-description: Simple theme with tailwind for a personal website with a blog and and a page for your projects.
+description: Meine Homepage mit Blog, Projekten und Resume
 author: Björn Kawecki
 plugins:
   - jekyll-feed
@@ -38,11 +38,11 @@ plugins:
   - jekyll-archives
 
 jekyll-archives:
-  enabled: 
+  enabled:
     - categories
   layout: category
   permalinks:
-    category: '/blog/category/:name/'
+    category: "/blog/category/:name/"
 
 postcss:
   cache: false
@@ -52,9 +52,8 @@ paginate_path: "/page:num/"
 
 collections:
   projects:
-    output: true   # Falls du möchtest, dass jedes Projekt eine eigene Seite hat
+    output: true # Falls du möchtest, dass jedes Projekt eine eigene Seite hat
     permalink: /projects/:path
-
 
 sass:
   load_paths:
