@@ -1,31 +1,53 @@
 ---
-layout: blog
+layout: default
+title: Über mich
 ---
 
-<h1>Weblog</h1>
-<div class="flex items-center mb-5 space-x-2">
-    {% for category in site.categories %}
-    <a href="/blog/category/{{ category[0] | downcase | url_encode | slugify }}"
-        class="px-1.5 py-0.5 text-sm font-medium text-center text-white no-underline rounded-full cursor-pointer bg-blue2-600 hover:bg-blue2-800 focus:outline-none focus:ring-4 focus:ring-blue2-300 me-2 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800">
-        {{ category[0] }}
-    </a>
-    {% endfor %}
-</div>
-{% assign psize = site.posts | size %}
-{% if psize == 0 %}
-Kein Einträge vorhanden.
-{% else %}
-<div class="flex flex-col space-y-2.5">
-    {% for post in paginator.posts %}
-    <a href="{{ post.url }}"
-        class="flex flex-col px-4 py-4 space-y-1 bg-gray-100 rounded hover:bg-gray-200 dark:bg-zinc-800 dark:hover:bg-zinc-700">
-        <div class="pb-0.5 text-sm font-medium text-gray-600 dark:text-gray-300">
-            {{ post.date | date: "%d.%m.%Y" }} | {{ post.category }}
-        </div>
-        <h2 class="font-bold w-fit dark:text-emerald-500 text-blue2-600">
-            {{ post.title }}
-        </h2>
-    </a>
-    {% endfor %}
-</div>
-{% endif %}
+<h1>Über mich</h1>
+
+<p>
+  Junior-Webentwickler mit Bildungsweg in den Geisteswissenschaften.<br />
+  Drei Jahre Erfahrung mit dem Python-Framework Django und verbundenen
+  Technologien.<br />
+  Langjähriger, begeisterter Linux-Anwender.
+</p>
+
+<h2>Programmierkenntnisse</h2>
+<ul>
+  <li><strong>Sprachen</strong>: Python, JavaScript, Bash</li>
+  <li><strong>Frontend</strong>: HTML, CSS, Tailwind, HTMX</li>
+  <li><strong>Backend</strong>: Django, REST, SQL</li>
+  <li><strong>DevOps</strong>: Linux, Docker, AWS, GitHub, Coolify</li>
+</ul>
+
+<h2>Zertifikate</h2>
+<p>
+  <a
+    class="inline-flex items-center"
+    href="https://www.credly.com/badges/444a285b-5e6a-43ca-83ac-da3be1002422"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    AWS Certified Cloud Practitioner
+    <svg
+      class="dark:fill-emerald-500 fill-blue2-600 h-[1.1em] w-auto ml-0.5"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <title>see-badge-in-new-tab</title>
+      <path
+        d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+      />
+    </svg>
+  </a>
+</p>
+
+<h2>Abschlüsse</h2>
+<ul>
+  <li>B.A. Russlandstudien/Philosophie, Universität Freiburg</li>
+  <li>M.A. Russlandstudien, Universität Freiburg / RGGU Moskau</li>
+</ul>
+
+<p>
+  📄 <a href="/assets/files/bjoern-kawecki-resume.pdf">Mein Resume als PDF</a>
+</p>

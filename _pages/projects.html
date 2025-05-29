@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Projekte
-permalink: /projects/
+permalink: /projects
 ---
 
 <h1>Projekte</h1>
@@ -10,16 +10,21 @@ permalink: /projects/
 <p>Keine Einträge vorhanden.</p>
 {% else %}
 <div class="flex flex-col space-y-2.5">
-  {% assign projects = site.projects | sort: "started" | reverse %}
-  {% for project in projects %}
-  <a href="{{ project.url }}"
-    class="px-4 py-4 bg-gray-100 rounded dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700">
+  {% assign projects = site.projects | sort: "started" | reverse %} {% for
+  project in projects %}
+  <a
+    href="{{ project.url }}"
+    class="px-4 py-4 bg-gray-100 rounded dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700"
+  >
     <div class="pb-0.5 text-base font-normal dark:text-gray-300">
-      {{ project.category }} | {{ project.started }}{% if project.status %} | Status: {{ project.status }}{% endif %}
+      {{ project.category }} | {{ project.started }}{% if project.status %} |
+      Status: {{ project.status }}{% endif %}
     </div>
     <h2 class="w-fit">{{ project.title }}</h2>
     <div class="flex flex-col text-gray-700 dark:text-gray-200">
-      <div class="text-base font-normal md:text-lg">{{ project.description }}</div>
+      <div class="text-base font-normal md:text-lg">
+        {{ project.description }}
+      </div>
     </div>
   </a>
   {% endfor %}
