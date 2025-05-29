@@ -2,30 +2,27 @@
 layout: project
 title: Telegram PromoBot
 projectname: Projekte | PromoBot
-description: Telegram-Bot zum Erstellen und Teilen von Promo-Aktionen
+description: Telegram-Bot zum Erstellen und Teilen von Promo-Aktionen.
 started: 2025
 uri: https://github.com/bjkawecki/PromoBot
 uri_h:
 status: Entwicklung
 category: Telegram Bot
 techstack:
-  - aiogram
-  - AWS
+  - Aiogram
   - Python
+  - Terraform
+  - AWS: S3, DynomoDB
 ---
 
 **Code**: [github.com/bjkawecki/PromoBot]({{ page.uri }})
 
 **Techstack:**
 
-<ul>
-{% for tech in page.techstack %}
-<li>{{ tech }}</li>
-{% endfor %}
-</ul>
+Aiogram, Python, Terraform, AWS
 
 **Beschreibung**:
 
-- Mit `aiogram` entiwckelter Telegram-Bot.
+- Mit _aiogram_ entiwckelter Telegram-Bot.
 - Unterstützt Verkäufer, Produkt-Promotions zu erstellen und zu verwalten.
 - Käufer erhalten eine einfache und interaktive Einkaufserfahrung direkt in Telegram.
