@@ -1,8 +1,13 @@
 ---
 layout: blog
+permalink: /blog/
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true # true = neuste zuerst
 ---
 
-<h1>Weblog</h1>
+<h1>Blog</h1>
 <div class="flex items-center mb-5 space-x-2">
   {% for category in site.categories %}
   <a

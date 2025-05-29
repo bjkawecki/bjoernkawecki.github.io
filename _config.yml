@@ -34,7 +34,7 @@ author: Björn Kawecki
 plugins:
   - jekyll-feed
   - jekyll-postcss
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-archives
 
 jekyll-archives:
@@ -47,12 +47,15 @@ jekyll-archives:
 postcss:
   cache: false
 
-paginate: 5
-paginate_path: "/page:num/"
+pagination:
+  enabled: true
+  per_page: 5 # Anzahl Posts pro Seite
+  permalink: "/page/:num/"
+  title: ":title - Seite :num"
 
 collections:
   projects:
-    output: true # Falls du möchtest, dass jedes Projekt eine eigene Seite hat
+    output: true
     permalink: /projects/:path
 
 sass:
