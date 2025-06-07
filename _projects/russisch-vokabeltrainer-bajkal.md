@@ -13,6 +13,8 @@ techstack: Django, HTMX
 
 **Online**: [bajkal-app.de](https://bajkal-app.de)
 
+**Code**: [github.com/bjkawecki/Russian-Language-Trainer](https://github.com/bjkawecki/Russian-Language-Trainer)
+
 **Beschreibung**: Während meines Studiums stellte ich fest, dass es kaum gutes Lernmaterial, gibt um Russisch zu lernen.
 Anfang 2020 entschied ich mich, dieses Problem selbst zu lösen, und begann mit der Konzeption einer eigenen Lern-App.
 
