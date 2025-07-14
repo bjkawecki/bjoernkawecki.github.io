@@ -1,6 +1,6 @@
-let toggleThemeButton = document.getElementById('toggle-color-mode');
+let toggleThemeButton = document.getElementById("toggle-color-mode");
 let lightModeSvgElement = `
-<svg class="w-6 h-6 fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white"
+<svg class="w-6 h-6 fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white dark:active:fill-gray-200 active:fill-gray-600"
    xmlns="http://www.w3.org/2000/svg"
    viewBox="0 0 24 24">
   <title>Heller Modus</title>
@@ -8,7 +8,7 @@ let lightModeSvgElement = `
 </svg>
 `;
 let darkModeSvgElement = `
-<svg class="w-6 h-6 fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white"
+<svg class="w-6 h-6 fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white dark:active:fill-gray-200 active:fill-gray-600"
    xmlns="http://www.w3.org/2000/svg"
    viewBox="0 0 24 24">
   <title>Dunkler Modus</title>
@@ -16,25 +16,27 @@ let darkModeSvgElement = `
 </svg>
 `;
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    toggleThemeButton.innerHTML = lightModeSvgElement;
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  toggleThemeButton.innerHTML = lightModeSvgElement;
 } else {
-    toggleThemeButton.innerHTML = darkModeSvgElement;
+  toggleThemeButton.innerHTML = darkModeSvgElement;
 }
 function toggleColorTheme() {
-    if (localStorage.theme === "light") {
-        toggleThemeButton.innerHTML = lightModeSvgElement;
-        localStorage.theme = "dark";
-        console.log(localStorage.theme);
-        root.classList.add("dark");
-    }
-    else {
-        toggleThemeButton.innerHTML = darkModeSvgElement;
-        localStorage.theme = "light";
-        console.log(localStorage.theme);
-        root.classList.remove("dark");
-    }
+  if (localStorage.theme === "light") {
+    toggleThemeButton.innerHTML = lightModeSvgElement;
+    localStorage.theme = "dark";
+    console.log(localStorage.theme);
+    root.classList.add("dark");
+  } else {
+    toggleThemeButton.innerHTML = darkModeSvgElement;
+    localStorage.theme = "light";
+    console.log(localStorage.theme);
+    root.classList.remove("dark");
+  }
 }
 
 toggleThemeButton.addEventListener("click", toggleColorTheme);
-

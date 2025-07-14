@@ -1363,6 +1363,10 @@ ul, ol {
   display: inline-flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -2209,6 +2213,10 @@ ul, ol {
   fill: #6b7280;
 }
 
+.hover\:fill-gray-900:hover {
+  fill: #111827;
+}
+
 .hover\:fill-white:hover {
   fill: #fff;
 }
@@ -2259,6 +2267,22 @@ ul, ol {
 .focus\:ring-blue-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(56 116 249 / var(--tw-ring-opacity));
+}
+
+.active\:fill-gray-600:active {
+  fill: #4b5563;
+}
+
+.active\:fill-fuchsia-600:active {
+  fill: #8749de;
+}
+
+.active\:fill-fuchsia-500:active {
+  fill: #9961eb;
+}
+
+.active\:fill-blue-500:active {
+  fill: #3874f9;
 }
 
 .active\:ring-blue-400:active {
@@ -2524,6 +2548,10 @@ ul, ol {
   fill: #f9fafb;
 }
 
+.dark\:hover\:fill-white:hover:where(.dark, .dark *) {
+  fill: #fff;
+}
+
 .dark\:hover\:fill-zinc-900:hover:where(.dark, .dark *) {
   fill: #18181b;
 }
@@ -2541,6 +2569,18 @@ ul, ol {
 .dark\:focus\:ring-fuchsia-800:focus:where(.dark, .dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(94 43 158 / var(--tw-ring-opacity));
+}
+
+.dark\:active\:fill-gray-200:active:where(.dark, .dark *) {
+  fill: #e5e7eb;
+}
+
+.dark\:active\:fill-fuchsia-200:active:where(.dark, .dark *) {
+  fill: #e5d8fc;
+}
+
+.dark\:active\:fill-fuchsia-500:active:where(.dark, .dark *) {
+  fill: #9961eb;
 }
 
 .active\:dark\:ring-fuchsia-700:where(.dark, .dark *):active {

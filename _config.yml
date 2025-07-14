@@ -36,6 +36,7 @@ plugins:
   - jekyll-postcss
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-polyglot
 
 jekyll-archives:
   enabled:
@@ -88,3 +89,37 @@ kramdown:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+languages:
+  - de
+  - en
+default_lang: "de"
+exclude_from_localizations:
+  - assets
+  - images
+  - favicon.ico
+  - feed.xml
+  - robots.txt
+  - node_modules
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+  - rvm-install
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _site
+
+# Exclude (für den Build selbst)
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+  - rvm-install
+  - _site

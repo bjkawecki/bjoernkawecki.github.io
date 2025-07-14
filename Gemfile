@@ -35,3 +35,4 @@ gem 'jekyll-postcss'
 gem "jekyll-paginate-v2"
 
 gem "jekyll-archives", "~> 2.3"
+gem 'jekyll-polyglot'
