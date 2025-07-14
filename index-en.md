@@ -6,7 +6,7 @@ lang: en
 page_id: about-me
 ---
 
-<h1>That's me</h1>
+<h1>About me</h1>
 
 <p>
 I develop web applications, mostly on the backend, preferably using Python.
