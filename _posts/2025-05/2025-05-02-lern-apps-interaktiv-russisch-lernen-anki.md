@@ -38,6 +38,6 @@ Anki ist eine mächtige Lernplattform für alle, die bereit sind, Zeit und Struk
 
 Insbesondere für Anfänger und Autodidakten ohne Vorkenntnisse oder Lernroutine ist die App jedoch möglicherweise zu offen und technisch.
 
-## {% assign target = site.posts | where: "title", "Lern-Apps: Interaktiv Russisch lernen" | first %}
+{% assign target = site.posts | where: "title", "Lern-Apps: Interaktiv Russisch lernen" | first %}
 
 _Eine Übersicht über alle bislang getesteten Lern-Apps findest du [hier]({{ site.baseurl }}{{ target.url }})._
