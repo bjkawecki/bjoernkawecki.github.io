@@ -1,6 +1,7 @@
 ---
 layout: project
 title: PromoBot
+lang: de
 projectname: Projekte | PromoBot
 description: Telegram-Bot zum Erstellen und Teilen von Promo-Aktionen.
 started: 2025

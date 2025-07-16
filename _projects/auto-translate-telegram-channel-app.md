@@ -1,4 +1,5 @@
 ---
+lang: de
 layout: project
 title: GPT Translator App
 projectname: Projekte | GPT Translator App

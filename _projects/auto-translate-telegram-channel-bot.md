@@ -1,5 +1,6 @@
 ---
 layout: project
+lang: de
 title: GPT Translator Bot
 projectname: Projekte | GPT Translator Bot
 description: Telegram-Bot, der Nachrichten aus einem Eingabekanal aufnimmt, übersetzt und an einen Ausgabekanal weiterleitet.

@@ -4,13 +4,13 @@ title: Projekte
 permalink: /projects/
 ---
 
-<h1>Projekte</h1>
+<h1>{{ site.data[site.active_lang].strings.navigation.projects }}</h1>
 
 {% if site.projects.size == 0 %}
-<p>Keine Einträge vorhanden.</p>
+<p>{{ site.data[site.active_lang].strings.no_entries.projects }}</p>
 {% else %}
 <div class="flex flex-col space-y-2.5">
-  {% assign projects = site.projects | sort: "started" | reverse %} {% for
+  {% assign projects = site.projects | where: "lang", site.active_lang | sort: "started" | reverse %} {% for
   project in projects %}
   <a
     href="{{ project.url }}"

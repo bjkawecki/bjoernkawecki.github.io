@@ -18,8 +18,7 @@ pagination:
   </a>
   {% endfor %}
 </div>
-{% assign psize = site.posts | size %} {% if psize == 0 %} Kein Einträge
-vorhanden. {% else %}
+{% assign psize = site.posts | size %} {% if psize == 0 %} {{ site.data[site.active_lang].strings.no_entries.blog }} {% else %}
 <div class="flex flex-col space-y-2.5">
   {% for post in paginator.posts %}
   <a

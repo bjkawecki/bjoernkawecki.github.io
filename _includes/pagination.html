@@ -10,7 +10,7 @@
         viewBox="0 0 24 24"
         class="w-6 h-6 fill-white hover:fill-white dark:fill-zinc-900 dark:hover:fill-zinc-900"
       >
-        <title>Vorherige Seite</title>
+        <title>{{ site.data[site.active_lang].strings.pagination.previous_page }}</title>
         <path
           d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
         />
@@ -19,7 +19,7 @@
   </div>
   {% endif %}
   <div class="px-3">
-    Seite {{ paginator.page }} von {{ paginator.total_pages }}
+    {{ site.data[site.active_lang].strings.pagination.page}} {{ paginator.page }} {{ site.data[site.active_lang].strings.pagination.of}} {{ paginator.total_pages }}
   </div>
   {% if paginator.next_page %}
   <div class="flex items-center">
@@ -32,7 +32,7 @@
         viewBox="0 0 24 24"
         class="w-6 h-6 fill-white hover:fill-white dark:fill-zinc-900 dark:hover:fill-zinc-900"
       >
-        <title>Nächste Seite</title>
+        <title>{{ site.data[site.active_lang].strings.pagination.next_page }}</title>
         <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
       </svg>
     </a>

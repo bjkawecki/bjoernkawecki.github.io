@@ -1,5 +1,6 @@
 ---
 layout: project
+lang: de
 title: Russisch-Vokabeltrainer "Bajkal"
 projectname: Projekte | Russisch-Vokabeltrainer "Bajkal"
 description: E-Learning-Anwendung für Russisch-Sprachschüler, verteilte Wiederholung, Wörterbuch und weitere nützliche Features.
@@ -15,10 +16,10 @@ techstack: Django, HTMX
 
 **Code**: [github.com/bjkawecki/Russian-Language-Trainer](https://github.com/bjkawecki/Russian-Language-Trainer)
 
-**Beschreibung**: Während meines Studiums stellte ich fest, dass es kaum gutes Lernmaterial, gibt um Russisch zu lernen.
-Anfang 2020 entschied ich mich, dieses Problem selbst zu lösen, und begann mit der Konzeption einer eigenen Lern-App.
+**Beschreibung**: Während meines Studiums stellte ich fest, dass es kaum gutes Lernmaterial zum Russischlernen gibt.
+Anfang 2020 beschloss ich, dieses Problem selbst anzugehen und begann mit der Konzeption einer eigenen Lern-App.
 
-Mein Ziel ist eine Web-App, die es ermöglicht, mit minimalem Aufwand eine umfassende Sammlung russischer Vokabeln zu lernen.
+Mein Ziel ist eine Web-App, mit der sich russische Vokabeln effizient und mit minimalem Aufwand lernen lassen
 
 ### Techstack
 

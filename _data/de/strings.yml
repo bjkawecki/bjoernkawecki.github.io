@@ -1,0 +1,23 @@
+aside:
+  profession: "Slawist und Webentwickler"
+  location: "Berlin"
+navigation:
+  about_me: "Über mich"
+  projects: "Projekte"
+head:
+  description: "Persönliche Webseite von Björn Kawecki, Slawist und Webentwickler. Hier finden Sie Informationen zu mir und meinen Projekten."
+  og_locale: "de_DE"
+  title: "Björn Kawecki | Persönliche Webseite"
+  name: "Über Björn Kawecki"
+pagination:
+  previous_page: Vorherige Seite
+  page: Seite
+  of: von
+  next_page: Nächste Seite
+  previous_post: Vorheriger Eintrag
+  next_post: Nächster Eintrag
+layout:
+  category: Kategorie
+no_entries:
+  blog: Keine Einträge vorhanden.
+  projects: Keine Projekte vorhanden.

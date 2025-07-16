@@ -11,7 +11,7 @@ page_id: about-me
 <p>
 Ich entwickle Webanwendungen, meist im Backend, bevorzugt mit Python.
 Linux, Docker und Git gehören zu meinem Standard-Setup.
-Mit meinem geisteswissenschaftlichen Hintergrund kommuniziere verständlich über technische Sachverhalte.
+Mit meinem geisteswissenschaftlichen Hintergrund kommuniziere ich verständlich technische Sachverhalte.
 </p>
 
 <h2>Programmierkenntnisse</h2>

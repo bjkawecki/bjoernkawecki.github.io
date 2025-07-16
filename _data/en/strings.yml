@@ -1,0 +1,26 @@
+aside:
+  profession: "Web Developer &amp; Slavist"
+  location: "Berlin, Germany"
+navigation:
+  about_me: "About me"
+  projects: "Projects"
+head:
+  description: "The personal website of Björn Kawecki, full-stack web developer with a background in Slavic studies. Learn more about me and the projects I'm working on."
+  og_locale: "de_DE"
+  title: "Björn Kawecki | Personal Website"
+  name: "About Björn Kawecki"
+pagination:
+  previous_page: Previous page
+  page: Page
+  of: of
+  next_page: Next page
+  previous_post: Previous post
+  next_post: Next post
+layout:
+  category: Category
+no_entries:
+  blog: No blog posts found.
+  projects: No projects found.
+errors:
+  404_title: "Error 404"
+  404_message: "Page not found"

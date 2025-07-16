@@ -44,5 +44,5 @@ With my humanities background, I communicate technical matters clearly.
 </ul>
 
 <p>
-  📄 <a href="/assets/files/bjoern-kawecki-resume.pdf">My résumé as PDF</a>
+  📄 <a href="/assets/files/bjoern-kawecki-resume-en.pdf">My résumé as PDF</a>
 </p>

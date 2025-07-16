@@ -8,9 +8,9 @@
   }}{% endif %}
 </title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta name="description" content="Blog, Projekte, Über mich" />
+<meta name="description" content="{{ site.data[site.active_lang].strings.head.description }}" />
 <link rel="canonical" href="http://bjoernkawecki.de/" />
-<meta property="og:site_name" content="Björn Kawecki | Persönliche Webseite" />
+<meta property="og:site_name" content="{{ site.data[site.active_lang].strings.head.title }}" />
 <meta property="og:locale" content="de_DE" />
 <meta property="og:image" content="{{ site.url }}/assets/img/profil-1.webp" />
 
@@ -18,9 +18,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "description": "Blog, Projekte, Über mich",
-    "headline": "Björn Kawecki | Persönliche Webseite",
-    "name": "Über Björn Kawecki",
+    "description": "{{ site.data[site.active_lang].strings.head.description }}",
+    "headline": "{{ site.data[site.active_lang].strings.head.title }}",
+    "name": "{{ site.data[site.active_lang].strings.head.name }}",
     "url": "https://bjoernkawecki.de/"
   }
 </script>
@@ -29,9 +29,9 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico" />
 <link rel="icon" href="/assets/img/favicon.ico" sizes="48x48" />
 <link
-  rel="pastel-green-touch-icon"
+  rel="apple-touch-icon"
   sizes="180x180"
-  href="/assets/img/pastel-green-touch-icon.png"
+  href="/assets/img/apple-touch-icon.png"
 />
 <link
   rel="icon"
@@ -64,5 +64,5 @@
   type="application/atom+xml"
   rel="alternate"
   href="http://bjoernkawecki.de/feed.xml"
-  title="Björn Kawecki | Persönliche Webseite"
+  title="{{ site.data[site.active_lang].strings.head.title }}"
 />
