@@ -18,6 +18,7 @@ pagination:
   next_post: Nächster Eintrag
 layout:
   category: Kategorie
+  back_to_list: Zur Übersicht
 no_entries:
   blog: Keine Einträge vorhanden.
   projects: Keine Projekte vorhanden.

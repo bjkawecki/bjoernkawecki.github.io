@@ -17,14 +17,14 @@
         <div
           class="prose-table:text-base prose-strong:dark:text-gray-300 prose-td:dark:text-gray-200 prose-td:text-gray-700 prose-a:text-blue-500 dark:prose-a:dark:text-fuchsia-500 prose-a:font-semibold prose-a:underline prose-h1:mt-3 prose-headings:text-gray-700 prose-headings:font-bold prose-h4:font-medium prose-p:text-lg prose-sm md:prose prose-li:text-lg dark:prose-headings:text-gray-200 dark:prose-ul:text-gray-200 dark:prose-ol:text-gray-200 dark:prose-p:text-gray-200"
         >
-          {% include header.html link="/blog/" name="Zur Übersicht" %}
+          {% include header.html link="/blog/" %}
           <div class="font-normal dark:text-gray-300 text-lg">
             {{ page.date | date: "%d.%m.%Y" }} | {{ page.category }}
           </div>
           <h1>{{ page.title }}</h1>
           {{ content }}
           {% include post_pagination.html %}
-          {% include footer.html %}
+          {% include post_footer.html %}
         </div>
       </div>
     </main>
