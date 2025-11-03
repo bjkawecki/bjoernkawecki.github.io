@@ -5,7 +5,7 @@ title: Russisch-Vokabeltrainer "Bajkal"
 projectname: Projekte | Russisch-Vokabeltrainer "Bajkal"
 description: E-Learning-Anwendung für Russisch-Sprachschüler, verteilte Wiederholung, Wörterbuch und weitere nützliche Features.
 started: 2020
-status: Beta
+status: Offline
 uri: https://bajkal-app.de
 uri_h: bajkal-app.de
 category: Web App
@@ -36,7 +36,7 @@ Mein Ziel ist eine Web-App, mit der sich russische Vokabeln effizient und mit mi
 - Lernfortschritt anschaulich visualisiert durch Diagramme
 
 ### Neuigkeiten
-
+- 11/2025: Offline während Überarbeitung
 - 05/2024: Beta-Version abrufbar unter [bajkal-app.de](https://bajkal-app.de)
 - 10/2024: Umzug von PaaS-Anbieter auf VPS
 - 03/2025: Version 0.5.0, Update des Layouts
