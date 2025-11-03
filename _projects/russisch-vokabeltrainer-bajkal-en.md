@@ -37,7 +37,7 @@ Mein Ziel ist eine Web-App, mit der sich russische Vokabeln effizient und mit mi
 ### Updates
 
 - 11/2025: Offline due to refactoring
-- 05/2024: Beta version available at [bajkal-app.de](https://bajkal-app.de)
+- 05/2024: Beta version
 - 10/2024: Migration from PaaS provider to VPS
 - 03/2025: Version 0.5.0, layout update
 
