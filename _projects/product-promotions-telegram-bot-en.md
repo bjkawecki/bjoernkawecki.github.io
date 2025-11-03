@@ -7,7 +7,6 @@ description: Telegram bot for creating and sharing promo campaigns.
 started: 2025
 uri: https://github.com/bjkawecki/PromoBot
 uri_h:
-status: Development
 category: Telegram Bot
 techstack:
   - Aiogram
