@@ -6,8 +6,8 @@ projectname: Projects | Russian Vocabulary Trainer "Baikal"
 description: E-learning application for Russian language learners, featuring spaced repetition, a dictionary, and other useful features.
 started: 2020
 status: Offline
-uri: https://bajkal-app.de
-uri_h: bajkal-app.de
+# uri: https://bajkal-app.de
+# uri_h: bajkal-app.de
 category: Web App
 techstack: Django, HTMX
 ---
