@@ -12,8 +12,6 @@ category: Web App
 techstack: Django, HTMX
 ---
 
-**Online**: [bajkal-app.de](https://bajkal-app.de)
-
 **Code**: [github.com/bjkawecki/Russian-Language-Trainer](https://github.com/bjkawecki/Russian-Language-Trainer)
 
 **Description**: While studying, I realized that there was a lack of high-quality learning materials for Russian.
