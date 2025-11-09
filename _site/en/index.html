@@ -79,192 +79,606 @@
   </head>
 
   <body class="text-gray-700 bg-gray-50 dark:bg-zinc-900 dark:text-gray-200">
-    <main class="px-5 mx-auto mb-10 w-full md:px-0" aria-label="Content">
-      <div
-        class="flex flex-col justify-center mt-10 space-x-0 md:flex-row md:space-x-28"
+    
+
+
+
+
+
+
+
+
+
+
+<header class="sticky top-0 z-40 border-b border-gray-200 dark:border-zinc-800 bg-gray-50/90 dark:bg-zinc-900/90 backdrop-blur">
+  <div class="max-w-6xl px-5 md:px-6 lg:px-8 mx-auto">
+    <div class="flex items-center justify-between py-4 md:py-5 gap-4">
+      <a
+        href="/en/"
+        class="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-100"
+        aria-label="Björn Kawecki – Web Developer &amp; Slavist"
       >
- 
-
-
-<aside class="flex-col items-center mb-3 md:mb-0 h-fit md:top-10 md:sticky">
-  <div class="flex justify-center mb-5">
-    <img
-      src="/assets/img/profil-1.webp"
-      alt="Portrait of Björn Kawecki"
-      class="object-cover h-48 rounded-full md:h-72"
-    />
-  </div>
-  <div class="flex flex-col items-center mb-2 space-y-0.5">
-    <div class="px-6 text-2xl font-medium md:px-0">
-      <a href="/en/">Björn Kawecki</a>
+        Björn Kawecki
+      </a>
+      <nav class="items-center hidden gap-6 md:flex">
+        
+        <a
+          href="/en/"
+          class="text-sm font-medium transition-colors text-blue-600 dark:text-fuchsia-400"
+          aria-current="page"
+        >
+          About me
+        </a>
+        
+        <a
+          href="/en/projects/"
+          class="text-sm font-medium transition-colors text-blue-600 dark:text-fuchsia-400"
+          aria-current="page"
+        >
+          Projects
+        </a>
+        
+        <a
+          href="/en/blog/"
+          class="text-sm font-medium transition-colors text-blue-600 dark:text-fuchsia-400"
+          aria-current="page"
+        >
+          Blog
+        </a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <div class="hidden md:flex items-center gap-2">
+          <button
+            id="toggle-color-mode"
+            type="button"
+            class="flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 dark:border-zinc-700 transition hover:border-gray-400 dark:hover:border-zinc-500"
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+          ></button>
+          <div class="flex items-center gap-1 text-sm font-medium">
+            
+              
+              
+                
+                <a
+                  class="px-2 py-1 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-50 dark:hover:bg-zinc-800 transition"
+                  href="/"
+                  aria-label="Switch language to Deutsch"
+                >
+                  DE
+                </a>
+              
+            
+              
+              
+                <span class="px-2 py-1 rounded-md bg-blue-100 text-blue-800 dark:bg-fuchsia-900/50 dark:text-fuchsia-200">
+                  EN
+                </span>
+              
+            
+          </div>
+        </div>
+        <a
+          href="/en/#contact"
+          class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white transition bg-blue-600 rounded-full shadow-sm hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500"
+        >
+          Contact
+        </a>
+        <button
+          id="mobile-nav-toggle"
+          type="button"
+          class="inline-flex items-center justify-center w-10 h-10 rounded-md border border-gray-200 text-gray-700 hover:text-gray-900 hover:border-gray-400 dark:border-zinc-700 dark:text-gray-100 dark:hover:text-gray-50 dark:hover:border-zinc-500 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          data-open-label="Open menu"
+          data-close-label="Close menu"
+        >
+          <span class="sr-only" id="mobile-nav-toggle-label">Open menu</span>
+          <svg id="mobile-nav-icon-open" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="mobile-nav-icon-close" xmlns="http://www.w3.org/2000/svg" class="hidden w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
     </div>
-      <div class="text-lg text-gray-700 dark:text-gray-300">
-        Web Developer &amp; Slavist</div>
-    <div class="flex text-base items-center dark:text-gray-400 text-gray-600 space-x-0.5">
-      <svg class="w-4 h-4 fill-gray-600 dark:fill-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>map-marker</title><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>
-    <span>Berlin, Germany</span>
+  </div>
+  <div
+    id="mobile-nav"
+    class="hidden md:hidden border-t border-gray-200 dark:border-zinc-800 bg-gray-50/95 dark:bg-zinc-900/95 backdrop-blur"
+  >
+    <nav class="flex flex-col gap-4 px-5 py-6 text-sm font-medium text-gray-700 dark:text-gray-200">
+      <a href="/en/" class="hover:text-blue-600 dark:hover:text-fuchsia-400 transition">
+        About me
+      </a>
+      <a href="/en/projects/" class="hover:text-blue-600 dark:hover:text-fuchsia-400 transition">
+        Projects
+      </a>
+      <a href="/en/blog/" class="hover:text-blue-600 dark:hover:text-fuchsia-400 transition">
+        Blog
+      </a>
+      <a href="/en/#contact" class="inline-flex items-center justify-center px-4 py-2 mt-2 text-sm font-semibold text-white transition bg-blue-600 rounded-full hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500">
+        Contact
+      </a>
+      <div class="flex items-center gap-2 pt-2 border-t border-gray-200 dark:border-zinc-800">
+        <span class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+          Switch language to
+        </span>
+        <div class="flex items-center gap-2">
+          
+            
+            
+              
+              <a
+                class="px-2 py-1 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-50 dark:hover:bg-zinc-800 transition"
+                href="/"
+                aria-label="Switch language to Deutsch"
+              >
+                DE
+              </a>
+            
+          
+            
+            
+              <span class="px-2 py-1 rounded-md bg-blue-100 text-blue-800 dark:bg-fuchsia-900/50 dark:text-fuchsia-200">
+                EN
+              </span>
+            
+          
+        </div>
+      </div>
+      <button
+        id="mobile-theme-toggle"
+        type="button"
+        class="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium border border-gray-300 rounded-md hover:border-gray-400 dark:border-zinc-700 dark:hover:border-zinc-500"
+        aria-pressed="false"
+        data-label="Toggle color theme"
+      >
+        Toggle color theme
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+    <main
+      id="main-content"
+      class="flex flex-col gap-16 px-5 py-12 mx-auto max-w-6xl md:px-8"
+      aria-label="Content"
+    >
+      
+<section class="flex flex-col-reverse items-center gap-10 md:flex-row md:gap-16">
+  <div class="w-full space-y-6 md:max-w-[38rem]">
+    <p class="text-sm font-semibold tracking-wide uppercase text-blue-600 dark:text-fuchsia-400">
+      Slavist &amp; Web Developer
+    </p>
+    <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl dark:text-gray-100">
+      I ship reliable platforms for digital learning.
+    </h1>
+    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+      From resilient backends and automation pipelines to lightweight frontends, I turn ideas into production-ready products fast.
+    </p>
+    <div class="flex flex-col gap-3 sm:flex-row">
+      <a href="/en/#contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white transition bg-blue-600 rounded-full shadow-sm hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500">
+        Start a project
+      </a>
     </div>
   </div>
-  <div class="flex justify-center mb-6 space-x-2">
-    
-    <a
-      href="/en/"
-      class="text-blue-500 hover:underline dark:text-fuchsia-500"
-      >About me</a
-    >
-    <span>&middot;</span>
-    
-    
-    <a
-      href="/en/projects/"
-      class="text-blue-500 hover:underline dark:text-fuchsia-500"
-      >Projects</a
-    >
-    <span>&middot;</span>
-    
-    
-    <a
-      href="/en/blog/"
-      class="text-blue-500 dark:text-fuchsia-500 hover:underline"
-      >Blog</a
-    >
+  <div class="w-48 h-48 overflow-hidden rounded-full shadow-lg ring-4 ring-blue-100 dark:ring-fuchsia-900/60 md:h-72 md:w-72">
+    <img src="/assets/img/profil-1.webp" alt="Portrait of Björn Kawecki" class="object-cover w-full h-full" loading="lazy" />
   </div>
-  <footer class="flex flex-col items-center my-10 space-y-3 md:mb-20">
-  <div class="flex justify-center space-x-3 w-1/2">
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://github.com/bjkawecki"
-      aria-label="Open Björn Kawecki's GitHub profile"
-      title="Open Björn Kawecki's GitHub profile"
-    >
-      <span class="sr-only">Open Björn Kawecki's GitHub profile</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        class="w-7 h-7 fill-gray-700 hover:fill-gray-500 dark:fill-gray-200 dark:hover:fill-gray-50"
-      >
-        <title>github</title>
-        <path
-          d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
-        />
-      </svg>
-    </a>
-    <a
-      href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Open Björn Kawecki's LinkedIn profile"
-      title="Open Björn Kawecki's LinkedIn profile"
-    >
-      <span class="sr-only">Open Björn Kawecki's LinkedIn profile</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        class="w-7 h-7 fill-gray-700 hover:fill-gray-500 dark:fill-gray-200 dark:hover:fill-gray-50"
-      >
-        <title>linkedin</title>
-        <path
-          d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
-        />
-      </svg>
-    </a>
-    <a
-      href="mailto:bkawecki@mailbox.org"
-      aria-label="Send an email to Björn Kawecki"
-      title="Send an email to Björn Kawecki"
-    >
-      <span class="sr-only">Send an email to Björn Kawecki</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        class="w-7 h-7 fill-gray-700 hover:fill-gray-500 dark:fill-gray-200 dark:hover:fill-gray-50"
-      >
-        <title>email-outline</title>
-        <path
-          d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
-        />
-      </svg>
-    </a>
-  </div>
-  <div class="text-sm dark:text-gray-300">
-    Powered by Jekyll &amp; GitHub Pages
-  </div>
-  <div class="flex space-x-3">
-    <button
-      id="toggle-color-mode"
-      type="button"
-      class="cursor-pointer"
-      aria-label="Toggle color theme"
-      aria-pressed="false"
-    ></button>
-    <div class="cursor-pointer fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white">
- 
+</section>
 
-<a  href="/" aria-label="Switch language to Deutsch" title="Switch language to Deutsch">
-  <span class="sr-only">Switch language to Deutsch</span>
-<svg class="w-6 h-6 fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white dark:active:fill-fuchsia-500 active:fill-blue-500"
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>translate</title><path d="M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H10V2H8V4H1V6H12.17C11.5,7.92 10.44,9.75 9,11.35C8.07,10.32 7.3,9.19 6.69,8H4.69C5.42,9.63 6.42,11.17 7.67,12.56L2.58,17.58L4,19L9,14L12.11,17.11L12.87,15.07M18.5,10H16.5L12,22H14L15.12,19H19.87L21,22H23L18.5,10M15.88,17L17.5,12.67L19.12,17H15.88Z" /></svg>
-</a>
-  
+<section class="space-y-8">
+  <div class="space-y-4">
+    <h2 class="text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-gray-100">
+      How I help
+    </h2>
+    <p class="max-w-3xl text-base leading-relaxed text-gray-700 dark:text-gray-300">
+      
+    </p>
+  </div>
+  <div class="grid gap-6 md:grid-cols-2">
+    
+      <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          CI/CD &amp; deployment
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Automated pipelines, GitHub Actions, Terraform, and Docker for reliable releases.
+        </p>
+      </article>
+    
+      <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          Automation &amp; bots
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Telegram bots, background workers, and integrations that keep workflows lean.
+        </p>
+      </article>
+    
+      <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          Web scraping &amp; data pipelines
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Robust scrapers, structured data processing, and downstream integrations.
+        </p>
+      </article>
+    
+      <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          MVP delivery
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Rapid prototypes and lightweight frontends with Tailwind &amp; HTMX for early validation.
+        </p>
+      </article>
+    
+      <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          Humanities insight
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Experience in didactics, clear communication, and context from the humanities.
+        </p>
+      </article>
+    
+  </div>
+</section>
 
-<a class="hidden" href="/en/" aria-label="Switch language to English" title="Switch language to English">
-  <span class="sr-only">Switch language to English</span>
-<svg class="w-6 h-6 fill-gray-700 hover:fill-gray-900 dark:fill-gray-200 dark:hover:fill-white dark:active:fill-fuchsia-500 active:fill-blue-500"
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>translate</title><path d="M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H10V2H8V4H1V6H12.17C11.5,7.92 10.44,9.75 9,11.35C8.07,10.32 7.3,9.19 6.69,8H4.69C5.42,9.63 6.42,11.17 7.67,12.56L2.58,17.58L4,19L9,14L12.11,17.11L12.87,15.07M18.5,10H16.5L12,22H14L15.12,19H19.87L21,22H23L18.5,10M15.88,17L17.5,12.67L19.12,17H15.88Z" /></svg>
-</a>
+<section class="space-y-8">
+  <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <div class="space-y-3">
+      <h2 class="text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-gray-100">
+        Latest on the blog
+      </h2>
+      <p class="max-w-3xl text-base leading-relaxed text-gray-700 dark:text-gray-300">
+        Insights from client work, didactics, and engineering across backend, AI, and teaching.
+      </p>
+    </div>
+    <a href="/en/blog/" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-blue-700 transition bg-blue-100 rounded-full hover:bg-blue-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-200 dark:hover:bg-fuchsia-900/60">
+      All articles
+    </a>
+  </div>
   
+    <div class="grid gap-6 md:grid-cols-3">
+      
+        <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+          <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+            02.05.2025 · Russian
+          </p>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+            Language Learning Apps Reviewed: Anki
+          </h3>
+          <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+            Ankianki-webpage is a prime example of a highly flexible learning tool. It’s not only suitable for learning Russian, but for virtually an...
+          </p>
+          <a class="inline-flex items-center text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300 mt-auto" href="/en/russian/2025/05/02/language-learning-apps-reviewed-anki.html">
+            Blog
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 ml-1" fill="currentColor">
+              <path d="M14.59 7L9 12.59 10.41 14 16 8.41 16 13 18 13 18 5 10 5 10 7z" />
+              <path d="M19 19H5V5H7V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19C20.1 21 21 20.1 21 19V17H19Z" />
+            </svg>
+          </a>
+        </article>
+      
+        <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+          <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+            05.03.2025 · Russian
+          </p>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+            Language Learning Apps: Learning Russian Interactively
+          </h3>
+          <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+            Learning Russian is a real challenge. Thanks to the wide range of digital tools available today, foreign languages seem more accessible t...
+          </p>
+          <a class="inline-flex items-center text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300 mt-auto" href="/en/russian/2025/03/05/language-learning-apps-learning-russian-interactively.html">
+            Blog
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 ml-1" fill="currentColor">
+              <path d="M14.59 7L9 12.59 10.41 14 16 8.41 16 13 18 13 18 5 10 5 10 7z" />
+              <path d="M19 19H5V5H7V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19C20.1 21 21 20.1 21 19V17H19Z" />
+            </svg>
+          </a>
+        </article>
+      
+        <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+          <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+            30.06.2024 · Didactics
+          </p>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+            Digital Learning X: Summary
+          </h3>
+          <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+            To conclude this introduction to my thoughts on the topic of “Digital Learning,” I’d like to summarize the key points:
+
+          </p>
+          <a class="inline-flex items-center text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300 mt-auto" href="/en/didactics/2024/06/30/digital-learning-X-resueme.html">
+            Blog
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 ml-1" fill="currentColor">
+              <path d="M14.59 7L9 12.59 10.41 14 16 8.41 16 13 18 13 18 5 10 5 10 7z" />
+              <path d="M19 19H5V5H7V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19C20.1 21 21 20.1 21 19V17H19Z" />
+            </svg>
+          </a>
+        </article>
+      
+    </div>
+  
+</section>
+
+<section class="space-y-6">
+  <div class="space-y-4">
+    <h2 class="text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-gray-100">Capabilities at a glance</h2>
+    <p class="max-w-3xl text-base leading-relaxed text-gray-700 dark:text-gray-300">
+      I pair linguistic expertise with pragmatic engineering so that the resulting tools fit both the classroom and the infrastructure they run on.
+    </p>
+  </div>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="p-6 border rounded-2xl border-gray-200 bg-white/80 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Technology stack</h3>
+      <ul class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+        <li><strong>Languages:</strong> Python, JavaScript, Bash</li>
+        <li><strong>Frontend:</strong> HTML, CSS, Tailwind, HTMX</li>
+        <li><strong>Backend:</strong> Django, FastAPI, aiogram</li>
+        <li><strong>DevOps:</strong> Linux, Docker, AWS, GitHub, Coolify</li>
+      </ul>
+    </div>
+    <div class="p-6 space-y-4 border rounded-2xl border-gray-200 bg-white/80 shadow-sm dark:border-zinc-700 dark:bg-zinc-900/70">
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Certificates</h3>
+        <a class="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300" href="https://www.credly.com/badges/444a285b-5e6a-43ca-83ac-da3be1002422" target="_blank" rel="noopener noreferrer">
+          AWS Certified Cloud Practitioner
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+          </svg>
+        </a>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Degrees</h3>
+        <ul class="mt-2 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+          <li>B.A. Russian Studies/Philosophy, University of Freiburg</li>
+          <li>M.A. Russian Studies, University of Freiburg / RGGU Moscow</li>
+        </ul>
+      </div>
+      <a class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300" href="/en/assets/files/bjoern-kawecki-resume-en.pdf">
+        <span>Download résumé</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M5,20H19V18H5V20M19,14H15V4H9V14H5L12,21L19,14Z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="space-y-6">
+  <div class="space-y-3">
+    <h2 class="text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-gray-100">
+      Journey &amp; Highlights
+    </h2>
+    <p class="max-w-3xl text-base leading-relaxed text-gray-700 dark:text-gray-300">
+      I moved from Slavic studies into software engineering, with milestones that shape how I work today.
+    </p>
+  </div>
+  <ol class="relative border-l border-gray-200 dark:border-zinc-700">
+    
+      <li class="ml-6 space-y-1 py-4">
+        <span class="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 border border-white dark:border-zinc-900 dark:bg-fuchsia-500"></span>
+        <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+          since 2022
+        </p>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          Freelance Developer
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Backend engineering, automation, and education technology for schools, associations, and small businesses.
+        </p>
+      </li>
+    
+      <li class="ml-6 space-y-1 py-4">
+        <span class="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 border border-white dark:border-zinc-900 dark:bg-fuchsia-500"></span>
+        <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+          2018 – 2022
+        </p>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          Education projects &amp; workshops
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          Designing digital learning experiences, facilitating workshops, and coaching language teachers.
+        </p>
+      </li>
+    
+      <li class="ml-6 space-y-1 py-4">
+        <span class="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 border border-white dark:border-zinc-900 dark:bg-fuchsia-500"></span>
+        <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+          Academic
+        </p>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+          M.A. Russian Studies · B.A. Russian Studies/Philosophy
+        </h3>
+        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          University of Freiburg &amp; RGGU Moscow – emphasis on language, culture, and analytical thinking.
+        </p>
+      </li>
+    
+  </ol>
+</section>
+
+<section id="contact" class="p-8 space-y-6 border rounded-3xl border-blue-200 bg-blue-50/60 dark:border-fuchsia-800/50 dark:bg-fuchsia-900/20">
+  <div class="space-y-3">
+    <h2 class="text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-gray-100">
+      Let’s collaborate
+    </h2>
+    <p class="max-w-3xl text-base leading-relaxed text-gray-700 dark:text-gray-200">
+      Tell me about your idea—new learning platform, Telegram bot, or workshop.
+    </p>
+  </div>
+  <div class="flex flex-col gap-3 sm:flex-row">
+    <a href="mailto:bkawecki@mailbox.org" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white transition bg-blue-600 rounded-full shadow-sm hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500">
+      Send an email
+    </a>
+  </div>
+</section>
+
+
+    </main>
+    
+
+
+
+
+<footer class="mt-20 border-t border-gray-200 dark:border-zinc-800 bg-gray-100/60 dark:bg-zinc-900/60">
+  <div class="max-w-6xl px-5 py-12 mx-auto space-y-12 md:px-8">
+    <div class="grid gap-10 lg:grid-cols-3">
+      <div class="space-y-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+        <p class="text-base font-semibold tracking-tight text-gray-900 dark:text-gray-100">
+          Björn Kawecki · Web Developer &amp; Slavist
+        </p>
+        <p>From resilient backends and automation pipelines to lightweight frontends, I turn ideas into production-ready products fast.</p>
+        <a
+          class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300"
+          href="mailto:bkawecki@mailbox.org"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-4 h-4"
+            fill="currentColor"
+          >
+            <path
+              d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20Z"
+            />
+          </svg>
+          bkawecki@mailbox.org
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-6 text-sm md:grid-cols-3 lg:grid-cols-2">
+        <div class="space-y-3">
+          <p class="text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
+            Quick Links
+          </p>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="transition hover:text-blue-600 dark:hover:text-fuchsia-400"
+                href="/en/"
+              >
+                About me
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition hover:text-blue-600 dark:hover:text-fuchsia-400"
+                href="/en/projects/"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition hover:text-blue-600 dark:hover:text-fuchsia-400"
+                href="/en/blog/"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition hover:text-blue-600 dark:hover:text-fuchsia-400"
+                href="/en/#contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
+            Berlin, Germany
+          </p>
+          <p class="text-gray-700 dark:text-gray-300">
+            Slavist & Web Developer
+          </p>
+          <div class="flex gap-2 text-xs font-medium text-gray-600 uppercase dark:text-gray-400">
+            
+              
+              
+                
+                <a
+                  class="px-2 py-1 transition rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-100/70 dark:text-gray-300 dark:hover:text-fuchsia-300 dark:hover:bg-fuchsia-900/30"
+                  href="/"
+                  aria-label="Switch language to Deutsch"
+                >
+                  DE
+                </a>
+              
+            
+              
+              
+                <span class="px-2 py-1 rounded-md bg-blue-100 text-blue-800 dark:bg-fuchsia-900/50 dark:text-fuchsia-200">
+                  EN
+                </span>
+              
+            
+          </div>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <p class="text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
+          Connect
+        </p>
+        <div class="flex gap-4">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/bjkawecki"
+            aria-label="Open Björn Kawecki's GitHub profile"
+            title="Open Björn Kawecki's GitHub profile"
+            class="p-2 transition border rounded-full border-gray-300 hover:border-blue-500 hover:text-blue-500 dark:border-zinc-700 dark:hover:border-fuchsia-500 dark:hover:text-fuchsia-400"
+          >
+            <span class="sr-only">Open Björn Kawecki's GitHub profile</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+              fill="currentColor"
+            >
+              <path
+                d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Björn Kawecki's LinkedIn profile"
+            title="Open Björn Kawecki's LinkedIn profile"
+            class="p-2 transition border rounded-full border-gray-300 hover:border-blue-500 hover:text-blue-500 dark:border-zinc-700 dark:hover:border-fuchsia-500 dark:hover:text-fuchsia-400"
+          >
+            <span class="sr-only">Open Björn Kawecki's LinkedIn profile</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+              fill="currentColor"
+            >
+              <path
+                d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between gap-4 pt-6 text-xs text-gray-500 border-t md:flex-row border-gray-200 dark:border-zinc-800 dark:text-gray-400">
+      <span>&copy; 2025 Björn Kawecki. Powered by Jekyll &amp; GitHub Pages.</span>
+      <span></span>
     </div>
   </div>
 </footer>
 <script src="/assets/js/index.js"></script>
 
-</aside>
-
-        <div class="md:w-1/3">
-          <div
-            class="prose dark:prose-strong:text-gray-200 prose-sm md:prose md:prose-p:text-base prose-p:text-lg md:prose-ul:text-base prose-ul:text-lg prose-a:text-blue-500 dark:prose-a:dark:text-fuchsia-500 prose-a:no-underline hover:prose-a:underline prose-headings:text-gray-700 prose-h4:font-medium prose-a:font-semibold dark:prose-headings:text-gray-200 dark:prose-ul:text-gray-200 dark:prose-p:text-gray-200"
-          >
-            <h1>About me</h1>
-
-<p>
-I develop web applications, mostly on the backend, preferably using Python.
-Linux, Docker, and Git are part of my standard setup.
-With my humanities background, I communicate technical matters clearly.
-</p>
-
-<h2>Programming</h2>
-<ul>
-  <li><strong>Languages</strong>: Python, JavaScript, Bash</li>
-  <li><strong>Frontend</strong>: HTML, CSS, Tailwind, HTMX</li>
-  <li><strong>Backend</strong>: Django, aiogram</li>
-  <li><strong>DevOps</strong>: Linux, Docker, AWS, GitHub, Coolify</li>
-</ul>
-
-<h2>Certificates</h2>
-<p>
-  <a class="inline-flex items-center" href="https://www.credly.com/badges/444a285b-5e6a-43ca-83ac-da3be1002422" target="_blank" rel="noopener noreferrer">
-    AWS Certified Cloud Practitioner
-    <svg class="dark:fill-fuchsia-500 fill-blue-500 h-[1.1em] w-auto ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <title>see-badge-in-new-tab</title>
-      <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
-    </svg>
-  </a>
-</p>
-
-<h2>Degrees</h2>
-<ul>
-  <li>B.A. Russian Studies/Philosophy, University of Freiburg</li>
-  <li>M.A. Russian Studies, University of Freiburg / RGGU Moscow</li>
-</ul>
-
-<p>
-  📄 <a href="/en/assets/files/bjoern-kawecki-resume-en.pdf">My résumé as PDF</a>
-</p>
-
-          </div>
-        </div>
-      </div>
-    </main>
   </body>
 </html>

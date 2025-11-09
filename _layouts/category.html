@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="de">
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+<html lang="{{ current_lang }}">
   <head>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title | escape }}" />
@@ -12,30 +13,34 @@
   </head>
 
   <body class="text-gray-700 bg-gray-50 dark:bg-zinc-900 dark:text-gray-200">
-    <main class="px-5 mx-auto md:w-1/2 lg:w-1/3 md:px-0" aria-label="Content">
-      <div class="flex flex-col justify-center mt-10 space-x-0 md:space-x-10">
-        <div>
-          {% include header.html link="/blog/" %}
-          <div
-            class="prose-a:font-semibold prose-a:no-underline prose prose-p:my-0 prose-sm md:prose dark:prose-p:text-gray-200 prose-a:text-blue-500 dark:prose-a:text-fuchsia-500 prose-headings:text-gray-700 prose-h2:mt-0 prose-h2:mb-2 dark:prose-headings:text-gray-200"
-          >
-            <h1>{{ site.data[site.active_lang].strings.layout.category }}: {{ page.title }}</h1>
-            <ul class="posts">
-              {% for post in page.posts %}
-              <li>
-                <span class="text-gray-700 dark:text-gray-200"
-                  >{{ post.date | date: "%d.%m.%Y" }} |
-                </span>
-                <a class="hover:underline" href="{{ post.url | relative_url }}"
-                  >{{ post.title }}</a
-                >
-              </li>
-              {% endfor %}
-            </ul>
-            {% include footer.html %}
-          </div>
-        </div>
+    {% include site-header.html %}
+    <main
+      id="main-content"
+      class="px-5 py-12 mx-auto max-w-4xl space-y-6 md:px-0"
+      aria-label="Content"
+    >
+      <div class="space-y-6">
+        {% include back_link.html link="/blog/" %}
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
+          {{ site.data[current_lang].strings.layout.category }}: {{ page.title }}
+        </h1>
+        <ul class="space-y-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          {% for post in page.posts %}
+            <li class="flex flex-col gap-1 md:flex-row md:items-center md:gap-3">
+              <span class="text-gray-500 dark:text-gray-400 md:min-w-[140px]">
+                {{ post.date | date: "%d.%m.%Y" }}
+              </span>
+              <a
+                class="font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300"
+                href="{{ post.url | relative_url }}"
+              >
+                {{ post.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </main>
+    {% include footer.html %}
   </body>
 </html>

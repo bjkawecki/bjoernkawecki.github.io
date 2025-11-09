@@ -1,0 +1,33 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+{% assign strings = site.data[current_lang].strings %}
+{% assign hero = strings.home.hero %}
+<section class="flex flex-col-reverse items-center gap-10 md:flex-row md:gap-16">
+  <div class="w-full space-y-6 md:max-w-[38rem]">
+    <p class="text-sm font-semibold tracking-wide uppercase text-blue-600 dark:text-fuchsia-400">
+      {{ hero.kicker }}
+    </p>
+    <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl dark:text-gray-100">
+      {{ hero.title }}
+    </h1>
+    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+      {{ hero.subtitle }}
+    </p>
+    <div class="flex flex-col gap-3 sm:flex-row">
+      <a
+        href="{{ site.baseurl }}{{ hero.primary_cta.href }}"
+        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white transition bg-blue-600 rounded-full shadow-sm hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500"
+      >
+        {{ hero.primary_cta.label }}
+      </a>
+    </div>
+  </div>
+  <div class="w-48 h-48 overflow-hidden rounded-full shadow-lg ring-4 ring-blue-100 dark:ring-fuchsia-900/60 md:h-72 md:w-72">
+    <img
+      src="{{ site.baseurl }}/assets/img/profil-1.webp"
+      alt="{{ strings.aside.profile_alt }}"
+      class="object-cover w-full h-full"
+      loading="lazy"
+    />
+  </div>
+</section>
+

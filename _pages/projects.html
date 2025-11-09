@@ -4,28 +4,76 @@ title: Projekte
 permalink: /projects/
 ---
 
-<h1>{{ site.data[site.active_lang].strings.navigation.projects }}</h1>
+{% assign strings = site.data[site.active_lang].strings %}
+{% assign localized_projects = site.projects | where: "lang", site.active_lang | sort: "started" | reverse %}
+{% assign categories = localized_projects | map: "category" | uniq %}
 
-{% if site.projects.size == 0 %}
-<p>{{ site.data[site.active_lang].strings.no_entries.projects }}</p>
+<section class="space-y-6">
+  <div class="space-y-4">
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
+      {{ strings.navigation.projects }}
+    </h1>
+    <p class="max-w-3xl text-base text-gray-700 dark:text-gray-300">
+      {{ strings.home.projects.description }}
+    </p>
+  </div>
+  {% if categories.size > 0 %}
+    <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase">
+      {% for category in categories %}
+        <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-600 dark:bg-zinc-800 dark:text-gray-300">
+          {{ category }}
+        </span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+{% if localized_projects.size == 0 %}
+  <p class="text-sm text-gray-600 dark:text-gray-300">
+    {{ strings.no_entries.projects }}
+  </p>
 {% else %}
-<div class="flex flex-col space-y-2.5">
-  {% assign projects = site.projects | where: "lang", site.active_lang | sort: "started" | reverse %} {% for
-  project in projects %}
-  <a
-    href="{{ project.url }}"
-class="px-4 py-4 bg-white dark:bg-zinc-800 border border-gray-100 dark:border-zinc-700 rounded-xl shadow-sm hover:shadow-md hover:ring-2 hover:ring-blue-500 dark:hover:ring-fuchsia-500 transition active:dark:ring-fuchsia-700 active:ring-blue-400"  >
-    <div class="pb-0.5 text-base font-normal dark:text-gray-300">
-      {{ project.category }} | {{ project.started }}{% if project.status %} |
-      Status: {{ project.status }}{% endif %}
-    </div>
-    <h2 class="w-fit">{{ project.title }}</h2>
-    <div class="flex flex-col text-gray-700 dark:text-gray-200">
-      <div class="text-base font-normal md:text-lg">
-        {{ project.description }}
-      </div>
-    </div>
-  </a>
-  {% endfor %}
-</div>
+  <section class="grid gap-6 md:grid-cols-2">
+    {% for project in localized_projects %}
+      <article class="flex flex-col h-full p-6 space-y-4 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+        <div class="space-y-2">
+          <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+            {{ project.category }} · {{ project.started }}{% if project.status %} · {{ project.status }}{% endif %}
+          </p>
+          <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
+            {{ project.title }}
+          </h2>
+          <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+            {{ project.description | default: project.excerpt | strip_html }}
+          </p>
+        </div>
+        {% if project.techstack %}
+          <ul class="flex flex-wrap gap-2 text-xs font-medium text-gray-600 dark:text-gray-300">
+            {% for tech in project.techstack %}
+              <li class="px-2.5 py-1 rounded-full bg-gray-100 text-gray-700 dark:bg-zinc-800 dark:text-gray-200">
+                {{ tech }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        <a
+          href="{{ project.url }}"
+          class="inline-flex items-center mt-auto text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300"
+        >
+          {{ strings.navigation.projects }}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-4 h-4 ml-1"
+            fill="currentColor"
+          >
+            <path
+              d="M14.59 7L9 12.59 10.41 14 16 8.41 16 13 18 13 18 5 10 5 10 7z"
+            />
+            <path d="M19 19H5V5H7V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19C20.1 21 21 20.1 21 19V17H19Z" />
+          </svg>
+        </a>
+      </article>
+    {% endfor %}
+  </section>
 {% endif %}

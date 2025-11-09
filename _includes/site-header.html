@@ -1,0 +1,158 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+{% assign lang_prefix = '' %}
+{% unless current_lang == site.default_lang %}
+  {% assign lang_prefix = '/' | append: current_lang %}
+{% endunless %}
+{% assign nav_about_path = lang_prefix | append: '/' %}
+{% assign nav_projects_path = lang_prefix | append: '/projects/' %}
+{% assign nav_blog_path = lang_prefix | append: '/blog/' %}
+{% assign contact_href = site.data[current_lang].strings.header.contact_cta_href | default: '#contact' %}
+{% assign contact_label = site.data[current_lang].strings.header.contact_cta | default: 'Kontakt' %}
+{% assign menu_open_label = site.data[current_lang].strings.header.menu_open | default: 'Menü öffnen' %}
+{% assign menu_close_label = site.data[current_lang].strings.header.menu_close | default: 'Menü schließen' %}
+{% assign header_strings = site.data[current_lang].strings %}
+<header class="sticky top-0 z-40 border-b border-gray-200 dark:border-zinc-800 bg-gray-50/90 dark:bg-zinc-900/90 backdrop-blur">
+  <div class="max-w-6xl px-5 md:px-6 lg:px-8 mx-auto">
+    <div class="flex items-center justify-between py-4 md:py-5 gap-4">
+      <a
+        href="{{ site.baseurl }}{{ nav_about_path }}"
+        class="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-100"
+        aria-label="Björn Kawecki – {{ header_strings.aside.profession }}"
+      >
+        Björn Kawecki
+      </a>
+      <nav class="items-center hidden gap-6 md:flex">
+        {% assign about_active = page.url == nav_about_path %}
+        <a
+          href="{{ site.baseurl }}{{ nav_about_path }}"
+          class="text-sm font-medium transition-colors {% if about_active %}text-blue-600 dark:text-fuchsia-400{% else %}text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50{% endif %}"
+          {% if about_active %}aria-current="page"{% endif %}
+        >
+          {{ header_strings.navigation.about_me }}
+        </a>
+        {% assign projects_active = page.url == nav_projects_path or page.url contains nav_projects_path %}
+        <a
+          href="{{ site.baseurl }}{{ nav_projects_path }}"
+          class="text-sm font-medium transition-colors {% if projects_active %}text-blue-600 dark:text-fuchsia-400{% else %}text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50{% endif %}"
+          {% if projects_active %}aria-current="page"{% endif %}
+        >
+          {{ header_strings.navigation.projects }}
+        </a>
+        {% assign blog_active = page.url == nav_blog_path or page.url contains nav_blog_path %}
+        <a
+          href="{{ site.baseurl }}{{ nav_blog_path }}"
+          class="text-sm font-medium transition-colors {% if blog_active %}text-blue-600 dark:text-fuchsia-400{% else %}text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50{% endif %}"
+          {% if blog_active %}aria-current="page"{% endif %}
+        >
+          {{ header_strings.navigation.blog }}
+        </a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <div class="hidden md:flex items-center gap-2">
+          <button
+            id="toggle-color-mode"
+            type="button"
+            class="flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 dark:border-zinc-700 transition hover:border-gray-400 dark:hover:border-zinc-500"
+            aria-label="{{ header_strings.footer.theme_toggle_label }}"
+            aria-pressed="false"
+          ></button>
+          <div class="flex items-center gap-1 text-sm font-medium">
+            {% for tongue in site.languages %}
+              {% assign language_code = site.data[tongue].strings.language_code | default: tongue | upcase %}
+              {% if tongue == site.active_lang %}
+                <span class="px-2 py-1 rounded-md bg-blue-100 text-blue-800 dark:bg-fuchsia-900/50 dark:text-fuchsia-200">
+                  {{ language_code }}
+                </span>
+              {% else %}
+                {% assign language_name = site.data[tongue].strings.language_name %}
+                <a
+                  class="px-2 py-1 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-50 dark:hover:bg-zinc-800 transition"
+                  {% static_href %}href="{% if tongue == site.default_lang %}{{ site.baseurl }}{{ page.url }}{% else %}{{ site.baseurl }}/{{ tongue }}{{ page.url }}{% endif %}"{% endstatic_href %}
+                  aria-label="{{ header_strings.footer.language_label }} {{ language_name }}"
+                >
+                  {{ language_code }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        <a
+          href="{{ site.baseurl }}{{ contact_href }}"
+          class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white transition bg-blue-600 rounded-full shadow-sm hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500"
+        >
+          {{ contact_label }}
+        </a>
+        <button
+          id="mobile-nav-toggle"
+          type="button"
+          class="inline-flex items-center justify-center w-10 h-10 rounded-md border border-gray-200 text-gray-700 hover:text-gray-900 hover:border-gray-400 dark:border-zinc-700 dark:text-gray-100 dark:hover:text-gray-50 dark:hover:border-zinc-500 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          data-open-label="{{ menu_open_label }}"
+          data-close-label="{{ menu_close_label }}"
+        >
+          <span class="sr-only" id="mobile-nav-toggle-label">{{ menu_open_label }}</span>
+          <svg id="mobile-nav-icon-open" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="mobile-nav-icon-close" xmlns="http://www.w3.org/2000/svg" class="hidden w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    id="mobile-nav"
+    class="hidden md:hidden border-t border-gray-200 dark:border-zinc-800 bg-gray-50/95 dark:bg-zinc-900/95 backdrop-blur"
+  >
+    <nav class="flex flex-col gap-4 px-5 py-6 text-sm font-medium text-gray-700 dark:text-gray-200">
+      <a href="{{ site.baseurl }}{{ nav_about_path }}" class="hover:text-blue-600 dark:hover:text-fuchsia-400 transition">
+        {{ header_strings.navigation.about_me }}
+      </a>
+      <a href="{{ site.baseurl }}{{ nav_projects_path }}" class="hover:text-blue-600 dark:hover:text-fuchsia-400 transition">
+        {{ header_strings.navigation.projects }}
+      </a>
+      <a href="{{ site.baseurl }}{{ nav_blog_path }}" class="hover:text-blue-600 dark:hover:text-fuchsia-400 transition">
+        {{ header_strings.navigation.blog }}
+      </a>
+      <a href="{{ site.baseurl }}{{ contact_href }}" class="inline-flex items-center justify-center px-4 py-2 mt-2 text-sm font-semibold text-white transition bg-blue-600 rounded-full hover:bg-blue-700 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500">
+        {{ contact_label }}
+      </a>
+      <div class="flex items-center gap-2 pt-2 border-t border-gray-200 dark:border-zinc-800">
+        <span class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+          {{ header_strings.footer.language_label }}
+        </span>
+        <div class="flex items-center gap-2">
+          {% for tongue in site.languages %}
+            {% assign language_code = site.data[tongue].strings.language_code | default: tongue | upcase %}
+            {% if tongue == site.active_lang %}
+              <span class="px-2 py-1 rounded-md bg-blue-100 text-blue-800 dark:bg-fuchsia-900/50 dark:text-fuchsia-200">
+                {{ language_code }}
+              </span>
+            {% else %}
+              {% assign language_name = site.data[tongue].strings.language_name %}
+              <a
+                class="px-2 py-1 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-50 dark:hover:bg-zinc-800 transition"
+                {% static_href %}href="{% if tongue == site.default_lang %}{{ site.baseurl }}{{ page.url }}{% else %}{{ site.baseurl }}/{{ tongue }}{{ page.url }}{% endif %}"{% endstatic_href %}
+                aria-label="{{ header_strings.footer.language_label }} {{ language_name }}"
+              >
+                {{ language_code }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <button
+        id="mobile-theme-toggle"
+        type="button"
+        class="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium border border-gray-300 rounded-md hover:border-gray-400 dark:border-zinc-700 dark:hover:border-zinc-500"
+        aria-pressed="false"
+        data-label="{{ header_strings.footer.theme_toggle_label }}"
+      >
+        {{ header_strings.footer.theme_toggle_label }}
+      </button>
+    </nav>
+  </div>
+</header>
+

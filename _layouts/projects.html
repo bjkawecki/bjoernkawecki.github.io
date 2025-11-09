@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="de">
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+<html lang="{{ current_lang }}">
   <head>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title | escape }}" />
@@ -8,26 +9,17 @@
       content="{{ page.description | default: site.description | escape }}"
     />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta
-      property="og:title"
-      content="Projekte – Björn Kawecki | Persönliche Webseite"
-    />
     {% include head.html %}
   </head>
   <body class="text-gray-700 bg-gray-50 dark:bg-zinc-900 dark:text-gray-200">
-    <main class="px-5 mx-auto mb-10 w-full md:px-0" aria-label="Content">
-      <div
-        class="flex flex-col justify-center mt-10 space-x-0 md:flex-row md:space-x-28"
-      >
- {% include aside.html %}
-        <div class="md:w-1/3">
-          <div
-            class="w-full prose-a:font-bold prose prose-p:my-0 prose-sm md:prose dark:prose-p:text-gray-200 prose-h2:text-blue-500 dark:prose-h2:text-fuchsia-500 prose-a:no-underline prose-headings:text-gray-700 prose-h2:mt-0 prose-h2:mb-2 dark:prose-headings:text-gray-200"
-          >
-            {{ content }}
-          </div>
-        </div>
-      </div>
+    {% include site-header.html %}
+    <main
+      id="main-content"
+      class="px-5 py-12 mx-auto space-y-10 max-w-6xl md:px-8"
+      aria-label="Content"
+    >
+      {{ content }}
     </main>
+    {% include footer.html %}
   </body>
 </html>
