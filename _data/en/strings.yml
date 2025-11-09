@@ -23,7 +23,7 @@ footer:
   email_label: "Send an email to Björn Kawecki"
   theme_toggle_label: "Toggle color theme"
   language_label: "Switch language to"
-  note: "Built with Jekyll & Tailwind."
+  note: "Built with Jekyll & GitHub Pages."
 language_name: "English"
 language_code: "EN"
 home:
