@@ -15,67 +15,57 @@ pagination:
 {% assign lang = "de" %}
 {% assign lang_prefix = '' %}
 {% unless lang == site.default_lang %}
-  {% assign lang_prefix = '/' | append: lang %}
+{% assign lang_prefix = '/' | append: lang %}
 {% endunless %}
 {% assign category_base = lang_prefix | append: '/blog/category/' %}
-<section class="space-y-6">
+<section class="space-y-6 max-w-3xl mx-auto">
   <div class="space-y-4">
     <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">Blog</h1>
     <p class="max-w-3xl text-base text-gray-700 dark:text-gray-300">
-      Notizen aus Projekten, Didaktik und Technologie – mit Fokus auf digitale Sprachlernangebote.
+      Notizen aus Projekten, Didaktik und Technologie
     </p>
   </div>
   <div class="flex flex-wrap gap-2">
     {% for category in site.categories %}
-      {% assign posts_in_category = category[1] | where: "lang", lang %}
-      {% if posts_in_category.size > 0 %}
-        <a
-          href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}"
-          class="px-3 py-1 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-200 dark:hover:bg-fuchsia-900/60"
-        >
-          {{ category[0] }}
-        </a>
-      {% endif %}
+    {% assign posts_in_category = category[1] | where: "lang", lang %}
+    {% if posts_in_category.size > 0 %}
+    <a href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}" class="px-3 py-1 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-200 dark:hover:bg-fuchsia-900/60">
+      {{ category[0] }}
+    </a>
+    {% endif %}
     {% endfor %}
   </div>
+
 </section>
 
 {% assign blog_posts = paginator.posts %}
 {% if blog_posts.size == 0 %}
-  <p class="text-sm text-gray-600 dark:text-gray-300">
-    {{ strings.no_entries.blog }}
-  </p>
+<p class="text-sm text-gray-600 dark:text-gray-300">
+  {{ strings.no_entries.blog }}
+</p>
 {% else %}
-  <section class="grid gap-6 md:grid-cols-2">
-    {% for post in blog_posts %}
-      <article class="flex flex-col h-full p-6 space-y-3 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
-        <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
-          {{ post.date | date: "%d.%m.%Y" }} · {{ post.category }}
-        </p>
-        <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
-          {{ post.title }}
-        </h2>
-        <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
-          {{ post.excerpt | strip_html | truncate: 180 }}
-        </p>
-        <a
-          class="inline-flex items-center mt-auto text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300"
-          href="{{ post.url }}"
-        >
-          Weiterlesen
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            class="w-4 h-4 ml-1"
-            fill="currentColor"
-          >
-            <path
-              d="M14.59 7L9 12.59 10.41 14 16 8.41 16 13 18 13 18 5 10 5 10 7z"
-            />
-            <path d="M19 19H5V5H7V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19C20.1 21 21 20.1 21 19V17H19Z" />
-          </svg>
-        </a>
-      </article>
-    {% endfor %}
-  </section>
+<section class="space-y-6 max-w-3xl mx-auto">
+  {% for post in blog_posts %}
+  <a href="{{ post.url }}" class="group block rounded-2xl border border-gray-200 bg-white/80 p-6 shadow-sm transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 dark:border-zinc-700 dark:bg-zinc-900/70 dark:hover:shadow-lg dark:focus-visible:outline-fuchsia-400">
+    <article class="space-y-3">
+      <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
+        {{ post.date | date: "%d.%m.%Y" }} · {{ post.category }}
+      </p>
+      <h2 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+        {{ post.title }}
+      </h2>
+      <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+        {{ post.excerpt | strip_html | truncate: 200 }}
+      </p>
+      <span class="inline-flex items-center text-sm font-semibold text-blue-600 transition group-hover:text-blue-800 dark:text-fuchsia-400 dark:group-hover:text-fuchsia-300">
+        Weiterlesen
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-4 w-4" fill="currentColor">
+          <path d="M14.59 7L9 12.59 10.41 14 16 8.41 16 13 18 13 18 5 10 5 10 7z" />
+          <path d="M19 19H5V5H7V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19C20.1 21 21 20.1 21 19V17H19Z" />
+        </svg>
+      </span>
+    </article>
+  </a>
+  {% endfor %}
+</section>
 {% endif %}

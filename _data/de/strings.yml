@@ -1,5 +1,5 @@
 aside:
-  profession: "Slawist und Webentwickler"
+  profession: "Full-Stack Webentwickler"
   location: "Berlin"
   profile_alt: "Porträt von Björn Kawecki"
 navigation:
@@ -13,9 +13,9 @@ header:
   contact_cta: "Kontakt"
   contact_cta_href: "/#kontakt"
 head:
-  description: "Persönliche Webseite von Björn Kawecki, Slawist und Webentwickler. Hier finden Sie Informationen zu mir und meinen Projekten."
+  description: "Björn Kawecki ist Full-Stack Webentwickler in Berlin. Python & JavaScript, Architektur, DevOps und Automatisierung aus einer Hand."
   og_locale: "de_DE"
-  title: "Björn Kawecki | Persönliche Webseite"
+  title: "Björn Kawecki | Full-Stack Webentwickler Berlin"
   name: "Über Björn Kawecki"
 footer:
   github_label: "GitHub-Profil von Björn Kawecki öffnen"
@@ -23,58 +23,52 @@ footer:
   email_label: "E-Mail an Björn Kawecki schreiben"
   theme_toggle_label: "Farbschema umschalten"
   language_label: "Sprache wechseln zu"
+  note: "Erstellt mit Jekyll & Tailwind."
 language_name: "Deutsch"
 language_code: "DE"
 home:
   hero:
-    kicker: "Slawist & Webentwickler"
-    title: "Ich entwickle robuste Plattformen für digitale Bildung."
-    subtitle: "Von stabilen Backends über automatisierte Deployments bis zu leichten Frontends – ich bringe Ideen schnell als nutzbare Produkte online."
+    title: "Entwicklung für das Web"
+    subtitle: "Full-Stack mit Python, JavaScript und AWS. Schnell entwickelt, zuverlässig deployed."
     primary_cta:
-      label: "Projekt anfragen"
+      label: "Kontakt"
       href: "/#kontakt"
-  skills:
-    title: "Was ich anbiete"
+    resume_label: "Lebenslauf (PDF)"
+  solutions:
     items:
-      - title: "CI/CD & Deployment"
-        description: "Automatisierte Pipelines, GitHub Actions, Terraform und Docker für reproduzierbare Releases."
-      - title: "Automatisierung & Bots"
-        description: "Telegram-Bots, Hintergrundjobs und Integrationen, die Prozesse schlank halten."
-      - title: "Web Scraping & Data Pipes"
-        description: "Robuste Scraper, strukturierte Datenaufbereitung und Weiterverarbeitung."
-      - title: "MVP-Entwicklung"
-        description: "Schnelle Prototypen und leichte Frontends mit Tailwind & HTMX für frühes Nutzerfeedback."
-      - title: "Humanities Know-how"
-        description: "Didaktische Erfahrung, klare Kommunikation und Kontextwissen aus den Sozial- und Geisteswissenschaften."
-  projects:
-    title: "Ausgewählte Projekte"
-    description: "Ein Blick in aktuelle Anwendungen und Tools, die ich für Sprach- und Lernkontexte entwickelt habe."
-    cta_label: "Alle Projekte ansehen"
-    cta_href: "/projects/"
-  blog:
-    title: "Neues aus dem Blog"
-    description: "Reflexionen aus Projekten, Didaktik und Entwicklung – quer durch Backend, KI und Unterricht."
-    cta_label: "Alle Beiträge"
-    cta_href: "/blog/"
+      - title: "Von der Idee zum Produkt"
+        outcome: "Anforderungen erfassen, Software entwickeln und live bringen. Vom ersten Konzept bis zur fertigen Anwendung."
+        tech:
+          - Python
+          - JavaScript
+          - React
+          - FastAPI
+          - PostgreSQL
+      - title: "Cloud & Betrieb"
+        outcome: "Systeme deployen, skalieren und betreiben. CI/CD-Pipelines und Cloud-Infrastructure, z. B. auf AWS."
+        tech:
+          - AWS
+          - Docker
+          - Linux
+          - GitHub Actions
+          - Nginx
+      - title: "Automatisierung & Integration"
+        outcome: "Daten sammeln, Systeme verbinden und Prozesse automatisieren. APIs nutzen und eigene entwickeln."
+        tech:
+          - Python
+          - REST APIs
+          - Web Scraping
+          - Automation
+          - Data Processing
+
+
+
   contact:
     anchor: "kontakt"
-    title: "Lass uns sprechen"
-    subtitle: "Erzähl mir von deinem Vorhaben – egal ob neue Lernplattform, Telegram-Bot oder Workshop."
+    title: "Kontakt aufnehmen"
+    subtitle: "Schreib mir eine kurze Nachricht oder buche direkt einen Termin – ich melde mich zeitnah zurück."
     primary_cta_label: "E-Mail schreiben"
     primary_cta_href: "mailto:bkawecki@mailbox.org"
-  journey:
-    title: "Werdegang & Highlights"
-    intro: "Ich habe meinen Weg von der Slawistik in die Softwareentwicklung gefunden – mit Stationen, die heute meine Projekte prägen."
-    milestones:
-      - period: "seit 2022"
-        title: "Freelance Developer"
-        description: "Backend-Entwicklung, Automatisierung und Bildungstechnologie für Schulen, Vereine und kleine Unternehmen."
-      - period: "2018 – 2022"
-        title: "Bildungsprojekte & Workshops"
-        description: "Konzeption digitaler Lernangebote, Moderation von Workshops und Coaching für Sprachlehrkräfte."
-      - period: "Studium"
-        title: "M.A. Russlandstudien · B.A. Russlandstudien/Philosophie"
-        description: "Universität Freiburg & RGGU Moskau – Fokus auf Sprache, Kultur und analytisches Arbeiten."
 pagination:
   previous_page: Vorherige Seite
   page: Seite

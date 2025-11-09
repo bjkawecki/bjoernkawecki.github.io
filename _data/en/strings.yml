@@ -1,5 +1,5 @@
 aside:
-  profession: "Web Developer &amp; Slavist"
+  profession: "Full-Stack Web Developer"
   location: "Berlin, Germany"
   profile_alt: "Portrait of Björn Kawecki"
 navigation:
@@ -13,9 +13,9 @@ header:
   contact_cta: "Contact"
   contact_cta_href: "/en/#contact"
 head:
-  description: "The personal website of Björn Kawecki, full-stack web developer with a background in Slavic studies. Learn more about me and the projects I'm working on."
+  description: "Björn Kawecki is a full-stack web developer in Berlin. Python & JavaScript, architecture, DevOps, and automation from concept to production."
   og_locale: "en_US"
-  title: "Björn Kawecki | Personal Website"
+  title: "Björn Kawecki | Full-Stack Web Developer Berlin"
   name: "About Björn Kawecki"
 footer:
   github_label: "Open Björn Kawecki's GitHub profile"
@@ -23,63 +23,49 @@ footer:
   email_label: "Send an email to Björn Kawecki"
   theme_toggle_label: "Toggle color theme"
   language_label: "Switch language to"
+  note: "Built with Jekyll & Tailwind."
 language_name: "English"
 language_code: "EN"
 home:
   hero:
-    kicker: "Slavist & Web Developer"
-    title: "I ship reliable platforms for digital learning."
-    subtitle: "From resilient backends and automation pipelines to lightweight frontends, I turn ideas into production-ready products fast."
+    title: "Web Development"
+    subtitle: "Full-stack with Python, JavaScript, and AWS. Rapidly developed, reliably deployed."
     primary_cta:
-      label: "Start a project"
+      label: "Contact"
       href: "/en/#contact"
-    badges:
-      - label: "Focus"
-        value: "Digital education & languages"
-      - label: "Certification"
-        value: "AWS Cloud Practitioner"
-  skills:
-    title: "How I help"
+    resume_label: "Resume (PDF)"
+  solutions:
     items:
-      - title: "CI/CD & deployment"
-        description: "Automated pipelines, GitHub Actions, Terraform, and Docker for reliable releases."
-      - title: "Automation & bots"
-        description: "Telegram bots, background workers, and integrations that keep workflows lean."
-      - title: "Web scraping & data pipelines"
-        description: "Robust scrapers, structured data processing, and downstream integrations."
-      - title: "MVP delivery"
-        description: "Rapid prototypes and lightweight frontends with Tailwind & HTMX for early validation."
-      - title: "Humanities insight"
-        description: "Experience in didactics, clear communication, and context from the humanities."
-  projects:
-    title: "Selected projects"
-    description: "Recent products and prototypes built for language learning and automated publishing."
-    cta_label: "Browse all projects"
-    cta_href: "/en/projects/"
-  blog:
-    title: "Latest on the blog"
-    description: "Insights from client work, didactics, and engineering across backend, AI, and teaching."
-    cta_label: "All articles"
-    cta_href: "/en/blog/"
+      - title: "From Idea to Product"
+        outcome: "Capture requirements, build software, and ship it. From first concept to finished application."
+        tech:
+          - Python
+          - JavaScript
+          - React
+          - FastAPI
+          - PostgreSQL
+      - title: "Cloud & Operations"
+        outcome: "Deploy, scale, and operate systems. CI/CD pipelines and cloud infrastructure on AWS."
+        tech:
+          - AWS
+          - Docker
+          - Linux
+          - GitHub Actions
+          - Nginx
+      - title: "Automation & Integration"
+        outcome: "Collect data, connect systems, and automate processes. Use APIs and build your own."
+        tech:
+          - Python
+          - REST APIs
+          - Web Scraping
+          - Automation
+          - Data Processing
   contact:
     anchor: "contact"
-    title: "Let’s collaborate"
-    subtitle: "Tell me about your idea—new learning platform, Telegram bot, or workshop."
+    title: "Get in touch"
+    subtitle: "Send over a brief or schedule a call – I’ll get back to you quickly."
     primary_cta_label: "Send an email"
     primary_cta_href: "mailto:bkawecki@mailbox.org"
-  journey:
-    title: "Journey & Highlights"
-    intro: "I moved from Slavic studies into software engineering, with milestones that shape how I work today."
-    milestones:
-      - period: "since 2022"
-        title: "Freelance Developer"
-        description: "Backend engineering, automation, and education technology for schools, associations, and small businesses."
-      - period: "2018 – 2022"
-        title: "Education projects & workshops"
-        description: "Designing digital learning experiences, facilitating workshops, and coaching language teachers."
-      - period: "Academic"
-        title: "M.A. Russian Studies · B.A. Russian Studies/Philosophy"
-        description: "University of Freiburg & RGGU Moscow – emphasis on language, culture, and analytical thinking."
 pagination:
   previous_page: Previous page
   page: Page
