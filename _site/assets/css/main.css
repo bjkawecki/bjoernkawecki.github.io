@@ -1519,6 +1519,10 @@ ul, ol {
   width: 2.75rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1609,6 +1613,10 @@ ul, ol {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2370,6 +2378,14 @@ ul, ol {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-56 {
+    height: 14rem;
+  }
+
+  .sm\:w-56 {
+    width: 14rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2476,8 +2492,23 @@ ul, ol {
     gap: 0.75rem;
   }
 
+  .md\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  }
+
   .md\:self-start {
     align-self: flex-start;
+  }
+
+  .md\:border-l-4 {
+    border-left-width: 4px;
+  }
+
+  .md\:border-blue-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(34 85 238 / var(--tw-border-opacity));
   }
 
   .md\:px-0 {
@@ -2502,6 +2533,10 @@ ul, ol {
 
   .md\:pr-6 {
     padding-right: 1.5rem;
+  }
+
+  .md\:pl-6 {
+    padding-left: 1.5rem;
   }
 
   .md\:text-\[2rem\] {
@@ -2919,5 +2954,12 @@ ul, ol {
 .dark\:prose-a\:text-fuchsia-400 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(181 141 243 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:dark\:border-fuchsia-500:where(.dark, .dark *) {
+    --tw-border-opacity: 1;
+    border-color: rgb(153 97 235 / var(--tw-border-opacity));
+  }
 }
 
