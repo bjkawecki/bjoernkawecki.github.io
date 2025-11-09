@@ -2113,6 +2113,11 @@ ul, ol {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-accent-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 227 221 / var(--tw-bg-opacity));
+}
+
 .hover\:fill-white:hover {
   fill: #fff;
 }
@@ -2627,6 +2632,10 @@ ul, ol {
 .dark\:hover\:bg-zinc-800:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.dark\:hover\:bg-accent-900\/20:hover:where(.dark, .dark *) {
+  background-color: rgb(109 25 29 / 0.2);
 }
 
 .dark\:hover\:fill-zinc-900:hover:where(.dark, .dark *) {
