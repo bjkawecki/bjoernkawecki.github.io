@@ -1,14 +1,22 @@
 aside:
   profession: "Web Developer &amp; Slavist"
   location: "Berlin, Germany"
+  profile_alt: "Portrait of Björn Kawecki"
 navigation:
   about_me: "About me"
   projects: "Projects"
 head:
   description: "The personal website of Björn Kawecki, full-stack web developer with a background in Slavic studies. Learn more about me and the projects I'm working on."
-  og_locale: "de_DE"
+  og_locale: "en_US"
   title: "Björn Kawecki | Personal Website"
   name: "About Björn Kawecki"
+footer:
+  github_label: "Open Björn Kawecki's GitHub profile"
+  linkedin_label: "Open Björn Kawecki's LinkedIn profile"
+  email_label: "Send an email to Björn Kawecki"
+  theme_toggle_label: "Toggle color theme"
+  language_label: "Switch language to"
+language_name: "English"
 pagination:
   previous_page: Previous page
   page: Page

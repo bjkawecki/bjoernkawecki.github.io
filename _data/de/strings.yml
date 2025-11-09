@@ -1,6 +1,7 @@
 aside:
   profession: "Slawist und Webentwickler"
   location: "Berlin"
+  profile_alt: "Porträt von Björn Kawecki"
 navigation:
   about_me: "Über mich"
   projects: "Projekte"
@@ -9,6 +10,13 @@ head:
   og_locale: "de_DE"
   title: "Björn Kawecki | Persönliche Webseite"
   name: "Über Björn Kawecki"
+footer:
+  github_label: "GitHub-Profil von Björn Kawecki öffnen"
+  linkedin_label: "LinkedIn-Profil von Björn Kawecki öffnen"
+  email_label: "E-Mail an Björn Kawecki schreiben"
+  theme_toggle_label: "Farbschema umschalten"
+  language_label: "Sprache wechseln zu"
+language_name: "Deutsch"
 pagination:
   previous_page: Vorherige Seite
   page: Seite

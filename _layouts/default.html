@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="de">
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+<html lang="{{ current_lang }}">
   <head>
     <meta property="og:title" content="{{ page.title | escape }}" />
     <meta
