@@ -31,7 +31,7 @@ pagination:
       {% if posts_in_category.size > 0 %}
         <a
           href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}"
-          class="px-3 py-1 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-200 dark:hover:bg-fuchsia-900/60"
+          class="px-3 py-1 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-brand-50 text-brand-700 hover:bg-brand-100 dark:bg-brand-900/40 dark:text-brand-100 dark:hover:bg-brand-900/60"
         >
           {{ category[0] }}
         </a>
@@ -50,7 +50,7 @@ pagination:
     {% for post in blog_posts %}
       <a
         href="{{ post.url }}"
-        class="group block rounded-2xl border border-gray-200 bg-white/80 p-6 shadow-sm transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 dark:border-zinc-700 dark:bg-zinc-900/70 dark:hover:shadow-lg dark:focus-visible:outline-fuchsia-400"
+        class="group block rounded-2xl border border-brand-100/80 bg-white/70 p-6 shadow-sm transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-300 dark:border-brand-900/60 dark:bg-brand-950/30 dark:hover:shadow-lg dark:focus-visible:outline-brand-400"
       >
         <article class="space-y-3">
           <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
@@ -62,7 +62,7 @@ pagination:
           <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
             {{ post.excerpt | strip_html | truncate: 200 }}
           </p>
-          <span class="inline-flex items-center text-sm font-semibold text-blue-600 transition group-hover:text-blue-800 dark:text-fuchsia-400 dark:group-hover:text-fuchsia-300">
+          <span class="inline-flex items-center text-sm font-semibold text-brand-700 transition group-hover:text-brand-900 dark:text-brand-200 dark:group-hover:text-brand-100">
             Read more
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -4,7 +4,10 @@
 {% assign lang_prefix = '/' | append: current_lang %}
 {% endunless %}
 <nav class="flex flex-col gap-3 pt-8 border-t border-gray-200 dark:border-zinc-800">
-  <a href="{{ site.baseurl }}{{ lang_prefix }}/" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-800 dark:text-fuchsia-400 dark:hover:text-fuchsia-300">
+  <a
+     href="{{ site.baseurl }}{{ lang_prefix }}/"
+    class="inline-flex items-center gap-2 text-sm font-semibold text-gray-700 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-200"
+  >
     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="m9 15-6-6m0 0 6-6M3 9h12" />
     </svg>
@@ -14,7 +17,7 @@
     Zur Startseite
     {% endif %}
   </a>
-  <a href="{{ site.baseurl }}{{ lang_prefix }}/blog/" class="inline-flex items-center gap-2 text-sm font-medium text-gray-700 transition hover:text-blue-600 dark:text-gray-300 dark:hover:text-fuchsia-300">
+  <a href="{{ site.baseurl }}{{ lang_prefix }}/blog/" class="inline-flex items-center gap-2 text-sm font-medium text-gray-700 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-200">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16m-6-6 6 6-6 6" />
     </svg>

@@ -26,7 +26,7 @@
     {% assign about_url = lang_prefix | append: '/' %}
     <a
       href="{{ site.baseurl }}{{ about_url }}"
-      class="{% if page.url == about_url %}font-bold {% endif %}text-blue-500 hover:underline dark:text-fuchsia-500"
+      class="{% if page.url == about_url %}font-bold {% endif %}text-gray-700 hover:underline dark:text-gray-300"
       >{{ site.data[site.active_lang].strings.navigation.about_me }}</a
     >
     <span>&middot;</span>
@@ -34,7 +34,7 @@
     {% assign projects_url = lang_prefix | append: '/projects/' %}
     <a
       href="{{ site.baseurl }}{{ projects_url }}"
-      class="{% if page.url == projects_root or page.url == projects_url or page.url contains projects_url %}font-bold {% endif %}text-blue-500 hover:underline dark:text-fuchsia-500"
+      class="{% if page.url == projects_root or page.url == projects_url or page.url contains projects_url %}font-bold {% endif %}text-gray-700 hover:underline dark:text-gray-300"
       >{{ site.data[site.active_lang].strings.navigation.projects }}</a
     >
     <span>&middot;</span>
@@ -42,7 +42,7 @@
     {% assign blog_url = lang_prefix | append: '/blog/' %}
     <a
       href="{{ site.baseurl }}{{ blog_url }}"
-      class="{% if page.url == blog_root or page.url == blog_url or page.url contains blog_url %}font-bold {% endif %}text-blue-500 dark:text-fuchsia-500 hover:underline"
+      class="{% if page.url == blog_root or page.url == blog_url or page.url contains blog_url %}font-bold {% endif %}text-gray-700 dark:text-gray-300 hover:underline"
       >Blog</a
     >
   </div>

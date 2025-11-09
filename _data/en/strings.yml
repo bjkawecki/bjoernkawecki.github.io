@@ -55,8 +55,8 @@ home:
       - title: "Automation & Integration"
         outcome: "Collect data, connect systems, and automate processes. Use APIs and build your own."
         tech:
-          - Python
-          - REST APIs
+          - AI
+          - REST API
           - Web Scraping
           - Automation
           - Data Processing
