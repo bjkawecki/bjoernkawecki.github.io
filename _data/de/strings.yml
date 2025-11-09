@@ -67,7 +67,7 @@ home:
     anchor: "kontakt"
     title: "Kontakt aufnehmen"
     subtitle: "Schreib mir eine kurze Nachricht oder buche direkt einen Termin – ich melde mich zeitnah zurück."
-    primary_cta_label: "E-Mail schreiben"
+    primary_cta_label: "Kontakt aufnehmen"
     primary_cta_href: "mailto:bkawecki@mailbox.org"
 pagination:
   previous_page: Vorherige Seite

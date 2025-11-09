@@ -64,7 +64,7 @@ home:
     anchor: "contact"
     title: "Get in touch"
     subtitle: "Send over a brief or schedule a call – I’ll get back to you quickly."
-    primary_cta_label: "Send an email"
+    primary_cta_label: "Get in touch"
     primary_cta_href: "mailto:bkawecki@mailbox.org"
 pagination:
   previous_page: Previous page
