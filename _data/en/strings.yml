@@ -60,6 +60,8 @@ home:
           - Web Scraping
           - Automation
           - Data Processing
+          - Telegram Bots
+      
   contact:
     anchor: "contact"
     title: "Get in touch"
