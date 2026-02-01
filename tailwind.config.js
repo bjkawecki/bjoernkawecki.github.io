@@ -9,7 +9,7 @@ module.exports = {
     "./_pages/*.md",
     "./_pages/*.html",
     "./_layouts/**/*.html",
-    "./_posts/*.md",
+    "./_posts/**/*.md",
     "./*.md",
     "./*.html",
   ],

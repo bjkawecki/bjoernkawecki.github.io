@@ -7,7 +7,7 @@ locale: en
 page_id: lern-apps-anki
 ---
 
-<a class="inline-flex items-center" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki<svg class="dark:fill-fuchsia-500 fill-blue-500 h-[1.1em] w-auto ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>anki-webpage</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a> is a prime example of a highly flexible learning tool. It’s not only suitable for learning Russian, but for virtually any learning goal that involves memorizing a large amount of information efficiently. This has both advantages and disadvantages.
+<a class="inline-flex items-center gap-0.5 transition hover:text-accent-600 dark:hover:text-accent-200" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki{% include icons/external-link.html %}</a> is a prime example of a highly flexible learning tool. It’s not only suitable for learning Russian, but for virtually any learning goal that involves memorizing a large amount of information efficiently. This has both advantages and disadvantages.
 
 The app is based on the principle of **spaced repetition**, meaning systematic repetition at increasing intervals—a method that is particularly effective for training long-term memory.
 
