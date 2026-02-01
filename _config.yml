@@ -33,7 +33,6 @@ description: "Full-Stack Webentwicklung in Berlin: Python, JavaScript, DevOps, A
 author: Björn Kawecki
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-postcss
   - jekyll-paginate-v2
   - jekyll-archives
@@ -108,6 +107,7 @@ exclude_from_localizations:
   - favicon.ico
   - feed.xml
   - robots.txt
+  - sitemap.xml
   - node_modules
   - package.json
   - package-lock.json
