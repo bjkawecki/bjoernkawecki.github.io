@@ -1309,6 +1309,16 @@ ul, ol {
   margin-bottom: 0;
 }
 
+/* Link-Hover nur für den gehoverteten Link (nicht alle bei Artikel-Hover) */
+
+.prose-links-hover a:hover {
+  color: rgb(230 59 50);
+}
+
+.dark .prose-links-hover a:hover {
+  color: rgb(255 202 191);
+}
+
 .fixed {
   position: fixed;
 }
@@ -2471,11 +2481,6 @@ body {
   transition-duration: 150ms;
 }
 
-.prose-a\:hover\:text-accent-600:hover :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-text-opacity: 1;
-  color: rgb(230 59 50 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px) {
   .sm\:h-48 {
     height: 12rem;
@@ -2906,11 +2911,6 @@ body {
 .dark\:prose-a\:text-brand-300 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.dark\:prose-a\:hover\:text-accent-200:hover :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 202 191 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
