@@ -4,6 +4,7 @@ title: "Digital lernen II: Lineares Lernmaterial"
 lang: de
 category: Didaktik
 locale: de
+page_id: digital-lernen-II
 ---
 
 Ein weiterer Nachteil, den Bücher gegenüber digitalen Lernmaterial haben, ist ihre Begrenztheit. Wie bereits erwähnt, können Informationen in Büchern nur linear angeordnet und gedruckt ("gespeichert") werden und ein Lehrbuch kann eben nur eine begrenzte Anzahl an Seiten haben.

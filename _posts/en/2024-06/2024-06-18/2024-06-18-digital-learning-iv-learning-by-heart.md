@@ -4,6 +4,7 @@ title: "Digital Learning IV: Learning by Heart"
 category: Didactics
 lang: en
 locale: en
+page_id: digital-lernen-IV
 ---
 
 The first positive experience I had with an online learning program was while preparing for the theoretical part of my driving test.

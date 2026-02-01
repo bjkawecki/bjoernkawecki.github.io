@@ -4,6 +4,7 @@ lang: en
 title: "Digital Learning I: A Web App for Russian Language Learners"
 category: Didactics
 locale: en
+page_id: digital-lernen-I
 ---
 
 In 2020, I began designing a web app intended to support Russian language learners. The idea arose from my own experience as a Slavic studies student. I always found it tedious to gather suitable learning materials for Russian.

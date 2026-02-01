@@ -18,7 +18,13 @@
       class="flex flex-col gap-16 px-5 py-12 mx-auto max-w-6xl md:px-8"
       aria-label="Content"
     >
+      {% if page.prose %}
+      <article class="max-w-3xl prose prose-lg dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-gray-100">
+        {{ content }}
+      </article>
+      {% else %}
       {{ content }}
+      {% endif %}
     </main>
     {% include footer.html %}
   </body>

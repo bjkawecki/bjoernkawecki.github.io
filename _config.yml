@@ -45,6 +45,13 @@ jekyll-archives:
   permalinks:
     category: "/blog/category/:name/"
 
+# Posts: nur /blog/:title.html (ohne Kategorie, ohne Datum)
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      permalink: /blog/:title.html
+
 postcss:
   cache: false
 

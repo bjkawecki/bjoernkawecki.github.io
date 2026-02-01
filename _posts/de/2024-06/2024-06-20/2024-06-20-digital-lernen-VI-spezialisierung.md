@@ -4,6 +4,7 @@ title: "Digital lernen VI: Spezialisierung"
 category: Didaktik
 lang: de
 locale: de
+page_id: digital-lernen-VI
 ---
 
 Für Französisch oder Italienisch gibt es eine ausreichend große Nachfrage.

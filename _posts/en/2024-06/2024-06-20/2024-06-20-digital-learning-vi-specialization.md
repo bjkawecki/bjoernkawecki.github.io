@@ -4,6 +4,7 @@ title: "Digital Learning VI: Specialization"
 category: Didactics
 lang: en
 locale: en
+page_id: digital-lernen-VI
 ---
 
 For French or Italian, there is sufficient demand. It makes financial sense for publishers to produce linear learning materials for these foreign languages. That is no longer the case for Slavic languages.

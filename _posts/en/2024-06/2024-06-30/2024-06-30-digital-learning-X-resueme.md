@@ -4,6 +4,7 @@ title: "Digital Learning X: Summary"
 category: Didactics
 lang: en
 locale: en
+page_id: digital-lernen-X
 ---
 
 To conclude this introduction to my thoughts on the topic of “Digital Learning,” I’d like to summarize the key points:

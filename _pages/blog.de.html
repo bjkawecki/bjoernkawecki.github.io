@@ -29,7 +29,7 @@ pagination:
     {% for category in site.categories %}
     {% assign posts_in_category = category[1] | where: "lang", lang %}
     {% if posts_in_category.size > 0 %}
-    <a href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}" class="px-3 py-1 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-accent-50 text-accent-700 hover:bg-accent-100 dark:border dark:border-accent-500 dark:bg-transparent dark:text-accent-200 dark:hover:bg-accent-900/30">
+    <a href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}" class="inline-block px-3 py-1.5 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-white border border-gray-200 text-accent-700 shadow-sm hover:bg-accent-50 hover:border-accent-200 hover:shadow dark:bg-zinc-800 dark:border-zinc-700 dark:text-accent-200 dark:shadow-none dark:hover:bg-zinc-700 dark:hover:border-accent-500">
       {{ category[0] }}
     </a>
     {% endif %}

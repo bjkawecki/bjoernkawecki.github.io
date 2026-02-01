@@ -4,6 +4,7 @@ title: "Digital lernen VII: Offenheit"
 category: Didaktik
 lang: de
 locale: de
+page_id: digital-lernen-VII
 ---
 
 Eine kostenlose und auf mehreren Betriebssystemen verfügbare Alternative zum Langenscheidt-Vokabeltrainer ist das Lernkartei-Programm Anki.

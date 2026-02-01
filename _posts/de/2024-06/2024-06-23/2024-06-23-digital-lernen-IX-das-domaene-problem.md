@@ -4,6 +4,7 @@ title: "Digital lernen IX: Das Domäne-Problem"
 category: Didaktik
 lang: de
 locale: de
+page_id: digital-lernen-IX
 ---
 
 Wenn Sie ein Restaurant auswählen würden, um Sushi zu essen: Welches würden Sie bevorzugen?

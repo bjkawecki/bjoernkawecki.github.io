@@ -4,6 +4,7 @@ title: "Digital lernen X: Resümee"
 category: Didaktik
 lang: de
 locale: de
+page_id: digital-lernen-X
 ---
 
 Nach dieser Einleitung in meine Gedanken zum Thema "Digital Lernen" möchte ich nun noch einmal die wichtigsten Punkte festhalten.

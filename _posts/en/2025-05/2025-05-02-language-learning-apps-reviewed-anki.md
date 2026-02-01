@@ -4,6 +4,7 @@ title: "Language Learning Apps Reviewed: Anki"
 category: Russian
 lang: en
 locale: en
+page_id: lern-apps-anki
 ---
 
 <a class="inline-flex items-center" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki<svg class="dark:fill-fuchsia-500 fill-blue-500 h-[1.1em] w-auto ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>anki-webpage</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a> is a prime example of a highly flexible learning tool. It’s not only suitable for learning Russian, but for virtually any learning goal that involves memorizing a large amount of information efficiently. This has both advantages and disadvantages.

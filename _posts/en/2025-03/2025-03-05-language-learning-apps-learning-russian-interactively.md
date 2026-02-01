@@ -4,6 +4,7 @@ title: "Language Learning Apps: Learning Russian Interactively"
 category: Russian
 lang: en
 locale: en
+page_id: lern-apps-interaktiv
 ---
 
 Learning Russian is a real challenge. Thanks to the wide range of digital tools available today, foreign languages seem more accessible than ever. But which apps and platforms truly deliver on their promises—and which are actually suitable for self-study?

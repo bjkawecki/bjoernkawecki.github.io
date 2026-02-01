@@ -38,9 +38,74 @@
               </span>
             {% else %}
               {% assign language_name = site.data[tongue].strings.language_name %}
+              {% assign lang_href = nil %}
+              {% if page.page_id and site.data.post_translations[page.page_id] and site.data.post_translations[page.page_id][tongue] %}
+                {% assign slug_for_lang = site.data.post_translations[page.page_id][tongue] %}
+                {% if tongue == site.default_lang %}
+                  {% assign lang_href = site.baseurl | append: "/blog/" | append: slug_for_lang | append: ".html" %}
+                {% else %}
+                  {% assign lang_href = site.baseurl | append: "/" | append: tongue | append: "/blog/" | append: slug_for_lang | append: ".html" %}
+                {% endif %}
+              {% endif %}
+              {% if lang_href == nil and page.page_id %}
+                {% for doc in site.documents %}
+                  {% if doc.page_id == page.page_id and (doc.lang == tongue or doc.locale == tongue) %}
+                    {% assign lang_href = site.baseurl | append: doc.url %}
+                    {% if lang_href contains ":title" and doc.slug %}
+                      {% assign lang_href = site.baseurl | append: "/blog/" | append: doc.slug | append: ".html" %}
+                      {% if tongue != site.default_lang %}
+                        {% assign lang_href = site.baseurl | append: "/" | append: tongue | append: "/blog/" | append: doc.slug | append: ".html" %}
+                      {% endif %}
+                    {% elsif tongue != site.default_lang and lang_href != nil %}
+                      {% unless lang_href contains "/" | append: tongue | append: "/" %}
+                        {% assign lang_href = site.baseurl | append: "/" | append: tongue | append: doc.url %}
+                      {% endunless %}
+                    {% endif %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                {% if lang_href == nil %}
+                  {% for doc in site.pages %}
+                    {% if doc.page_id == page.page_id and (doc.lang == tongue or doc.locale == tongue) %}
+                      {% assign lang_href = site.baseurl | append: doc.url %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              {% endif %}
+              {% if lang_href == nil %}
+                {% assign target_url = page.permalink_lang[tongue] | default: nil %}
+                {% assign use_target = false %}
+                {% if target_url %}
+                  {% if target_url contains ":title" %}
+                    {% assign use_target = false %}
+                  {% else %}
+                    {% assign use_target = true %}
+                  {% endif %}
+                {% endif %}
+                {% if use_target %}
+                  {% if tongue == site.default_lang %}
+                    {% assign lang_href = site.baseurl | append: target_url %}
+                  {% else %}
+                    {% assign lang_href = site.baseurl | append: '/' | append: tongue | append: target_url %}
+                  {% endif %}
+                {% else %}
+                  {% if tongue == site.default_lang %}
+                    {% assign lang_href = site.baseurl | append: page.url %}
+                  {% else %}
+                    {% assign lang_href = site.baseurl | append: '/' | append: tongue | append: page.url %}
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+              {% if lang_href contains ":title" %}
+                {% assign lang_href = site.baseurl | append: page.url %}
+                {% if tongue != site.default_lang %}
+                  {% assign lang_href = site.baseurl | append: '/' | append: tongue | append: page.url %}
+                {% endif %}
+              {% endif %}
               <a
                 class="px-2 py-1 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-50 dark:hover:bg-zinc-800 transition"
-                {% static_href %}href="{% if tongue == site.default_lang %}{{ site.baseurl }}{{ page.url }}{% else %}{{ site.baseurl }}/{{ tongue }}{{ page.url }}{% endif %}"{% endstatic_href %}
+                {% static_href %}href="{{ lang_href }}"{% endstatic_href %}
                 aria-label="{{ header_strings.footer.language_label }} {{ language_name }}"
               >
                 {{ language_code }}

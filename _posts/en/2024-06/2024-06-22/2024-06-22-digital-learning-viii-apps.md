@@ -4,6 +4,7 @@ title: "Digital Learning VIII: Apps"
 category: Didactics
 lang: en
 locale: en
+page_id: digital-lernen-VIII
 ---
 
 A third way to learn a foreign language using a program is through **specialized apps or web apps**.  

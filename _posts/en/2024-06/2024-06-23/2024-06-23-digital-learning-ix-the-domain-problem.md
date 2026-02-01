@@ -4,6 +4,7 @@ title: "Digital Learning IX: The Domain Problem"
 category: Didactics
 lang: en
 locale: en
+page_id: digital-lernen-IX
 ---
 
 If you were choosing a restaurant to eat sushi:  

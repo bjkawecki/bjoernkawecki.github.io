@@ -4,6 +4,7 @@ title: "Digital Learning V: Vocabulary"
 category: Didactics
 lang: en
 locale: en
+page_id: digital-lernen-V
 ---
 
 Vocabulary learning works especially well when it is interactive and synesthetic — that is, when it engages multiple forms of perception. That’s why learning with a vocabulary notebook during school was particularly dreadful.

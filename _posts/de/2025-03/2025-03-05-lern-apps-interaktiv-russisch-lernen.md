@@ -4,6 +4,7 @@ title: "Lern-Apps: Interaktiv Russisch lernen"
 category: Russisch
 lang: de
 locale: de
+page_id: lern-apps-interaktiv
 ---
 
 Russisch lernen ist eine echte Herausforderung. Dank vielfältiger digitaler Angebote scheinen Fremdsprachen heute zwar zugänglicher denn je zu sein. Aber welche Apps und Plattformen halten wirklich, was sie versprechen, und eignen sich z. B. für das Selbststudium?

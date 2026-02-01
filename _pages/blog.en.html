@@ -31,7 +31,7 @@ pagination:
       {% if posts_in_category.size > 0 %}
         <a
           href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}"
-          class="px-3 py-1 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-brand-50 text-brand-700 hover:bg-brand-100 dark:bg-brand-900/40 dark:text-brand-100 dark:hover:bg-brand-900/60"
+          class="inline-block px-3 py-1.5 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-white border border-gray-200 text-accent-700 shadow-sm hover:bg-accent-50 hover:border-accent-200 hover:shadow dark:bg-zinc-800 dark:border-zinc-700 dark:text-accent-200 dark:shadow-none dark:hover:bg-zinc-700 dark:hover:border-accent-500"
         >
           {{ category[0] }}
         </a>

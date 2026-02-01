@@ -77,7 +77,7 @@ pagination:
   next_post: Next post
 layout:
   category: Category
-  back_to_list: Back to list
+  back_to_list: All Blog Posts
 no_entries:
   blog: No blog posts found.
   projects: No projects found.

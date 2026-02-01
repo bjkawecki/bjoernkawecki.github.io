@@ -4,6 +4,7 @@ title: "Digital lernen IV: Auswendiglernen"
 category: Didaktik
 lang: de
 locale: de
+page_id: digital-lernen-IV
 ---
 
 Die erste gute Erfahrung, die ich mit einem Online-Lernprogramm gemacht habe, war während meiner Vorbereitung auf die theoretische Führerscheinprüfung.
