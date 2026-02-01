@@ -61,10 +61,10 @@ pagination:
   permalink: "/page/:num/"
   title: ":title - Seite :num"
 
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:path
 
 sass:
   load_paths:
