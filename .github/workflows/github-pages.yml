@@ -26,6 +26,8 @@ jobs:
           npm install --prefer-online --no-audit --no-fund
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
+        env:
+          JEKYLL_ENV: production
         with:
           enable_cache: true
       - name: Deploy
