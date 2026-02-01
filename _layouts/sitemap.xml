@@ -1,0 +1,50 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign base = site.url | append: site.baseurl %}
+{% for doc in site.documents %}
+  {% if doc.sitemap != false and doc.url and doc.url != "" %}
+    {% unless doc.url contains "/assets/" or doc.url contains "feed.xml" or doc.url contains "sitemap" %}
+      {% assign loc = doc.url | replace: "index.html", "" | prepend: base %}
+<url>
+  <loc>{{ loc }}</loc>
+  {% if doc.last_modified_at %}
+  <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
+  {% elsif doc.date %}
+  <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
+  {% endif %}
+</url>
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+{% for page in site.pages %}
+  {% if page.sitemap != false and page.url and page.url != "" %}
+    {% unless page.url contains "/assets/" or page.url contains "feed.xml" or page.url contains "sitemap" %}
+      {% assign loc = page.url | replace: "index.html", "" | prepend: base %}
+<url>
+  <loc>{{ loc }}</loc>
+</url>
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+{% comment %} Englische URLs aus post_translations (falls Polyglot sie nicht in site.documents liefert) {% endcomment %}
+{% if site.data.post_translations and site.default_lang %}
+  {% for item in site.data.post_translations %}
+    {% assign pid = item[0] %}
+    {% assign slugs = item[1] %}
+    {% if slugs.en %}
+      {% assign loc = base | append: "/en/blog/" | append: slugs.en | append: ".html" %}
+<url>
+  <loc>{{ loc }}</loc>
+</url>
+    {% endif %}
+  {% endfor %}
+  {% comment %} Statische englische Seiten {% endcomment %}
+<url><loc>{{ base }}/en/</loc></url>
+<url><loc>{{ base }}/en/blog/</loc></url>
+<url><loc>{{ base }}/en/404</loc></url>
+<url><loc>{{ base }}/en/projects/</loc></url>
+{% endif %}
+</urlset>
