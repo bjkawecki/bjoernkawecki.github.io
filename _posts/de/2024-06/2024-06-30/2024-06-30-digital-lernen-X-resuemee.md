@@ -15,4 +15,4 @@ Nach dieser Einleitung in meine Gedanken zum Thema "Digital Lernen" möchte ich 
 
    (Man sollte jedoch nicht vergessen, dass es nichts "umsonst" gibt. Auch ein kostenloses Programm wie Anki muss entwickelt und instand gehalten werden.)
 
-3. Eine an Spezialisierung ausgerichtete Lernanwendung muss Lernmaterial mitliefern, das von Experten der jeweiligen Domäne erstellt wurde, den Lernprozess des Nutzers optimal fördern (interaktiv und synästehtisch), eindeutige Rückmeldung über die Eingabe des Nutzers geben und trotzdem auf allen Betriebssystemen verfügbar sein.
+3. Eine an Spezialisierung ausgerichtete Lernanwendung muss Lernmaterial mitliefern, das von Experten der jeweiligen Domäne erstellt wurde, den Lernprozess des Nutzers optimal fördern (interaktiv und synästehtisch), eindeutige Rückmeldung über die Eingabe des Nutzers geben und auf möglichst vielen Betriebssystemen verfügbar sein.
