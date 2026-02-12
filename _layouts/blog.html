@@ -22,7 +22,9 @@
       <div class="space-y-10">
         {{ content }}
       </div>
-      {% include pagination.html %}
+      {% if paginator and paginator.posts.size > 0 %}
+        {% include pagination.html %}
+      {% endif %}
     </main>
     {% include footer.html %}
   </body>

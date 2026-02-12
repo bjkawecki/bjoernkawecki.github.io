@@ -120,7 +120,10 @@ exclude_from_localizations:
   - _site
 
 # Exclude (für den Build selbst)
+# _posts: Blog ist ausgelagert, nur Redirect-Seiten aus _data/blog_redirects.yml werden gebaut
+# blog.de/en.html: leere Blog-Übersicht nicht bauen, Redirect aus blog_redirects.yml leitet /blog/ weiter
 exclude:
+  - _posts
   - node_modules
   - Gemfile
   - Gemfile.lock

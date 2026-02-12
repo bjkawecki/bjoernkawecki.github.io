@@ -1,0 +1,60 @@
+# Mapping: alte URL (from) → neue URL (to)
+# Eine Redirect-Seite wird pro Eintrag erzeugt. Ziel-URL bei Bedarf anpassen.
+base: "https://blog.filingo.app"
+
+redirects:
+  # Deutsche Posts
+  - from: /blog/abschied-von-bajkal-ausblick-auf-den-nachfolger.html
+    to: https://blog.filingo.app/abschied-von-bajkal-ausblick-auf-den-nachfolger.html
+  - from: /blog/digital-lernen-I-eine-webapp-für-russisch-sprachschueler.html
+    to: https://blog.filingo.app/digital-lernen-I-eine-webapp-für-russisch-sprachschueler.html
+  - from: /blog/digital-lernen-II-lineares-lernmaterial.html
+    to: https://blog.filingo.app/digital-lernen-II-lineares-lernmaterial.html
+  - from: /blog/digital-lernen-III-das-problem-mit-muedem-papier.html
+    to: https://blog.filingo.app/digital-lernen-III-das-problem-mit-muedem-papier.html
+  - from: /blog/digital-lernen-IV-auswendiglernen.html
+    to: https://blog.filingo.app/digital-lernen-IV-auswendiglernen.html
+  - from: /blog/digital-lernen-IX-das-domaene-problem.html
+    to: https://blog.filingo.app/digital-lernen-IX-das-domaene-problem.html
+  - from: /blog/digital-lernen-V-vokabeln.html
+    to: https://blog.filingo.app/digital-lernen-V-vokabeln.html
+  - from: /blog/digital-lernen-VI-spezialisierung.html
+    to: https://blog.filingo.app/digital-lernen-VI-spezialisierung.html
+  - from: /blog/digital-lernen-VII-offenheit.html
+    to: https://blog.filingo.app/digital-lernen-VII-offenheit.html
+  - from: /blog/digital-lernen-VIII-apps.html
+    to: https://blog.filingo.app/digital-lernen-VIII-apps.html
+  - from: /blog/digital-lernen-X-resuemee.html
+    to: https://blog.filingo.app/digital-lernen-X-resuemee.html
+  - from: /blog/lern-apps-interaktiv-russisch-lernen-anki.html
+    to: https://blog.filingo.app/lern-apps-interaktiv-russisch-lernen-anki.html
+  - from: /blog/lern-apps-interaktiv-russisch-lernen.html
+    to: https://blog.filingo.app/lern-apps-interaktiv-russisch-lernen.html
+
+  # Englische Posts
+  - from: /en/blog/digital-learning-I-a-web-app-for-russian-Language-learners.html
+    to: https://blog.filingo.app/digital-learning-I-a-web-app-for-russian-Language-learners.html
+  - from: /en/blog/digital-learning-ii-linear-learning-materials.html
+    to: https://blog.filingo.app/digital-learning-ii-linear-learning-materials.html
+  - from: /en/blog/digital-learning-iii-the-problem-with-tired-paper.html
+    to: https://blog.filingo.app/digital-learning-iii-the-problem-with-tired-paper.html
+  - from: /en/blog/digital-learning-iv-learning-by-heart.html
+    to: https://blog.filingo.app/digital-learning-iv-learning-by-heart.html
+  - from: /en/blog/digital-learning-ix-the-domain-problem.html
+    to: https://blog.filingo.app/digital-learning-ix-the-domain-problem.html
+  - from: /en/blog/digital-learning-v-vocabulary.html
+    to: https://blog.filingo.app/digital-learning-v-vocabulary.html
+  - from: /en/blog/digital-learning-vi-specialization.html
+    to: https://blog.filingo.app/digital-learning-vi-specialization.html
+  - from: /en/blog/digital-learning-vii-openness.html
+    to: https://blog.filingo.app/digital-learning-vii-openness.html
+  - from: /en/blog/digital-learning-viii-apps.html
+    to: https://blog.filingo.app/digital-learning-viii-apps.html
+  - from: /en/blog/digital-learning-X-resueme.html
+    to: https://blog.filingo.app/digital-learning-X-resueme.html
+  - from: /en/blog/language-learning-apps-learning-russian-interactively.html
+    to: https://blog.filingo.app/language-learning-apps-learning-russian-interactively.html
+  - from: /en/blog/language-learning-apps-reviewed-anki.html
+    to: https://blog.filingo.app/language-learning-apps-reviewed-anki.html
+  - from: /en/blog/saying-goodbye-to-bajkal-ooking-ahead-to-its-successor.html
+    to: https://blog.filingo.app/saying-goodbye-to-bajkal-ooking-ahead-to-its-successor.html

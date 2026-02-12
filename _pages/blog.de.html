@@ -4,11 +4,11 @@ permalink: /blog/
 lang: de
 page_id: blog
 pagination:
-  enabled: true
-  per_page: 5
-  sort_field: 'date'
-  sort_reverse: true
-  locale: de
+enabled: true
+per_page: 5
+sort_field: 'date'
+sort_reverse: true
+locale: de
 ---
 
 {% assign strings = site.data[site.active_lang].strings %}
@@ -22,7 +22,6 @@ pagination:
   <div class="space-y-4">
     <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">Blog</h1>
     <p class="max-w-3xl text-base text-gray-700 dark:text-gray-300">
-      Notizen aus Projekten, Didaktik und Technologie
     </p>
   </div>
   <div class="flex flex-wrap gap-2">
@@ -38,12 +37,8 @@ pagination:
 
 </section>
 
+{% if paginator and paginator.posts.size > 0 %}
 {% assign blog_posts = paginator.posts %}
-{% if blog_posts.size == 0 %}
-<p class="text-sm text-gray-600 dark:text-gray-300">
-  {{ strings.no_entries.blog }}
-</p>
-{% else %}
 <section class="space-y-6 max-w-3xl mx-auto">
   {% for post in blog_posts %}
   <a href="{{ post.url }}" class="group block rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:shadow-lg dark:focus-visible:outline-accent-200">
@@ -63,5 +58,11 @@ pagination:
     </article>
   </a>
   {% endfor %}
+</section>
+{% else %}
+<section class="space-y-6 max-w-3xl mx-auto">
+  <p class="text-gray-600 dark:text-gray-300">
+    {{ strings.no_entries.blog }}
+  </p>
 </section>
 {% endif %}

@@ -40,12 +40,8 @@ pagination:
   </div>
 </section>
 
-{% assign blog_posts = paginator.posts %}
-{% if blog_posts.size == 0 %}
-  <p class="text-sm text-gray-600 dark:text-gray-300">
-    {{ strings.no_entries.blog }}
-  </p>
-{% else %}
+{% if paginator and paginator.posts.size > 0 %}
+  {% assign blog_posts = paginator.posts %}
   <section class="space-y-6 max-w-3xl mx-auto">
     {% for post in blog_posts %}
       <a
@@ -69,4 +65,8 @@ pagination:
       </a>
     {% endfor %}
   </section>
+{% else %}
+  <p class="text-sm text-gray-600 dark:text-gray-300">
+    {{ strings.no_entries.blog }}
+  </p>
 {% endif %}
