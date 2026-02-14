@@ -13,7 +13,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
+      width: {
+        md: "28rem",
+        lg: "32rem",
+        xl: "36rem",
       },
     },
   },

@@ -11,9 +11,10 @@
     "@fontsource/inter": "^5.0.18"
   },
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css && bundle exec jekyll build",
-    "serve": "npx concurrently --kill-others \"npm run watch\" \"bundle exec jekyll serve --livereload\"",
-    "serve_d": "npx concurrently --kill-others \"npm run watch\" \"bundle exec jekyll serve --drafts --livereload\"",
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css",
+    "build": "npm run build:css && bundle exec jekyll build",
+    "serve": "npm run build:css && npx concurrently --kill-others \"npm run watch\" \"bundle exec jekyll serve --livereload\"",
+    "serve_d": "npm run build:css && npx concurrently --kill-others \"npm run watch\" \"bundle exec jekyll serve --drafts --livereload\"",
     "watch": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
   }
 }
