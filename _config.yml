@@ -18,48 +18,26 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Björn Kawecki | Full-Stack Webentwickler Berlin
+title: Björn Kawecki
 email: bkawecki@mailbox.org
 url: "https://bjoernkawecki.de" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username:
 github_username: bjkawecki
-
+linkedin_url: https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/
 # Build settings
 # theme: minima
 
 theme_name: bluegreen
-description: "Full-Stack Webentwicklung in Berlin: Python, JavaScript, DevOps, Automatisierung, KI-Integrationen."
+description: ""
 author: Björn Kawecki
 plugins:
   - jekyll-feed
   - jekyll-postcss
-  - jekyll-paginate-v2
-  - jekyll-archives
   - jekyll-polyglot
-
-jekyll-archives:
-  enabled:
-    - categories
-  layout: category
-  permalinks:
-    category: "/blog/category/:name/"
-
-# Posts: nur /blog/:title.html (ohne Kategorie, ohne Datum)
-defaults:
-  - scope:
-      type: "posts"
-    values:
-      permalink: /blog/:title.html
 
 postcss:
   cache: false
-
-pagination:
-  enabled: true
-  per_page: 5 # Anzahl Posts pro Seite
-  permalink: "/page/:num/"
-  title: ":title - Seite :num"
 
 # collections:
 #   projects:
@@ -120,8 +98,7 @@ exclude_from_localizations:
   - _site
 
 # Exclude (für den Build selbst)
-# _posts: Blog ist ausgelagert, nur Redirect-Seiten aus _data/blog_redirects.yml werden gebaut
-# blog.de/en.html: leere Blog-Übersicht nicht bauen, Redirect aus blog_redirects.yml leitet /blog/ weiter
+# _posts: Blog ist ausgelagert, Redirect-Seiten kommen aus _data/blog_redirects.yml
 exclude:
   - _posts
   - node_modules

@@ -1,0 +1,62 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
+{% assign nav = site.data[current_lang].strings.nav | default: nil %}
+{% assign home_url = site.baseurl | append: "/" %}
+{% if current_lang != site.default_lang %}
+{% assign home_url = site.baseurl | append: "/" | append: current_lang | append: "/" %}
+{% endif %}
+
+<header class="sticky top-0 z-50 border-b border-gray-200 bg-white" role="banner">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Hauptnavigation">
+    <a href="{{ home_url }}" class="shrink-0 font-semibold text-gray-900">
+      {{ site.title }}
+    </a>
+
+    {% comment %} Desktop: Anker + CTA {% endcomment %}
+    <div class="hidden items-center gap-8 md:flex">
+      <div class="flex gap-6">
+        <a href="#angebot" class="text-sm text-gray-900 hover:opacity-80">
+          {{ nav.angebot | default: "Angebot" }}
+        </a>
+        <a href="#ablauf" class="text-sm text-gray-900 hover:opacity-80">
+          {{ nav.ablauf | default: "Ablauf" }}
+        </a>
+        <a href="#faq" class="text-sm text-gray-900 hover:opacity-80">
+          {{ nav.faq | default: "FAQ" }}
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#kontakt" class="inline-flex shrink-0 items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
+          {{ nav.cta | default: "Gespräch buchen" }}
+        </a>
+      </div>
+    </div>
+
+    {% comment %} Mobile: Hamburger {% endcomment %}
+    <div class="relative flex items-center gap-2 md:hidden">
+      <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-3 py-2 text-sm font-medium text-white hover:bg-emerald-700">
+        {{ nav.cta | default: "Gespräch buchen" }}
+      </a>
+      <details class="group peer">
+        <summary class="flex cursor-pointer list-none items-center justify-center rounded-lg p-2 text-gray-900 hover:bg-gray-100" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Menü öffnen</span>
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </summary>
+        <div id="nav-menu" class="absolute right-4 top-full mt-1 flex w-56 flex-col rounded-lg border border-gray-200 bg-white py-2 shadow-lg">
+          <a href="#angebot" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">{{ nav.angebot | default: "Angebot" }}</a>
+          <a href="#ablauf" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">{{ nav.ablauf | default: "Ablauf" }}</a>
+          <a href="#faq" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">{{ nav.faq | default: "FAQ" }}</a>
+          <div class="my-1 border-t border-gray-200"></div>
+          {% if current_lang == "de" %}
+          <a href="{{ site.baseurl }}/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" aria-current="page">DE</a>
+          <a href="{{ site.baseurl }}/en/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">EN</a>
+          {% else %}
+          <a href="{{ site.baseurl }}/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">DE</a>
+          <a href="{{ site.baseurl }}/en/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" aria-current="page">EN</a>
+          {% endif %}
+        </div>
+      </details>
+    </div>
+  </nav>
+</header>

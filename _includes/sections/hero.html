@@ -1,0 +1,48 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
+{% assign hero = site.data[current_lang].strings.hero | default: nil %}
+{% if current_lang == "en" %}
+{% assign hero_headline = hero.headline | default: "Document processes. Save search costs." %}
+{% assign hero_subheadline = hero.subheadline | default: "Process and knowledge documentation for IT teams – structured, traceable, relieving." %}
+{% assign hero_trust_line = hero.trust_line | default: "For growing software and platform teams" %}
+{% assign hero_cta_intro = hero.cta_intro | default: "Reach me here right away:" %}
+{% assign hero_linkedin = hero.linkedin_label | default: "DM on LinkedIn" %}
+{% assign hero_email = hero.email_label | default: "Send an email" %}
+{% assign hero_badge = hero.badge | default: "External documentation specialist" %}
+{% assign hero_alt = hero.portrait_alt | default: "Portrait" %}
+{% else %}
+{% assign hero_headline = hero.headline | default: "Sauber Dokumentieren. Suchkosten sparen." %}
+{% assign hero_subheadline = hero.subheadline | default: "Das Universum strebt nach Entropie. Deswegen unterstütze ich Ihr IT-Team, verteiltes Wissen in klare, wartbare Dokumentation zu überführen." %}
+{% assign hero_trust_line = hero.trust_line | default: "Für wachsende Software- und Plattform-Teams" %}
+{% assign hero_badge = hero.badge | default: "Externer Dokumentations-Spezialist" %}
+{% assign hero_cta_intro = hero.cta_intro | default: "Fragen kostet nichts:" %}
+{% assign hero_linkedin = hero.linkedin_label | default: "DM auf LinkedIn" %}
+{% assign hero_email = hero.email_label | default: "E-Mail schreiben" %}
+{% assign hero_alt = hero.portrait_alt | default: "Portrait" %}
+{% endif %}
+
+<section id="hero" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="hero-heading">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="flex flex-col items-center text-center">
+            <div class="max-w-2xl space-y-8">
+                <h1 id="hero-heading" class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+                    {{ hero_headline }}
+                </h1>
+                <p class="text-sm text-gray-600">{{ hero_trust_line }}</p>
+                <p class="text-lg leading-relaxed text-gray-700 sm:text-xl">
+                    {{ hero_subheadline }}
+                </p>
+                <div class="space-y-3">
+                    <p class="text-sm text-gray-600">{{ hero_cta_intro }}</p>
+                    <div class="flex flex-wrap items-center justify-center gap-3">
+                        <a href="{{ site.linkedin_url | default: 'https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/' }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-5 py-3 text-base font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50">
+                            {{ hero_linkedin }}
+                        </a>
+                        <a href="mailto:{{ site.email }}" class="inline-flex items-center justify-center rounded-lg border-2 border-gray-900 bg-transparent px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-gray-50">
+                            {{ hero_email }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

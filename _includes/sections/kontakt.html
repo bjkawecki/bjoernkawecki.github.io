@@ -1,0 +1,15 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
+{% assign kontakt = site.data[current_lang].strings.kontakt | default: nil %}
+{% if current_lang == "en" %}
+{% assign kontakt_heading = kontakt.heading | default: "Contact" %}
+{% else %}
+{% assign kontakt_heading = kontakt.heading | default: "Kontakt" %}
+{% endif %}
+
+<section id="kontakt" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="kontakt-heading">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <h2 id="kontakt-heading" class="text-center text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+      {{ kontakt_heading }}
+    </h2>
+  </div>
+</section>

@@ -1,5 +1,6 @@
 .PHONY: serve build install serve-drafts
 
+# Tailwind läuft im Watch-Modus – CSS wird bei Änderungen automatisch neu gebaut
 serve:
 	npm run serve
 

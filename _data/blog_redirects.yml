@@ -3,6 +3,12 @@
 base: "https://blog.filingo.app"
 
 redirects:
+  # Blog-Index
+  - from: /blog/
+    to: https://blog.filingo.app/
+  - from: /en/blog/
+    to: https://blog.filingo.app/
+
   # Deutsche Posts
   - from: /blog/abschied-von-bajkal-ausblick-auf-den-nachfolger.html
     to: https://blog.filingo.app/abschied-von-bajkal-ausblick-auf-den-nachfolger.html
