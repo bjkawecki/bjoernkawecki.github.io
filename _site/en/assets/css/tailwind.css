@@ -14,7 +14,7 @@
   --color-fungreen-800: #166534;
   --color-fungreen-900: #14532c;
   --color-fungreen-950: #052e15;
-  --font-family-heading: Manrope, system-ui, sans-serif;
+  --font-family-heading: Inter, Manrope, system-ui, sans-serif;
 }
 
 body {
@@ -206,3 +206,5 @@ body {
   font-weight: 800;
   src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2');
 }
+
+
