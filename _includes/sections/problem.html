@@ -4,16 +4,16 @@
 {% assign problem_heading = problem.heading | default: "When documentation becomes a cost factor" %}
 {% assign problem_intro = problem.intro | default: "Documentation can be fragile in different ways – each with its own consequences." %}
 {% else %}
-{% assign problem_heading = problem.heading | default: "Fehlende Dokumentation im Arbeitsalltag" %}
+{% assign problem_heading = problem.heading | default: "Fehlende Dokumentation im Arbeitsalltag:" %}
 {% assign problem_intro = problem.intro | default: "Hält Mitarbeiter auf, schafft Abhängigkeiten und erzeugt unnötigen Frust." %}
 {% endif %}
 {% comment %} Wiederverwendete Klassen für Blasen-Grid und einheitliche Blasen-Optik {% endcomment %}
 {% assign grid_bubbles = "grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto" %}
-{% assign bubble_base = "relative flex items-center justify-center rounded-4xl border-2 p-4 font-semibold leading-normal text-slate-800 sm:p-5 w-fit" %}
+{% assign bubble_base = "relative flex items-center justify-center rounded-4xl border-2 md:px-4 md:py-6 font-semibold leading-normal text-slate-800 px-5 py-4" %}
 {% assign bubble_gray = "border-gray-400 bg-gray-50 mt-4 sm:mt-5 max-w-48 ml-0" %}
 {% assign bubble_amber = "border-amber-400 bg-amber-100 max-w-60 " %}
 {% assign bubble_tail = "absolute h-5 w-5 border-b-2 border-r-2" %}
-{% assign text_in_bubble = "text-left w-fit shrink-0" %}
+{% assign text_in_bubble = "text-center w-fit shrink-0" %}
 
 <section id="problem" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="problem-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -21,22 +21,19 @@
       <h2 id="problem-heading" class="text-2xl font-semibold tracking-tight text-slate-800 md:text-4xl">
         {{ problem_heading }}
       </h2>
-      <p class="text-lg leading-relaxed text-slate-800">
-        <span class="inline-flex items-end gap-2">
-          <span class="inline-block h-[1.5em] w-[1.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
-          <span class="border-b-4 border-amber-400">{{ problem_intro }}</span>
-        </span>
-      </p>
+      <!-- <p class="text-lg leading-relaxed text-slate-800">
+        <span>{{ problem_intro }}</span>
+      </p> -->
     </div>
 
     <!-- 3 blocks side-by-side (but not too early) -->
-    <div class="mx-auto mt-16 flex flex-row items-stretch gap-20">
+    <div class="mx-auto mt-14 flex flex-row items-stretch gap-5">
 
       <!-- Block 1 -->
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="inline-block h-[2.5em] w-[2.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">{% include icons/file-remove-outline.html %}</span>
-          <h3 class="text-2xl font-semibold text-slate-800 tracking-tight mt-0 mb-0">Wissen nur im Kopf</h3>
+          <h3 class="text-2xl font-medium text-slate-800 tracking-tight">Wissen nur im Kopf</h3>
         </div>
 
         <div class="{{ grid_bubbles }}">
@@ -59,7 +56,7 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="inline-block h-[2.5em] w-[2.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">{% include icons/head-remove-outline.html %}</span>
-          <h3 class="text-2xl font-semibold text-slate-800 tracking-tight mt-0 mb-0">Verantwortung unklar</h3>
+          <h3 class="text-2xl font-medium text-slate-800 tracking-tight mt-0 mb-0">Verantwortung unklar</h3>
         </div>
 
         <div class="{{ grid_bubbles }}">
@@ -71,7 +68,7 @@
           </div>
           <div class="flex justify-center">
             <div class="{{ bubble_base }} {{ bubble_amber }}">
-              <span class="{{ text_in_bubble }}">Nee, steht nirgends. Ich erklär's dir später.</span>
+              <span class="{{ text_in_bubble }}">Nee, steht nirgends. Ich erklär's dir schnell.</span>
               <div class="{{ bubble_tail }} bottom-8 -right-3 -rotate-45 border-amber-400 bg-amber-100"></div>
             </div>
           </div>
@@ -82,7 +79,7 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="inline-block h-[2.5em] w-[2.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">{% include icons/routes.html %}</span>
-          <h3 class="text-2xl font-semibold text-slate-800 tracking-tight mt-0 mb-0">Ablageort nicht zentral</h3>
+          <h3 class="text-2xl font-medium text-slate-800 tracking-tight mt-0 mb-0">Ablageort nicht zentral</h3>
         </div>
 
         <div class="{{ grid_bubbles }}">
@@ -100,9 +97,15 @@
           </div>
         </div>
       </article>
-
     </div>
-
+    <div class="mx-auto mt-20 text-center">
+      <p class="text-xl leading-relaxed text-slate-800 font-medium">
+        <span class="inline-flex items-end gap-2">
+          <!-- <span class="inline-block h-[3em] w-[3em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span> -->
+          <span class="border-b-4 border-amber-400">{{ problem_intro }}</span>
+        </span>
+      </p>
+    </div>
   </div>
   <script>
     (function () {
