@@ -4,43 +4,40 @@
 {% assign problem_heading = problem.heading | default: "When documentation becomes a cost factor" %}
 {% assign problem_intro = problem.intro | default: "Documentation can be fragile in different ways – each with its own consequences." %}
 {% else %}
-{% assign problem_heading = problem.heading | default: "Fehlende Dokumentation im Arbeitsalltag:" %}
-{% assign problem_intro = problem.intro | default: "Hält Mitarbeiter auf, schafft Abhängigkeiten und erzeugt unnötigen Frust." %}
+{% assign problem_heading = problem.heading | default: "Stolpersteine im IT-Alltag" %}
+{% assign problem_intro = problem.intro | default: "Hält Mitarbeiter auf, schafft Abhängigkeiten und erzeugt vermeidbaren Frust." %}
 {% endif %}
 {% comment %} Wiederverwendete Klassen für Blasen-Grid und einheitliche Blasen-Optik {% endcomment %}
 {% assign grid_bubbles = "grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto" %}
-{% assign bubble_base = "relative flex items-center justify-center rounded-4xl border-2 md:px-4 md:py-6 font-semibold leading-normal text-slate-800 px-5 py-4" %}
-{% assign bubble_gray = "border-gray-400 bg-gray-50 mt-4 sm:mt-5 max-w-48 ml-0" %}
+{% assign bubble_base = "relative flex items-center justify-center rounded-4xl border-2 md:px-4 md:py-6 font-medium leading-normal text-slate-800 px-5 py-4" %}
+{% assign bubble_gray = "border-gray-500 bg-gray-50 mt-4 sm:mt-5 max-w-48 ml-0" %}
 {% assign bubble_amber = "border-amber-400 bg-amber-100 max-w-60 " %}
 {% assign bubble_tail = "absolute h-5 w-5 border-b-2 border-r-2" %}
 {% assign text_in_bubble = "text-center w-fit shrink-0" %}
 
-<section id="problem" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="problem-heading">
+<section id="problem" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-30" aria-labelledby="problem-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <div class="mx-auto text-center space-y-3">
-      <h2 id="problem-heading" class="text-2xl font-semibold tracking-tight text-slate-800 md:text-4xl">
+    <div class="mx-auto max-w-2xl text-center space-y-3">
+      <h2 id="problem-heading" class="text-2xl leading-relaxed font-semibold tracking-tight text-slate-800 md:text-4xl">
         {{ problem_heading }}
       </h2>
-      <!-- <p class="text-lg leading-relaxed text-slate-800">
-        <span>{{ problem_intro }}</span>
-      </p> -->
     </div>
 
     <!-- 3 blocks side-by-side (but not too early) -->
-    <div class="mx-auto mt-14 flex flex-row items-stretch gap-5">
+    <div class="mx-auto mt-12 flex flex-row items-stretch gap-5">
 
       <!-- Block 1 -->
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="inline-block h-[2.5em] w-[2.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">{% include icons/file-remove-outline.html %}</span>
-          <h3 class="text-2xl font-medium text-slate-800 tracking-tight">Wissen nur im Kopf</h3>
+          <h3 class="text-2xl font-medium text-slate-800 tracking-tighter">Wissen nur im Kopf</h3>
         </div>
 
         <div class="{{ grid_bubbles }}">
           <div class="flex justify-center">
             <div class="{{ bubble_base }} {{ bubble_gray }}">
               <span class="{{ text_in_bubble }}">Wie machen wir das hier nochmal?</span>
-              <div class="{{ bubble_tail }} top-8 -left-3 rotate-135 border-gray-400 bg-gray-50"></div>
+              <div class="{{ bubble_tail }} top-8 -left-3 rotate-135 border-gray-500 bg-gray-50"></div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -56,14 +53,14 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="inline-block h-[2.5em] w-[2.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">{% include icons/head-remove-outline.html %}</span>
-          <h3 class="text-2xl font-medium text-slate-800 tracking-tight mt-0 mb-0">Verantwortung unklar</h3>
+          <h3 class="text-2xl font-medium text-slate-800 tracking-tight ermt-0 mb-0">Zuständigkeit unklar</h3>
         </div>
 
         <div class="{{ grid_bubbles }}">
           <div class="flex justify-center">
             <div class="{{ bubble_base }} {{ bubble_gray }}">
               <span class="{{ text_in_bubble }}">Gibt’s eine Doku zum Modul?</span>
-              <div class="{{ bubble_tail }} top-8 -left-3 rotate-135 border-gray-400 bg-gray-50"></div>
+              <div class="{{ bubble_tail }} top-8 -left-3 rotate-135 border-gray-500 bg-gray-50"></div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -79,14 +76,14 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="inline-block h-[2.5em] w-[2.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">{% include icons/routes.html %}</span>
-          <h3 class="text-2xl font-medium text-slate-800 tracking-tight mt-0 mb-0">Ablageort nicht zentral</h3>
+          <h3 class="text-2xl font-medium text-slate-800 tracking-tight ermt-0 mb-0">Ablageort verteilt</h3>
         </div>
 
         <div class="{{ grid_bubbles }}">
           <div class="flex justify-center">
             <div class="{{ bubble_base }} {{ bubble_gray }}">
               <span class="{{ text_in_bubble }}">Ist die Anleitung auf Confluence?</span>
-              <div class="{{ bubble_tail }} top-8 -left-3 rotate-135 border-gray-400 bg-gray-50"></div>
+              <div class="{{ bubble_tail }} top-8 -left-3 rotate-135 border-gray-500 bg-gray-50"></div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -98,11 +95,11 @@
         </div>
       </article>
     </div>
-    <div class="mx-auto mt-20 text-center">
-      <p class="text-xl leading-relaxed text-slate-800 font-medium">
-        <span class="inline-flex items-end gap-2">
-          <!-- <span class="inline-block h-[3em] w-[3em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span> -->
-          <span class="border-b-4 border-amber-400">{{ problem_intro }}</span>
+    <div class="mt-24 max-w-5xl ml-10">
+      <p class="text-xl text-slate-900 font-semibold">
+        <span class="flex items-center gap-2">
+          <span class="inline-block h-[2em] w-[2em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
+          <span class="border-b-0  border-amber-400">{{ problem_intro }}</span>
         </span>
       </p>
     </div>
