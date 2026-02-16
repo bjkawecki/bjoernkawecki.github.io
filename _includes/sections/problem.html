@@ -7,6 +7,13 @@
 {% assign problem_heading = problem.heading | default: "Wenn Dokumentation zum Kostenfaktor wird" %}
 {% assign problem_intro = problem.intro | default: "Dokumentation kann auf verschiedene Art fehleranfällig sein – mit unterschiedlichen Folgen." %}
 {% endif %}
+{% comment %} Wiederverwendete Klassen für Blasen-Grid und einheitliche Blasen-Optik {% endcomment %}
+{% assign grid_bubbles = "grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto" %}
+{% assign bubble_base = "relative flex items-center justify-center rounded-4xl border p-4 font-medium leading-normal text-slate-800 sm:p-5 w-fit" %}
+{% assign bubble_gray = "border-gray-400 bg-gray-50 -ml-12 mt-4 sm:mt-5 max-w-48 ml-0" %}
+{% assign bubble_amber = "border-amber-400 bg-amber-100 -mr-16 max-w-60 ml-6" %}
+{% assign bubble_tail = "absolute h-5 w-5 border-b border-r" %}
+{% assign text_in_bubble = "text-left w-fit shrink-0" %}
 
 <section id="angebot" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="problem-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -26,22 +33,20 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="flex shrink-0">{% include icons/file-remove-outline.html %}</span>
-          <h3 class="text-2xl font-medium  tracking-tight mt-0 mb-0">Wissen nur im Kopf</h3>
+          <h3 class="text-2xl font-semibold text-slate-800 tracking-tight mt-0 mb-0">Wissen nur im Kopf</h3>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
-          <!-- Spalte 1 links: graue Blase am Anfang, leicht nach unten -->
+        <div class="{{ grid_bubbles }}">
           <div class="flex justify-start">
-            <div class="relative mt-4 sm:mt-5 max-w-56 rounded-3xl border border-gray-400 bg-gray-50 p-4 font-medium leading-normal text-slate-800 sm:p-5 w-fit">
-              Wie machen wir das hier nochmal?
-              <div class="absolute top-6 h-5 w-5 -left-2 rotate-135 border-b border-r border-gray-400 bg-gray-50"></div>
+            <div class="{{ bubble_base }} {{ bubble_gray }}">
+              <span class="{{ text_in_bubble }}">Wie machen wir das hier nochmal?</span>
+              <div class="{{ bubble_tail }} top-8 -left-2 rotate-135 border-gray-400 bg-gray-50"></div>
             </div>
           </div>
-          <!-- Spalte 2 rechts: gelbe Blase rückt nach (am Anfang der Spalte) -->
-          <div class="flex justify-start">
-            <div class="relative max-w-56 rounded-3xl border border-amber-300 w-fit bg-amber-100 p-4 font-medium leading-normal text-slate-800 sm:p-5">
-              Das weiß nur <span id="problem-name">Thomas</span> – und der ist leider krank.
-              <div class="absolute bottom-6 -right-2 h-5 w-5 -rotate-45 border-b border-r border-amber-300 bg-amber-100"></div>
+          <div class="flex justify-end">
+            <div class="{{ bubble_base }} {{ bubble_amber }}">
+              <span class="{{ text_in_bubble }}">Das weiß nur <span id="problem-name">Thomas</span> – und der ist leider krank.</span>
+              <div class="{{ bubble_tail }} bottom-8 -right-2 -rotate-45 border-amber-400 bg-amber-100"></div>
             </div>
           </div>
         </div>
@@ -51,20 +56,20 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="flex shrink-0">{% include icons/head-remove-outline.html %}</span>
-          <h3 class="text-2xl font-medium  tracking-tight mt-0 mb-0">Unklare Zuständigkeit</h3>
+          <h3 class="text-2xl font-semibold text-slate-800 tracking-tight mt-0 mb-0">Unklare Zuständigkeit</h3>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
+        <div class="{{ grid_bubbles }}">
           <div class="flex justify-start">
-            <div class="relative mt-4 sm:mt-5 max-w-56 rounded-3xl border border-gray-400 bg-gray-50 p-4 font-medium leading-normal text-slate-800 sm:p-5 w-fit">
-              Gibt’s eine Doku zum Modul?
-              <div class="absolute top-6 h-5 w-5 -left-2 rotate-135 border-b border-r border-gray-400 bg-gray-50"></div>
+            <div class="{{ bubble_base }} {{ bubble_gray }}">
+              <span class="{{ text_in_bubble }}">Gibt’s eine Doku zum Modul?</span>
+              <div class="{{ bubble_tail }} top-8 -left-2 rotate-135 border-gray-400 bg-gray-50"></div>
             </div>
           </div>
-          <div class="flex justify-start">
-            <div class="relative max-w-56 rounded-3xl border border-amber-300 w-fit bg-amber-100 p-4 font-medium leading-normal text-slate-800 sm:p-5">
-              Ne. Ich erklär's dir, wenn ich Zeit hab.
-              <div class="absolute bottom-6 -right-2 h-5 w-5 -rotate-45 border-b border-r border-amber-300 bg-amber-100"></div>
+          <div class="flex justify-end">
+            <div class="{{ bubble_base }} {{ bubble_amber }}">
+              <span class="{{ text_in_bubble }}">Leider nicht. Ich erklär's dir, sobald ich Zeit hab.</span>
+              <div class="{{ bubble_tail }} bottom-8 -right-2 -rotate-45 border-amber-400 bg-amber-100"></div>
             </div>
           </div>
         </div>
@@ -74,20 +79,20 @@
       <article class="w-full min-w-0">
         <div class="flex justify-center items-center gap-3 mb-2 text-slate-800">
           <span class="flex shrink-0">{% include icons/routes.html %}</span>
-          <h3 class="text-2xl font-medium  tracking-tight mt-0 mb-0">Ablageort nicht zentral</h3>
+          <h3 class="text-2xl font-semibold text-slate-800 tracking-tight mt-0 mb-0">Ablageort nicht zentral</h3>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
+        <div class="{{ grid_bubbles }}">
           <div class="flex justify-start">
-            <div class="relative mt-4 sm:mt-5 max-w-56 rounded-3xl border border-gray-400 bg-gray-50 p-4 font-medium leading-normal text-slate-800 sm:p-5 w-fit">
-              Ist die Anleitung auf Confluence?
-              <div class="absolute top-6 h-5 w-5 -left-2 rotate-135 border-b border-r border-gray-400 bg-gray-50"></div>
+            <div class="{{ bubble_base }} {{ bubble_gray }}">
+              <span class="{{ text_in_bubble }}">Ist die Anleitung auf Confluence?</span>
+              <div class="{{ bubble_tail }} top-8 -left-2 rotate-135 border-gray-400 bg-gray-50"></div>
             </div>
           </div>
-          <div class="flex justify-start">
-            <div class="relative max-w-56 rounded-3xl border border-amber-300 w-fit bg-amber-100 p-4 font-medium leading-normal text-slate-800 sm:p-5">
-              Ehrlich gesagt, keine Ahnung...
-              <div class="absolute bottom-6 -right-2 h-5 w-5 -rotate-45 border-b border-r border-amber-300 bg-amber-100"></div>
+          <div class="flex justify-end">
+            <div class="{{ bubble_base }} {{ bubble_amber }}">
+              <span class="{{ text_in_bubble }}">Ehrlich gesagt, keine Ahnung...</span>
+              <div class="{{ bubble_tail }} bottom-8 -right-2 -rotate-45 border-amber-400 bg-amber-100"></div>
             </div>
           </div>
         </div>
