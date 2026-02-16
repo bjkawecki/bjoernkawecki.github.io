@@ -205,7 +205,7 @@
           <!-- Spalte 2 rechts: gelbe Blase rückt nach (am Anfang der Spalte) -->
           <div class="flex justify-start">
             <div class="relative rounded-3xl border border-amber-300 w-fit max-w-full bg-amber-100 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5">
-              „Das weiß nur Thomas – und der ist leider krank.“
+              „Das weiß nur <span id="problem-name">Thomas</span> – und der ist leider krank.“
               <div class="absolute -top-2 right-8 h-5 w-5 rotate-225 border-b border-r border-amber-300 bg-amber-100"></div>
             </div>
           </div>
@@ -266,10 +266,14 @@
 
     </div>
 
-
-
-
   </div>
+  <script>
+    (function () {
+      var names = ['Thomas', 'Stefan', 'Klaus', 'Michael', 'André', 'Martin', 'Peter', 'Sebastian'];
+      var el = document.getElementById('problem-name');
+      if (el) el.textContent = names[Math.floor(Math.random() * names.length)];
+    })();
+  </script>
 </section>
 
 <section id="loesung" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="solution-heading">
