@@ -82,7 +82,8 @@
 
 <header class="sticky top-0 z-50 border-b border-gray-200 bg-white" role="banner">
   <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Hauptnavigation">
-    <a href="/en/" class="shrink-0 font-semibold text-gray-900">
+    <a href="/en/" class="flex shrink-0 items-center gap-2 font-semibold text-gray-900">
+      <img src="/assets/img/logo-3.svg" alt="" class="h-7 w-7" width="32" height="32" />
       Björn Kawecki
     </a>
 
@@ -172,34 +173,102 @@
 <section id="angebot" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="problem-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 id="problem-heading" class="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+      <h2 id="problem-heading" class="text-2xl font-semibold tracking-tight text-slate-800 sm:text-3xl">
         When documentation becomes a cost factor
       </h2>
       <p class="mt-4 text-lg leading-relaxed text-gray-600">
-        In many teams, knowledge and processes are not where they should be: easy to find and up to date.
+        Documentation can be fragile in different ways – each with its own consequences.
       </p>
     </div>
 
-    <ul class="mx-auto mt-12 grid max-w-2xl gap-4 sm:grid-cols-2 lg:max-w-4xl" role="list">
-      
-      <li class="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700">Knowledge lives in people’s heads instead of in docs</li>
-      <li class="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700">Onboarding takes too long</li>
-      <li class="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700">Documentation is scattered or outdated</li>
-      <li class="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700">Developers are expected to document on the side</li>
-      <li class="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-700 sm:col-span-2">Nobody feels responsible for keeping it up to date</li>
-      
-    </ul>
+    <!-- 3 blocks side-by-side (but not too early) -->
+    <div class="mx-auto mt-16 flex max-w-5xl flex-col items-stretch gap-24">
 
-    <div class="mx-auto mt-14 max-w-2xl text-center">
-      <h3 class="text-lg font-medium text-gray-900">Typical consequences</h3>
-      <ul class="mt-4 space-y-2 text-left text-gray-600 sm:mx-auto sm:max-w-md">
-        
-        <li class="flex gap-2"><span class="text-gray-400" aria-hidden="true">—</span> Bus factor: key person leaves, knowledge goes with them</li>
-        <li class="flex gap-2"><span class="text-gray-400" aria-hidden="true">—</span> Slower onboarding and inefficient handovers</li>
-        <li class="flex gap-2"><span class="text-gray-400" aria-hidden="true">—</span> Unnecessary tool costs and friction between teams</li>
-        
-      </ul>
+      <!-- Block 1 -->
+      <article class="w-full min-w-0">
+        <div class="flex items-center gap-3 mb-4 text-slate-800">
+          <span class="flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-10 w-10 shrink-0" fill="currentColor" aria-hidden="true">
+    <title>file-remove-outline</title>
+    <path d="M22.54 21.12L20.41 19L22.54 16.88L21.12 15.46L19 17.59L16.88 15.46L15.46 16.88L17.59 19L15.46 21.12L16.88 22.54L19 20.41L21.12 22.54M6 2C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H13.81C13.45 21.38 13.2 20.7 13.08 20H6V4H13V9H18V13.08C18.33 13.03 18.67 13 19 13C19.34 13 19.67 13.03 20 13.08V8L14 2M8 12V14H16V12M8 16V18H13V16Z" />
+</svg></span>
+          <h3 class="text-xl font-semibold uppercase tracking-wide mt-0 mb-0">Prozesse nicht dokumentiert</h3>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-[auto_auto] gap-6 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
+          <!-- Spalte 1 links: graue Blase am Anfang, leicht nach unten -->
+          <div class="flex justify-start">
+            <div class="relative mt-4 sm:mt-5 rounded-3xl border border-gray-300 bg-gray-50 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5 w-fit max-w-full">
+              „Wie machen wir das hier nochmal?“
+              <div class="absolute -bottom-2 left-8 h-5 w-5 rotate-45 border-b border-r border-gray-300 bg-gray-50"></div>
+            </div>
+          </div>
+          <!-- Spalte 2 rechts: gelbe Blase rückt nach (am Anfang der Spalte) -->
+          <div class="flex justify-start">
+            <div class="relative rounded-3xl border border-amber-300 w-fit max-w-full bg-amber-100 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5">
+              „Das weiß nur Thomas – und der ist leider krank.“
+              <div class="absolute -top-2 right-8 h-5 w-5 rotate-225 border-b border-r border-amber-300 bg-amber-100"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Block 2 -->
+      <article class="w-full min-w-0">
+        <div class="flex items-center gap-3 mb-4 text-slate-800">
+          <span class="flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-10 w-10 shrink-0" fill="currentColor" aria-hidden="true">
+    <title>head-remove-outline</title>
+    <path d="M13 3C16.9 3 20 6.1 20 10C20 12.8 18.4 15.2 16 16.3V21H9V18H8C6.9 18 6 17.1 6 16V13H4.5C4.1 13 3.8 12.5 4.1 12.2L6 9.7C6.2 5.9 9.2 3 13 3M13 1C8.4 1 4.6 4.4 4.1 8.9L2.5 11C1.9 11.7 1.8 12.7 2.2 13.6C2.6 14.3 3.2 14.8 4 15V16C4 17.9 5.3 19.4 7 19.9V23H18V17.5C20.5 15.9 22 13.1 22 10C22 5 18 1 13 1M16.5 6.9L14.4 9L16.5 11.1L15.1 12.5L13 10.4L10.9 12.5L9.5 11.1L11.6 9L9.5 6.9L10.9 5.5L13 7.6L15.1 5.5L16.5 6.9Z" />
+</svg></span>
+          <h3 class="text-xl font-semibold uppercase tracking-wide mt-0 mb-0">Keine klare Zuständigkeit</h3>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-[auto_auto] gap-6 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
+          <div class="flex justify-start">
+            <div class="relative mt-4 sm:mt-5 rounded-3xl border border-gray-300 bg-gray-50 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5 w-fit max-w-full">
+              „Gibt’s eine Doku zum Modul?“
+              <div class="absolute -bottom-2 left-8 h-5 w-5 rotate-45 border-b border-r border-gray-300 bg-gray-50"></div>
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="relative rounded-3xl border border-amber-300 w-fit max-w-full bg-amber-100 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5">
+              „Nicht wirklich. Ich erklär's dir, wenn ich Zeit hab.“
+              <div class="absolute -top-2 right-8 h-5 w-5 rotate-225 border-b border-r border-amber-300 bg-amber-100"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Block 3 -->
+      <article class="w-full min-w-0">
+        <div class="flex items-center gap-3 mb-4 text-slate-800">
+          <span class="flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-10 w-10 shrink-0" fill="currentColor" aria-hidden="true">
+    <title>routes</title>
+    <path d="M11,10H5L3,8L5,6H11V3L12,2L13,3V4H19L21,6L19,8H13V10H19L21,12L19,14H13V20A2,2 0 0,1 15,22H9A2,2 0 0,1 11,20V10Z" />
+</svg></span>
+          <h3 class="text-xl font-semibold uppercase tracking-wide mt-0 mb-0">Ablageort nicht zentral</h3>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-[auto_auto] gap-6 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
+          <div class="flex justify-start">
+            <div class="relative mt-4 sm:mt-5 rounded-3xl border border-gray-300 bg-gray-50 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5 w-fit max-w-full">
+              „Ist die Anleitung auf Confluence?“
+              <div class="absolute -bottom-2 left-8 h-5 w-5 rotate-45 border-b border-r border-gray-300 bg-gray-50"></div>
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="relative rounded-3xl border border-amber-300 w-fit max-w-full bg-amber-100 p-4 text-lg font-medium leading-relaxed text-slate-800 sm:p-5">
+              „Ehrlich gesagt, keine Ahnung...“
+              <div class="absolute -top-2 right-8 h-5 w-5 rotate-225 border-b border-r border-amber-300 bg-amber-100"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
     </div>
+
+
+
+
   </div>
 </section>
 
