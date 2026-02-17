@@ -2,10 +2,10 @@
 {% assign problem = site.data[current_lang].strings.problem | default: nil %}
 {% if current_lang == "en" %}
 {% assign problem_heading = problem.heading | default: "When documentation becomes a cost factor" %}
-{% assign problem_intro = problem.intro | default: "Documentation can be fragile in different ways – each with its own consequences." %}
+{% assign problem_intro = problem.intro | default: "It costs time, deepens dependencies and leads to avoidable frustration." %}
 {% else %}
 {% assign problem_heading = problem.heading | default: "Stolpersteine im IT-Alltag" %}
-{% assign problem_intro = problem.intro | default: "Hält Mitarbeiter auf, schafft Abhängigkeiten und erzeugt vermeidbaren Frust." %}
+{% assign problem_intro = problem.intro | default: "Kostet Zeit, vertieft Abhängigkeiten und führt zu vermeidbarem Frust." %}
 {% endif %}
 {% comment %} Wiederverwendete Klassen für Blasen-Grid und einheitliche Blasen-Optik {% endcomment %}
 {% assign grid_bubbles = "grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto" %}
@@ -98,8 +98,8 @@
     <div class="mt-24 max-w-5xl ml-10">
       <p class="text-xl text-slate-900 font-semibold">
         <span class="flex items-center gap-2">
-          <span class="inline-block h-[2em] w-[2em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
-          <span class="border-b-0  border-amber-400">{{ problem_intro }}</span>
+          <span class="inline-block h-[1.5em] w-[1.5em] shrink-0 self-center [&_svg]:h-full [&_svg]:w-full" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
+          <span class="border-b-2 border-amber-400">{{ problem_intro }}</span>
         </span>
       </p>
     </div>
