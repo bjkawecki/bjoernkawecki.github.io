@@ -9,7 +9,7 @@
 {% assign solution_3_title = solution.p3_title | default: "Structure" %}
 {% assign solution_3_desc = solution.p3_desc | default: "Layout and storage follow a binding standard." %}
 {% else %}
-{% assign solution_heading = solution.heading | default: "Das macht Dokumentation wirklich nützlich:" %}
+{% assign solution_heading = solution.heading | default: "Was gute Dokumentation auszeichnet:" %}
 {% assign solution_1_title = solution.p1_title | default: "Aktualität" %}
 {% assign solution_1_desc = solution.p1_desc | default: "Dokumentation entwickelt sich mit dem System weiter." %}
 {% assign solution_2_title = solution.p2_title | default: "Verantwortung" %}
@@ -18,34 +18,30 @@
 {% assign solution_3_desc = solution.p3_desc | default: "Aufbau und Ablage folgen einem verbindlichen Standard." %}
 {% endif %}
 
-<section id="loesung" class="relative border-b border-gray-200 bg-gray-50 py-24 overflow-hidden" aria-labelledby="solution-heading">
-  <div class="absolute inset-0 pointer-events-none opacity-[0.04]" aria-hidden="true" style="background-image: repeating-linear-gradient(0deg, rgb(148 163 184) 0, rgb(148 163 184) 1px, transparent 1px, transparent 32px), repeating-linear-gradient(90deg, rgb(148 163 184) 0, rgb(148 163 184) 1px, transparent 1px, transparent 32px);"></div>
-
-  <div class="relative z-10 mx-auto max-w-5xl px-6">
+<section id="loesung" class="border-b border-gray-200 bg-gray-50 py-24" aria-labelledby="solution-heading">
+  <div class="mx-auto max-w-5xl px-6">
     <h2 id="solution-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 lg:text-4xl">
       {{ solution_heading }}
     </h2>
-    <div class="w-16 h-px bg-emerald-600 mt-6 mb-16" aria-hidden="true"></div>
 
-    <div class="flex gap-6">
-      <div class="w-px shrink-0 bg-emerald-600/60 self-stretch" aria-hidden="true"></div>
-      <ul class="list-none space-y-16 flex-1 min-w-0" aria-label="{{ solution_heading }}">
-        <li>
-          <span class="block text-sm font-mono tracking-wide text-emerald-600" aria-hidden="true">01</span>
-          <h3 id="solution-1-title" class="text-xl font-semibold text-slate-900 mt-1">{{ solution_1_title }}</h3>
-          <p class="text-base text-slate-700 leading-relaxed mt-2">{{ solution_1_desc }}</p>
-        </li>
-        <li>
-          <span class="block text-sm font-mono tracking-wide text-emerald-600" aria-hidden="true">02</span>
-          <h3 id="solution-2-title" class="text-xl font-semibold text-slate-900 mt-1">{{ solution_2_title }}</h3>
-          <p class="text-base text-slate-700 leading-relaxed mt-2">{{ solution_2_desc }}</p>
-        </li>
-        <li>
-          <span class="block text-sm font-mono tracking-wide text-emerald-600" aria-hidden="true">03</span>
-          <h3 id="solution-3-title" class="text-xl font-semibold text-slate-900 mt-1">{{ solution_3_title }}</h3>
-          <p class="text-base text-slate-700 leading-relaxed mt-2">{{ solution_3_desc }}</p>
-        </li>
-      </ul>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-[12rem_1fr] gap-x-4 gap-y-8 md:gap-y-10 items-center" aria-label="{{ solution_heading }}">
+      <div class="flex items-center gap-3 min-h-10 md:w-full md:max-w-48">
+        <span class="text-sm font-mono tracking-wide text-emerald-600 tabular-nums shrink-0" aria-hidden="true">01</span>
+        <h3 id="solution-1-title" class="text-xl font-semibold text-slate-900">{{ solution_1_title }}</h3>
+      </div>
+      <p class="text-xl text-slate-700 leading-relaxed md:pl-0">{{ solution_1_desc }}</p>
+
+      <div class="flex items-center gap-3 min-h-10 md:w-full md:max-w-48">
+        <span class="text-sm font-mono tracking-wide text-emerald-600 tabular-nums shrink-0" aria-hidden="true">02</span>
+        <h3 id="solution-2-title" class="text-xl font-semibold text-slate-900">{{ solution_2_title }}</h3>
+      </div>
+      <p class="text-xl text-slate-700 leading-relaxed md:pl-0">{{ solution_2_desc }}</p>
+
+      <div class="flex items-center gap-3 min-h-10 md:w-full md:max-w-48">
+        <span class="text-sm font-mono tracking-wide text-emerald-600 tabular-nums shrink-0" aria-hidden="true">03</span>
+        <h3 id="solution-3-title" class="text-xl font-semibold text-slate-900">{{ solution_3_title }}</h3>
+      </div>
+      <p class="text-xl text-slate-700 leading-relaxed md:pl-0">{{ solution_3_desc }}</p>
     </div>
   </div>
 </section>
