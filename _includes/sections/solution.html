@@ -18,30 +18,49 @@
 {% assign solution_3_desc = solution.p3_desc | default: "Aufbau und Ablage folgen einem verbindlichen Standard." %}
 {% endif %}
 
-<section id="loesung" class="border-b border-gray-200 bg-gray-50 py-24" aria-labelledby="solution-heading">
+<section id="loesung" class="border-b border-gray-200 bg-gray-50 py-20" aria-labelledby="solution-heading">
   <div class="mx-auto max-w-5xl px-6">
-    <h2 id="solution-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 lg:text-4xl">
+    <h2 id="solution-heading" class="text-left text-4xl font-semibold tracking-tight text-slate-900 lg:text-5xl">
       {{ solution_heading }}
     </h2>
 
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-[12rem_1fr] gap-x-4 gap-y-8 md:gap-y-10 items-center" aria-label="{{ solution_heading }}">
-      <div class="flex items-center gap-3 min-h-10 md:w-full md:max-w-48">
-        <span class="text-sm font-mono tracking-wide text-emerald-600 tabular-nums shrink-0" aria-hidden="true">01</span>
-        <h3 id="solution-1-title" class="text-xl font-semibold text-slate-900">{{ solution_1_title }}</h3>
-      </div>
-      <p class="text-xl text-slate-700 leading-relaxed md:pl-0">{{ solution_1_desc }}</p>
+    <div class="mt-14 space-y-12" aria-label="{{ solution_heading }}">
+      <article class="flex gap-4 md:gap-6">
+        <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
+          {% include icons/circle-check.html %}
+        </span>
+        <div>
+          <h3 id="solution-1-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_1_title }}
 
-      <div class="flex items-center gap-3 min-h-10 md:w-full md:max-w-48">
-        <span class="text-sm font-mono tracking-wide text-emerald-600 tabular-nums shrink-0" aria-hidden="true">02</span>
-        <h3 id="solution-2-title" class="text-xl font-semibold text-slate-900">{{ solution_2_title }}</h3>
-      </div>
-      <p class="text-xl text-slate-700 leading-relaxed md:pl-0">{{ solution_2_desc }}</p>
 
-      <div class="flex items-center gap-3 min-h-10 md:w-full md:max-w-48">
-        <span class="text-sm font-mono tracking-wide text-emerald-600 tabular-nums shrink-0" aria-hidden="true">03</span>
-        <h3 id="solution-3-title" class="text-xl font-semibold text-slate-900">{{ solution_3_title }}</h3>
-      </div>
-      <p class="text-xl text-slate-700 leading-relaxed md:pl-0">{{ solution_3_desc }}</p>
+          </h3>
+          <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_1_desc }}</p>
+        </div>
+      </article>
+
+      <article class="flex gap-4 md:gap-6">
+        <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
+          {% include icons/circle-check.html %}
+        </span>
+        <div>
+          <h3 id="solution-2-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_2_title }}
+
+          </h3>
+          <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_2_desc }}</p>
+        </div>
+      </article>
+
+      <article class="flex gap-4 md:gap-6">
+        <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
+          {% include icons/circle-check.html %}
+        </span>
+        <div>
+          <h3 id="solution-3-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_3_title }}
+
+          </h3>
+          <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_3_desc }}</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
