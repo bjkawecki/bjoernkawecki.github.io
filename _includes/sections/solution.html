@@ -18,49 +18,57 @@
 {% assign solution_3_desc = solution.p3_desc | default: "Aufbau und Ablage folgen einem verbindlichen Standard." %}
 {% endif %}
 
-<section id="loesung" class="border-b border-gray-200 bg-gray-50 py-20" aria-labelledby="solution-heading">
-  <div class="mx-auto max-w-5xl px-6">
+<section id="loesung" class="relative border-b border-gray-200 bg-gray-50 py-20 overflow-hidden" aria-labelledby="solution-heading">
+  <div class="absolute right-0 top-0 bottom-0 w-1/2 max-w-2xl pointer-events-none" aria-hidden="true" style="background: linear-gradient(to left, rgb(236 253 245 / 0.4), transparent), radial-gradient(circle at center, rgb(167 243 208 / 0.12) 1px, transparent 1px); background-size: 100% 100%, 24px 24px;"></div>
+  <div class="relative mx-auto max-w-6xl px-6">
     <h2 id="solution-heading" class="text-left text-4xl font-semibold tracking-tight text-slate-900 lg:text-5xl">
       {{ solution_heading }}
     </h2>
 
-    <div class="mt-14 space-y-12" aria-label="{{ solution_heading }}">
-      <article class="flex gap-4 md:gap-6">
-        <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
-          {% include icons/circle-check.html %}
-        </span>
-        <div>
-          <h3 id="solution-1-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_1_title }}
+    <div class="mt-14 grid grid-cols-1 md:grid-cols-[1fr_minmax(240px,380px)] gap-10 md:gap-12 lg:gap-16 items-center">
+      <div class="min-w-0">
+        <div class="space-y-10" aria-label="{{ solution_heading }}">
+          <article class="flex gap-4 md:gap-6">
+            <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
+              {% include icons/circle-check.html %}
+            </span>
+            <div>
+              <h3 id="solution-1-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_1_title }}
 
 
-          </h3>
-          <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_1_desc }}</p>
+              </h3>
+              <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_1_desc }}</p>
+            </div>
+          </article>
+
+          <article class="flex gap-4 md:gap-6">
+            <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
+              {% include icons/circle-check.html %}
+            </span>
+            <div>
+              <h3 id="solution-2-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_2_title }}
+
+              </h3>
+              <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_2_desc }}</p>
+            </div>
+          </article>
+
+          <article class="flex gap-4 md:gap-6">
+            <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
+              {% include icons/circle-check.html %}
+            </span>
+            <div>
+              <h3 id="solution-3-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_3_title }}
+
+              </h3>
+              <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_3_desc }}</p>
+            </div>
+          </article>
         </div>
-      </article>
-
-      <article class="flex gap-4 md:gap-6">
-        <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
-          {% include icons/circle-check.html %}
-        </span>
-        <div>
-          <h3 id="solution-2-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_2_title }}
-
-          </h3>
-          <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_2_desc }}</p>
-        </div>
-      </article>
-
-      <article class="flex gap-4 md:gap-6">
-        <span class="inline-block h-8 w-8 fill-emerald-600 shrink-0 self-center [&_svg]:h-full [&_svg]:w-full">
-          {% include icons/circle-check.html %}
-        </span>
-        <div>
-          <h3 id="solution-3-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">{{ solution_3_title }}
-
-          </h3>
-          <p class="mt-2 text-xl leading-relaxed text-slate-700">{{ solution_3_desc }}</p>
-        </div>
-      </article>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="{{ site.baseurl }}/assets/img/zettelkasten.svg" alt="" class="h-auto w-full max-w-md md:max-w-none object-contain opacity-80" width="1184" height="864" />
+      </div>
     </div>
   </div>
 </section>
