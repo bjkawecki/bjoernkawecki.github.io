@@ -2,6 +2,7 @@
 {% assign solution = site.data[current_lang].strings.solution | default: nil %}
 {% if current_lang == "en" %}
 {% assign solution_heading = solution.heading | default: "What makes documentation truly useful:" %}
+{% assign solution_subheadline = solution.subheadline | default: "Three principles that effective documentation can be measured by." %}
 {% assign solution_1_title = solution.p1_title | default: "Currency" %}
 {% assign solution_1_desc = solution.p1_desc | default: "Documentation evolves with the system." %}
 {% assign solution_2_title = solution.p2_title | default: "Ownership" %}
@@ -9,7 +10,8 @@
 {% assign solution_3_title = solution.p3_title | default: "Structure" %}
 {% assign solution_3_desc = solution.p3_desc | default: "Layout and storage follow a binding standard." %}
 {% else %}
-{% assign solution_heading = solution.heading | default: "Was gute Dokumentation auszeichnet:" %}
+{% assign solution_heading = solution.heading | default: "Ein belastbares System für Ihre Dokumentation" %}
+{% assign solution_subheadline = solution.subheadline | default: "Mehr Produktivität, weniger operative Reibung" %}
 {% assign solution_1_title = solution.p1_title | default: "Aktualität" %}
 {% assign solution_1_desc = solution.p1_desc | default: "Dokumentation entwickelt sich mit dem System weiter." %}
 {% assign solution_2_title = solution.p2_title | default: "Verantwortung" %}
@@ -21,9 +23,11 @@
 <section id="loesung" class="relative border-b border-gray-200 bg-gray-50 py-20 overflow-hidden" aria-labelledby="solution-heading">
   <div class="absolute right-0 top-0 bottom-0 w-1/2 max-w-2xl pointer-events-none" aria-hidden="true" style="background: linear-gradient(to left, rgb(236 253 245 / 0.4), transparent), radial-gradient(circle at center, rgb(167 243 208 / 0.12) 1px, transparent 1px); background-size: 100% 100%, 24px 24px;"></div>
   <div class="relative mx-auto max-w-6xl px-6">
-    <h2 id="solution-heading" class="text-left text-4xl font-semibold tracking-tight text-slate-900 lg:text-5xl">
+
+    <h2 id="solution-heading" class="text-left text-4xl font-semibold  tracking-tight text-slate-900 lg:text-4xl  leading-normal">
       {{ solution_heading }}
     </h2>
+    <p class="mt-3 text-slate-600 text-xl">{{ solution_subheadline }}</p>
 
     <div class="mt-14 grid grid-cols-1 md:grid-cols-[1fr_minmax(240px,380px)] gap-10 md:gap-12 lg:gap-16 items-center">
       <div class="min-w-0">
