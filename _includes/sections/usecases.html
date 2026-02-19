@@ -1,16 +1,135 @@
 {% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
 {% assign usecases = site.data[current_lang].strings.usecases | default: nil %}
 {% if current_lang == "en" %}
-{% assign usecases_heading = usecases.heading | default: "Use cases" %}
+{% assign usecases_heading = usecases.heading | default: "Where we focus" %}
+{% assign usecases_intro_1 = usecases.intro_1 | default: "Documentation has impact at several levels." %}
+{% assign usecases_intro_2 = usecases.intro_2 | default: "Depending on your starting point, we intervene where structure has the greatest leverage." %}
+{% assign col1_title = usecases.col1_title | default: "Product & code" %}
+{% assign col1_i1_title = usecases.col1_i1_title | default: "Repository overview" %}
+{% assign col1_i1_desc = usecases.col1_i1_desc | default: "Architecture, purpose and dependencies are documented in a traceable way. Code gets a clear entry point." %}
+{% assign col1_i2_title = usecases.col1_i2_title | default: "Developer onboarding" %}
+{% assign col1_i2_desc = usecases.col1_i2_desc | default: "New team members find their way around codebase, processes and standards in a structured way – without informal knowledge transfer." %}
+{% assign col1_i3_title = usecases.col1_i3_title | default: "System / architecture documentation" %}
+{% assign col1_i3_desc = usecases.col1_i3_desc | default: "Technical relationships are made transparent and kept available over time." %}
+{% assign col2_title = usecases.col2_title | default: "Processes & collaboration" %}
+{% assign col2_i1_title = usecases.col2_i1_title | default: "Process documentation (SOPs)" %}
+{% assign col2_i1_desc = usecases.col2_i1_desc | default: "Recurring processes are clearly described, versioned and made reproducible." %}
+{% assign col2_i2_title = usecases.col2_i2_title | default: "Roles & responsibilities" %}
+{% assign col2_i2_desc = usecases.col2_i2_desc | default: "Documentation areas are clearly assigned – responsibility does not stay diffuse." %}
+{% assign col2_i3_title = usecases.col2_i3_title | default: "Consistent terminology" %}
+{% assign col2_i3_desc = usecases.col2_i3_desc | default: "Terms, naming and categories follow a consistent logic." %}
+{% assign col3_title = usecases.col3_title | default: "Structure & system" %}
+{% assign col3_i1_title = usecases.col3_i1_title | default: "Documentation audit" %}
+{% assign col3_i1_desc = usecases.col3_i1_desc | default: "Existing content is analysed, assessed and structurally realigned." %}
+{% assign col3_i1_outcome = usecases.col3_i1_outcome | default: "Clear assessment and recommendations." %}
+{% assign outcome_label = usecases.outcome_label | default: "Outcome:" %}
+{% assign col3_i2_title = usecases.col3_i2_title | default: "Consolidation" %}
+{% assign col3_i2_desc = usecases.col3_i2_desc | default: "Centralizing scattered sources and shared terminology." %}
+{% assign col3_i2_outcome = usecases.col3_i2_outcome | default: "One central knowledge base." %}
+{% assign col3_i3_title = usecases.col3_i3_title | default: "Information architecture" %}
+{% assign col3_i3_desc = usecases.col3_i3_desc | default: "Content follows a binding structure – independent of individuals or history." %}
+{% assign docs_category = usecases.docs_category | default: "Documentation" %}
+{% assign doc3_title = usecases.doc3_title | default: "Project documentation" %}
+{% assign doc3_desc = usecases.doc3_desc | default: "Creation and maintenance of project docs. E.g. repository high-level documentation." %}
+{% assign doc3_outcome = usecases.doc3_outcome | default: "Ready-to-use project documentation." %}
+{% assign doc4_title = usecases.doc4_title | default: "Process documentation (SOPs)" %}
+{% assign doc4_desc = usecases.doc4_desc | default: "Processes and standards as binding documents. E.g. developer onboarding." %}
+{% assign doc4_outcome = usecases.doc4_outcome | default: "Reproducible workflows." %}
 {% else %}
-{% assign usecases_heading = usecases.heading | default: "Use Cases" %}
+{% assign usecases_heading = usecases.heading | default: "Wo ich konkret ansetze" %}
+{% assign usecases_intro_1 = usecases.intro_1 | default: "Dokumentation wirkt auf mehreren Ebenen." %}
+{% assign usecases_intro_2 = usecases.intro_2 | default: "Je nach Ausgangslage greife ich dort ein, wo Struktur den größten Hebel hat." %}
+{% assign col1_title = usecases.col1_title | default: "Produkt & Code" %}
+{% assign col1_i1_title = usecases.col1_i1_title | default: "Repository-Übersicht" %}
+{% assign col1_i1_desc = usecases.col1_i1_desc | default: "Architektur, Zweck und Abhängigkeiten werden nachvollziehbar dokumentiert. Code erhält einen klaren Einstiegspunkt." %}
+{% assign col1_i2_title = usecases.col1_i2_title | default: "Entwickler-Onboarding" %}
+{% assign col1_i2_desc = usecases.col1_i2_desc | default: "Neue Teammitglieder finden sich strukturiert in Codebasis, Abläufen und Standards zurecht – ohne informelle Wissensweitergabe." %}
+{% assign col2_title = usecases.col2_title | default: "Abläufe & Zusammenarbeit" %}
+{% assign col2_i1_title = usecases.col2_i1_title | default: "Prozessdokumentation (SOPs)" %}
+{% assign col2_i1_desc = usecases.col2_i1_desc | default: "Wiederkehrende Abläufe werden klar beschrieben, versioniert und reproduzierbar gemacht." %}
+{% assign col2_i3_title = usecases.col2_i3_title | default: "Einheitliche Terminologie" %}
+{% assign col2_i3_desc = usecases.col2_i3_desc | default: "Begriffe, Benennungen und Kategorien folgen einer konsistenten Logik." %}
+{% assign col3_title = usecases.col3_title | default: "Struktur & System" %}
+{% assign col3_i1_title = usecases.col3_i1_title | default: "Audit" %}
+{% assign col3_i1_desc = usecases.col3_i1_desc | default: "Bestehende Inhalte werden analysiert, bewertet und strukturell neu ausgerichtet." %}
+{% assign col3_i1_outcome = usecases.col3_i1_outcome | default: "Bestandsaufnahme und Handlungsempfehlungen." %}
+{% assign col3_i2_title = usecases.col3_i2_title | default: "Konsolidierung" %}
+{% assign col3_i2_desc = usecases.col3_i2_desc | default: "Zentralisierung verstreuter Quellen und gemeinsame Terminologie." %}
+{% assign col3_i2_outcome = usecases.col3_i2_outcome | default: "Eine zentrale Wissensbasis." %}
+{% assign docs_category = usecases.docs_category | default: "Dokumentation" %}
+{% assign doc3_title = usecases.doc3_title | default: "Projekt-Dokumentation" %}
+{% assign doc3_desc = usecases.doc3_desc | default: "Erstellung und Pflege von Projektdokumentation. Z. B. Repository High-Level-Dokumentation." %}
+{% assign doc3_outcome = usecases.doc3_outcome | default: "Fertige Projektdokumentation." %}
+{% assign doc4_title = usecases.doc4_title | default: "Prozessdokumentation (SOPs)" %}
+{% assign doc4_desc = usecases.doc4_desc | default: "Abläufe und Standards als verbindliche Dokumente. Z. B. Entwickler-Onboarding." %}
+{% assign doc4_outcome = usecases.doc4_outcome | default: "Reproduzierbare Abläufe." %}
 {% endif %}
 
 <section id="usecases" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="usecases-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="usecases-heading" class="text-center text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+    <h2 id="usecases-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       {{ usecases_heading }}
     </h2>
-    <div>Benefits</div>
+    <p class="mt-3 text-slate-600 text-lg">{{ usecases_intro_1 }}</p>
+    <p class="mt-1 text-slate-600 text-lg">{{ usecases_intro_2 }}</p>
+
+    <div class="mt-12 sm:mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+      <article class="w-full max-w-[260px] min-h-[320px] flex flex-col bg-emerald-700 rounded-xl border border-emerald-600/80 shadow-sm px-5 py-6 mx-auto sm:mx-0 sm:max-w-none" aria-labelledby="usecase-audit-title">
+        <h3 id="usecase-audit-title" class="text-2xl font-semibold tracking-tight text-white">
+          {{ col3_i1_title }}
+        </h3>
+        <p class="mt-3 text-base text-white/90 font-normal leading-relaxed flex-1">
+          {{ col3_i1_desc }}
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/25">
+          <p class="text-base font-semibold text-white flex items-center gap-2.5">
+            <span class="inline-block h-5 w-5 shrink-0 [&_svg]:h-full [&_svg]:w-full [&_svg]:fill-white" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
+            {{ col3_i1_outcome }}
+          </p>
+        </div>
+      </article>
+      <article class="w-full max-w-[260px] min-h-[320px] flex flex-col bg-emerald-700 rounded-xl border border-emerald-600/80 shadow-sm px-5 py-6 mx-auto sm:mx-0 sm:max-w-none" aria-labelledby="usecase-konsolidierung-title">
+        <h3 id="usecase-konsolidierung-title" class="text-2xl font-semibold tracking-tight text-white">
+          {{ col3_i2_title }}
+        </h3>
+        <p class="mt-3 text-base text-white/90 font-normal leading-relaxed flex-1">
+          {{ col3_i2_desc }}
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/25">
+          <p class="text-base font-semibold text-white flex items-center gap-2.5">
+            <span class="inline-block h-5 w-5 shrink-0 [&_svg]:h-full [&_svg]:w-full [&_svg]:fill-white" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
+            {{ col3_i2_outcome }}
+          </p>
+        </div>
+      </article>
+      <article class="w-full max-w-[260px] min-h-[320px] flex flex-col bg-emerald-700 rounded-xl border border-emerald-600/80 shadow-sm px-5 py-6 mx-auto sm:mx-0 sm:max-w-none" aria-labelledby="usecase-projekt-docs-title">
+        <h3 id="usecase-projekt-docs-title" class="text-2xl font-semibold tracking-tight text-white">
+          {{ doc3_title }}
+        </h3>
+        <p class="mt-3 text-base text-white/90 font-normal leading-relaxed flex-1">
+          {{ doc3_desc }}
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/25">
+          <p class="text-base font-semibold text-white flex items-center gap-2.5">
+            <span class="inline-block h-5 w-5 shrink-0 [&_svg]:h-full [&_svg]:w-full [&_svg]:fill-white" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
+            {{ doc3_outcome }}
+          </p>
+        </div>
+      </article>
+      <article class="w-full max-w-[260px] min-h-[320px] flex flex-col bg-emerald-700 rounded-xl border border-emerald-600/80 shadow-sm px-5 py-6 mx-auto sm:mx-0 sm:max-w-none" aria-labelledby="usecase-prozess-docs-title">
+        <h3 id="usecase-prozess-docs-title" class="text-2xl font-semibold tracking-tight text-white">
+          {{ doc4_title }}
+        </h3>
+        <p class="mt-3 text-base text-white/90 font-normal leading-relaxed flex-1">
+          {{ doc4_desc }}
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/25">
+          <p class="text-base font-semibold text-white flex items-center gap-2.5">
+            <span class="inline-block h-5 w-5 shrink-0 [&_svg]:h-full [&_svg]:w-full [&_svg]:fill-white" aria-hidden="true">{% include icons/arrow-right-bottom.html %}</span>
+            {{ doc4_outcome }}
+          </p>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
