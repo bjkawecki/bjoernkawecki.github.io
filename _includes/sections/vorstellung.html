@@ -1,0 +1,41 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
+{% assign vorstellung = site.data[current_lang].strings.vorstellung | default: nil %}
+{% if current_lang == "en" %}
+{% assign vorstellung_heading = vorstellung.heading | default: "About me" %}
+{% assign vorstellung_subheadline = vorstellung.subheadline | default: "" %}
+{% assign vorstellung_p1 = vorstellung.p1 | default: "During my humanities studies in Freiburg I began to focus more on programming – at first out of interest, later with the clear aim of working in IT." %}
+{% assign vorstellung_p2 = vorstellung.p2 | default: "After completing my M.A. in 2021 I first worked as an editor and in parallel deepened my skills in web development." %}
+{% assign vorstellung_p3 = vorstellung.p3 | default: "In 2024 I started training in the cloud sector; in 2025 I took my first roles in IT." %}
+{% assign vorstellung_p4 = vorstellung.p4 | default: "Working with language has always mattered to me. As a documentation engineer I bring code and text together for my clients – with technical understanding and clear structure." %}
+{% assign vorstellung_portrait_alt = vorstellung.portrait_alt | default: "Portrait" %}
+{% else %}
+{% assign vorstellung_heading = vorstellung.heading | default: "Über mich" %}
+{% assign vorstellung_subheadline = vorstellung.subheadline | default: "" %}
+{% assign vorstellung_p1 = vorstellung.p1 | default: "Während meines geisteswissenschaftlichen Studiums in Freiburg begann ich, mich intensiver mit **Programmierung** zu beschäftigen. Zunächst aus Interesse, später mit dem Ziel, in die IT zu wechseln." %}
+{% assign vorstellung_p2 = vorstellung.p2 | default: "Nach meinem Master-Abschluss 2021 arbeitete ich zunächst als Redakteur. Parallel dazu vertiefte ich meine Kenntnisse in **Webentwicklung**." %}
+{% assign vorstellung_p3 = vorstellung.p3 | default: "2024 begann ich eine Fortbildung im **Cloud-Bereich**, 2025 folgten meine ersten beruflichen Stationen in der IT." %}
+{% assign vorstellung_p4 = vorstellung.p4 | default: "Die Arbeit mit Sprache blieb mir stets wichtig. Als **Documentation Engineer** führe ich nun für meine Kunden **Code und Text** zusammen." %}
+{% assign vorstellung_portrait_alt = vorstellung.portrait_alt | default: "Porträt" %}
+{% endif %}
+
+<section id="vorstellung" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="vorstellung-heading">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <h2 id="vorstellung-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl ">
+      <span class="border-b-4 border-emerald-600">{{ vorstellung_heading }}</span>
+    </h2>
+    {% if vorstellung_subheadline != "" %}
+    <p class="mt-3 text-lg text-slate-600">{{ vorstellung_subheadline }}</p>
+    {% endif %}
+    <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_minmax(200px,320px)] lg:gap-12 lg:items-start">
+      <div class="min-w-0 prose prose-slate max-w-none  text-xl text-slate-600 leading-relaxed">
+        <div>{{ vorstellung_p1 | markdownify }}</div>
+        <div class="mt-4 ">{{ vorstellung_p2 | markdownify }}</div>
+        <div class="mt-4 ">{{ vorstellung_p3 | markdownify }}</div>
+        <div class="mt-4 ">{{ vorstellung_p4 | markdownify }}</div>
+      </div>
+      <div class="lg:pt-0">
+        <img src="{{ '/assets/img/profil-3.png' | relative_url }}" alt="{{ vorstellung_portrait_alt }}" class="rounded-lg w-full object-cover aspect-3/4 max-w-[280px] mx-auto lg:mx-0" width="280" height="373" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>

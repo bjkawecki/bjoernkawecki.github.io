@@ -10,6 +10,7 @@ page_id: about-me
 {% include sections/problem.html %}
 {% include sections/solution.html %}
 {% include sections/usecases.html %}
+{% include sections/vorstellung.html %}
 {% include sections/ablauf.html %}
 {% include sections/fuerwen.html %}
 {% include sections/vertrauen.html %}
