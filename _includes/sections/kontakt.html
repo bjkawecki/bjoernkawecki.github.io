@@ -1,15 +1,33 @@
 {% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
 {% assign kontakt = site.data[current_lang].strings.kontakt | default: nil %}
 {% if current_lang == "en" %}
-{% assign kontakt_heading = kontakt.heading | default: "Contact" %}
+{% assign kontakt_heading = kontakt.heading | default: "Let's talk" %}
+{% assign kontakt_subline = kontakt.subline | default: "30 minutes, no obligation. No sales pitch – a concrete assessment of your situation." %}
+{% assign kontakt_cta_label = kontakt.cta_label | default: "Request a conversation" %}
+{% assign kontakt_trust = kontakt.trust | default: "No obligation" %}
 {% else %}
-{% assign kontakt_heading = kontakt.heading | default: "Kontakt" %}
+{% assign kontakt_heading = kontakt.heading | default: "Sprechen wir darüber" %}
+{% assign kontakt_subline = kontakt.subline | default: "30 Minuten, unverbindlich. Kein Sales-Pitch – eine konkrete Einschätzung Ihrer Situation." %}
+{% assign kontakt_cta_label = kontakt.cta_label | default: "Gespräch anfragen" %}
+{% assign kontakt_trust = kontakt.trust | default: "Unverbindlich" %}
+{% endif %}
+{% if kontakt.cta_url %}
+{% assign kontakt_cta_href = kontakt.cta_url %}
+{% else %}
+{% capture kontakt_cta_href %}mailto:{{ site.email }}{% endcapture %}
 {% endif %}
 
-<section id="kontakt" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="kontakt-heading">
+<section id="kontakt" class="border-b border-gray-200 bg-white py-20 sm:py-24 lg:py-28" aria-labelledby="kontakt-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="kontakt-heading" class="text-center text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+    <h2 id="kontakt-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       {{ kontakt_heading }}
     </h2>
+    <p class="mt-6 max-w-2xl text-xl text-slate-700 leading-relaxed font-normal">{{ kontakt_subline }}</p>
+    <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+      <a href="{{ kontakt_cta_href }}" class="inline-flex w-fit items-center justify-center rounded-lg bg-emerald-600 px-6 py-3.5 text-lg font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
+        {{ kontakt_cta_label }}
+      </a>
+      <span class="text-slate-600 text-base">{{ kontakt_trust }}</span>
+    </div>
   </div>
 </section>

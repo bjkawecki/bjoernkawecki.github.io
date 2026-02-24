@@ -1,5 +1,30 @@
-<footer class="border-t border-gray-200 bg-white py-8" role="contentinfo">
+{% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
+{% assign footer = site.data[current_lang].strings.footer | default: nil %}
+{% if current_lang == "en" %}
+{% assign footer_imprint = footer.imprint | default: "Imprint" %}
+{% assign footer_privacy = footer.privacy | default: "Privacy" %}
+{% else %}
+{% assign footer_imprint = footer.imprint | default: "Impressum" %}
+{% assign footer_privacy = footer.privacy | default: "Datenschutz" %}
+{% endif %}
+
+<footer class="border-t border-gray-200 bg-white py-8 sm:py-10" role="contentinfo">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 class="sr-only">Footer</h2>
+    <div class="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-center">
+      <p class="text-sm text-slate-600">
+        © {{ site.time | date: "%Y" }} {{ site.author | default: site.title }}
+      </p>
+      <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-sm" aria-label="Footer">
+        {% if site.imprint_url %}
+        <a href="{{ site.imprint_url }}" class="text-slate-600 hover:text-slate-900">{{ footer_imprint }}</a>
+        {% endif %}
+        {% if site.privacy_url %}
+        <a href="{{ site.privacy_url }}" class="text-slate-600 hover:text-slate-900">{{ footer_privacy }}</a>
+        {% endif %}
+        {% if site.linkedin_url %}
+        <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-slate-900">LinkedIn</a>
+        {% endif %}
+      </nav>
+    </div>
   </div>
 </footer>
