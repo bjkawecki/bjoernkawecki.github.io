@@ -1,15 +1,29 @@
 {% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
 {% assign vertrauen = site.data[current_lang].strings.vertrauen | default: nil %}
 {% if current_lang == "en" %}
-{% assign vertrauen_heading = vertrauen.heading | default: "Trust" %}
+{% assign vertrauen_heading = vertrauen.heading | default: "Why documentation should stay simple" %}
+{% assign vertrauen_p1 = vertrauen.p1 | default: "Complex systems need orientation." %}
+{% assign vertrauen_p2 = vertrauen.p2 | default: "Documentation should lighten the load – not add more structure, versioning and administration to manage." %}
+{% assign vertrauen_p3 = vertrauen.p3 | default: "That’s why I work with clear structures, manageable levels and traceable terminology." %}
+{% assign vertrauen_p4 = vertrauen.p4 | default: "Good documentation reduces complexity instead of reproducing it." %}
 {% else %}
-{% assign vertrauen_heading = vertrauen.heading | default: "Vertrauensaufbau" %}
+{% assign vertrauen_heading = vertrauen.heading | default: "Warum Dokumentation einfach bleiben muss" %}
+{% assign vertrauen_p1 = vertrauen.p1 | default: "Komplexe Systeme brauchen Orientierung." %}
+{% assign vertrauen_p2 = vertrauen.p2 | default: "Dokumentation soll entlasten – nicht zusätzlich strukturieren, versionieren und verwalten müssen." %}
+{% assign vertrauen_p3 = vertrauen.p3 | default: "Ich arbeite deshalb mit klaren Strukturen, überschaubaren Ebenen und nachvollziehbaren Begriffen." %}
+{% assign vertrauen_p4 = vertrauen.p4 | default: "Eine gute Dokumentation reduziert Komplexität, statt sie zu reproduzieren." %}
 {% endif %}
 
 <section id="vertrauen" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="vertrauen-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="vertrauen-heading" class="text-center text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+    <h2 id="vertrauen-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       {{ vertrauen_heading }}
     </h2>
+    <div class="mt-8 max-w-3xl">
+      <p class="text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p1 }} {{ vertrauen_p2_text }}</p>
+      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p2 }}</p>
+      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p3 }}</p>
+      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p4 }}</p>
+    </div>
   </div>
 </section>
