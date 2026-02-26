@@ -13,6 +13,6 @@ page_id: about-me
 {% include sections/vorstellung.html %}
 {% include sections/ablauf.html %}
 {% include sections/fuerwen.html %}
-{% include sections/vertrauen.html %}
+<!-- {% include sections/vertrauen.html %} -->
 {% include sections/kontakt.html %}
 {% include sections/faq.html %}

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
+{% assign posts = site.blog | sort: "date" | reverse %}
+{% assign posts_lang = posts | where: "lang", current_lang %}
+
+<section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+  <h1 class="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">{{ page.title }}</h1>
+  {% if page.subtitle %}
+  <p class="mt-3 text-xl text-slate-600">{{ page.subtitle }}</p>
+  {% endif %}
+  <div class="mt-6 prose prose-slate max-w-none text-slate-600">
+    {{ content }}
+  </div>
+
+  <ul class="mt-10 space-y-8" aria-label="Blog-Beiträge">
+    {% for post in posts_lang %}
+    <li>
+      <article>
+        <h2 class="text-xl font-semibold text-slate-900">
+          <a href="{{ post.url | relative_url }}" class="hover:text-emerald-600 focus:outline-none focus:underline">{{ post.title }}</a>
+        </h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="mt-1 block text-sm text-slate-500">{{ post.date | date: "%d.%m.%Y" }}</time>
+        {% if post.excerpt %}
+        <p class="mt-2 text-slate-600">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {% endif %}
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

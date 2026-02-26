@@ -39,10 +39,10 @@ plugins:
 postcss:
   cache: false
 
-# collections:
-#   projects:
-#     output: true
-#     permalink: /projects/:path
+collections:
+  blog:
+    output: true
+    permalink: /blog/:slug/
 
 sass:
   load_paths:

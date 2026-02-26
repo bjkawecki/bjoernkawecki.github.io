@@ -80,6 +80,9 @@
 
 
 
+
+
+
 <header class="sticky top-0 z-50 border-b border-gray-200 bg-white" role="banner">
   <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Hauptnavigation">
     <a href="/en/" class="flex shrink-0 items-center gap-2 font-semibold text-gray-900">
@@ -89,19 +92,18 @@
 
     
     <div class="hidden items-center gap-8 md:flex">
-      <div class="flex gap-6">
-        <a href="#angebot" class="text-sm text-gray-900 hover:opacity-80">
-          Angebot
-        </a>
-        <a href="#ablauf" class="text-sm text-gray-900 hover:opacity-80">
-          Ablauf
-        </a>
-        <a href="#faq" class="text-sm text-gray-900 hover:opacity-80">
-          FAQ
-        </a>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+        <a href="/en/#start" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="start">Start</a>
+        <a href="/en/#problem" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="problem">Problem</a>
+        <a href="/en/#angebot" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="angebot">Lösung</a>
+        <a href="/en/#ueber-mich" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="ueber-mich">Über mich</a>
+        <a href="/en/#zusammenarbeit" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="zusammenarbeit">Zusammenarbeit</a>
+        <a href="/en/#faq" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="faq">FAQ</a>
+        <span class="ml-1 h-4 w-px bg-slate-200" aria-hidden="true"></span>
+        <a href="/en/blog/" class="nav-link-blog text-slate-600 hover:text-slate-900 ">Blog</a>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="#kontakt" class="inline-flex shrink-0 items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
+      <div class="flex shrink-0 items-center gap-4">
+        <a href="/en/#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
           Gespräch buchen
         </a>
       </div>
@@ -109,7 +111,7 @@
 
     
     <div class="relative flex items-center gap-2 md:hidden">
-      <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-3 py-2 text-sm font-medium text-white hover:bg-emerald-700">
+      <a href="/en/#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-3 py-2 text-sm font-medium text-white hover:bg-emerald-700">
         Gespräch buchen
       </a>
       <details class="group peer">
@@ -120,9 +122,14 @@
           </svg>
         </summary>
         <div id="nav-menu" class="absolute right-4 top-full mt-1 flex w-56 flex-col rounded-lg border border-gray-200 bg-white py-2 shadow-lg">
-          <a href="#angebot" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">Angebot</a>
-          <a href="#ablauf" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">Ablauf</a>
-          <a href="#faq" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">FAQ</a>
+          <a href="/en/#start" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="start">Start</a>
+          <a href="/en/#problem" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="problem">Problem</a>
+          <a href="/en/#angebot" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="angebot">Lösung</a>
+          <a href="/en/#ueber-mich" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="ueber-mich">Über mich</a>
+          <a href="/en/#zusammenarbeit" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="zusammenarbeit">Zusammenarbeit</a>
+          <a href="/en/#faq" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="faq">FAQ</a>
+          <div class="my-1 border-t border-gray-200"></div>
+          <a href="/en/blog/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">Blog</a>
           <div class="my-1 border-t border-gray-200"></div>
           
           <a href="/en/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">DE</a>
@@ -133,6 +140,78 @@
     </div>
   </nav>
 </header>
+
+<style>
+.nav-section-link--active { font-weight: 600; color: var(--color-emerald-600, #059669); }
+#nav-menu .nav-section-link--active { color: var(--color-emerald-600, #059669); }
+</style>
+<script>
+(function() {
+  var sectionIds = ['start', 'angebot', 'ueber-mich', 'faq'];
+  var navLinks = document.querySelectorAll('.nav-section-link');
+  if (!navLinks.length) return;
+
+  function setActive(sectionId) {
+    navLinks.forEach(function(a) {
+      var isActive = (a.getAttribute('data-section') === sectionId);
+      a.classList.toggle('nav-section-link--active', isActive);
+      a.setAttribute('aria-current', isActive ? 'true' : null);
+    });
+  }
+
+  function getSectionFromHash() {
+    var hash = (window.location.hash || '').replace(/^#/, '');
+    return sectionIds.indexOf(hash) >= 0 ? hash : null;
+  }
+
+  function getActiveSectionFromScroll() {
+    var y = window.scrollY + 120;
+    var problemEl = document.getElementById('problem');
+    if (problemEl) {
+      var pTop = problemEl.getBoundingClientRect().top + window.scrollY;
+      var pBottom = pTop + problemEl.offsetHeight;
+      if (y >= pTop && y < pBottom) return 'start';
+    }
+    var lastAbove = null;
+    for (var i = 0; i < sectionIds.length; i++) {
+      var el = document.getElementById(sectionIds[i]);
+      if (!el) continue;
+      var top = el.getBoundingClientRect().top + window.scrollY;
+      var bottom = top + el.offsetHeight;
+      if (y >= top && y < bottom) return sectionIds[i];
+      if (top <= y) lastAbove = sectionIds[i];
+    }
+    return lastAbove;
+  }
+
+  function isHomePage() {
+    var p = window.location.pathname;
+    return p === '/' || p === '/en/' || p === '';
+  }
+
+  function updateFromScroll() {
+    var sectionId = getActiveSectionFromScroll() || '';
+    setActive(sectionId);
+    if (isHomePage() && sectionId) {
+      history.replaceState(null, '', window.location.pathname + '#' + sectionId);
+    }
+  }
+
+  function updateFromHash() {
+    var sectionId = getSectionFromHash();
+    if (sectionId) setActive(sectionId);
+  }
+
+  window.addEventListener('hashchange', updateFromHash);
+  window.addEventListener('scroll', function() { requestAnimationFrame(updateFromScroll); }, { passive: true });
+  window.addEventListener('load', function() {
+    if (getSectionFromHash()) updateFromHash();
+    else updateFromScroll();
+  });
+  if (getSectionFromHash()) updateFromHash();
+  else updateFromScroll();
+})();
+</script>
   <main id="main-content" aria-label="Content">
     <h2 id="error-404">Error 404</h2>
 

@@ -1,29 +1,36 @@
 {% assign current_lang = site.active_lang | default: site.default_lang | default: "de" %}
 {% assign vertrauen = site.data[current_lang].strings.vertrauen | default: nil %}
 {% if current_lang == "en" %}
-{% assign vertrauen_heading = vertrauen.heading | default: "Why documentation should stay simple" %}
-{% assign vertrauen_p1 = vertrauen.p1 | default: "Complex systems need orientation." %}
-{% assign vertrauen_p2 = vertrauen.p2 | default: "Documentation should lighten the load – not add more structure, versioning and administration to manage." %}
-{% assign vertrauen_p3 = vertrauen.p3 | default: "That’s why I work with clear structures, manageable levels and traceable terminology." %}
-{% assign vertrauen_p4 = vertrauen.p4 | default: "Good documentation reduces complexity instead of reproducing it." %}
+{% assign vertrauen_kicker = vertrauen.kicker | default: "My core idea:" %}
+{% assign vertrauen_heading = vertrauen.heading | default: "Documentation reduces complexity." %}
+{% assign vertrauen_subheadline = vertrauen.subheadline | default: "Whether it does isn't determined by the tool, but by structure, terminology, and conscious omissions." %}
+{% assign vertrauen_p1 = vertrauen.p1 | default: "Software organizes content." %}
+{% assign vertrauen_p2 = vertrauen.p2 | default: "People decide what makes sense." %}
 {% else %}
-{% assign vertrauen_heading = vertrauen.heading | default: "Warum Dokumentation einfach bleiben muss" %}
-{% assign vertrauen_p1 = vertrauen.p1 | default: "Komplexe Systeme brauchen Orientierung." %}
-{% assign vertrauen_p2 = vertrauen.p2 | default: "Dokumentation soll entlasten – nicht zusätzlich strukturieren, versionieren und verwalten müssen." %}
-{% assign vertrauen_p3 = vertrauen.p3 | default: "Ich arbeite deshalb mit klaren Strukturen, überschaubaren Ebenen und nachvollziehbaren Begriffen." %}
-{% assign vertrauen_p4 = vertrauen.p4 | default: "Eine gute Dokumentation reduziert Komplexität, statt sie zu reproduzieren." %}
+{% assign vertrauen_kicker = vertrauen.kicker | default: "Mein Kerngedanke:" %}
+{% assign vertrauen_heading = vertrauen.heading | default: "Dokumentation reduziert Komplexität." %}
+{% assign vertrauen_subheadline = vertrauen.subheadline | default: "Ob sie das schafft, entscheidet sich nicht am Tool, sondern an Struktur, Begriffen und bewussten Auslassungen." %}
+{% assign vertrauen_p1 = vertrauen.p1 | default: "Software organisiert Inhalte." %}
+{% assign vertrauen_p2 = vertrauen.p2 | default: "Menschen entscheiden, was sinnvoll ist." %}
 {% endif %}
 
-<section id="vertrauen" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="vertrauen-heading">
+<section id="vertrauen" class="border-b border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24" aria-labelledby="vertrauen-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="vertrauen-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-      {{ vertrauen_heading }}
-    </h2>
-    <div class="mt-8 max-w-3xl">
-      <p class="text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p1 }} {{ vertrauen_p2_text }}</p>
-      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p2 }}</p>
-      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p3 }}</p>
-      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">{{ vertrauen_p4 }}</p>
+    <div class="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_minmax(280px,420px)] lg:gap-14 lg:items-center">
+      <div class="min-w-0">
+        <p class="text-sm font-medium uppercase tracking-wide text-slate-500">{{ vertrauen_kicker }}</p>
+        <h2 id="vertrauen-heading" class="mt-2 text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          {{ vertrauen_heading }}
+        </h2>
+        <p class="mt-5 text-xl text-slate-700 leading-relaxed">{{ vertrauen_subheadline }}</p>
+        <div class="mt-12">
+          <p class="text-xl font-medium text-slate-800 leading-relaxed">{{ vertrauen_p1 }}</p>
+          <p class="mt-4 text-xl font-medium text-slate-800 leading-relaxed">{{ vertrauen_p2 }}</p>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-end" aria-hidden="true">
+        <img src="{{ '/assets/img/regal.svg' | relative_url }}" alt="" class="h-auto w-full max-w-sm object-contain lg:max-w-md" width="420" height="280" loading="lazy">
+      </div>
     </div>
   </div>
 </section>

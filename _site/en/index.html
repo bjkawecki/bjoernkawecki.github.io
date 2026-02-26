@@ -80,6 +80,9 @@
 
 
 
+
+
+
 <header class="sticky top-0 z-50 border-b border-gray-200 bg-white" role="banner">
   <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Hauptnavigation">
     <a href="/en/" class="flex shrink-0 items-center gap-2 font-semibold text-gray-900">
@@ -89,19 +92,18 @@
 
     
     <div class="hidden items-center gap-8 md:flex">
-      <div class="flex gap-6">
-        <a href="#angebot" class="text-sm text-gray-900 hover:opacity-80">
-          Angebot
-        </a>
-        <a href="#ablauf" class="text-sm text-gray-900 hover:opacity-80">
-          Ablauf
-        </a>
-        <a href="#faq" class="text-sm text-gray-900 hover:opacity-80">
-          FAQ
-        </a>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+        <a href="#start" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="start">Start</a>
+        <a href="#problem" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="problem">Problem</a>
+        <a href="#angebot" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="angebot">Lösung</a>
+        <a href="#ueber-mich" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="ueber-mich">Über mich</a>
+        <a href="#zusammenarbeit" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="zusammenarbeit">Zusammenarbeit</a>
+        <a href="#faq" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="faq">FAQ</a>
+        <span class="ml-1 h-4 w-px bg-slate-200" aria-hidden="true"></span>
+        <a href="/en/blog/" class="nav-link-blog text-slate-600 hover:text-slate-900 ">Blog</a>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="#kontakt" class="inline-flex shrink-0 items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
+      <div class="flex shrink-0 items-center gap-4">
+        <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
           Gespräch buchen
         </a>
       </div>
@@ -120,9 +122,14 @@
           </svg>
         </summary>
         <div id="nav-menu" class="absolute right-4 top-full mt-1 flex w-56 flex-col rounded-lg border border-gray-200 bg-white py-2 shadow-lg">
-          <a href="#angebot" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">Angebot</a>
-          <a href="#ablauf" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">Ablauf</a>
-          <a href="#faq" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">FAQ</a>
+          <a href="#start" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="start">Start</a>
+          <a href="#problem" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="problem">Problem</a>
+          <a href="#angebot" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="angebot">Lösung</a>
+          <a href="#ueber-mich" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="ueber-mich">Über mich</a>
+          <a href="#zusammenarbeit" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="zusammenarbeit">Zusammenarbeit</a>
+          <a href="#faq" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="faq">FAQ</a>
+          <div class="my-1 border-t border-gray-200"></div>
+          <a href="/en/blog/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">Blog</a>
           <div class="my-1 border-t border-gray-200"></div>
           
           <a href="/en/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">DE</a>
@@ -133,9 +140,81 @@
     </div>
   </nav>
 </header>
+
+<style>
+.nav-section-link--active { font-weight: 600; color: var(--color-emerald-600, #059669); }
+#nav-menu .nav-section-link--active { color: var(--color-emerald-600, #059669); }
+</style>
+<script>
+(function() {
+  var sectionIds = ['start', 'angebot', 'ueber-mich', 'faq'];
+  var navLinks = document.querySelectorAll('.nav-section-link');
+  if (!navLinks.length) return;
+
+  function setActive(sectionId) {
+    navLinks.forEach(function(a) {
+      var isActive = (a.getAttribute('data-section') === sectionId);
+      a.classList.toggle('nav-section-link--active', isActive);
+      a.setAttribute('aria-current', isActive ? 'true' : null);
+    });
+  }
+
+  function getSectionFromHash() {
+    var hash = (window.location.hash || '').replace(/^#/, '');
+    return sectionIds.indexOf(hash) >= 0 ? hash : null;
+  }
+
+  function getActiveSectionFromScroll() {
+    var y = window.scrollY + 120;
+    var problemEl = document.getElementById('problem');
+    if (problemEl) {
+      var pTop = problemEl.getBoundingClientRect().top + window.scrollY;
+      var pBottom = pTop + problemEl.offsetHeight;
+      if (y >= pTop && y < pBottom) return 'start';
+    }
+    var lastAbove = null;
+    for (var i = 0; i < sectionIds.length; i++) {
+      var el = document.getElementById(sectionIds[i]);
+      if (!el) continue;
+      var top = el.getBoundingClientRect().top + window.scrollY;
+      var bottom = top + el.offsetHeight;
+      if (y >= top && y < bottom) return sectionIds[i];
+      if (top <= y) lastAbove = sectionIds[i];
+    }
+    return lastAbove;
+  }
+
+  function isHomePage() {
+    var p = window.location.pathname;
+    return p === '/' || p === '/en/' || p === '';
+  }
+
+  function updateFromScroll() {
+    var sectionId = getActiveSectionFromScroll() || '';
+    setActive(sectionId);
+    if (isHomePage() && sectionId) {
+      history.replaceState(null, '', window.location.pathname + '#' + sectionId);
+    }
+  }
+
+  function updateFromHash() {
+    var sectionId = getSectionFromHash();
+    if (sectionId) setActive(sectionId);
+  }
+
+  window.addEventListener('hashchange', updateFromHash);
+  window.addEventListener('scroll', function() { requestAnimationFrame(updateFromScroll); }, { passive: true });
+  window.addEventListener('load', function() {
+    if (getSectionFromHash()) updateFromHash();
+    else updateFromScroll();
+  });
+  if (getSectionFromHash()) updateFromHash();
+  else updateFromScroll();
+})();
+</script>
   <main id="main-content" aria-label="Content">
     
-<section id="hero" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="hero-heading">
+<section id="start" class="border-b border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24" aria-labelledby="start-heading">
     <div class="mx-auto px-4 sm:px-6">
         <div class="relative flex min-h-80 flex-col items-center gap-8 lg:min-h-0 lg:justify-center">
             <div class="order-2 flex shrink-0 lg:absolute lg:left-0 lg:top-1/2 lg:z-0 lg:w-sm lg:-translate-y-1/2 xl:left-0 xl:w-md 2xl:w-md translate-x-1/6" aria-hidden="true">
@@ -143,20 +222,20 @@
             </div>
             <div class="order-1 relative z-10 flex flex-col items-center text-center lg:px-6">
                 <div class="max-w-3xl lg:rounded-lg lg:px-8 lg:py-6">
-                    <h1 id="hero-heading" class="text-3xl font-semibold leading-tight tracking-tight text-gray-900 sm:text-4xl lg:text-6xl ">
+                    <h1 id="start-heading" class="text-3xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-4xl lg:text-6xl ">
                         Document processes. Save search costs.
                     </h1>
-                    <p class="mt-8 text-xl leading-relaxed text-gray-700 md:text-2xl">
+                    <p class="mt-8 text-xl leading-relaxed text-slate-700 md:text-2xl">
                         Process and knowledge documentation for IT teams – structured, traceable, relieving.
                     </p>
                     <div class="mt-12 space-y-4">
-                        <p class="text-sm text-gray-600">Reach me here right away:</p>
+                        <p class="text-sm text-slate-600">Reach me here right away:</p>
                         <div class="flex flex-wrap items-center justify-center gap-3">
-                            <a href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-5 py-3 text-base font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50">
+                            <a href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-5 py-3 text-base font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-50">
                                 DM on LinkedIn
                             </a>
                             oder
-                            <a href="mailto:bkawecki@mailbox.org" class="inline-flex items-center justify-center rounded-lg border-2 border-gray-900 bg-transparent px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-gray-50">
+                            <a href="mailto:bkawecki@mailbox.org" class="inline-flex items-center justify-center rounded-lg border-2 border-slate-900 bg-transparent px-5 py-3 text-base font-medium text-slate-900 hover:bg-slate-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 focus:ring-offset-slate-50">
                                 Send an email
                             </a>
                         </div>
@@ -173,7 +252,7 @@
 <section id="problem" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-30" aria-labelledby="problem-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
     <div class="mx-auto max-w-2xl text-center space-y-3">
-      <h2 id="problem-heading" class="text-2xl leading-relaxed font-semibold tracking-tight text-slate-800 md:text-4xl">
+      <h2 id="problem-heading" class="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
         When documentation becomes a cost factor
       </h2>
     </div>
@@ -188,7 +267,7 @@
     <title>file-remove-outline</title>
     <path d="M22.54 21.12L20.41 19L22.54 16.88L21.12 15.46L19 17.59L16.88 15.46L15.46 16.88L17.59 19L15.46 21.12L16.88 22.54L19 20.41L21.12 22.54M6 2C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H13.81C13.45 21.38 13.2 20.7 13.08 20H6V4H13V9H18V13.08C18.33 13.03 18.67 13 19 13C19.34 13 19.67 13.03 20 13.08V8L14 2M8 12V14H16V12M8 16V18H13V16Z" />
 </svg></span>
-          <h3 class="text-2xl font-medium text-slate-800 tracking-tighter">Wissen nur im Kopf</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Wissen nur im Kopf</h3>
         </div>
 
         <div class="grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
@@ -214,7 +293,7 @@
     <title>head-remove-outline</title>
     <path d="M13 3C16.9 3 20 6.1 20 10C20 12.8 18.4 15.2 16 16.3V21H9V18H8C6.9 18 6 17.1 6 16V13H4.5C4.1 13 3.8 12.5 4.1 12.2L6 9.7C6.2 5.9 9.2 3 13 3M13 1C8.4 1 4.6 4.4 4.1 8.9L2.5 11C1.9 11.7 1.8 12.7 2.2 13.6C2.6 14.3 3.2 14.8 4 15V16C4 17.9 5.3 19.4 7 19.9V23H18V17.5C20.5 15.9 22 13.1 22 10C22 5 18 1 13 1M16.5 6.9L14.4 9L16.5 11.1L15.1 12.5L13 10.4L10.9 12.5L9.5 11.1L11.6 9L9.5 6.9L10.9 5.5L13 7.6L15.1 5.5L16.5 6.9Z" />
 </svg></span>
-          <h3 class="text-2xl font-medium text-slate-800 tracking-tight ermt-0 mb-0">Zuständigkeit unklar</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Zuständigkeit unklar</h3>
         </div>
 
         <div class="grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
@@ -240,7 +319,7 @@
     <title>routes</title>
     <path d="M11,10H5L3,8L5,6H11V3L12,2L13,3V4H19L21,6L19,8H13V10H19L21,12L19,14H13V20A2,2 0 0,1 15,22H9A2,2 0 0,1 11,20V10Z" />
 </svg></span>
-          <h3 class="text-2xl font-medium text-slate-800 tracking-tight ermt-0 mb-0">Ablageort verteilt</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Ablageort verteilt</h3>
         </div>
 
         <div class="grid grid-cols-1 gap-4 items-start w-full min-w-0 sm:w-fit sm:mx-auto">
@@ -280,14 +359,14 @@
   </script>
 </section>
 
-<section id="loesung" class="relative border-b border-gray-200 bg-gray-50 py-20 overflow-hidden" aria-labelledby="solution-heading">
+<section id="angebot" class="relative border-b border-gray-200 bg-gray-50 py-20 overflow-hidden" aria-labelledby="solution-heading">
   <div class="absolute right-0 top-0 bottom-0 w-1/2 max-w-2xl pointer-events-none" aria-hidden="true" style="background: linear-gradient(to left, rgb(236 253 245 / 0.4), transparent), radial-gradient(circle at center, rgb(167 243 208 / 0.12) 1px, transparent 1px); background-size: 100% 100%, 24px 24px;"></div>
   <div class="relative mx-auto max-w-6xl px-6">
 
-    <h2 id="solution-heading" class="text-left text-4xl font-semibold  tracking-tight text-slate-900 lg:text-5xl leading-normal">
+    <h2 id="solution-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       What makes documentation truly useful:
     </h2>
-    <p class="mt-3 text-slate-600 text-xl">Three principles that effective documentation can be measured by.</p>
+    <p class="mt-3 text-xl text-slate-700 leading-relaxed">Three principles that effective documentation can be measured by.</p>
 
     <div class="mt-14 grid grid-cols-1 md:grid-cols-[1fr_minmax(240px,380px)] gap-10 md:gap-12 lg:gap-16 items-center">
       <div class="min-w-0">
@@ -300,11 +379,11 @@
 </svg>
             </span>
             <div>
-              <h3 id="solution-1-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">Currency
+              <h3 id="solution-1-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Currency
 
 
               </h3>
-              <p class="mt-2 text-xl leading-relaxed text-slate-700">Documentation evolves with the system.</p>
+              <p class="mt-2 text-lg text-slate-700 leading-relaxed">Documentation evolves with the system.</p>
             </div>
           </article>
 
@@ -316,10 +395,10 @@
 </svg>
             </span>
             <div>
-              <h3 id="solution-2-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">Ownership
+              <h3 id="solution-2-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Ownership
 
               </h3>
-              <p class="mt-2 text-xl leading-relaxed text-slate-700">Content is assigned to clear roles or areas.</p>
+              <p class="mt-2 text-lg text-slate-700 leading-relaxed">Content is assigned to clear roles or areas.</p>
             </div>
           </article>
 
@@ -331,10 +410,10 @@
 </svg>
             </span>
             <div>
-              <h3 id="solution-3-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 md:text-2xl">Structure
+              <h3 id="solution-3-title" class="flex items-center gap-2 text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Structure
 
               </h3>
-              <p class="mt-2 text-xl leading-relaxed text-slate-700">Layout and storage follow a binding standard.</p>
+              <p class="mt-2 text-lg text-slate-700 leading-relaxed">Layout and storage follow a binding standard.</p>
             </div>
           </article>
         </div>
@@ -351,7 +430,7 @@
     <h2 id="usecases-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       Where we focus
     </h2>
-    <p class="mt-3 text-slate-600 text-lg">Documentation has impact at several levels.</p>
+    <p class="mt-3 text-xl text-slate-700 leading-relaxed">Documentation has impact at several levels.</p>
 
     <div class="md:mt-10 mt-14 grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-14 mx-auto">
       <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-3">
@@ -457,14 +536,14 @@
   </div>
 </section>
 
-<section id="vorstellung" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="vorstellung-heading">
+<section id="ueber-mich" class="border-b border-gray-200 bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="vorstellung-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
     <h2 id="vorstellung-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl ">
       <span class="border-b-4 border-emerald-600">About me</span>
     </h2>
     
     <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_minmax(200px,320px)] lg:gap-12 lg:items-start">
-      <div class="min-w-0 prose prose-slate max-w-none  text-xl text-slate-600 leading-relaxed">
+      <div class="min-w-0 prose prose-slate max-w-none text-lg text-slate-700 leading-relaxed">
         <div><p>During my humanities studies in Freiburg I began to focus more on programming – at first out of interest, later with the clear aim of working in IT.</p>
 </div>
         <div class="mt-4 "><p>After completing my M.A. in 2021 I first worked as an editor and in parallel deepened my skills in web development.</p>
@@ -481,16 +560,17 @@
   </div>
 </section>
 
-<section id="ablauf" class="border-b border-gray-200 bg-gray-50 py-20 sm:py-24 lg:py-28" aria-labelledby="ablauf-heading">
+<section id="zusammenarbeit" class="border-b border-gray-200 bg-gray-50 py-20 sm:py-24 lg:py-28" aria-labelledby="zusammenarbeit-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="ablauf-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+    <h2 id="zusammenarbeit-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       How we work
     </h2>
-    <div class="mt-14 sm:mt-16 grid grid-cols-1 gap-14 sm:gap-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
+    <p class="mt-6 text-xl text-slate-700 leading-relaxed">In four steps</p>
+    <div class="mt-10 sm:mt-12 grid grid-cols-1 gap-14 sm:gap-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
       <article class="flex items-start gap-4 sm:gap-5">
         <span class="text-4xl sm:text-5xl font-light tabular-nums text-emerald-600 shrink-0 leading-none" aria-hidden="true">01</span>
         <div class="min-w-0">
-          <h3 class="text-xl font-semibold text-slate-800 sm:text-2xl">Initial conversation</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Initial conversation</h3>
           <p class="mt-3 text-slate-700 leading-relaxed text-lg">A no-obligation conversation to clarify your starting position, goals and expectations.</p>
           <p class="mt-2 text-slate-700 leading-relaxed text-lg">Confidentiality is a given; an NDA is possible at any time.</p>
         </div>
@@ -498,7 +578,7 @@
       <article class="flex items-start gap-4 sm:gap-5">
         <span class="text-4xl sm:text-5xl font-light tabular-nums text-emerald-600 shrink-0 leading-none" aria-hidden="true">02</span>
         <div class="min-w-0">
-          <h3 class="text-xl font-semibold text-slate-800 sm:text-2xl">Analysis &amp; proposal</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Analysis &amp; proposal</h3>
           <p class="mt-3 text-slate-700 leading-relaxed text-lg">A shared overview of the current state and the modules that could be used.</p>
           <p class="mt-2 text-slate-700 leading-relaxed text-lg">On this basis I prepare a transparent cost estimate.</p>
         </div>
@@ -506,7 +586,7 @@
       <article class="flex items-start gap-4 sm:gap-5">
         <span class="text-4xl sm:text-5xl font-light tabular-nums text-emerald-600 shrink-0 leading-none" aria-hidden="true">03</span>
         <div class="min-w-0">
-          <h3 class="text-xl font-semibold text-slate-800 sm:text-2xl">Planning &amp; agreement</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Planning &amp; agreement</h3>
           <p class="mt-3 text-slate-700 leading-relaxed text-lg">Goals, timeline, access and communication channels are defined.</p>
           <p class="mt-2 text-slate-700 leading-relaxed text-lg">The collaboration is set out in a contract.</p>
         </div>
@@ -514,7 +594,7 @@
       <article class="flex items-start gap-4 sm:gap-5">
         <span class="text-4xl sm:text-5xl font-light tabular-nums text-emerald-600 shrink-0 leading-none" aria-hidden="true">04</span>
         <div class="min-w-0">
-          <h3 class="text-xl font-semibold text-slate-800 sm:text-2xl">Implementation</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Implementation</h3>
           <p class="mt-3 text-slate-700 leading-relaxed text-lg">Work is carried out in agreed stages.</p>
           <p class="mt-2 text-slate-700 leading-relaxed text-lg">Regular feedback ensures transparency and progress.</p>
         </div>
@@ -525,7 +605,7 @@
 
 <section id="fuerwen" class="border-b border-gray-200 bg-white py-20 sm:py-24 lg:py-28" aria-labelledby="fuerwen-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="fuerwen-heading" class="text-3xl font-semibold text-center tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+    <h2 id="fuerwen-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
       When working together makes sense
     </h2>
     <ul class="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-12 lg:items-stretch list-none p-0 m-0">
@@ -537,9 +617,9 @@
     <path d="M19,11H13V5H19M19,19H13V13H19M11,11H5V5H11M11,19H5V13H11M3,21H21V3H3V21Z" />
 </svg></span>
           </div>
-          <h3 class="text-2xl font-semibold text-slate-900 leading-tight">Clearly defined scope</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Clearly defined scope</h3>
         </div>
-        <p class="mt-3 text-slate-700 leading-relaxed text-lg font-medium line-clamp-2">Scope and goals can be defined together.</p>
+        <p class="mt-3 text-lg text-slate-700 leading-relaxed line-clamp-2">Scope and goals can be defined together.</p>
       </li>
       <li class="flex min-w-0 flex-col rounded-xl border border-gray-200/80 bg-[#f9fafb] p-6 focus-within:border-emerald-400/60 focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:ring-offset-2">
         <div class="flex items-center gap-3">
@@ -549,9 +629,9 @@
     <path d="M6,2L10,6L7,17L12,22L17,17L14,6L18,2Z" />
 </svg></span>
           </div>
-          <h3 class="text-2xl font-semibold text-slate-900 leading-normal">Dedicated contact</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Dedicated contact</h3>
         </div>
-        <p class="mt-3 text-slate-700 leading-relaxed text-lg font-medium line-clamp-2">Questions and coordination have a clear path.</p>
+        <p class="mt-3 text-lg text-slate-700 leading-relaxed line-clamp-2">Questions and coordination have a clear path.</p>
       </li>
       <li class="flex min-w-0 flex-col rounded-xl border border-gray-200/80 bg-[#f9fafb] p-6 focus-within:border-emerald-400/60 focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:ring-offset-2">
         <div class="flex items-center gap-3">
@@ -561,9 +641,9 @@
     <path d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" />
 </svg></span>
           </div>
-          <h3 class="text-2xl font-semibold text-slate-900 leading-normal">Access to information</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Access to information</h3>
         </div>
-        <p class="mt-3 text-slate-700 leading-relaxed text-lg font-medium line-clamp-2">Context and open points can be clarified.</p>
+        <p class="mt-3 text-lg text-slate-700 leading-relaxed line-clamp-2">Context and open points can be clarified.</p>
       </li>
       <li class="flex min-w-0 flex-col rounded-xl border border-gray-200/80 bg-[#f9fafb] p-6 focus-within:border-emerald-400/60 focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:ring-offset-2">
         <div class="flex items-center gap-3">
@@ -573,9 +653,9 @@
     <path d="M21.71 8.71C22.96 7.46 22.39 6 21.71 5.29L18.71 2.29C17.45 1.04 16 1.61 15.29 2.29L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59V14.59L2.29 15.29C1.04 16.55 1.61 18 2.29 18.71L5.29 21.71C5.83 22.25 6.41 22.45 6.96 22.45C7.67 22.45 8.32 22.1 8.71 21.71L11.41 19H15C16.7 19 17.56 17.94 17.87 16.9C19 16.6 19.62 15.74 19.87 14.9C21.42 14.5 22 13.03 22 12V9H21.41L21.71 8.71M20 12C20 12.45 19.81 13 19 13L18 13L18 14C18 14.45 17.81 15 17 15L16 15L16 16C16 16.45 15.81 17 15 17H10.59L7.31 20.28C7 20.57 6.82 20.4 6.71 20.29L3.72 17.31C3.43 17 3.6 16.82 3.71 16.71L5 15.41V11.41L7 9.41V11C7 12.21 7.8 14 10 14S13 12.21 13 11H20V12M20.29 7.29L18.59 9H11V11C11 11.45 10.81 12 10 12S9 11.45 9 11V8C9 7.54 9.17 6 11 6H14.41L16.69 3.72C17 3.43 17.18 3.6 17.29 3.71L20.28 6.69C20.57 7 20.4 7.18 20.29 7.29Z" />
 </svg></span>
           </div>
-          <h3 class="text-2xl font-semibold text-slate-900 leading-normal">Subject-matter input is possible</h3>
+          <h3 class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Subject-matter input is possible</h3>
         </div>
-        <p class="mt-3 text-slate-700 leading-relaxed text-lg font-medium line-clamp-2">Relevant stakeholders are available for exchange and clarification.</p>
+        <p class="mt-3 text-lg text-slate-700 leading-relaxed line-clamp-2">Relevant stakeholders are available for exchange and clarification.</p>
       </li>
     </ul>
     <p class="mt-14 text-xl text-slate-900 font-semibold">
@@ -589,20 +669,30 @@
     </p>
   </div>
 </section>
+<!-- 
 
-<section id="vertrauen" class="border-b border-gray-200 bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="vertrauen-heading">
+
+
+<section id="vertrauen" class="border-b border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24" aria-labelledby="vertrauen-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <h2 id="vertrauen-heading" class="text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-      Why documentation should stay simple
-    </h2>
-    <div class="mt-8 max-w-3xl">
-      <p class="text-2xl text-slate-700 leading-relaxed font-normal">Complex systems need orientation. </p>
-      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">Documentation should lighten the load – not add more structure, versioning and administration to manage.</p>
-      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">That’s why I work with clear structures, manageable levels and traceable terminology.</p>
-      <p class="mt-4 text-2xl text-slate-700 leading-relaxed font-normal">Good documentation reduces complexity instead of reproducing it.</p>
+    <div class="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_minmax(280px,420px)] lg:gap-14 lg:items-center">
+      <div class="min-w-0">
+        <p class="text-sm font-medium uppercase tracking-wide text-slate-500">My core idea:</p>
+        <h2 id="vertrauen-heading" class="mt-2 text-left text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          Documentation reduces complexity.
+        </h2>
+        <p class="mt-5 text-xl text-slate-700 leading-relaxed">Whether it does isn't determined by the tool, but by structure, terminology, and conscious omissions.</p>
+        <div class="mt-12">
+          <p class="text-xl font-medium text-slate-800 leading-relaxed">Software organizes content.</p>
+          <p class="mt-4 text-xl font-medium text-slate-800 leading-relaxed">People decide what makes sense.</p>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-end" aria-hidden="true">
+        <img src="/assets/img/regal.svg" alt="" class="h-auto w-full max-w-sm object-contain lg:max-w-md" width="420" height="280" loading="lazy">
+      </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section id="kontakt" class="border-b border-gray-200 bg-white py-20 sm:py-24 lg:py-28" aria-labelledby="kontakt-heading">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -626,36 +716,36 @@
     </h2>
     <dl class="mt-10 divide-y divide-gray-200">
       <div class="py-5 first:pt-0">
-        <dt class="text-lg font-medium text-slate-900">What’s the advantage of an outside perspective?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">An external view helps to see blind spots: what’s missing, what’s redundant, where structure is unclear. I don’t take your internal habits for granted – so we can design documentation that actually helps.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">What’s the advantage of an outside perspective?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">An external view helps to see blind spots: what’s missing, what’s redundant, where structure is unclear. I don’t take your internal habits for granted – so we can design documentation that actually helps.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">Is this about quality management?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">Not in the formal sense. Good documentation supports quality assurance and can follow standards, but the focus is on clarity, traceability and usability – not on certification systems.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Is this about quality management?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">Not in the formal sense. Good documentation supports quality assurance and can follow standards, but the focus is on clarity, traceability and usability – not on certification systems.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">How much internal effort is required?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">That depends on the project. You provide access, context and a contact; I do the structural work and drafts. Review and decisions stay with you. We agree on the level of involvement upfront.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">How much internal effort is required?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">That depends on the project. You provide access, context and a contact; I do the structural work and drafts. Review and decisions stay with you. We agree on the level of involvement upfront.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">How does working with an external person work?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">Clear roles: one fixed contact on your side, defined access and communication channels. Work is done in agreed stages with regular feedback. NDA and confidentiality are standard if you need them.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">How does working with an external person work?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">Clear roles: one fixed contact on your side, defined access and communication channels. Work is done in agreed stages with regular feedback. NDA and confidentiality are standard if you need them.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">Do we have to introduce new tools?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">Not necessarily. I work with what you have where possible (e.g. Markdown, Confluence, Notion). If we recommend changes, they’re discussed transparently – no tool dictate.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Do we have to introduce new tools?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">Not necessarily. I work with what you have where possible (e.g. Markdown, Confluence, Notion). If we recommend changes, they’re discussed transparently – no tool dictate.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">How quickly will we see results?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">After an initial assessment we can often deliver a first structured overview or pilot within a few weeks. Broader projects are planned in stages so that progress is visible early.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">How quickly will we see results?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">After an initial assessment we can often deliver a first structured overview or pilot within a few weeks. Broader projects are planned in stages so that progress is visible early.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">What does a pilot project cost?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">Costs depend on scope and duration. After the first conversation and a look at your situation, I provide a transparent estimate. There’s no obligation until we agree on a project.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">What does a pilot project cost?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">Costs depend on scope and duration. After the first conversation and a look at your situation, I provide a transparent estimate. There’s no obligation until we agree on a project.</dd>
       </div>
       <div class="py-5">
-        <dt class="text-lg font-medium text-slate-900">Why not just use AI for documentation?</dt>
-        <dd class="mt-2 text-slate-700 leading-relaxed">I use AI where it helps – for drafts or structure. But good documentation needs context, decisions and ownership. AI can’t replace that; it supports it.</dd>
+        <dt class="text-xl font-semibold text-slate-900 sm:text-2xl leading-tight">Why not just use AI for documentation?</dt>
+        <dd class="mt-2 text-lg text-slate-700 leading-relaxed">I use AI where it helps – for drafts or structure. But good documentation needs context, decisions and ownership. AI can’t replace that; it supports it.</dd>
       </div>
     </dl>
   </div>

@@ -4,6 +4,9 @@
 {% if current_lang != site.default_lang %}
 {% assign home_url = site.baseurl | append: "/" | append: current_lang | append: "/" %}
 {% endif %}
+{% assign is_home = false %}
+{% if page.url == "/" or page.url == "/en/" %}{% assign is_home = true %}{% endif %}
+{% if is_home %}{% assign anchor_base = "" %}{% else %}{% assign anchor_base = home_url %}{% endif %}
 
 <header class="sticky top-0 z-50 border-b border-gray-200 bg-white" role="banner">
   <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Hauptnavigation">
@@ -12,21 +15,20 @@
       {{ site.title }}
     </a>
 
-    {% comment %} Desktop: Anker + CTA {% endcomment %}
+    {% comment %} Desktop: Start, Problem, Lösung, Über mich, Zusammenarbeit, FAQ, Blog + CTA {% endcomment %}
     <div class="hidden items-center gap-8 md:flex">
-      <div class="flex gap-6">
-        <a href="#angebot" class="text-sm text-gray-900 hover:opacity-80">
-          {{ nav.angebot | default: "Angebot" }}
-        </a>
-        <a href="#ablauf" class="text-sm text-gray-900 hover:opacity-80">
-          {{ nav.ablauf | default: "Ablauf" }}
-        </a>
-        <a href="#faq" class="text-sm text-gray-900 hover:opacity-80">
-          {{ nav.faq | default: "FAQ" }}
-        </a>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+        <a href="{{ anchor_base }}#start" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="start">{{ nav.start | default: "Start" }}</a>
+        <a href="{{ anchor_base }}#problem" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="problem">{{ nav.problem | default: "Problem" }}</a>
+        <a href="{{ anchor_base }}#angebot" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="angebot">{{ nav.loesung | default: "Lösung" }}</a>
+        <a href="{{ anchor_base }}#ueber-mich" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="ueber-mich">{{ nav.vorstellung | default: "Über mich" }}</a>
+        <a href="{{ anchor_base }}#zusammenarbeit" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="zusammenarbeit">{{ nav.zusammenarbeit | default: "Zusammenarbeit" }}</a>
+        <a href="{{ anchor_base }}#faq" class="nav-section-link text-slate-600 hover:text-slate-900" data-section="faq">{{ nav.faq | default: "FAQ" }}</a>
+        <span class="ml-1 h-4 w-px bg-slate-200" aria-hidden="true"></span>
+        <a href="{{ home_url }}blog/" class="nav-link-blog text-slate-600 hover:text-slate-900 {% if page.url contains '/blog' %}nav-section-link--active{% endif %}">{{ nav.blog | default: "Blog" }}</a>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="#kontakt" class="inline-flex shrink-0 items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
+      <div class="flex shrink-0 items-center gap-4">
+        <a href="{{ anchor_base }}#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-white">
           {{ nav.cta | default: "Gespräch buchen" }}
         </a>
       </div>
@@ -34,7 +36,7 @@
 
     {% comment %} Mobile: Hamburger {% endcomment %}
     <div class="relative flex items-center gap-2 md:hidden">
-      <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-3 py-2 text-sm font-medium text-white hover:bg-emerald-700">
+      <a href="{{ anchor_base }}#kontakt" class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-3 py-2 text-sm font-medium text-white hover:bg-emerald-700">
         {{ nav.cta | default: "Gespräch buchen" }}
       </a>
       <details class="group peer">
@@ -45,9 +47,14 @@
           </svg>
         </summary>
         <div id="nav-menu" class="absolute right-4 top-full mt-1 flex w-56 flex-col rounded-lg border border-gray-200 bg-white py-2 shadow-lg">
-          <a href="#angebot" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">{{ nav.angebot | default: "Angebot" }}</a>
-          <a href="#ablauf" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">{{ nav.ablauf | default: "Ablauf" }}</a>
-          <a href="#faq" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50">{{ nav.faq | default: "FAQ" }}</a>
+          <a href="{{ anchor_base }}#start" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="start">{{ nav.start | default: "Start" }}</a>
+          <a href="{{ anchor_base }}#problem" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="problem">{{ nav.problem | default: "Problem" }}</a>
+          <a href="{{ anchor_base }}#angebot" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="angebot">{{ nav.loesung | default: "Lösung" }}</a>
+          <a href="{{ anchor_base }}#ueber-mich" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="ueber-mich">{{ nav.vorstellung | default: "Über mich" }}</a>
+          <a href="{{ anchor_base }}#zusammenarbeit" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="zusammenarbeit">{{ nav.zusammenarbeit | default: "Zusammenarbeit" }}</a>
+          <a href="{{ anchor_base }}#faq" class="nav-section-link px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" data-section="faq">{{ nav.faq | default: "FAQ" }}</a>
+          <div class="my-1 border-t border-gray-200"></div>
+          <a href="{{ home_url }}blog/" class="px-4 py-2.5 text-sm {% if page.url contains '/blog' %}nav-section-link--active{% else %}text-gray-900 hover:bg-gray-50{% endif %}">{{ nav.blog | default: "Blog" }}</a>
           <div class="my-1 border-t border-gray-200"></div>
           {% if current_lang == "de" %}
           <a href="{{ site.baseurl }}/" class="px-4 py-2.5 text-sm text-gray-900 hover:bg-gray-50" aria-current="page">DE</a>
@@ -61,3 +68,69 @@
     </div>
   </nav>
 </header>
+
+<style>
+.nav-section-link--active { font-weight: 600; color: var(--color-emerald-600, #059669); }
+#nav-menu .nav-section-link--active { color: var(--color-emerald-600, #059669); }
+</style>
+<script>
+(function() {
+  var sectionIds = ['start', 'problem', 'angebot', 'ueber-mich', 'zusammenarbeit', 'faq'];
+  var navLinks = document.querySelectorAll('.nav-section-link');
+  if (!navLinks.length) return;
+
+  function setActive(sectionId) {
+    navLinks.forEach(function(a) {
+      var isActive = (a.getAttribute('data-section') === sectionId);
+      a.classList.toggle('nav-section-link--active', isActive);
+      a.setAttribute('aria-current', isActive ? 'true' : null);
+    });
+  }
+
+  function getSectionFromHash() {
+    var hash = (window.location.hash || '').replace(/^#/, '');
+    return sectionIds.indexOf(hash) >= 0 ? hash : null;
+  }
+
+  function getActiveSectionFromScroll() {
+    var y = window.scrollY + 120;
+    var lastAbove = null;
+    for (var i = 0; i < sectionIds.length; i++) {
+      var el = document.getElementById(sectionIds[i]);
+      if (!el) continue;
+      var top = el.getBoundingClientRect().top + window.scrollY;
+      var bottom = top + el.offsetHeight;
+      if (y >= top && y < bottom) return sectionIds[i];
+      if (top <= y) lastAbove = sectionIds[i];
+    }
+    return lastAbove;
+  }
+
+  function isHomePage() {
+    var p = window.location.pathname;
+    return p === '/' || p === '/en/' || p === '';
+  }
+
+  function updateFromScroll() {
+    var sectionId = getActiveSectionFromScroll() || '';
+    setActive(sectionId);
+    if (isHomePage() && sectionId) {
+      history.replaceState(null, '', window.location.pathname + '#' + sectionId);
+    }
+  }
+
+  function updateFromHash() {
+    var sectionId = getSectionFromHash();
+    if (sectionId) setActive(sectionId);
+  }
+
+  window.addEventListener('hashchange', updateFromHash);
+  window.addEventListener('scroll', function() { requestAnimationFrame(updateFromScroll); }, { passive: true });
+  window.addEventListener('load', function() {
+    if (getSectionFromHash()) updateFromHash();
+    else updateFromScroll();
+  });
+  if (getSectionFromHash()) updateFromHash();
+  else updateFromScroll();
+})();
+</script>
