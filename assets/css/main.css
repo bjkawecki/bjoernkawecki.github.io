@@ -2083,17 +2083,17 @@ ul, ol {
 /* Light mode */
 
 :root {
-  --accent-50: #fff1f1;
-  --accent-100: #ffe1e1;
-  --accent-200: #ffc7c7;
-  --accent-300: #ffa0a0;
-  --accent-400: #ff6b6b;
-  --accent-500: #f83b3b;
-  --accent-600: #e51d1d;
-  --accent-700: #c11414;
-  --accent-800: #a01414;
-  --accent-900: #841818;
-  --accent-950: #480707;
+  --accent-50: #fdf3f3;
+  --accent-100: #fce4e4;
+  --accent-200: #facece;
+  --accent-300: #f5acac;
+  --accent-400: #ed7c7c;
+  --accent-500: #e15151;
+  --accent-600: #cd3535;
+  --accent-700: #ac2929;
+  --accent-800: #8f2525;
+  --accent-900: #772525;
+  --accent-950: #400f0f;
 }
 
 /* Dark mode */
