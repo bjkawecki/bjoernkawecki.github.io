@@ -38,7 +38,7 @@ home:
     resume_label: "Lebenslauf (PDF)"
   solutions:
     items:
-      - title: "Von der Idee zum Produkt"
+      - title: "Produktentwicklung"
         outcome: "Anforderungen erfassen, Software entwickeln und live bringen."
         tech:
           - Python
@@ -72,14 +72,13 @@ home:
     cta_label: "Alle Projekte"
     cta_href: "/projects/"
   intro:
-    paragraph1: "Ich bin Björn Kawecki, Full-Stack-Entwickler in Berlin. Hier stelle ich mich vor, zeige meine Schwerpunkte und ausgewählte Projekte."
-    paragraph2: "Wenn du an einer Zusammenarbeit interessiert bist, schreib mir gern. Meine konkreten Leistungen und Technologien findest du im Angebot, ausgewählte Projekte auf der Projekt-Seite."
-    paragraph3: "Technical Writing und Dokumentation biete ich unter einer eigenen Marke an."
+    paragraph1: "Ich bin Webentwickler in Berlin, mit geisteswissenschaflichem Hintergrund (Russistik)."
+    paragraph2_prefix: "Bei Interesse an einer Zusammenarbeit bin ich am besten per E-Mail erreichbar. Mehr Informationen über meine Leistungen gibt es unter "
+    paragraph2_suffix: "."
+    paragraph3_prefix: "Ausgewählte Projekte befinden sich unter "
+    paragraph3_suffix: "."
     projects_label: "Projekte"
-    services_label: "Angebot"
-    contact_label: "Kontakt"
-    docs_label: "Documentation Engineering"
-    docs_url: "#"
+    services_label: "Services"
   contact:
     anchor: "kontakt"
     title: "E-Mail schreiben"

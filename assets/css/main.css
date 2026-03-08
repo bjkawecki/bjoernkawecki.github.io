@@ -1351,6 +1351,10 @@ ul, ol {
   margin-right: auto;
 }
 
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1500,6 +1504,11 @@ ul, ol {
   width: 0.75em;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1534,6 +1543,14 @@ ul, ol {
 
 .basis-1\/2 {
   flex-basis: 50%;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1713,6 +1730,10 @@ ul, ol {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -1721,14 +1742,14 @@ ul, ol {
   border-top-width: 1px;
 }
 
-.border-accent-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 202 191 / var(--tw-border-opacity, 1));
-}
-
 .border-accent-300 {
   --tw-border-opacity: 1;
   border-color: rgb(255 156 140 / var(--tw-border-opacity, 1));
+}
+
+.border-accent-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 84 71 / var(--tw-border-opacity, 1));
 }
 
 .border-gray-200 {
@@ -1739,6 +1760,10 @@ ul, ol {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .border-white {
@@ -1885,6 +1910,14 @@ ul, ol {
   padding-bottom: 1rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1946,10 +1979,6 @@ ul, ol {
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .font-semibold {
@@ -2686,10 +2715,6 @@ body {
   background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
 }
 
-.dark\:bg-zinc-800\/80:where(.dark, .dark *) {
-  background-color: rgb(39 39 42 / 0.8);
-}
-
 .dark\:bg-zinc-900:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
@@ -2719,11 +2744,6 @@ body {
 .dark\:text-accent-200:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 202 191 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-accent-300:where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 156 140 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-accent-50:where(.dark, .dark *) {

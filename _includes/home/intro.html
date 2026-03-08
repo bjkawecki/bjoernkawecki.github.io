@@ -1,37 +1,22 @@
 {% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
 {% assign strings = site.data[current_lang].strings %}
 {% assign intro = strings.home.intro %}
-{% assign contact = strings.home.contact %}
+{% assign nav_strings = strings.navigation %}
 {% assign lang_prefix = '' %}
 {% unless current_lang == site.default_lang %}
   {% assign lang_prefix = '/' | append: current_lang %}
 {% endunless %}
 {% assign projects_url = lang_prefix | append: '/projects/' %}
 {% assign services_url = lang_prefix | append: '/services/' %}
-{% assign contact_href = contact.primary_cta_href | default: 'mailto:bkawecki@mailbox.org' %}
-{% if contact.anchor %}
-  {% assign contact_anchor = lang_prefix | append: '/#' | append: contact.anchor %}
-{% endif %}
-<div class="space-y-6 prose prose-lg dark:prose-invert prose-p:text-gray-700 dark:prose-p:text-gray-300 max-w-none">
+<div class="space-y-8 prose prose-lg dark:prose-invert prose-p:text-gray-700 dark:prose-p:text-gray-300 max-w-none">
+  <h1 class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white md:text-4xl !mb-0">{{ nav_strings.about_me }}</h1>
   <p class="text-lg leading-relaxed">
     {{ intro.paragraph1 }}
   </p>
   <p class="leading-relaxed">
-    {{ intro.paragraph2 }}
+    {{ intro.paragraph2_prefix }}<a href="{{ site.baseurl }}{{ services_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium">{{ intro.services_label }}</a>{{ intro.paragraph2_suffix }}
   </p>
   <p class="leading-relaxed">
-    <a href="{{ site.baseurl }}{{ services_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium">{{ intro.services_label }}</a>
-    ·
-    <a href="{{ site.baseurl }}{{ projects_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium">{{ intro.projects_label }}</a>
-    ·
-    {% if contact_anchor %}
-    <a href="{{ site.baseurl }}{{ contact_anchor }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium">{{ intro.contact_label }}</a>
-    {% else %}
-    <a href="{{ contact_href }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium">{{ intro.contact_label }}</a>
-    {% endif %}
-  </p>
-  <p class="leading-relaxed">
-    {{ intro.paragraph3 }}
-    <a href="{{ intro.docs_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium" rel="noopener noreferrer">{{ intro.docs_label }}</a>.
+    {{ intro.paragraph3_prefix }}<a href="{{ site.baseurl }}{{ projects_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100 font-medium">{{ intro.projects_label }}</a>{{ intro.paragraph3_suffix }}
   </p>
 </div>
