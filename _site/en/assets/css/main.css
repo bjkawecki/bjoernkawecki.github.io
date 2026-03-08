@@ -2369,6 +2369,11 @@ body {
   border-color: var(--accent-500);
 }
 
+.hover\:border-gray-400:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
+}
+
 .hover\:bg-accent-50:hover {
   background-color: var(--accent-50);
 }
@@ -2694,10 +2699,6 @@ body {
   border-color: rgb(24 24 27 / var(--tw-border-opacity, 1));
 }
 
-.dark\:bg-accent-200:where(.dark, .dark *) {
-  background-color: var(--accent-200);
-}
-
 .dark\:bg-accent-400:where(.dark, .dark *) {
   background-color: var(--accent-400);
 }
@@ -2758,16 +2759,16 @@ body {
   color: var(--accent-200);
 }
 
+.dark\:text-accent-400:where(.dark, .dark *) {
+  color: var(--accent-400);
+}
+
 .dark\:text-accent-50:where(.dark, .dark *) {
   color: var(--accent-50);
 }
 
 .dark\:text-accent-500:where(.dark, .dark *) {
   color: var(--accent-500);
-}
-
-.dark\:text-accent-900:where(.dark, .dark *) {
-  color: var(--accent-900);
 }
 
 .dark\:text-brand-200:where(.dark, .dark *) {
@@ -2815,6 +2816,11 @@ body {
   border-color: var(--accent-500);
 }
 
+.dark\:hover\:border-zinc-600:hover:where(.dark, .dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 91 / var(--tw-border-opacity, 1));
+}
+
 .dark\:hover\:bg-accent-400:hover:where(.dark, .dark *) {
   background-color: var(--accent-400);
 }
@@ -2853,6 +2859,11 @@ body {
 .dark\:hover\:text-brand-100:hover:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+}
+
+.dark\:hover\:text-gray-300:hover:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 
 .dark\:hover\:text-gray-50:hover:where(.dark, .dark *) {
@@ -2894,9 +2905,8 @@ body {
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 
-.dark\:prose-a\:text-brand-300 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+.dark\:prose-a\:text-accent-500 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
+  color: var(--accent-500);
 }
 
 @media (min-width: 768px) {
