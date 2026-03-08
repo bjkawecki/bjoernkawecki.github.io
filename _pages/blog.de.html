@@ -28,7 +28,7 @@ locale: de
     {% for category in site.categories %}
     {% assign posts_in_category = category[1] | where: "lang", lang %}
     {% if posts_in_category.size > 0 %}
-    <a href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}" class="inline-block px-3 py-1.5 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-white border border-gray-200 text-accent-700 shadow-sm hover:bg-accent-50 hover:border-accent-200 hover:shadow dark:bg-zinc-800 dark:border-zinc-700 dark:text-accent-500 dark:shadow-none dark:hover:bg-zinc-700 dark:hover:border-accent-500">
+    <a href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}" class="inline-block px-3 py-1.5 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-white border border-gray-200 text-accent-700 shadow-sm hover:bg-accent-50 hover:border-accent-200 hover:shadow dark:bg-zinc-800 dark:border-zinc-700 dark:text-accent-400 dark:shadow-none dark:hover:bg-zinc-700 dark:hover:border-accent-500">
       {{ category[0] }}
     </a>
     {% endif %}
@@ -52,7 +52,7 @@ locale: de
       <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
         {{ post.excerpt | strip_html | truncate: 200 }}
       </p>
-      <span class="inline-flex items-center text-sm font-semibold text-accent-600 transition group-hover:text-accent-700 dark:text-accent-500 dark:group-hover:text-accent-400">
+      <span class="inline-flex items-center text-sm font-semibold text-accent-600 transition group-hover:text-accent-700 dark:text-accent-400 dark:group-hover:text-accent-300">
         Weiterlesen
       </span>
     </article>

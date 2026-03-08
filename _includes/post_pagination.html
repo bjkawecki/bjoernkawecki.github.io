@@ -13,7 +13,7 @@
     {% assign next_index = current_index | minus: 1 %}
     {% if next_index >= 0 %}
       {% assign next_post = all_posts[next_index] %}
-      <a class="basis-1/2 underline text-gray-700 hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-500 transition" href="{{ next_post.url }}">{{ site.data[site.active_lang].strings.pagination.next_post }}</a>
+      <a class="basis-1/2 underline text-gray-700 hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400 transition" href="{{ next_post.url }}">{{ site.data[site.active_lang].strings.pagination.next_post }}</a>
     {% else %}
       <div class="basis-1/2"></div>
     {% endif %}
@@ -24,7 +24,7 @@
     {% assign prev_index = current_index | plus: 1 %}
     {% if prev_index < all_posts.size %}
       {% assign prev_post = all_posts[prev_index] %}
-      <a class="basis-1/2 text-right underline text-gray-700 hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-500 transition" href="{{ prev_post.url }}">{{ site.data[site.active_lang].strings.pagination.previous_post }}</a>
+      <a class="basis-1/2 text-right underline text-gray-700 hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400 transition" href="{{ prev_post.url }}">{{ site.data[site.active_lang].strings.pagination.previous_post }}</a>
     {% else %}
       <div class="basis-1/2"></div>
     {% endif %}
