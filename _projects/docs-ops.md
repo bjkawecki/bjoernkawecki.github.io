@@ -1,7 +1,7 @@
 ---
 layout: project
 lang: de
-title: DocOps
+title: DocsOps
 output: false
 description: Interne Open-Source Dokumentationsplattform
 started: "2025"

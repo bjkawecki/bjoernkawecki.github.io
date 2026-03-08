@@ -1,7 +1,7 @@
 ---
 layout: project
 lang: en
-title: DocOps
+title: DocsOps
 output: false
 description: Open-source documentation platform for internal use – concept, planning, and code on GitHub.
 started: "2025"
