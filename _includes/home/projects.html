@@ -9,7 +9,7 @@
         {{ projects_strings.title }}
       </h2>
     </div>
-    <a href="{{ site.baseurl }}{{ projects_strings.cta_href }}" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-accent-600 transition bg-gray-100 rounded-full hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:bg-zinc-800 dark:text-accent-200 dark:hover:bg-zinc-700">
+    <a href="{{ site.baseurl }}{{ projects_strings.cta_href }}" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-accent-600 transition bg-gray-100 rounded-full hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:bg-zinc-800 dark:text-accent-500 dark:hover:bg-zinc-700">
       {{ projects_strings.cta_label }}
     </a>
   </div>
@@ -38,7 +38,7 @@
       </ul>
       {% endif %}
       <div class="pt-2 mt-auto">
-        <a href="{% if project.external_url %}{{ project.external_url }}{% else %}{{ project.url }}{% endif %}" {% if project.external_url %}target="_blank" rel="noopener noreferrer" {% endif %} class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-700 dark:text-accent-200 dark:hover:text-accent-100">
+        <a href="{% if project.external_url %}{{ project.external_url }}{% else %}{{ project.url }}{% endif %}" {% if project.external_url %}target="_blank" rel="noopener noreferrer" {% endif %} class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-700 dark:text-accent-500 dark:hover:text-accent-400">
           {% if project.link_label %}{{ project.link_label }}{% else %}{{ strings.navigation.projects }}{% endif %}
           {% include icons/arrow-right.html class="w-4 h-4 ml-1" %}
         </a>

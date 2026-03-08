@@ -18,21 +18,21 @@
     <div class="flex items-center justify-between py-4 md:py-5 gap-4">
       <a
         href="{{ site.baseurl }}{{ nav_about_path }}"
-        class="text-xl font-bold tracking-tight text-gray-900 transition hover:text-accent-600 dark:text-white dark:hover:text-accent-300"
+        class="text-xl font-bold tracking-tight text-gray-900 transition hover:text-accent-600 dark:text-white dark:hover:text-accent-500"
         aria-label="Björn Kawecki – {{ header_strings.aside.profession }}"
       >
         Björn Kawecki
       </a>
       <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-600 dark:text-gray-300" aria-label="Hauptnavigation">
-        <a href="{{ site.baseurl }}{{ nav_about_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-300 {% if page.url == nav_about_path or page.url == lang_prefix %}font-semibold text-gray-900 dark:text-white border-accent-500{% endif %}">{{ nav_strings.about_me }}</a>
-        <a href="{{ site.baseurl }}{{ nav_projects_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-300 {% if page.url == nav_projects_path %}font-semibold text-gray-900 dark:text-white border-accent-500{% endif %}">{{ nav_strings.projects }}</a>
-        <a href="{{ site.baseurl }}{{ nav_services_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-300 {% if page.url == nav_services_path %}font-semibold text-gray-900 dark:text-white border-accent-500{% endif %}">{{ nav_strings.services }}</a>
+        <a href="{{ site.baseurl }}{{ nav_about_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-500 {% if page.url == nav_about_path or page.url == lang_prefix %}font-semibold text-accent-600 dark:text-accent-500 border-accent-500{% endif %}">{{ nav_strings.about_me }}</a>
+        <a href="{{ site.baseurl }}{{ nav_projects_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-500 {% if page.url == nav_projects_path %}font-semibold text-accent-600 dark:text-accent-500 border-accent-500{% endif %}">{{ nav_strings.projects }}</a>
+        <a href="{{ site.baseurl }}{{ nav_services_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-500 {% if page.url == nav_services_path %}font-semibold text-accent-600 dark:text-accent-500 border-accent-500{% endif %}">{{ nav_strings.services }}</a>
       </nav>
       <div class="flex items-center gap-3">
         <button
           id="toggle-color-mode"
           type="button"
-          class="flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 text-gray-600 transition hover:border-accent-500 hover:text-accent-600 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-accent-500 dark:hover:text-accent-200"
+          class="flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 text-gray-600 transition hover:border-accent-500 hover:text-accent-600 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-accent-500 dark:hover:text-accent-500"
           aria-label="{{ header_strings.footer.theme_toggle_label }}"
           aria-pressed="false"
         >
@@ -42,7 +42,7 @@
           {% for tongue in site.languages %}
             {% assign language_code = site.data[tongue].strings.language_code | default: tongue | upcase %}
             {% if tongue == site.active_lang %}
-              <span class="px-2 py-1 rounded-md bg-accent-100 text-accent-600 dark:bg-accent-900/50 dark:text-accent-200">
+              <span class="px-2 py-1 rounded-md bg-accent-100 text-accent-600 dark:bg-accent-900/50 dark:text-accent-500">
                 {{ language_code }}
               </span>
             {% else %}

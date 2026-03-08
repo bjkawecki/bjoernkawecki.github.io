@@ -31,7 +31,7 @@ pagination:
       {% if posts_in_category.size > 0 %}
         <a
           href="{{ site.baseurl }}{{ category_base }}{{ category[0] | downcase | url_encode | slugify }}"
-          class="inline-block px-3 py-1.5 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-white border border-gray-200 text-accent-700 shadow-sm hover:bg-accent-50 hover:border-accent-200 hover:shadow dark:bg-zinc-800 dark:border-zinc-700 dark:text-accent-200 dark:shadow-none dark:hover:bg-zinc-700 dark:hover:border-accent-500"
+          class="inline-block px-3 py-1.5 text-xs font-semibold tracking-wide uppercase transition rounded-full bg-white border border-gray-200 text-accent-700 shadow-sm hover:bg-accent-50 hover:border-accent-200 hover:shadow dark:bg-zinc-800 dark:border-zinc-700 dark:text-accent-500 dark:shadow-none dark:hover:bg-zinc-700 dark:hover:border-accent-500"
         >
           {{ category[0] }}
         </a>
@@ -46,7 +46,7 @@ pagination:
     {% for post in blog_posts %}
       <a
         href="{{ post.url }}"
-        class="group block rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:shadow-lg dark:focus-visible:outline-accent-200"
+        class="group block rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:shadow-lg dark:focus-visible:outline-accent-500"
       >
         <article class="space-y-3">
           <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
