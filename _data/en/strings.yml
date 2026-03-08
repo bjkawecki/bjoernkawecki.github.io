@@ -5,6 +5,7 @@ aside:
 navigation:
   about_me: "About me"
   projects: "Projects"
+  services: "Services"
   blog: "Blog"
   contact: "Contact"
 header:
@@ -18,6 +19,7 @@ head:
   title: "Björn Kawecki | Full-Stack Web Developer Berlin"
   name: "About Björn Kawecki"
 footer:
+  pages: "Pages"
   github_label: "Open Björn Kawecki's GitHub profile"
   linkedin_label: "Open Björn Kawecki's LinkedIn profile"
   email_label: "Send an email to Björn Kawecki"
@@ -45,7 +47,7 @@ home:
           - FastAPI
           - PostgreSQL
       - title: "Cloud & Operations"
-        outcome: "Deploy, scale, and operate systems. CI/CD pipelines and cloud infrastructure on AWS."
+        outcome: "Deploy, scale, and operate systems. CI/CD pipelines and cloud infrastructure."
         tech:
           - AWS
           - Docker
@@ -53,7 +55,7 @@ home:
           - GitHub Actions
           - Nginx
       - title: "Automation & Integration"
-        outcome: "Collect data, connect systems, and automate processes. Use APIs and build your own."
+        outcome: "Collect data, automate processes, use APIs and build your own."
         tech:
           - AI
           - REST API
@@ -62,6 +64,20 @@ home:
           - Data Processing
           - Telegram Bots
       
+  projects:
+    title: "Projects"
+    description: "Selected projects in web development, automation, and documentation."
+    cta_label: "All projects"
+    cta_href: "/en/projects/"
+  intro:
+    paragraph1: "I’m Björn Kawecki, a full-stack developer based in Berlin. This site is where I introduce myself, outline what I do, and highlight selected projects."
+    paragraph2: "If you’re interested in working together, get in touch. You’ll find my services and tech stack on the Services page, and some project case studies on the Projects page."
+    paragraph3: "I offer technical writing and documentation under a separate brand."
+    projects_label: "Projects"
+    services_label: "Services"
+    contact_label: "Contact"
+    docs_label: "Documentation Engineering"
+    docs_url: "#"
   contact:
     anchor: "contact"
     title: "Get in touch"

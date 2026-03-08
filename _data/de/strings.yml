@@ -5,6 +5,7 @@ aside:
 navigation:
   about_me: "Über mich"
   projects: "Projekte"
+  services: "Services"
   blog: "Blog"
   contact: "Kontakt"
 header:
@@ -18,6 +19,7 @@ head:
   title: "Björn Kawecki | Full-Stack Webentwickler Berlin"
   name: "Über Björn Kawecki"
 footer:
+  pages: "Seiten"
   github_label: "GitHub-Profil von Björn Kawecki öffnen"
   linkedin_label: "LinkedIn-Profil von Björn Kawecki öffnen"
   email_label: "E-Mail an Björn Kawecki schreiben"
@@ -37,7 +39,7 @@ home:
   solutions:
     items:
       - title: "Von der Idee zum Produkt"
-        outcome: "Anforderungen erfassen, Software entwickeln und live bringen. Vom ersten Konzept bis zur fertigen Anwendung."
+        outcome: "Anforderungen erfassen, Software entwickeln und live bringen."
         tech:
           - Python
           - JavaScript
@@ -45,7 +47,7 @@ home:
           - FastAPI
           - PostgreSQL
       - title: "Cloud & Betrieb"
-        outcome: "Systeme deployen, skalieren und betreiben. CI/CD-Pipelines und Cloud-Infrastructure, z. B. auf AWS."
+        outcome: "Systeme deployen, skalieren und betreiben. CI/CD-Pipelines und Cloud-Infrastructure."
         tech:
           - AWS
           - Docker
@@ -53,7 +55,7 @@ home:
           - GitHub Actions
           - Nginx
       - title: "Automatisierung & Integration"
-        outcome: "Daten sammeln, Systeme verbinden und Prozesse automatisieren. APIs nutzen und eigene entwickeln."
+        outcome: "Daten sammeln, Prozesse automatisieren, APIs nutzen und eigene entwickeln."
         tech:
           - AI
           - REST API
@@ -64,11 +66,25 @@ home:
 
 
 
+  projects:
+    title: "Projekte"
+    description: "Ausgewählte Projekte aus den Bereichen Webentwicklung, Automatisierung und Dokumentation."
+    cta_label: "Alle Projekte"
+    cta_href: "/projects/"
+  intro:
+    paragraph1: "Ich bin Björn Kawecki, Full-Stack-Entwickler in Berlin. Hier stelle ich mich vor, zeige meine Schwerpunkte und ausgewählte Projekte."
+    paragraph2: "Wenn du an einer Zusammenarbeit interessiert bist, schreib mir gern. Meine konkreten Leistungen und Technologien findest du im Angebot, ausgewählte Projekte auf der Projekt-Seite."
+    paragraph3: "Technical Writing und Dokumentation biete ich unter einer eigenen Marke an."
+    projects_label: "Projekte"
+    services_label: "Angebot"
+    contact_label: "Kontakt"
+    docs_label: "Documentation Engineering"
+    docs_url: "#"
   contact:
     anchor: "kontakt"
-    title: "Kontakt aufnehmen"
-    subtitle: "Schreib mir eine kurze Nachricht oder buche direkt einen Termin – ich melde mich zeitnah zurück."
-    primary_cta_label: "Kontakt aufnehmen"
+    title: "E-Mail schreiben"
+    subtitle: "Schreib mir eine kurze Nachricht – ich melde mich zeitnah zurück."
+    primary_cta_label: "E-Mail schreiben"
     primary_cta_href: "mailto:bkawecki@mailbox.org"
 pagination:
   previous_page: Vorherige Seite

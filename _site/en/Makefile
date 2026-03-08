@@ -1,4 +1,4 @@
-.PHONY: serve build install serve-drafts
+.PHONY: serve build install serve-drafts css
 
 serve:
 	npm run serve
@@ -6,6 +6,10 @@ serve:
 # Dev-Server inkl. Entwürfe (--drafts)
 serve-drafts:
 	npm run serve_d
+
+# Nur Tailwind-CSS neu bauen (Klassen aus HTML/Includes einlesen)
+css:
+	npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css
 
 # Site bauen (Tailwind + Jekyll)
 build:

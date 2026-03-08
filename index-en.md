@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: default_with_sidebar
 title: About Me
 permalink: /
 lang: en
 page_id: about-me
 ---
 
-{% include home/hero.html %}
+{% include home/intro.html %}

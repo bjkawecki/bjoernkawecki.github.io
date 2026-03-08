@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+<html lang="{{ current_lang }}">
+  <head>
+    <meta property="og:title" content="{{ page.title | escape }}" />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description | escape }}"
+    />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% include head.html %}
+  </head>
+
+  <body class="text-gray-700 bg-brand-50 dark:bg-brand-950 dark:text-gray-100 transition-colors">
+    {% include site-header.html %}
+    <main
+      id="main-content"
+      class="px-5 py-12 mx-auto max-w-6xl md:px-8"
+      aria-label="Content"
+    >
+      <div class="grid gap-10 lg:grid-cols-[3fr_1fr] lg:gap-12">
+        <div class="space-y-10 md:space-y-12 md:pr-6">
+          {% if page.prose %}
+          <article class="max-w-3xl prose prose-lg dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-gray-100">
+            {{ content }}
+          </article>
+          {% else %}
+          {{ content }}
+          {% endif %}
+        </div>
+        <div class="lg:order-2">
+          {% include sidebar.html %}
+        </div>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
