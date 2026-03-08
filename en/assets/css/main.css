@@ -1319,11 +1319,11 @@ ul, ol {
 }
 
 .dark .prose-links-hover a {
-  color: var(--accent-500);
+  color: var(--accent-400);
 }
 
 .dark .prose-links-hover a:hover {
-  color: var(--accent-400);
+  color: var(--accent-300);
 }
 
 .absolute {
@@ -2832,12 +2832,12 @@ body {
   color: var(--accent-100);
 }
 
-.dark\:hover\:text-accent-400:hover:where(.dark, .dark *) {
-  color: var(--accent-400);
+.dark\:hover\:text-accent-300:hover:where(.dark, .dark *) {
+  color: var(--accent-300);
 }
 
-.dark\:hover\:text-accent-500:hover:where(.dark, .dark *) {
-  color: var(--accent-500);
+.dark\:hover\:text-accent-400:hover:where(.dark, .dark *) {
+  color: var(--accent-400);
 }
 
 .dark\:hover\:text-brand-100:hover:where(.dark, .dark *) {
@@ -2875,8 +2875,8 @@ body {
   outline-color: var(--accent-500);
 }
 
-.group:hover .dark\:group-hover\:text-accent-400:where(.dark, .dark *) {
-  color: var(--accent-400);
+.group:hover .dark\:group-hover\:text-accent-300:where(.dark, .dark *) {
+  color: var(--accent-300);
 }
 
 .group:hover .dark\:group-hover\:text-brand-100:where(.dark, .dark *) {
@@ -2894,8 +2894,8 @@ body {
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 
-.dark\:prose-a\:text-accent-500 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
-  color: var(--accent-500);
+.dark\:prose-a\:text-accent-400 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
+  color: var(--accent-400);
 }
 
 @media (min-width: 768px) {
