@@ -70,12 +70,12 @@ home:
     cta_label: "All projects"
     cta_href: "/en/projects/"
   intro:
-    paragraph1: "I’m a Russicist and web developer based in Berlin. I studied Russian language, literature, and linguistics, and later shifted into software development."
-    paragraph2_prefix: "For collaboration inquiries, the best way to reach me is by email. More information about my services can be found under "
-    paragraph2_suffix: "."
-    paragraph3_prefix: "Selected projects can be found on the "
-    paragraph3_suffix: " page."
-    projects_label: "Projects page"
+    paragraph1: "Hello, I'm Björn Kawecki. I'm a web developer and live in Berlin."
+    paragraph2: "Before moving into IT I studied Russian studies and completed my Master's in 2021. I then worked in editorial roles. In 2024 I began training in the cloud sector, which led to my first role in software development."
+    paragraph4_part1: "Working with language remains important to me and also shapes my "
+    paragraph4_part2: ". If you are interested in working together, the best way to reach me is by email. You can find more information about my services under "
+    paragraph4_part3: "."
+    projects_label: "projects"
     services_label: "Services"
   contact:
     anchor: "contact"

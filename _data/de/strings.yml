@@ -72,11 +72,11 @@ home:
     cta_label: "Alle Projekte"
     cta_href: "/projects/"
   intro:
-    paragraph1: "Ich bin Webentwickler in Berlin, mit geisteswissenschaflichem Hintergrund (Russistik)."
-    paragraph2_prefix: "Bei Interesse an einer Zusammenarbeit bin ich am besten per E-Mail erreichbar. Mehr Informationen über meine Leistungen gibt es unter "
-    paragraph2_suffix: "."
-    paragraph3_prefix: "Ausgewählte Projekte befinden sich unter "
-    paragraph3_suffix: "."
+    paragraph1: "Hallo, ich heiße Björn Kawecki. Ich bin Full-Stack Webentwickler und lebe in Berlin."
+    paragraph2: "Vor meinem Einstieg in die IT studierte ich Russistik und schloss 2021 mein Masterstudium ab. Anschließend arbeitete ich redaktionell. 2024 begann ich eine Fortbildung im Cloud-Bereich. Im selben Jahr folgte meine erste Station in der Softwareentwicklung."
+    paragraph4_part1: "Die Arbeit mit Sprache bleibt mir wichtig und prägt auch meine "
+    paragraph4_part2: ". Wenn Sie an einer Zusammenarbeit interessiert sind, erreichen Sie mich am besten per E-Mail. Weitere Informationen zu meinen Leistungen finden Sie unter "
+    paragraph4_part3: "."
     projects_label: "Projekte"
     services_label: "Services"
   contact:
