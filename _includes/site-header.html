@@ -32,7 +32,7 @@
         <button
           id="toggle-color-mode"
           type="button"
-          class="flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 text-gray-600 transition hover:border-accent-500 hover:text-accent-600 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-accent-500 dark:hover:text-accent-500"
+          class="flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 text-gray-600 transition hover:border-gray-400 hover:text-gray-900 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-zinc-600 dark:hover:text-gray-200"
           aria-label="{{ header_strings.footer.theme_toggle_label }}"
           aria-pressed="false"
         >
@@ -42,7 +42,7 @@
           {% for tongue in site.languages %}
             {% assign language_code = site.data[tongue].strings.language_code | default: tongue | upcase %}
             {% if tongue == site.active_lang %}
-              <span class="px-2 py-1 rounded-md bg-accent-100 text-accent-600 dark:bg-accent-900/50 dark:text-accent-500">
+              <span class="px-2 py-1 rounded-md bg-accent-100 text-accent-600 dark:bg-transparent dark:border dark:border-accent-400 dark:text-accent-500">
                 {{ language_code }}
               </span>
             {% else %}

@@ -59,7 +59,7 @@ body {
     color: var(--accent-500);
   }
   .dark .prose-links-hover a:hover {
-    color: var(--accent-500);
+    color: var(--accent-400);
   }
 }
 

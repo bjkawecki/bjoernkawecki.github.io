@@ -1323,7 +1323,7 @@ ul, ol {
 }
 
 .dark .prose-links-hover a:hover {
-  color: var(--accent-500);
+  color: var(--accent-400);
 }
 
 .absolute {
@@ -1389,10 +1389,6 @@ ul, ol {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-3 {
@@ -1883,11 +1879,6 @@ ul, ol {
   padding-bottom: 0.375rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1908,6 +1899,11 @@ ul, ol {
   padding-bottom: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1922,10 +1918,6 @@ ul, ol {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .text-right {
@@ -2365,10 +2357,6 @@ body {
   border-color: var(--accent-200);
 }
 
-.hover\:border-accent-500:hover {
-  border-color: var(--accent-500);
-}
-
 .hover\:border-gray-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
@@ -2399,10 +2387,6 @@ body {
 
 .hover\:fill-white:hover {
   fill: #fff;
-}
-
-.hover\:text-accent-500:hover {
-  color: var(--accent-500);
 }
 
 .hover\:text-accent-600:hover {
@@ -2859,6 +2843,11 @@ body {
 .dark\:hover\:text-brand-100:hover:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+}
+
+.dark\:hover\:text-gray-200:hover:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
 }
 
 .dark\:hover\:text-gray-300:hover:where(.dark, .dark *) {
