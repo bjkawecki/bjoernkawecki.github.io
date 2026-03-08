@@ -1,6 +1,6 @@
 aside:
   profession: "Full-Stack Web Developer"
-  location: "Berlin, Germany"
+  location: "Berlin"
   profile_alt: "Portrait of Björn Kawecki"
 navigation:
   about_me: "About me"
@@ -14,7 +14,7 @@ header:
   contact_cta: "Contact"
   contact_cta_href: "/en/#contact"
 head:
-  description: "Björn Kawecki is a full-stack web developer in Berlin. Python & JavaScript, architecture, DevOps, and automation from concept to production."
+  description: "Björn Kawecki is a full-stack web developer in Berlin. Python & JavaScript, architecture, DevOps, and automation from a single source."
   og_locale: "en_US"
   title: "Björn Kawecki | Full-Stack Web Developer Berlin"
   name: "About Björn Kawecki"
@@ -30,16 +30,16 @@ language_name: "English"
 language_code: "EN"
 home:
   hero:
-    title: "Web Development"
-    subtitle: "Full-stack with Python, JavaScript, and AWS. Rapidly developed, reliably deployed."
+    title: "Development for the Web"
+    subtitle: "Full-stack with Python, JavaScript, and AWS. Quickly developed, reliably deployed."
     primary_cta:
       label: "Contact"
       href: "/en/#contact"
     resume_label: "Resume (PDF)"
   solutions:
     items:
-      - title: "From Idea to Product"
-        outcome: "Capture requirements, build software, and ship it. From first concept to finished application."
+      - title: "Product Development"
+        outcome: "Capture requirements, develop software, and bring it live."
         tech:
           - Python
           - JavaScript
@@ -55,7 +55,7 @@ home:
           - GitHub Actions
           - Nginx
       - title: "Automation & Integration"
-        outcome: "Collect data, automate processes, use APIs and build your own."
+        outcome: "Collect data, automate processes, use APIs and develop your own."
         tech:
           - AI
           - REST API
@@ -70,18 +70,18 @@ home:
     cta_label: "All projects"
     cta_href: "/en/projects/"
   intro:
-    paragraph1: "Hello, I'm Björn Kawecki. I'm a web developer and live in Berlin."
-    paragraph2: "Before moving into IT I studied Russian studies and completed my Master's in 2021. I then worked in editorial roles. In 2024 I began training in the cloud sector, which led to my first role in software development."
+    paragraph1: "Hello, I'm Björn Kawecki. I'm a full-stack web developer and live in Berlin."
+    paragraph2: "Before moving into IT I studied Russian studies and completed my Master's in 2021. I then worked in editorial roles. In 2024 I began training in the cloud sector. The same year I took up my first position in software development."
     paragraph4_part1: "Working with language remains important to me and also shapes my "
-    paragraph4_part2: ". If you are interested in working together, the best way to reach me is by email. You can find more information about my services under "
+    paragraph4_part2: ". If you are interested in working together, the best way to reach me is by email. Further information about my services can be found under "
     paragraph4_part3: "."
-    projects_label: "projects"
+    projects_label: "Projects"
     services_label: "Services"
   contact:
     anchor: "contact"
-    title: "Get in touch"
-    subtitle: "Send over a brief or schedule a call – I’ll get back to you quickly."
-    primary_cta_label: "Get in touch"
+    title: "Send email"
+    subtitle: "Send me a short message – I’ll get back to you promptly."
+    primary_cta_label: "Send email"
     primary_cta_href: "mailto:bkawecki@mailbox.org"
 pagination:
   previous_page: Previous page
@@ -94,7 +94,7 @@ layout:
   category: Category
   back_to_list: All Blog Posts
 no_entries:
-  blog: No blog posts found.
+  blog: No entries yet.
   projects: No projects found.
 errors:
   404_title: "Error 404"
