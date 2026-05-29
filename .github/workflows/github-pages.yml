@@ -7,31 +7,34 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           bundler-cache: true
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v6
         with:
-          node-version: "18"
-      - run: |
-          npm cache clean --force
-          rm -rf node_modules package-lock.json
-          npm install --prefer-online --no-audit --no-fund
+          node-version: "24"
+          cache: npm
+      - run: npm ci
       - name: Build site
-        uses: limjh16/jekyll-action-ts@v2
         env:
           JEKYLL_ENV: production
-        with:
-          enable_cache: true
+        run: npm run build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site

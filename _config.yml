@@ -55,6 +55,9 @@ defaults:
 postcss:
   cache: false
 
+# Verhindert Race Conditions beim parallelen jekyll-polyglot-Build in CI.
+disable_disk_cache: true
+
 pagination:
   enabled: true
   per_page: 5 # Anzahl Posts pro Seite
