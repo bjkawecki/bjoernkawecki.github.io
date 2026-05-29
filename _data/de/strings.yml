@@ -84,7 +84,7 @@ home:
     title: "E-Mail schreiben"
     subtitle: "Schreib mir eine kurze Nachricht – ich melde mich zeitnah zurück."
     primary_cta_label: "E-Mail schreiben"
-    primary_cta_href: "mailto:bkawecki@mailbox.org"
+    primary_cta_href: "mailto:post@bjoernkawecki.de"
 pagination:
   previous_page: Vorherige Seite
   page: Seite

@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Björn Kawecki | Full-Stack Webentwickler Berlin
-email: bkawecki@mailbox.org
+email: post@bjoernkawecki.de
 url: "https://bjoernkawecki.de" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username:

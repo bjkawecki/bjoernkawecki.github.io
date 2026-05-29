@@ -82,7 +82,7 @@ home:
     title: "Send email"
     subtitle: "Send me a short message – I’ll get back to you promptly."
     primary_cta_label: "Send email"
-    primary_cta_href: "mailto:bkawecki@mailbox.org"
+    primary_cta_href: "mailto:post@bjoernkawecki.de"
 pagination:
   previous_page: Previous page
   page: Page
