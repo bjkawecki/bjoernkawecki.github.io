@@ -1,5 +1,5 @@
 ---
-layout: default_with_sidebar
+layout: default
 title: Projekte
 permalink: /projects/
 lang: de
@@ -22,7 +22,7 @@ page_id: projects
   {{ strings.no_entries.projects }}
 </p>
 {% else %}
-<section class="grid gap-6 grid-cols-1">
+<section class="grid grid-cols-1 gap-6 md:grid-cols-2">
   {% for project in localized_projects %}
   <article class="flex flex-col h-full p-6 space-y-4 border rounded-2xl border-gray-200 bg-white/80 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
     <div class="space-y-2">
@@ -50,3 +50,5 @@ page_id: projects
   {% endfor %}
 </section>
 {% endif %}
+
+{% include contact_cta.html %}

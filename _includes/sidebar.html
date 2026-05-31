@@ -2,16 +2,31 @@
 {% assign strings = site.data[current_lang].strings %}
 {% assign hero = strings.home.hero %}
 {% assign contact = strings.home.contact %}
-<div class="flex flex-col items-center gap-6 lg:items-start">
-  <figure class="flex h-40 w-40 items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-900 sm:h-48 sm:w-48 lg:h-auto lg:w-full lg:aspect-square">
-    <img src="{{ site.baseurl }}/assets/img/profil-1.webp" alt="{{ strings.aside.profile_alt }}" class="h-full w-full object-cover" loading="lazy" />
-  </figure>
-  <div class="w-full space-y-4 rounded-2xl border border-gray-200 bg-white/80 p-5 shadow-md backdrop-blur dark:border-zinc-700 dark:bg-zinc-900">
-    <div class="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">
-      {% include icons/location.html class="h-4 w-4 flex-shrink-0" %}
-      <span>{{ strings.aside.location }}</span>
+<div class="w-full lg:hidden">
+  <section class="rounded-2xl border border-gray-200 bg-white/80 p-4 shadow-md backdrop-blur dark:border-zinc-700 dark:bg-zinc-900">
+    <div class="flex items-center gap-4">
+      <img
+        src="{{ site.baseurl }}/assets/img/profil-1.webp"
+        alt="{{ strings.aside.profile_alt }}"
+        class="aspect-square w-1/2 flex-shrink-0 rounded-xl object-cover"
+        loading="lazy"
+      />
+      <div class="min-w-0 flex-1 space-y-1">
+        <p class="text-lg font-semibold leading-tight text-gray-900 dark:text-gray-100">
+          Björn Kawecki
+        </p>
+        <p class="text-sm font-medium leading-relaxed text-gray-600 dark:text-gray-300">
+          {{ strings.aside.profession }} · {{ strings.aside.location }}
+        </p>
+      </div>
     </div>
-    <div class="flex justify-center gap-4 border-t border-gray-200 pt-4 dark:border-zinc-700 lg:justify-start">
+    <a href="{{ contact.primary_cta_href | default: 'mailto:post@bjoernkawecki.de' }}" class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-accent-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:bg-accent-500 dark:hover:bg-accent-400 dark:focus-visible:outline-accent-500">
+      {{ contact.primary_cta_label | default: strings.contact.primary_cta_label }}
+    </a>
+  </section>
+
+  <div class="mt-4 w-full space-y-3 rounded-2xl border border-gray-200 bg-white/80 p-4 shadow-sm backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/70">
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
       <a href="https://github.com/bjkawecki" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">
         {% include icons/github.html class="h-5 w-5" %}
         <span>GitHub</span>
@@ -21,7 +36,39 @@
         <span>LinkedIn</span>
       </a>
     </div>
-    <div class="space-y-3 border-t border-gray-200 pt-4 dark:border-zinc-700">
+    <div class="grid gap-2 border-t border-gray-200 pt-3 text-sm font-medium dark:border-zinc-700 sm:grid-cols-2">
+      <a href="{{ site.baseurl }}/assets/files/bjoern-kawecki-resume.pdf" class="flex items-center justify-center gap-2 text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300" target="_blank" rel="noopener noreferrer">
+        <span>{{ hero.resume_label | default: "Lebenslauf (PDF)" }}</span>
+        {% include icons/download.html class="h-4 w-4 flex-shrink-0" %}
+      </a>
+      <a href="https://www.credly.com/badges/444a285b-5e6a-43ca-83ac-da3be1002422" class="flex items-center justify-center gap-2 text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300" target="_blank" rel="noopener noreferrer">
+        <span>AWS Cloud Practitioner</span>
+        {% include icons/open-external.html class="h-4 w-4 flex-shrink-0" %}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="hidden flex-col items-center gap-6 lg:flex lg:items-start">
+  <figure class="flex w-full aspect-square items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
+    <img src="{{ site.baseurl }}/assets/img/profil-1.webp" alt="{{ strings.aside.profile_alt }}" class="h-full w-full object-cover" loading="lazy" />
+  </figure>
+  <div class="w-full space-y-4 rounded-2xl border border-gray-200 bg-white/80 p-5 shadow-md backdrop-blur dark:border-zinc-700 dark:bg-zinc-900">
+    <div class="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">
+      {% include icons/location.html class="h-4 w-4 flex-shrink-0" %}
+      <span>{{ strings.aside.location }}</span>
+    </div>
+    <div class="flex justify-center gap-4 border-t border-gray-200 pt-3 dark:border-zinc-700 sm:pt-4 lg:justify-start">
+      <a href="https://github.com/bjkawecki" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">
+        {% include icons/github.html class="h-5 w-5" %}
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200">
+        {% include icons/linkedin.html class="h-5 w-5" %}
+        <span>LinkedIn</span>
+      </a>
+    </div>
+    <div class="space-y-3 border-t border-gray-200 pt-3 dark:border-zinc-700 sm:pt-4">
       <a href="{{ site.baseurl }}/assets/files/bjoern-kawecki-resume.pdf" class="flex items-center gap-2.5 text-sm font-medium text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300" target="_blank" rel="noopener noreferrer">
         <span>{{ hero.resume_label | default: "Lebenslauf (PDF)" }}</span>
         {% include icons/download.html class="h-4 w-4 flex-shrink-0" %}
@@ -31,7 +78,7 @@
         {% include icons/open-external.html class="h-4 w-4 flex-shrink-0" %}
       </a>
     </div>
-    <div class="space-y-3 border-t border-gray-200 pt-4 dark:border-zinc-700">
+    <div class="space-y-3 border-t border-gray-200 pt-3 dark:border-zinc-700 sm:pt-4">
       <a href="{{ contact.primary_cta_href | default: 'mailto:post@bjoernkawecki.de' }}" class="flex w-full items-center justify-center rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:bg-accent-500 dark:hover:bg-accent-400 dark:focus-visible:outline-accent-500">
         {{ contact.primary_cta_label | default: strings.contact.primary_cta_label }}
       </a>

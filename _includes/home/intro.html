@@ -8,15 +8,15 @@
 {% endunless %}
 {% assign projects_url = lang_prefix | append: '/projects/' %}
 {% assign services_url = lang_prefix | append: '/services/' %}
-<div class="space-y-8 prose prose-lg dark:prose-invert prose-p:text-gray-700 dark:prose-p:text-gray-300 max-w-none">
-  <h1 class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white md:text-4xl !mb-0">{{ nav_strings.about_me }}</h1>
-  <p class="text-lg leading-relaxed">
+<div class="space-y-6 prose prose-base dark:prose-invert prose-p:text-gray-700 dark:prose-p:text-gray-300 max-w-none sm:prose-lg md:space-y-8">
+  <h1 class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl !mb-0">{{ nav_strings.about_me }}</h1>
+  <p class="text-base leading-7 sm:text-lg sm:leading-relaxed">
     {{ intro.paragraph1 }}
   </p>
-  <p class="leading-relaxed">
+  <p class="leading-7 sm:leading-relaxed">
     {{ intro.paragraph2 }}
   </p>
-  <p class="leading-relaxed">
+  <p class="leading-7 sm:leading-relaxed">
     {{ intro.paragraph4_part1 }}<a href="{{ site.baseurl }}{{ projects_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300 font-medium">{{ intro.projects_label }}</a>{{ intro.paragraph4_part2 }}<a href="{{ site.baseurl }}{{ services_url }}" class="text-accent-600 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300 font-medium">{{ intro.services_label }}</a>{{ intro.paragraph4_part3 }}
   </p>
 </div>

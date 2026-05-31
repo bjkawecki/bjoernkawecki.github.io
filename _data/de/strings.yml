@@ -82,7 +82,7 @@ home:
   contact:
     anchor: "kontakt"
     title: "E-Mail schreiben"
-    subtitle: "Schreib mir eine kurze Nachricht – ich melde mich zeitnah zurück."
+    subtitle: "Schreiben Sie mir eine kurze Nachricht – ich melde mich zeitnah zurück."
     primary_cta_label: "E-Mail schreiben"
     primary_cta_href: "mailto:post@bjoernkawecki.de"
 pagination:
