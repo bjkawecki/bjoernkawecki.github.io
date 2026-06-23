@@ -6,6 +6,6 @@ output: false
 description: Open-source documentation platform for internal use – concept, planning, and code on GitHub.
 started: "2025"
 category: Open Source
-external_url: https://github.com/bjkawecki/docs-ops
+external_url: https://github.com/bjkawecki/DocsOps
 link_label: To GitHub repo
 ---
