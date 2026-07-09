@@ -147,7 +147,7 @@
 </style>
 <script>
 (function() {
-  var sectionIds = ['start', 'angebot', 'ueber-mich', 'faq'];
+  var sectionIds = ['start', 'problem', 'angebot', 'ueber-mich', 'zusammenarbeit', 'faq'];
   var navLinks = document.querySelectorAll('.nav-section-link');
   if (!navLinks.length) return;
 
@@ -166,12 +166,6 @@
 
   function getActiveSectionFromScroll() {
     var y = window.scrollY + 120;
-    var problemEl = document.getElementById('problem');
-    if (problemEl) {
-      var pTop = problemEl.getBoundingClientRect().top + window.scrollY;
-      var pBottom = pTop + problemEl.offsetHeight;
-      if (y >= pTop && y < pBottom) return 'start';
-    }
     var lastAbove = null;
     for (var i = 0; i < sectionIds.length; i++) {
       var el = document.getElementById(sectionIds[i]);
