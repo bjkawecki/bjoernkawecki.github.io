@@ -1,0 +1,86 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+{% assign docs = site.data[current_lang].strings.docs_engineering %}
+<div class="mx-auto max-w-3xl space-y-16">
+
+  {%- comment -%} 1. Hero: H1 + Subheadline {%- endcomment -%}
+  <section class="space-y-5" aria-labelledby="docs-hero-heading">
+    <h1 id="docs-hero-heading" class="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
+      {{ docs.hero.headline }}
+    </h1>
+    <p class="text-lg leading-relaxed text-gray-800 sm:text-xl dark:text-gray-200">
+      {{ docs.hero.lead }}
+    </p>
+  </section>
+
+  {%- comment -%} 2. Problem: Absätze fließen um vertikal mittige Chaos-Grafik {%- endcomment -%}
+  <section class="space-y-5" aria-labelledby="docs-problem-heading">
+    <h2 id="docs-problem-heading" class="text-2xl font-medium tracking-tight text-gray-900 dark:text-gray-100">
+      {{ docs.problem.heading }}
+    </h2>
+    <div class="docs-float-wrap docs-float-wrap--chaos text-base leading-relaxed text-gray-800 dark:text-gray-200">
+      <div class="docs-float-wrap__push" aria-hidden="true"></div>
+      <figure class="docs-float-wrap__figure docs-float-wrap__figure--chaos">
+        <img
+          src="{{ site.baseurl }}/assets/img/hero-illustration-chaos.svg"
+          alt="{{ docs.problem.chaos_alt }}"
+          class="h-auto w-full"
+          width="352"
+          height="293"
+          loading="lazy"
+        />
+      </figure>
+      {% for paragraph in docs.problem.paragraphs %}
+      <p{% unless forloop.last %} class="mb-5"{% endunless %}>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  {%- comment -%} 3. Ansatz + Angebot: Absätze fließen um vertikal mittige Order-Grafik {%- endcomment -%}
+  <section class="space-y-5" aria-labelledby="docs-solution-heading">
+    <h2 id="docs-solution-heading" class="text-2xl font-medium tracking-tight text-gray-900 dark:text-gray-100">
+      {{ docs.solution.heading }}
+    </h2>
+    <div class="docs-float-wrap docs-float-wrap--order text-base leading-relaxed text-gray-800 dark:text-gray-200">
+      <div class="docs-float-wrap__push" aria-hidden="true"></div>
+      <figure class="docs-float-wrap__figure">
+        <img
+          src="{{ site.baseurl }}/assets/img/hero-illustration-order.svg"
+          alt="{{ docs.solution.order_alt }}"
+          class="h-auto w-full"
+          width="352"
+          height="212"
+          loading="lazy"
+        />
+      </figure>
+      {% for paragraph in docs.solution.paragraphs %}
+      <p{% unless forloop.last %} class="mb-5"{% endunless %}>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  {%- comment -%} 4. Wie ich arbeite {%- endcomment -%}
+  <section class="space-y-5" aria-labelledby="docs-approach-heading">
+    <h2 id="docs-approach-heading" class="text-2xl font-medium tracking-tight text-gray-900 dark:text-gray-100">
+      {{ docs.approach.heading }}
+    </h2>
+    <div class="space-y-5 text-base leading-relaxed text-gray-800 dark:text-gray-200">
+      {% for paragraph in docs.approach.paragraphs %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  {%- comment -%} 5. Schluss mit CTA (ohne Überschrift) {%- endcomment -%}
+  <section class="space-y-5" aria-label="{{ docs.closing.cta_label }}">
+    <p class="text-lg font-medium leading-relaxed text-gray-900 dark:text-gray-100">
+      {{ docs.closing.text }}
+    </p>
+    <p>
+      <a
+        href="mailto:{{ site.email }}"
+        class="inline-flex items-center justify-center rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-700 dark:hover:bg-accent-500"
+      >{{ docs.closing.cta_label }}</a>
+    </p>
+  </section>
+
+</div>

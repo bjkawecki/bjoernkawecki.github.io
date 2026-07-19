@@ -1,5 +1,6 @@
 .PHONY: serve build install serve-drafts css
 
+# Dev-Server: Tailwind einmal bauen, dann watch + Jekyll (CSS-Änderungen ohne Neustart)
 serve:
 	npm run serve
 

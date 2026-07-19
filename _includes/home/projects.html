@@ -2,45 +2,51 @@
 {% assign strings = site.data[current_lang].strings %}
 {% assign projects_strings = strings.home.projects %}
 {% assign localized_projects = site.projects | where: "lang", current_lang | sort: "started" | reverse %}
-<section class="space-y-8">
+{% assign lang_prefix = '' %}
+{% unless current_lang == site.default_lang %}
+  {% assign lang_prefix = '/' | append: current_lang %}
+{% endunless %}
+{% assign projects_cta_href = lang_prefix | append: '/projects/' %}
+{% assign projects_grid = 'md:grid-cols-2' %}
+{% if localized_projects.size > 2 %}
+  {% assign projects_grid = 'md:grid-cols-3' %}
+{% endif %}
+<section class="space-y-8 border-t border-gray-200 pt-12 dark:border-zinc-700" aria-labelledby="home-projects-heading">
   <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-    <div class="space-y-3">
-      <h2 class="text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-white">
+    <div class="max-w-2xl space-y-3">
+      <h2 id="home-projects-heading" class="text-2xl font-semibold tracking-tight text-gray-900 lg:text-3xl dark:text-white">
         {{ projects_strings.title }}
       </h2>
+      {% if projects_strings.description %}
+      <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+        {{ projects_strings.description }}
+      </p>
+      {% endif %}
     </div>
-    <a href="{{ site.baseurl }}{{ projects_strings.cta_href }}" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-accent-600 transition bg-gray-100 rounded-full hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:bg-zinc-800 dark:text-accent-400 dark:hover:bg-zinc-700">
+    <a href="{{ site.baseurl }}{{ projects_cta_href }}" class="inline-flex shrink-0 items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700">
       {{ projects_strings.cta_label }}
+      {% include icons/arrow-right.html class="ml-1 h-4 w-4" %}
     </a>
   </div>
   {% if localized_projects.size > 0 %}
-  <div class="grid gap-6 md:grid-cols-3">
+  <div class="grid gap-8 {{ projects_grid }}">
     {% for project in localized_projects limit:3 %}
-    <article class="flex flex-col h-full p-6 space-y-4 border rounded-2xl border-gray-200 bg-white shadow-sm transition hover:shadow-md dark:border-zinc-700 dark:bg-zinc-900">
-      <div class="space-y-2">
-        <p class="text-xs font-semibold tracking-wide uppercase text-gray-500 dark:text-gray-400">
-          {{ project.category }}
-        </p>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
-          {{ project.title }}
-        </h3>
-        <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-          {{ project.description | default: project.excerpt | strip_html | truncate: 140 }}
-        </p>
-      </div>
-      {% if project.techstack %}
-      <ul class="flex flex-wrap gap-2 text-xs font-medium text-gray-600 dark:text-gray-200">
-        {% for tech in project.techstack limit:5 %}
-        <li class="px-2.5 py-1 rounded-full bg-brand-50 text-brand-700 dark:bg-accent-600 dark:text-accent-50">
-          {{ tech }}
-        </li>
-        {% endfor %}
-      </ul>
+    <article class="flex h-full flex-col space-y-3 border-t border-gray-200 pt-6 dark:border-zinc-700">
+      {% if project.category %}
+      <p class="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        {{ project.category }}
+      </p>
       {% endif %}
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+        {{ project.title }}
+      </h3>
+      <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+        {{ project.description | default: project.excerpt | strip_html | truncate: 140 }}
+      </p>
       <div class="pt-2 mt-auto">
-        <a href="{% if project.external_url %}{{ project.external_url }}{% else %}{{ project.url }}{% endif %}" {% if project.external_url %}target="_blank" rel="noopener noreferrer" {% endif %} class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300">
-          {% if project.link_label %}{{ project.link_label }}{% else %}{{ strings.navigation.projects }}{% endif %}
-          {% include icons/arrow-right.html class="w-4 h-4 ml-1" %}
+        <a href="{{ project.url }}" class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700">
+          {{ projects_strings.read_more }}
+          {% include icons/arrow-right.html class="ml-1 h-4 w-4" %}
         </a>
       </div>
     </article>

@@ -1,25 +1,36 @@
 aside:
-  profession: "Full-Stack Webentwickler"
+  profession: "Softwareentwickler · Wissensmanagement"
   location: "Berlin"
   profile_alt: "Porträt von Björn Kawecki"
 navigation:
+  start: "Blog"
   about_me: "Über mich"
+  field: "Fachgebiet"
+  webentwicklung: "Softwareentwicklung"
+  documentation_engineering: "Wissensmanagement"
   projects: "Projekte"
-  services: "Services"
+  services: "Softwareentwicklung"
   blog: "Blog"
   contact: "Kontakt"
 header:
   menu_open: "Menü öffnen"
   menu_close: "Menü schließen"
   contact_cta: "Kontakt"
-  contact_cta_href: "/#kontakt"
+  contact_cta_href: "mailto:post@bjoernkawecki.de"
+  field_menu_label: "Fachgebiet öffnen"
 head:
-  description: "Björn Kawecki ist Full-Stack Webentwickler in Berlin. Python & JavaScript, Architektur, DevOps und Automatisierung aus einer Hand."
+  description: "Björn Kawecki – Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin."
   og_locale: "de_DE"
-  title: "Björn Kawecki | Full-Stack Webentwickler Berlin"
-  name: "Über Björn Kawecki"
+  title: "Björn Kawecki | Blog & Documentation Engineering"
+  name: "Björn Kawecki"
 footer:
   pages: "Seiten"
+  site: "Site"
+  impressum: "Impressum"
+  datenschutz: "Datenschutz"
+  focus: "Schwerpunkte"
+  github: "GitHub"
+  linkedin: "LinkedIn"
   github_label: "GitHub-Profil von Björn Kawecki öffnen"
   linkedin_label: "LinkedIn-Profil von Björn Kawecki öffnen"
   email_label: "E-Mail an Björn Kawecki schreiben"
@@ -29,62 +40,142 @@ footer:
 language_name: "Deutsch"
 language_code: "DE"
 home:
-  hero:
-    title: "Entwicklung für das Web"
-    subtitle: "Full-Stack mit Python, JavaScript und AWS. Schnell entwickelt, zuverlässig deployed."
-    primary_cta:
-      label: "Kontakt"
-      href: "/#kontakt"
+  geschichte:
+    title: "Über mich"
+    anchor: "ueber-mich"
+    paragraphs:
+      - "Hallo, ich heiße Björn, lebe in Berlin und arbeite seit 2025 als Anwendungsentwickler."
+      - "Beruflich begann ich nach dem Russistik-Studium 2021 als Redakteur. Die Medienarbeit passte auf Dauer nicht; 2024 wechselte ich in den Tech-Bereich."
+      - "Mit dem Programmieren hatte ich schon im Studium angefangen. 2020 startete ich eine Web-App zum Russischlernen, daraus wurde ein Langzeitprojekt, das heute als [Filingo](/projects/filingo/) weiterläuft."
+      - "Parallel beschäftige ich mich mit Fragen des Wissensmanagements. Mit [DocsOps](/projects/docs-ops/) baue ich eine Open-Source-Plattform für internes Organisationswissen. Unter [Wissensmanagement](/knowledge-management/) erkläre ich, warum Wissen in Organisationen oft verloren geht oder schwer nutzbar bleibt, und biete Unterstützung an."
+      - "Für die Umsetzung meiner Projekte setze ich mittlerweile stark auf KI. Da für mich stets mehr das Produkt als der Code im Mittelpunkt stand, kam mir das Arbeiten mit KI gelegen. Mehr über meinen Ansatz schreibe ich auf der Seite [Softwareentwicklung](/software-development/)."
     resume_label: "Lebenslauf (PDF)"
+    resume_href: "/assets/files/bjoern-kawecki-resume.pdf"
+    certificate_label: "Zertifikat: AWS Cloud Practitioner"
+    certificate_href: "https://www.credly.com/badges/444a285b-5e6a-43ca-83ac-da3be1002422"
+  fachgebiete:
+    title: "Fachgebiete"
+    anchor: "fachgebiete"
+    intro: "Zwei Schwerpunkte, ein gemeinsamer Anspruch: Systeme und Wissen dauerhaft nutzbar machen."
+    items:
+      - title: "Softwareentwicklung"
+        description: "Systeme bauen, bei denen Entscheidungen und Wissen genauso zählen wie Code."
+        href: "/software-development/"
+        cta: "Zu Softwareentwicklung"
+      - title: "Wissensmanagement"
+        description: "Technische Dokumentation und Wissensstrukturen, die mit dem System mitwachsen."
+        href: "/knowledge-management/"
+        cta: "Zu Wissensmanagement"
+  projects:
+    title: "Projekte"
+    description: "Ausgewählte Beispiele aus Softwareentwicklung und Dokumentation."
+    cta_label: "Alle Projekte"
+    cta_href: "/projects/"
+    all_label: "Alle Projekte"
+    menu_label: "Projekte öffnen"
+    read_more: "Mehr erfahren"
+  blog:
+    eyebrow: "Björn Kawecki · Berlin"
+    title: "Gedanken zu Struktur, Software und Dokumentation"
+    description: "Beiträge zu Documentation Engineering, Wissensmanagement und der Arbeit mit komplexen Informationen."
+    read_more: "Weiterlesen"
+  contact:
+    anchor: "kontakt"
+    title: "Kontakt"
+    subtitle: "Schreiben Sie mir eine kurze Nachricht – ich melde mich zeitnah zurück."
+    primary_cta_label: "E-Mail schreiben"
+    primary_cta_href: "mailto:post@bjoernkawecki.de"
   solutions:
     items:
-      - title: "Produktentwicklung"
-        outcome: "Anforderungen erfassen, Software entwickeln und live bringen."
+      - title: "Webanwendungen"
+        outcome: "Interfaces und Backends für den Browser – von der Anforderung bis zum Deploy."
         tech:
-          - Python
           - JavaScript
+          - TypeScript
           - React
+          - Python
           - FastAPI
           - PostgreSQL
-      - title: "Cloud & Betrieb"
-        outcome: "Systeme deployen, skalieren und betreiben. CI/CD-Pipelines und Cloud-Infrastructure."
+      - title: "APIs & Integration"
+        outcome: "Schnittstellen bauen, Daten verbinden und bestehende Systeme anbinden."
         tech:
-          - AWS
+          - REST API
+          - AI
+          - Web Scraping
+          - Automation
+          - Data Processing
+      - title: "Betrieb & Delivery"
+        outcome: "Web-Apps zuverlässig ausliefern: CI/CD, Container und Hosting."
+        tech:
           - Docker
           - Linux
           - GitHub Actions
           - Nginx
-      - title: "Automatisierung & Integration"
-        outcome: "Daten sammeln, Prozesse automatisieren, APIs nutzen und eigene entwickeln."
-        tech:
-          - AI
-          - REST API
-          - Web Scraping
-          - Automation
-          - Data Processing
-          - Telegram Bots
-
-
-
-  projects:
-    title: "Projekte"
-    description: "Ausgewählte Projekte aus den Bereichen Webentwicklung, Automatisierung und Dokumentation."
-    cta_label: "Alle Projekte"
-    cta_href: "/projects/"
+          - AWS
+softwareentwicklung:
+  title: "Softwareentwicklung"
   intro:
-    paragraph1: "Hallo, ich heiße Björn Kawecki. Ich bin Full-Stack Webentwickler und lebe in Berlin."
-    paragraph2: "Vor meinem Einstieg in die IT studierte ich Russistik und schloss 2021 mein Masterstudium ab. Anschließend arbeitete ich redaktionell. 2024 begann ich eine Fortbildung im Cloud-Bereich. Im selben Jahr folgte meine erste Station in der Softwareentwicklung."
-    paragraph4_part1: "Die Arbeit mit Sprache bleibt mir wichtig und prägt auch meine "
-    paragraph4_part2: ". Wenn Sie an einer Zusammenarbeit interessiert sind, erreichen Sie mich am besten per E-Mail. Weitere Informationen zu meinen Leistungen finden Sie unter "
-    paragraph4_part3: "."
-    projects_label: "Projekte"
-    services_label: "Services"
-  contact:
-    anchor: "kontakt"
-    title: "E-Mail schreiben"
-    subtitle: "Schreiben Sie mir eine kurze Nachricht – ich melde mich zeitnah zurück."
-    primary_cta_label: "E-Mail schreiben"
-    primary_cta_href: "mailto:post@bjoernkawecki.de"
+    - "Mit dem zunehmenden Einsatz leistungsfähiger KI-Werkzeuge verschiebt sich der Schwerpunkt in der Softwareentwicklung. Die reine Umsetzung, also das Schreiben und Erzeugen von Code, wird effizienter. Dadurch entstehen Kapazitäten für andere Bestandteile der Entwicklung: Anforderungen verstehen, Entscheidungen treffen, Zusammenhänge dokumentieren und Systeme weiterentwickeln."
+    - "Softwareentwicklung ist daher heute enger mit Produktentwicklung verbunden: Was wird gebaut, für wen und mit welchen Auswirkungen auf Betrieb, Wartbarkeit und Weiterentwicklung?"
+  before_diagram: []
+  diagram:
+    aria_label: "Softwareprodukt im Zentrum, Entwicklungsprozess innen, Produktdimensionen außen mit Beispielfragen"
+    center:
+      - "Software"
+      - "Produkt"
+    legend: "Innen: Entwicklungsprozess · Außen: Produktdimensionen"
+    process:
+      - "Anforderung"
+      - "Entscheidung"
+      - "Umsetzung"
+      - "Dokumentation"
+    dimensions:
+      - label: "UI / UX"
+        question: "Wie werden Nutzer durch die Anwendung geführt? Wie werden komplexe Abläufe verständlich dargestellt?"
+      - label: "Backend"
+        question: "Welche Teile sollten individuell entwickelt werden? Welche Aufgaben können Frameworks oder bestehende Komponenten übernehmen?"
+      - label: "Daten"
+        question: "Welche Beziehungen müssen abgebildet werden? Wie lässt sich das Datenmodell ändern, wenn die Anforderungen wachsen?"
+      - label: "Schnittstellen"
+        question: "Welche Bereiche sollten externe Plattformen oder Dienste übernehmen? Welche Abhängigkeiten entstehen dadurch?"
+      - label: "Betrieb"
+        question: "Wie wird überwacht, ob ein System funktioniert? Wie werden Fehler erkannt und untersucht?"
+      - label: "Architektur"
+        question: "Wie wird das System in wartbare Bestandteile gegliedert? Wie bleiben Schnittstellen zwischen diesen Teilen stabil?"
+  after_diagram:
+    - "Der Entwicklungsprozess verbindet Anforderung, Entscheidung, Umsetzung und Dokumentation. Neben dem Code entstehen dabei Annahmen, Entscheidungen und Erfahrungswerte. Dokumentation hält diese Zusammenhänge fest und macht sie für spätere Änderungen verfügbar."
+    - "Gute Entscheidungen setzen ein Verständnis der verschiedenen Dimensionen von Software voraus. Je besser diese Dimensionen verstanden werden, desto präziser können Anforderungen formuliert und die richtigen Fragen gestellt werden."
+  closing:
+    paragraphs:
+      - "Ich sehe das als positive Entwicklung: Die zunehmende Automatisierung der Umsetzung schafft Raum für eine Softwareentwicklung, in der das Verständnis des Produkts und seiner Dimensionen stärker in den Mittelpunkt rückt. Die frei werdenden Kapazitäten eröffnen die Möglichkeit, Anforderungen, Entscheidungen, Umsetzung und Dokumentation als gleichwertige Bestandteile zu stärken."
+docs_engineering:
+  hero:
+    headline: "Machen Sie das Wissen Ihrer Organisation nutzbar"
+    lead: "Ich unterstütze Organisationen und IT-Teams dabei, ihr Wissen über Systeme, Projekte und Abläufe in Strukturen zu überführen, die im Alltag tragen: auffindbar, aktuell und unabhängig von einzelnen Köpfen."
+  problem:
+    heading: "Unzugängliches Wissen ist ein Risiko"
+    paragraphs:
+      - "„Wie machen wir das hier nochmal?“ „Gibt es dazu eine Dokumentation?“ „Ist die Anleitung noch aktuell?“ Solche Fragen tauchen auf, wenn Erfahrung und Kontext nur in Köpfen existieren."
+      - "Verlässt ein erfahrener Kollege das Team, fehlt mit ihm das Wissen über Abläufe, Entscheidungen und Sonderfälle. Und neue Mitarbeiter suchen sich über Wochen zusammen, was dokumentiert sein könnte."
+      - "Das kostet Zeit und erzeugt Abhängigkeiten: Rückfragen unterbrechen die Arbeit, veraltete Anleitungen führen in die Irre, dasselbe Wissen wird mehrfach neu erarbeitet oder driftet auseinander."
+      - "Organisationen investieren viel in Software, Infrastruktur und Prozesse. Das Wissen darüber entsteht täglich mit, wird aber selten genauso gepflegt."
+    chaos_alt: "Ungeordnete Dokumente und Ordner"
+  solution:
+    heading: "Von verstreutem Wissen zu klaren Strukturen"
+    paragraphs:
+      - "Damit Wissen nutzbar bleibt, braucht es mehr als einzelne Dokumente: klare Strukturen, definierte Verantwortlichkeiten und regelmäßige Pflege. Diesen systematischen Ansatz nennt man Documentation Engineering: Dokumentation wird wie ein System behandelt, das mit der Organisation mitwächst."
+      - "Genau dabei unterstütze ich Sie: Ich analysiere, welches Wissen vorhanden ist und wo Lücken liegen, ordne bestehende Inhalte und baue nachvollziehbare Strukturen auf, für Software und Infrastruktur ebenso wie für Arbeitsabläufe, Verantwortlichkeiten und interne Prozesse."
+      - "Das Ergebnis ist eine Wissensbasis, mit der Ihr Team tatsächlich arbeitet: eine Ablage mit klarer Logik, dokumentierte Abläufe und Standards, die neuen Inhalten von selbst den richtigen Ort zuweisen."
+    order_alt: "Strukturierte Dokumentationshierarchie"
+  approach:
+    heading: "Wie wir zusammenarbeiten"
+    paragraphs:
+      - "Eine Zusammenarbeit beginnt mit einem konkreten Problem oder Bereich, etwa einem System ohne Dokumentation oder einem Onboarding, das zu lange dauert. In einem Erstgespräch klären wir Ausgangslage und Ziel; danach folgen die Analyse bestehender Strukturen, die Planung von Umfang und Prioritäten und die schrittweise Umsetzung."
+      - "Oft hilft dabei der Blick von außen: Er zeigt, was fehlt, was doppelt ist und wo Strukturen unklar sind, blinde Flecken, die im Alltag nicht mehr auffallen. Auf Ihrer Seite braucht es wenig, aber Entscheidendes: einen klar umrissenen Bereich, eine feste Ansprechperson für Rückfragen, Zugang zu den relevanten Informationen und fachliche Mitwirkung, wenn Einordnung gefragt ist."
+      - "Dabei arbeite ich in den Systemen, die Sie bereits nutzen. Neue Werkzeuge sind nur dann Teil der Lösung, wenn sie klaren Mehrwert bringen. KI setze ich gezielt ein, um Inhalte zu erstellen und zu strukturieren; Kontext, Entscheidungen und Verantwortung bleiben dabei beim Menschen."
+  closing:
+    text: "Sie möchten wissen, wo Ihre Organisation beim Thema Dokumentation und Wissensmanagement steht? In einem unverbindlichen Gespräch erhalten Sie eine erste Einschätzung und konkrete nächste Schritte."
+    cta_label: "Gespräch anfragen"
 pagination:
   previous_page: Vorherige Seite
   page: Seite
@@ -95,6 +186,11 @@ pagination:
 layout:
   category: Kategorie
   back_to_list: Alle Blog-Einträge
+  back_to_home: Zur Startseite
+  back_to_projects: Alle Projekte
 no_entries:
   blog: Keine Einträge vorhanden.
   projects: Keine Projekte vorhanden.
+errors:
+  404_title: "Fehler 404"
+  404_message: "Seite nicht gefunden"

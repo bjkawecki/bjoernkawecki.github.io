@@ -1,0 +1,25 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+{% assign strings = site.data[current_lang].strings %}
+{% assign hero = strings.home.hero %}
+<section class="space-y-6 md:space-y-8" aria-labelledby="home-hero-heading">
+  {% if hero.eyebrow %}
+  <p class="text-sm font-medium tracking-wide text-gray-600 dark:text-gray-400">
+    {{ hero.eyebrow }}
+  </p>
+  {% endif %}
+  <h1 id="home-hero-heading" class="max-w-3xl text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-white">
+    {{ hero.title }}
+  </h1>
+  <p class="max-w-2xl text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+    {{ hero.subtitle }}
+  </p>
+  <div class="flex flex-wrap gap-3 pt-2">
+    <a
+      href="{{ hero.primary_cta.href }}"
+      class="inline-flex items-center justify-center rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-200 dark:hover:bg-accent-500"
+    >
+      {{ hero.primary_cta.label }}
+      {% include icons/arrow-right.html class="ml-1.5 h-4 w-4" %}
+    </a>
+  </div>
+</section>

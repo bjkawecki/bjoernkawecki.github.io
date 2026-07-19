@@ -7,12 +7,12 @@
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.0.18"
+    "@fontsource/ibm-plex-sans": "^5.2.8"
   },
   "scripts": {
     "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && bundle exec jekyll build",
-    "serve": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && bundle exec jekyll serve  --livereload",
-    "serve_d": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && bundle exec jekyll serve --drafts --livereload",
+    "serve": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch & bundle exec jekyll serve --livereload",
+    "serve_d": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch & bundle exec jekyll serve --drafts --livereload",
     "watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
   }
 }

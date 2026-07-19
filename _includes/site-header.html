@@ -3,21 +3,44 @@
 {% unless current_lang == site.default_lang %}
   {% assign lang_prefix = '/' | append: current_lang %}
 {% endunless %}
-{% assign nav_about_path = lang_prefix | append: '/' %}
+{% assign nav_blog_path = lang_prefix | append: '/' %}
+{% assign nav_about_path = lang_prefix | append: '/ueber-mich/' %}
 {% assign nav_projects_path = lang_prefix | append: '/projects/' %}
-{% assign nav_services_path = lang_prefix | append: '/services/' %}
-{% assign nav_blog_path = lang_prefix | append: '/blog/' %}
-{% assign contact_href = site.data[current_lang].strings.home.contact.primary_cta_href | default: site.data[current_lang].strings.header.contact_cta_href | default: '#contact' %}
+{% assign nav_software_path = lang_prefix | append: '/software-development/' %}
+{% assign nav_docs_path = lang_prefix | append: '/knowledge-management/' %}
+{% assign contact_href = site.data[current_lang].strings.home.contact.primary_cta_href | default: 'mailto:post@bjoernkawecki.de' %}
 {% assign nav_strings = site.data[current_lang].strings.navigation %}
-{% assign contact_label = site.data[current_lang].strings.header.contact_cta | default: 'Kontakt' %}
+{% assign contact_label = site.data[current_lang].strings.navigation.contact | default: 'Kontakt' %}
 {% assign menu_open_label = site.data[current_lang].strings.header.menu_open | default: 'Menü öffnen' %}
 {% assign menu_close_label = site.data[current_lang].strings.header.menu_close | default: 'Menü schließen' %}
+{% assign field_menu_label = site.data[current_lang].strings.header.field_menu_label | default: nav_strings.field %}
 {% assign header_strings = site.data[current_lang].strings %}
+{% assign field_active = false %}
+{% if page.url == nav_software_path or page.url == nav_docs_path %}
+  {% assign field_active = true %}
+{% endif %}
+{% assign nav_projects_list = site.projects | where: "lang", current_lang | sort: "started" | reverse %}
+{% assign projects_menu_label = site.data[current_lang].strings.home.projects.menu_label | default: nav_strings.projects %}
+{% assign projects_active = false %}
+{% if page.layout == 'project' %}
+  {% assign projects_active = true %}
+{% endif %}
+{% assign home_path = lang_prefix | append: '/' %}
+{% if lang_prefix == '' %}
+  {% assign home_path = '/' %}
+{% endif %}
+{% assign blog_nav_active = false %}
+{% if page.url == '/' or page.url == home_path %}
+  {% assign blog_nav_active = true %}
+{% endif %}
+{% if page.layout == 'post' %}
+  {% assign blog_nav_active = true %}
+{% endif %}
 {% capture language_switcher %}
   {% for tongue in site.languages %}
     {% assign language_code = site.data[tongue].strings.language_code | default: tongue | upcase %}
     {% if tongue == site.active_lang %}
-      <span class="inline-flex h-9 min-w-9 items-center justify-center rounded-md bg-accent-100 px-2 text-sm font-semibold text-accent-600 dark:border dark:border-accent-400 dark:bg-transparent dark:text-accent-500">
+      <span class="inline-flex h-9 min-w-9 items-center justify-center rounded-md bg-accent-100 px-2 text-sm font-medium text-accent-600 dark:bg-white/10 dark:text-accent-400">
         {{ language_code }}
       </span>
     {% else %}
@@ -88,7 +111,7 @@
         {% endif %}
       {% endif %}
       <a
-        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-sm font-medium text-gray-600 transition hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-zinc-800 dark:hover:text-gray-50"
+        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-sm font-medium text-gray-800 transition hover:bg-brand-100 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-gray-100 dark:focus-visible:outline-accent-400"
         {% static_href %}href="{{ lang_href }}"{% endstatic_href %}
         aria-label="{{ header_strings.footer.language_label }} {{ language_name }}"
       >
@@ -97,26 +120,77 @@
     {% endif %}
   {% endfor %}
 {% endcapture %}
-<header class="sticky top-0 z-40 border-b border-gray-200 bg-white/80 backdrop-blur transition dark:border-zinc-800 dark:bg-zinc-900/70">
+<header class="sticky top-0 z-40 border-b border-brand-200/80 bg-brand-50/85 backdrop-blur transition dark:border-zinc-800 dark:bg-brand-950/85">
   <div class="max-w-6xl px-5 md:px-6 lg:px-8 mx-auto">
     <div class="flex items-center justify-between gap-3 py-3 md:gap-4 md:py-5">
       <a
-        href="{{ site.baseurl }}{{ nav_about_path }}"
+        href="{{ site.baseurl }}{{ nav_blog_path }}"
         class="min-w-0 shrink text-lg font-bold tracking-tight text-gray-900 transition hover:text-accent-600 dark:text-white dark:hover:text-accent-400 sm:text-xl"
         aria-label="Björn Kawecki – {{ header_strings.aside.profession }}"
       >
         Björn Kawecki
       </a>
-      <nav class="hidden items-center justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-600 dark:text-gray-300 md:flex" aria-label="Hauptnavigation">
-        <a href="{{ site.baseurl }}{{ nav_about_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 {% if page.url == nav_about_path or page.url == lang_prefix %}font-semibold text-accent-600 dark:text-accent-400 border-accent-500{% endif %}">{{ nav_strings.about_me }}</a>
-        <a href="{{ site.baseurl }}{{ nav_projects_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 {% if page.url == nav_projects_path %}font-semibold text-accent-600 dark:text-accent-400 border-accent-500{% endif %}">{{ nav_strings.projects }}</a>
-        <a href="{{ site.baseurl }}{{ nav_services_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 {% if page.url == nav_services_path %}font-semibold text-accent-600 dark:text-accent-400 border-accent-500{% endif %}">{{ nav_strings.services }}</a>
+      <nav class="hidden items-center justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-800 dark:text-gray-300 md:flex" aria-label="Hauptnavigation">
+        <a href="{{ site.baseurl }}{{ nav_blog_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 {% if blog_nav_active %}font-semibold text-accent-600 dark:text-accent-400 border-accent-500{% endif %}">{{ nav_strings.blog }}</a>
+        <a href="{{ site.baseurl }}{{ nav_about_path }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 {% if page.url == nav_about_path %}font-semibold text-accent-600 dark:text-accent-400 border-accent-500{% endif %}">{{ nav_strings.about_me }}</a>
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex cursor-default items-center gap-1 border-b-2 border-transparent pb-1 transition hover:text-accent-600 dark:hover:text-accent-400 {% if field_active %}border-accent-500 font-semibold text-accent-600 dark:text-accent-400{% endif %}"
+            aria-haspopup="true"
+            aria-controls="nav-field-menu"
+            id="nav-field-trigger"
+          >
+            {{ nav_strings.field }}
+            <svg class="h-3.5 w-3.5 opacity-70 transition-transform duration-150 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="nav-field-menu"
+            class="invisible absolute left-0 top-full z-50 min-w-[14rem] pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100"
+            role="menu"
+            aria-label="{{ field_menu_label }}"
+          >
+            <div class="rounded-lg border border-brand-200 bg-brand-50 py-1 shadow-lg dark:border-zinc-700 dark:bg-brand-900">
+              <a href="{{ site.baseurl }}{{ nav_software_path }}" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_software_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.webentwicklung }}</a>
+              <a href="{{ site.baseurl }}{{ nav_docs_path }}" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_docs_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.documentation_engineering }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex cursor-default items-center gap-1 border-b-2 border-transparent pb-1 transition hover:text-accent-600 dark:hover:text-accent-400 {% if projects_active %}border-accent-500 font-semibold text-accent-600 dark:text-accent-400{% endif %}"
+            aria-haspopup="true"
+            aria-controls="nav-projects-menu"
+            id="nav-projects-trigger"
+          >
+            {{ nav_strings.projects }}
+            <svg class="h-3.5 w-3.5 opacity-70 transition-transform duration-150 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="nav-projects-menu"
+            class="invisible absolute left-0 top-full z-50 min-w-[14rem] pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100"
+            role="menu"
+            aria-label="{{ projects_menu_label }}"
+          >
+            <div class="rounded-lg border border-brand-200 bg-brand-50 py-1 shadow-lg dark:border-zinc-700 dark:bg-brand-900">
+              {% for project in nav_projects_list %}
+              <a href="{{ project.url }}" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400">{{ project.title }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <a href="{{ contact_href }}" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400">{{ contact_label }}</a>
       </nav>
       <div class="flex shrink-0 items-center gap-1.5 sm:gap-2">
         <button
           id="toggle-color-mode"
           type="button"
-          class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-600 transition hover:border-gray-400 hover:text-gray-900 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-zinc-600 dark:hover:text-gray-200"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-200 text-gray-700 transition hover:bg-brand-100 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:border-zinc-700/80 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-200 dark:focus-visible:outline-accent-400"
           aria-label="{{ header_strings.footer.theme_toggle_label }}"
           aria-pressed="false"
         >
@@ -128,7 +202,7 @@
         <button
           id="mobile-nav-toggle"
           type="button"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-700 transition hover:border-gray-400 hover:text-gray-900 md:hidden dark:border-zinc-700 dark:text-gray-300 dark:hover:border-zinc-600 dark:hover:text-gray-200"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-brand-200 text-gray-700 transition hover:bg-brand-100 hover:text-gray-900 md:hidden dark:border-zinc-700/80 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-200"
           aria-controls="mobile-nav"
           aria-expanded="false"
           aria-label="{{ menu_open_label }}"
@@ -145,14 +219,19 @@
         </button>
       </div>
     </div>
-    <nav id="mobile-nav" class="hidden border-t border-gray-200 py-3 md:hidden dark:border-zinc-800" aria-label="Mobile Hauptnavigation">
-      <div class="flex flex-col gap-1 text-base font-medium text-gray-700 dark:text-gray-200">
-        <a href="{{ site.baseurl }}{{ nav_about_path }}" class="rounded-lg px-3 py-2 transition hover:bg-gray-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_about_path or page.url == lang_prefix %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.about_me }}</a>
-        <a href="{{ site.baseurl }}{{ nav_projects_path }}" class="rounded-lg px-3 py-2 transition hover:bg-gray-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_projects_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.projects }}</a>
-        <a href="{{ site.baseurl }}{{ nav_services_path }}" class="rounded-lg px-3 py-2 transition hover:bg-gray-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_services_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.services }}</a>
-        <a href="{{ contact_href }}" class="mt-2 inline-flex items-center justify-center rounded-lg bg-accent-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-700 dark:bg-accent-500 dark:hover:bg-accent-400">{{ contact_label }}</a>
+    <nav id="mobile-nav" class="hidden border-t border-brand-200/80 py-3 md:hidden dark:border-zinc-800" aria-label="Mobile Hauptnavigation">
+      <div class="flex flex-col gap-1 text-base font-medium text-gray-800 dark:text-gray-200">
+        <a href="{{ site.baseurl }}{{ nav_blog_path }}" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if blog_nav_active %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.blog }}</a>
+        <a href="{{ site.baseurl }}{{ nav_about_path }}" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_about_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.about_me }}</a>
+        <p class="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{{ nav_strings.field }}</p>
+        <a href="{{ site.baseurl }}{{ nav_software_path }}" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_software_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.webentwicklung }}</a>
+        <a href="{{ site.baseurl }}{{ nav_docs_path }}" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == nav_docs_path %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ nav_strings.documentation_engineering }}</a>
+        <p class="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{{ nav_strings.projects }}</p>
+        {% for project in nav_projects_list %}
+        <a href="{{ project.url }}" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 {% if page.url == project.url %}font-semibold text-accent-600 dark:text-accent-400{% endif %}">{{ project.title }}</a>
+        {% endfor %}
+        <a href="{{ contact_href }}" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400">{{ contact_label }}</a>
       </div>
     </nav>
   </div>
 </header>
-

@@ -1,25 +1,23 @@
-<div class="flex items-center justify-center mt-10">
+<div class="mt-16 flex items-center justify-center gap-3 text-sm text-gray-600 dark:text-gray-300">
   {% if paginator.previous_page %}
-  <div class="flex items-center">
-    <a
-      href="{{ paginator.previous_page_path }}"
-      class="text-sm font-medium text-white rounded bg-gray-700 focus:ring-2 focus:ring-gray-300 focus:outline-none transition hover:bg-gray-800 dark:bg-zinc-700 dark:focus:ring-zinc-500 dark:hover:bg-zinc-600"
-    >
-      {% include icons/chevron-left.html class="w-6 h-6 fill-white hover:fill-white dark:fill-zinc-900 dark:hover:fill-zinc-900" title=site.data[site.active_lang].strings.pagination.previous_page %}
-    </a>
-  </div>
+  <a
+    href="{{ paginator.previous_page_path }}"
+    class="inline-flex items-center rounded-lg border border-gray-200 px-3 py-2 font-medium transition hover:border-accent-400 hover:text-accent-600 dark:border-zinc-700 dark:hover:border-accent-500 dark:hover:text-accent-400"
+    aria-label="{{ site.data[site.active_lang].strings.pagination.previous_page }}"
+  >
+    {% include icons/chevron-left.html class="h-5 w-5" %}
+  </a>
   {% endif %}
-  <div class="px-3">
-    {{ site.data[site.active_lang].strings.pagination.page}} {{ paginator.page }} {{ site.data[site.active_lang].strings.pagination.of}} {{ paginator.total_pages }}
-  </div>
+  <span>
+    {{ site.data[site.active_lang].strings.pagination.page }} {{ paginator.page }} {{ site.data[site.active_lang].strings.pagination.of }} {{ paginator.total_pages }}
+  </span>
   {% if paginator.next_page %}
-  <div class="flex items-center">
-    <a
-      href="{{ paginator.next_page_path }}"
-      class="text-sm font-medium text-white rounded bg-gray-700 focus:ring-2 focus:ring-gray-300 focus:outline-none transition hover:bg-gray-800 dark:bg-zinc-700 dark:focus:ring-zinc-500 dark:hover:bg-zinc-600"
-    >
-      {% include icons/chevron-right.html class="w-6 h-6 fill-white hover:fill-white dark:fill-zinc-900 dark:hover:fill-zinc-900" title=site.data[site.active_lang].strings.pagination.next_page %}
-    </a>
-  </div>
+  <a
+    href="{{ paginator.next_page_path }}"
+    class="inline-flex items-center rounded-lg border border-gray-200 px-3 py-2 font-medium transition hover:border-accent-400 hover:text-accent-600 dark:border-zinc-700 dark:hover:border-accent-500 dark:hover:text-accent-400"
+    aria-label="{{ site.data[site.active_lang].strings.pagination.next_page }}"
+  >
+    {% include icons/chevron-right.html class="h-5 w-5" %}
+  </a>
   {% endif %}
 </div>

@@ -1,6 +1,14 @@
 # Slug pro Sprache für den Sprachumschalter (page_id -> de/en slug)
 # Muss mit dem Dateinamen-Teil nach dem Datum übereinstimmen (z. B. 2026-02-01-SLUG.md)
 
+dokumentationsschuld:
+  de: dokumentationsschuld
+  en: recognizing-documentation-debt
+
+strukturierte-dokumentation:
+  de: strukturierte-dokumentation
+  en: why-structured-documentation
+
 abschied-bajkal:
   de: abschied-von-bajkal-ausblick-auf-den-nachfolger
   en: saying-goodbye-to-bajkal-ooking-ahead-to-its-successor

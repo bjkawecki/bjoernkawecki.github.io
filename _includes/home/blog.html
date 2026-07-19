@@ -1,1 +1,26 @@
-{# Blog-Sektion entfernt #}
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+{% assign blog = site.data[current_lang].strings.home.blog %}
+<section class="space-y-5 border-t border-gray-200 pt-12 dark:border-zinc-700" aria-labelledby="home-blog-heading">
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+    <div class="max-w-2xl space-y-2">
+      <h2 id="home-blog-heading" class="text-2xl font-semibold tracking-tight text-gray-900 lg:text-3xl dark:text-white">
+        {{ blog.title }}
+      </h2>
+      <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+        {{ blog.description }}
+      </p>
+    </div>
+    <a
+      href="{{ blog.cta_href }}"
+      {% if blog.cta_href contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+      class="inline-flex shrink-0 items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
+    >
+      {{ blog.cta_label }}
+      {% if blog.cta_href contains 'http' %}
+        {% include icons/open-external.html class="ml-1.5 h-4 w-4" %}
+      {% else %}
+        {% include icons/arrow-right.html class="ml-1 h-4 w-4" %}
+      {% endif %}
+    </a>
+  </div>
+</section>

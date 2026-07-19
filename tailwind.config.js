@@ -16,21 +16,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // 'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         brand: {
-          50: "#f9fafb",
-          100: "#f3f4f6",
-          200: "#e5e7eb",
-          300: "#d1d5db",
-          400: "#9ca3af",
-          500: "#6b7280",
-          600: "#4b5563",
-          700: "#374151",
-          800: "#1f2937",
-          900: "#111827",
-          950: "#0b111a",
+          50: "#ebe4dc",
+          100: "#e2d9cf",
+          200: "#cfc2b4",
+          300: "#b5a494",
+          400: "#968575",
+          500: "#7a6b5d",
+          600: "#5c5650",
+          700: "#3a4550",
+          800: "#252a30",
+          900: "#1a1c1b",
+          950: "#161918",
         },
         accent: {
           50: "var(--accent-50)",

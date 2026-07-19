@@ -1,25 +1,36 @@
 aside:
-  profession: "Full-Stack Web Developer"
+  profession: "Software Developer · Knowledge Management"
   location: "Berlin"
   profile_alt: "Portrait of Björn Kawecki"
 navigation:
-  about_me: "About me"
+  start: "Blog"
+  about_me: "About"
+  field: "Fields"
+  webentwicklung: "Software Development"
+  documentation_engineering: "Knowledge Management"
   projects: "Projects"
-  services: "Services"
+  services: "Software Development"
   blog: "Blog"
   contact: "Contact"
 header:
   menu_open: "Open menu"
   menu_close: "Close menu"
   contact_cta: "Contact"
-  contact_cta_href: "/en/#contact"
+  contact_cta_href: "mailto:post@bjoernkawecki.de"
+  field_menu_label: "Open fields menu"
 head:
-  description: "Björn Kawecki is a full-stack web developer in Berlin. Python & JavaScript, architecture, DevOps, and automation from a single source."
+  description: "Björn Kawecki – blog and notes on documentation engineering, software, and knowledge structures. Software developer in Berlin."
   og_locale: "en_US"
-  title: "Björn Kawecki | Full-Stack Web Developer Berlin"
-  name: "About Björn Kawecki"
+  title: "Björn Kawecki | Blog & Documentation Engineering"
+  name: "Björn Kawecki"
 footer:
   pages: "Pages"
+  site: "Site"
+  impressum: "Legal notice"
+  datenschutz: "Privacy policy"
+  focus: "Focus"
+  github: "GitHub"
+  linkedin: "LinkedIn"
   github_label: "Open Björn Kawecki's GitHub profile"
   linkedin_label: "Open Björn Kawecki's LinkedIn profile"
   email_label: "Send an email to Björn Kawecki"
@@ -29,60 +40,142 @@ footer:
 language_name: "English"
 language_code: "EN"
 home:
-  hero:
-    title: "Development for the Web"
-    subtitle: "Full-stack with Python, JavaScript, and AWS. Quickly developed, reliably deployed."
-    primary_cta:
-      label: "Contact"
-      href: "/en/#contact"
+  geschichte:
+    title: "About"
+    anchor: "about"
+    paragraphs:
+      - "Hello, my name is Björn. I live in Berlin and have been working as an application developer since 2025."
+      - "After graduating in Russian studies I began my career as an editor in 2021. Media work was not a lasting fit; in 2024 I moved into tech."
+      - "I had already started programming during my studies. In 2020 I began a web app for learning Russian; it became a long-term project that continues today as [Filingo](/projects/filingo/)."
+      - "In parallel I work on questions of knowledge management. With [DocsOps](/projects/docs-ops/) I am building an open-source platform for internal organisational knowledge. On [Knowledge Management](/knowledge-management/) I explain why knowledge in organisations is often lost or hard to use, and I offer support."
+      - "For implementing my projects I now rely heavily on AI. Because the product always mattered more to me than the code, working with AI suited me well. I write more about my approach on the [Software Development](/software-development/) page."
     resume_label: "Resume (PDF)"
+    resume_href: "/assets/files/bjoern-kawecki-resume-en.pdf"
+    certificate_label: "Certificate: AWS Cloud Practitioner"
+    certificate_href: "https://www.credly.com/badges/444a285b-5e6a-43ca-83ac-da3be1002422"
+  fachgebiete:
+    title: "Fields"
+    anchor: "fields"
+    intro: "Two areas, one shared goal: making systems and knowledge lastingly usable."
+    items:
+      - title: "Software Development"
+        description: "Building systems where decisions and knowledge matter as much as code."
+        href: "/software-development/"
+        cta: "Software Development"
+      - title: "Knowledge Management"
+        description: "Technical documentation and knowledge structures that grow with the system."
+        href: "/knowledge-management/"
+        cta: "Knowledge Management"
+  projects:
+    title: "Projects"
+    description: "Selected examples from software development and documentation."
+    cta_label: "All projects"
+    cta_href: "/projects/"
+    all_label: "All projects"
+    menu_label: "Open projects menu"
+    read_more: "Learn more"
+  blog:
+    eyebrow: "Björn Kawecki · Berlin"
+    title: "Notes on structure, software, and documentation"
+    description: "Writing on documentation engineering, knowledge management, and working with complex information."
+    read_more: "Read more"
+  contact:
+    anchor: "contact"
+    title: "Contact"
+    subtitle: "Send me a short message — I’ll get back to you promptly."
+    primary_cta_label: "Send email"
+    primary_cta_href: "mailto:post@bjoernkawecki.de"
   solutions:
     items:
-      - title: "Product Development"
-        outcome: "Capture requirements, develop software, and bring it live."
+      - title: "Web Applications"
+        outcome: "Browser-facing interfaces and backends — from requirements to deploy."
         tech:
-          - Python
           - JavaScript
+          - TypeScript
           - React
+          - Python
           - FastAPI
           - PostgreSQL
-      - title: "Cloud & Operations"
-        outcome: "Deploy, scale, and operate systems. CI/CD pipelines and cloud infrastructure."
+      - title: "APIs & Integration"
+        outcome: "Build interfaces, connect data, and wire existing systems together."
         tech:
-          - AWS
+          - REST API
+          - AI
+          - Web Scraping
+          - Automation
+          - Data Processing
+      - title: "Delivery & Ops"
+        outcome: "Ship web apps reliably: CI/CD, containers, and hosting."
+        tech:
           - Docker
           - Linux
           - GitHub Actions
           - Nginx
-      - title: "Automation & Integration"
-        outcome: "Collect data, automate processes, use APIs and develop your own."
-        tech:
-          - AI
-          - REST API
-          - Web Scraping
-          - Automation
-          - Data Processing
-          - Telegram Bots
-      
-  projects:
-    title: "Projects"
-    description: "Selected projects in web development, automation, and documentation."
-    cta_label: "All projects"
-    cta_href: "/en/projects/"
+          - AWS
+softwareentwicklung:
+  title: "Software Development"
   intro:
-    paragraph1: "Hello, I'm Björn Kawecki. I'm a full-stack web developer and live in Berlin."
-    paragraph2: "Before moving into IT I studied Russian studies and completed my Master's in 2021. I then worked in editorial roles. In 2024 I began training in the cloud sector. The same year I took up my first position in software development."
-    paragraph4_part1: "Working with language remains important to me and also shapes my "
-    paragraph4_part2: ". If you are interested in working together, the best way to reach me is by email. Further information about my services can be found under "
-    paragraph4_part3: "."
-    projects_label: "Projects"
-    services_label: "Services"
-  contact:
-    anchor: "contact"
-    title: "Send email"
-    subtitle: "Send me a short message – I’ll get back to you promptly."
-    primary_cta_label: "Send email"
-    primary_cta_href: "mailto:post@bjoernkawecki.de"
+    - "As capable AI tools see wider use, the focus in software development is shifting. Pure implementation, meaning writing and generating code, becomes more efficient. That creates capacity for other parts of development: understanding requirements, making decisions, documenting relationships, and evolving systems."
+    - "Software development is therefore more closely tied to product development today: what gets built, for whom, and with what effects on operations, maintainability, and future development?"
+  before_diagram: []
+  diagram:
+    aria_label: "Software product at the center, development process inside, product dimensions outside with example questions"
+    center:
+      - "Software"
+      - "product"
+    legend: "Inner: development process · Outer: product dimensions"
+    process:
+      - "Requirement"
+      - "Decision"
+      - "Implementation"
+      - "Documentation"
+    dimensions:
+      - label: "UI / UX"
+        question: "How are users guided through the application? How are complex flows made understandable?"
+      - label: "Backend"
+        question: "Which parts should be custom-built? Which tasks can frameworks or existing components take on?"
+      - label: "Data"
+        question: "Which relationships need to be represented? How can the data model change as requirements grow?"
+      - label: "Interfaces"
+        question: "Which areas should external platforms or services own? What dependencies does that create?"
+      - label: "Operations"
+        question: "How is it monitored whether a system is working? How are failures detected and investigated?"
+      - label: "Architecture"
+        question: "How is the system divided into maintainable parts? How do interfaces between those parts stay stable?"
+  after_diagram:
+    - "The development process connects requirement, decision, implementation, and documentation. Alongside the code, assumptions, decisions, and hard-won experience emerge. Documentation records those relationships and keeps them available for later changes."
+    - "Good decisions depend on understanding the different dimensions of software. The better those dimensions are understood, the more precisely requirements can be framed and the right questions asked."
+  closing:
+    paragraphs:
+      - "I see this as a positive development: Growing automation of implementation creates room for software development in which understanding the product and its dimensions moves more firmly into the center. The capacity that becomes available opens the possibility of strengthening requirements, decisions, implementation, and documentation as equal parts."
+docs_engineering:
+  hero:
+    headline: "Make your organisation’s knowledge usable"
+    lead: "I help organisations and IT teams turn their knowledge about systems, projects, and workflows into structures that hold up in daily work: findable, current, and independent of individual people."
+  problem:
+    heading: "Inaccessible knowledge is a risk"
+    paragraphs:
+      - "“How do we do this again?” “Is there documentation for this?” “Is the guide still up to date?” Questions like these come up when experience and context exist only in people’s heads."
+      - "When an experienced colleague leaves the team, the knowledge about workflows, decisions, and edge cases leaves with him. And new colleagues spend weeks piecing together what could have been documented."
+      - "That costs time and creates dependencies: follow-up questions interrupt work, outdated instructions lead people astray, and the same knowledge is worked out again and again or drifts apart."
+      - "Organisations invest a lot in software, infrastructure, and processes. The knowledge about them grows every day, but is rarely maintained with the same care."
+    chaos_alt: "Scattered documents and folders"
+  solution:
+    heading: "From scattered knowledge to clear structures"
+    paragraphs:
+      - "For knowledge to stay usable, it takes more than individual documents: clear structures, defined responsibilities, and regular maintenance. This systematic approach is called Documentation Engineering: documentation is treated like a system that grows with the organisation."
+      - "That is exactly where I support you: I analyse what knowledge exists and where the gaps are, organise existing content, and build clear structures, for software and infrastructure as well as for workflows, responsibilities, and internal processes."
+      - "The result is a knowledge base your team actually works with: a repository with a clear logic, documented workflows, and standards that assign new content to the right place on their own."
+    order_alt: "Structured documentation hierarchy"
+  approach:
+    heading: "How we work together"
+    paragraphs:
+      - "Collaboration starts with a concrete problem or area, for example a system without documentation or onboarding that takes too long. In an initial conversation we clarify the starting point and goal; after that come the analysis of existing structures, the planning of scope and priorities, and step-by-step delivery."
+      - "Often the outside perspective helps: it shows what is missing, what is duplicated, and where structures are unclear, blind spots that go unnoticed in daily work. Good collaboration needs little from your side, but it matters: a clearly defined scope, a fixed contact person for questions, access to the relevant information, and subject-matter input when context is needed."
+      - "I work in the systems you already use. New tools only become part of the solution when they bring clear value. I use AI deliberately to draft and structure content; context, decisions, and responsibility stay with people."
+  closing:
+    text: "Want to know where your organisation stands on documentation and knowledge management? In a no-obligation conversation you will get an initial assessment and concrete next steps."
+    cta_label: "Request a conversation"
 pagination:
   previous_page: Previous page
   page: Page
@@ -93,6 +186,8 @@ pagination:
 layout:
   category: Category
   back_to_list: All Blog Posts
+  back_to_home: Back to home
+  back_to_projects: All projects
 no_entries:
   blog: No entries yet.
   projects: No projects found.
