@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>
+  Filingo – Björn Kawecki | Blog & Documentation Engineering 
+</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="description" content="Björn Kawecki – Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin." />
+<link rel="canonical" href="http://bjoernkawecki.de/" />
+<meta property="og:site_name" content="Björn Kawecki | Blog & Documentation Engineering" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:image" content="https://bjoernkawecki.de/assets/img/profil-1.webp" />
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "description": "Björn Kawecki – Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin.",
+    "headline": "Björn Kawecki | Blog & Documentation Engineering",
+    "name": "Björn Kawecki",
+    "url": "https://bjoernkawecki.de/"
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Björn Kawecki",
+    "jobTitle": "Softwareentwickler · Wissensmanagement",
+    "url": "https://bjoernkawecki.de/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://github.com/bjkawecki",
+      "https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/"
+    ]
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+<script src="https://alceris.com/script.js" data-id="68711fe6135d86d0" async defer></script>
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+<link rel="icon" href="/assets/img/favicon.ico" sizes="48x48" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/img/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/img/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/img/favicon-16x16.png"
+/>
+<link rel="manifest" href="/assets/img/site.webmanifest" />
+<script type="text/javascript">
+  let root = document.getElementsByTagName("html")[0];
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    root.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    root.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+</script>
+<link
+  type="application/atom+xml"
+  rel="alternate"
+  href="http://bjoernkawecki.de/feed.xml"
+  title="Björn Kawecki | Blog & Documentation Engineering"
+/>
+
+    <meta property="og:title" content="Filingo" />
+    <meta
+      property="og:description"
+      content="Digitaler Russisch-Vokabeltrainer mit Spaced Repetition und Wörterbuch."
+    />
+    <meta property="og:url" content="https://bjoernkawecki.de/projects/filingo/" />
+    <link rel="canonical" href="https://bjoernkawecki.de/projects/filingo/" />
+  </head>
+  <body class="text-gray-700 bg-brand-50 dark:bg-brand-950 dark:text-gray-100 transition-colors">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="sticky top-0 z-40 border-b border-brand-200/80 bg-brand-50/85 backdrop-blur transition dark:border-zinc-800 dark:bg-brand-950/85">
+  <div class="max-w-6xl px-5 md:px-6 lg:px-8 mx-auto">
+    <div class="flex items-center justify-between gap-3 py-3 md:gap-4 md:py-5">
+      <a
+        href="/"
+        class="min-w-0 shrink text-lg font-bold tracking-tight text-gray-900 transition hover:text-accent-600 dark:text-white dark:hover:text-accent-400 sm:text-xl"
+        aria-label="Björn Kawecki – Softwareentwickler · Wissensmanagement"
+      >
+        Björn Kawecki
+      </a>
+      <nav class="hidden items-center justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-800 dark:text-gray-300 md:flex" aria-label="Hauptnavigation">
+        <a href="/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Blog</a>
+        <a href="/ueber-mich/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Über mich</a>
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex cursor-default items-center gap-1 border-b-2 border-transparent pb-1 transition hover:text-accent-600 dark:hover:text-accent-400 "
+            aria-haspopup="true"
+            aria-controls="nav-field-menu"
+            id="nav-field-trigger"
+          >
+            Fachgebiet
+            <svg class="h-3.5 w-3.5 opacity-70 transition-transform duration-150 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="nav-field-menu"
+            class="invisible absolute left-0 top-full z-50 min-w-[14rem] pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100"
+            role="menu"
+            aria-label="Fachgebiet öffnen"
+          >
+            <div class="rounded-lg border border-brand-200 bg-brand-50 py-1 shadow-lg dark:border-zinc-700 dark:bg-brand-900">
+              <a href="/software-development/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Softwareentwicklung</a>
+              <a href="/knowledge-management/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Wissensmanagement</a>
+            </div>
+          </div>
+        </div>
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex cursor-default items-center gap-1 border-b-2 border-transparent pb-1 transition hover:text-accent-600 dark:hover:text-accent-400 border-accent-500 font-semibold text-accent-600 dark:text-accent-400"
+            aria-haspopup="true"
+            aria-controls="nav-projects-menu"
+            id="nav-projects-trigger"
+          >
+            Projekte
+            <svg class="h-3.5 w-3.5 opacity-70 transition-transform duration-150 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="nav-projects-menu"
+            class="invisible absolute left-0 top-full z-50 min-w-[14rem] pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100"
+            role="menu"
+            aria-label="Projekte öffnen"
+          >
+            <div class="rounded-lg border border-brand-200 bg-brand-50 py-1 shadow-lg dark:border-zinc-700 dark:bg-brand-900">
+              
+              <a href="/projects/filingo/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400">Filingo</a>
+              
+              <a href="/projects/docs-ops/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400">DocsOps</a>
+              
+            </div>
+          </div>
+        </div>
+        <a href="mailto:post@bjoernkawecki.de" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400">Kontakt</a>
+      </nav>
+      <div class="flex shrink-0 items-center gap-1.5 sm:gap-2">
+        <button
+          id="toggle-color-mode"
+          type="button"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-200 text-gray-700 transition hover:bg-brand-100 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:border-zinc-700/80 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-200 dark:focus-visible:outline-accent-400"
+          aria-label="Farbschema umschalten"
+          aria-pressed="false"
+        >
+          <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"/></svg>
+
+        </button>
+        <div class="flex items-center gap-1">
+          
+  
+    
+    
+      <span class="inline-flex h-9 min-w-9 items-center justify-center rounded-md bg-accent-100 px-2 text-sm font-medium text-accent-600 dark:bg-white/10 dark:text-accent-400">
+        DE
+      </span>
+    
+  
+    
+    
+      
+      
+      
+      
+        
+          
+        
+          
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+      
+      
+      
+      <a
+        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-sm font-medium text-gray-800 transition hover:bg-brand-100 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-gray-100 dark:focus-visible:outline-accent-400"
+        href="/en/projects/filingo/"
+        aria-label="Sprache wechseln zu English"
+      >
+        EN
+      </a>
+    
+  
+
+        </div>
+        <button
+          id="mobile-nav-toggle"
+          type="button"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-brand-200 text-gray-700 transition hover:bg-brand-100 hover:text-gray-900 md:hidden dark:border-zinc-700/80 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-200"
+          aria-controls="mobile-nav"
+          aria-expanded="false"
+          aria-label="Menü öffnen"
+          data-open-label="Menü öffnen"
+          data-close-label="Menü schließen"
+        >
+          <span class="sr-only" id="mobile-nav-toggle-label">Menü öffnen</span>
+          <svg id="mobile-nav-icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg id="mobile-nav-icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="hidden border-t border-brand-200/80 py-3 md:hidden dark:border-zinc-800" aria-label="Mobile Hauptnavigation">
+      <div class="flex flex-col gap-1 text-base font-medium text-gray-800 dark:text-gray-200">
+        <a href="/" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Blog</a>
+        <a href="/ueber-mich/" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Über mich</a>
+        <p class="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Fachgebiet</p>
+        <a href="/software-development/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Softwareentwicklung</a>
+        <a href="/knowledge-management/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Wissensmanagement</a>
+        <p class="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Projekte</p>
+        
+        <a href="/projects/filingo/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 font-semibold text-accent-600 dark:text-accent-400">Filingo</a>
+        
+        <a href="/projects/docs-ops/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">DocsOps</a>
+        
+        <a href="mailto:post@bjoernkawecki.de" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main
+      id="main-content"
+      class="mx-auto max-w-3xl space-y-8 px-5 pb-16 pt-8 md:px-8 md:pb-20 md:pt-10"
+      aria-label="Content"
+    >
+      <article class="space-y-5">
+        <div class="space-y-3">
+          
+          <h1 class="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
+            Filingo
+          </h1>
+        </div>
+        <div class="space-y-5 text-base leading-relaxed text-gray-800 dark:text-gray-200 [&_a]:font-medium [&_a]:text-accent-600 [&_a]:transition hover:[&_a]:text-accent-500 dark:[&_a]:text-accent-400 dark:hover:[&_a]:text-accent-700 [&_h2]:pt-3 [&_h2]:text-xl [&_h2]:font-medium [&_h2]:tracking-tight [&_h2]:text-gray-900 dark:[&_h2]:text-gray-100 [&_p]:text-base [&_p]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 dark:[&_strong]:text-gray-100">
+          <p>Filingo ist ein <strong>digitaler Russisch-Vokabeltrainer</strong>. Im Zentrum steht Spaced Repetition: Vokabeln werden mit Karten geübt, die Wiederholungen folgen dem bisherigen Lernstand. Dazu gehört ein Wörterbuch mit Formen, Übersetzungen und Audio, damit Übung und Nachschlagen denselben Stoff teilen.</p>
+
+<p>Die Idee entstand aus der eigenen Erfahrung als Student. Geeignetes Material für Russisch war über viele Quellen verstreut und mühsam zusammenzusuchen. Was fehlte, war ein durchgängiges System und die Aussicht auf Vollständigkeit. Genau darauf zielt Filingo: Lernstoff systematisch und möglichst vollständig aufzubereiten.</p>
+
+<p>Die erste Version hieß Bajkal. Die Konzeption begann 2021, 2024 ging sie online. 2025 stellte ich Bajkal ein, weil ich mich für eine Neukonzeption und grundlegende Überarbeitung unter dem Namen Filingo entschied. Filingo ist seit 2025 in Produktion und wird aktiv weiterentwickelt.</p>
+
+<p>Wer mehr über meine Überlegungen zu Filingo und Lernsoftware erfahren möchte, findet sie im Projektblog. Wer Filingo ausprobieren will, kann das auf der App-Seite tun.</p>
+
+        </div>
+        
+        <p class="flex flex-wrap gap-x-6 gap-y-2">
+          
+          <a
+            href="https://blog.filingo.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
+          >
+            Zum Blog
+            <svg class="ml-1.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+</svg>
+
+          </a>
+          
+          <a
+            href="https://filingo.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
+          >
+            Zur App
+            <svg class="ml-1.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+</svg>
+
+          </a>
+          
+        </p>
+        
+      </article>
+    </main>
+    
+
+
+
+
+
+
+<footer class="mt-20 border-t border-brand-200/80 dark:border-zinc-800">
+  <div class="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-16">
+    <div class="mx-auto w-fit max-w-full">
+      <div class="flex flex-col gap-12 text-sm sm:flex-row sm:gap-x-16 xl:gap-x-24">
+        <div class="min-w-[14rem] space-y-4">
+          <p class="font-medium text-gray-900 dark:text-gray-100">Björn Kawecki</p>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:post@bjoernkawecki.de" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" aria-label="E-Mail an Björn Kawecki schreiben">post@bjoernkawecki.de</a>
+            <a href="https://github.com/bjkawecki" target="_blank" rel="noopener noreferrer" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" aria-label="GitHub-Profil von Björn Kawecki öffnen">GitHub</a>
+            <a href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/" target="_blank" rel="noopener noreferrer" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" aria-label="LinkedIn-Profil von Björn Kawecki öffnen">LinkedIn</a>
+          </div>
+        </div>
+        <div class="min-w-[14rem] space-y-4">
+          <p class="font-medium text-gray-900 dark:text-gray-100">Site</p>
+          <div class="flex flex-col gap-3">
+            <a href="/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Blog</a>
+            <a href="/ueber-mich/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Über mich</a>
+            <a href="/impressum/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Impressum</a>
+            <a href="/datenschutz/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Datenschutz</a>
+          </div>
+        </div>
+        <div class="min-w-[14rem] space-y-4">
+          <p class="font-medium text-gray-900 dark:text-gray-100">Schwerpunkte</p>
+          <div class="flex flex-col gap-3">
+            <a href="/software-development/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Softwareentwicklung</a>
+            <a href="/knowledge-management/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Wissensmanagement</a>
+            
+            <a href="/projects/docs-ops/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">DocsOps</a>
+            
+            <a href="/projects/filingo/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Filingo</a>
+            
+          </div>
+        </div>
+      </div>
+      <p class="mt-14 text-xs text-gray-500 dark:text-gray-400">
+        &copy; 2026 Björn Kawecki · Erstellt mit Jekyll & GitHub Pages.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/index.js"></script>
+
+  </body>
+</html>

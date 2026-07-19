@@ -118,3 +118,40 @@ if (mobileNavToggle && mobileNav) {
     link.addEventListener("click", () => updateNavState(false));
   });
 }
+
+const softwareDiagram = document.querySelector(".software-diagram");
+if (softwareDiagram) {
+  const tipLabels = softwareDiagram.querySelectorAll(".software-diagram__label--tip");
+
+  const closeAllTips = (except) => {
+    tipLabels.forEach((label) => {
+      if (label === except) return;
+      label.classList.remove("is-open");
+      const trigger = label.querySelector(".software-diagram__trigger");
+      if (trigger) trigger.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  tipLabels.forEach((label) => {
+    const trigger = label.querySelector(".software-diagram__trigger");
+    if (!trigger) return;
+
+    trigger.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const willOpen = !label.classList.contains("is-open");
+      closeAllTips(label);
+      label.classList.toggle("is-open", willOpen);
+      trigger.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".software-diagram__label--tip")) {
+      closeAllTips();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeAllTips();
+  });
+}

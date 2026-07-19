@@ -4,7 +4,7 @@
 
 <head>
   <meta property="og:title" content="" />
-  <meta property="og:description" content="Full-Stack Webentwicklung in Berlin: Python, JavaScript, DevOps, Automatisierung, KI-Integrationen." />
+  <meta property="og:description" content="Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin." />
   <meta property="og:url" content="https://bjoernkawecki.de/404" />
   <link rel="stylesheet" href="/assets/css/main.css" />
 <meta charset="utf-8" />
@@ -12,12 +12,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>
-  Björn Kawecki | Full-Stack Webentwickler Berlin
+  Björn Kawecki | Blog & Documentation Engineering
 </title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta name="description" content="Björn Kawecki ist Full-Stack Webentwickler in Berlin. Python & JavaScript, Architektur, DevOps und Automatisierung aus einer Hand." />
+<meta name="description" content="Björn Kawecki – Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin." />
 <link rel="canonical" href="http://bjoernkawecki.de/" />
-<meta property="og:site_name" content="Björn Kawecki | Full-Stack Webentwickler Berlin" />
+<meta property="og:site_name" content="Björn Kawecki | Blog & Documentation Engineering" />
 <meta property="og:locale" content="de_DE" />
 <meta property="og:image" content="https://bjoernkawecki.de/assets/img/profil-1.webp" />
 
@@ -25,9 +25,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "description": "Björn Kawecki ist Full-Stack Webentwickler in Berlin. Python & JavaScript, Architektur, DevOps und Automatisierung aus einer Hand.",
-    "headline": "Björn Kawecki | Full-Stack Webentwickler Berlin",
-    "name": "Über Björn Kawecki",
+    "description": "Björn Kawecki – Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin.",
+    "headline": "Björn Kawecki | Blog & Documentation Engineering",
+    "name": "Björn Kawecki",
     "url": "https://bjoernkawecki.de/"
   }
 </script>
@@ -36,7 +36,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Björn Kawecki",
-    "jobTitle": "Full-Stack Web Developer",
+    "jobTitle": "Softwareentwickler · Wissensmanagement",
     "url": "https://bjoernkawecki.de/",
     "address": {
       "@type": "PostalAddress",
@@ -91,7 +91,7 @@
   type="application/atom+xml"
   rel="alternate"
   href="http://bjoernkawecki.de/feed.xml"
-  title="Björn Kawecki | Full-Stack Webentwickler Berlin"
+  title="Björn Kawecki | Blog & Documentation Engineering"
 />
 
 </head>
@@ -111,26 +111,92 @@
 
 
 
-<header class="sticky top-0 z-40 border-b border-gray-200 bg-white/80 backdrop-blur transition dark:border-zinc-800 dark:bg-zinc-900/70">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="sticky top-0 z-40 border-b border-brand-200/80 bg-brand-50/85 backdrop-blur transition dark:border-zinc-800 dark:bg-brand-950/85">
   <div class="max-w-6xl px-5 md:px-6 lg:px-8 mx-auto">
     <div class="flex items-center justify-between gap-3 py-3 md:gap-4 md:py-5">
       <a
         href="/"
         class="min-w-0 shrink text-lg font-bold tracking-tight text-gray-900 transition hover:text-accent-600 dark:text-white dark:hover:text-accent-400 sm:text-xl"
-        aria-label="Björn Kawecki – Full-Stack Webentwickler"
+        aria-label="Björn Kawecki – Softwareentwickler · Wissensmanagement"
       >
         Björn Kawecki
       </a>
-      <nav class="hidden items-center justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-600 dark:text-gray-300 md:flex" aria-label="Hauptnavigation">
-        <a href="/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Über mich</a>
-        <a href="/projects/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Projekte</a>
-        <a href="/services/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Services</a>
+      <nav class="hidden items-center justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-800 dark:text-gray-300 md:flex" aria-label="Hauptnavigation">
+        <a href="/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Blog</a>
+        <a href="/ueber-mich/" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400 ">Über mich</a>
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex cursor-default items-center gap-1 border-b-2 border-transparent pb-1 transition hover:text-accent-600 dark:hover:text-accent-400 "
+            aria-haspopup="true"
+            aria-controls="nav-field-menu"
+            id="nav-field-trigger"
+          >
+            Fachgebiet
+            <svg class="h-3.5 w-3.5 opacity-70 transition-transform duration-150 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="nav-field-menu"
+            class="invisible absolute left-0 top-full z-50 min-w-[14rem] pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100"
+            role="menu"
+            aria-label="Fachgebiet öffnen"
+          >
+            <div class="rounded-lg border border-brand-200 bg-brand-50 py-1 shadow-lg dark:border-zinc-700 dark:bg-brand-900">
+              <a href="/software-development/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Softwareentwicklung</a>
+              <a href="/knowledge-management/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Wissensmanagement</a>
+            </div>
+          </div>
+        </div>
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex cursor-default items-center gap-1 border-b-2 border-transparent pb-1 transition hover:text-accent-600 dark:hover:text-accent-400 "
+            aria-haspopup="true"
+            aria-controls="nav-projects-menu"
+            id="nav-projects-trigger"
+          >
+            Projekte
+            <svg class="h-3.5 w-3.5 opacity-70 transition-transform duration-150 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="nav-projects-menu"
+            class="invisible absolute left-0 top-full z-50 min-w-[14rem] pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100"
+            role="menu"
+            aria-label="Projekte öffnen"
+          >
+            <div class="rounded-lg border border-brand-200 bg-brand-50 py-1 shadow-lg dark:border-zinc-700 dark:bg-brand-900">
+              
+              <a href="/projects/filingo/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400">Filingo</a>
+              
+              <a href="/projects/docs-ops/" role="menuitem" class="block px-4 py-2.5 text-sm text-gray-800 transition hover:bg-brand-100 hover:text-accent-600 dark:text-gray-200 dark:hover:bg-zinc-800 dark:hover:text-accent-400">DocsOps</a>
+              
+            </div>
+          </div>
+        </div>
+        <a href="mailto:post@bjoernkawecki.de" class="pb-1 border-b-2 border-transparent transition hover:text-accent-600 dark:hover:text-accent-400">Kontakt</a>
       </nav>
       <div class="flex shrink-0 items-center gap-1.5 sm:gap-2">
         <button
           id="toggle-color-mode"
           type="button"
-          class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-600 transition hover:border-gray-400 hover:text-gray-900 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-zinc-600 dark:hover:text-gray-200"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-200 text-gray-700 transition hover:bg-brand-100 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:border-zinc-700/80 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-200 dark:focus-visible:outline-accent-400"
           aria-label="Farbschema umschalten"
           aria-pressed="false"
         >
@@ -142,7 +208,7 @@
   
     
     
-      <span class="inline-flex h-9 min-w-9 items-center justify-center rounded-md bg-accent-100 px-2 text-sm font-semibold text-accent-600 dark:border dark:border-accent-400 dark:bg-transparent dark:text-accent-500">
+      <span class="inline-flex h-9 min-w-9 items-center justify-center rounded-md bg-accent-100 px-2 text-sm font-medium text-accent-600 dark:bg-white/10 dark:text-accent-400">
         DE
       </span>
     
@@ -158,11 +224,27 @@
         
           
         
-          
         
           
-        
-        
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
           
             
           
@@ -233,7 +315,7 @@
       
       
       <a
-        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-sm font-medium text-gray-600 transition hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-zinc-800 dark:hover:text-gray-50"
+        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-sm font-medium text-gray-800 transition hover:bg-brand-100 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-gray-100 dark:focus-visible:outline-accent-400"
         href="/en/404"
         aria-label="Sprache wechseln zu English"
       >
@@ -246,7 +328,7 @@
         <button
           id="mobile-nav-toggle"
           type="button"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-700 transition hover:border-gray-400 hover:text-gray-900 md:hidden dark:border-zinc-700 dark:text-gray-300 dark:hover:border-zinc-600 dark:hover:text-gray-200"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-brand-200 text-gray-700 transition hover:bg-brand-100 hover:text-gray-900 md:hidden dark:border-zinc-700/80 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-200"
           aria-controls="mobile-nav"
           aria-expanded="false"
           aria-label="Menü öffnen"
@@ -263,19 +345,26 @@
         </button>
       </div>
     </div>
-    <nav id="mobile-nav" class="hidden border-t border-gray-200 py-3 md:hidden dark:border-zinc-800" aria-label="Mobile Hauptnavigation">
-      <div class="flex flex-col gap-1 text-base font-medium text-gray-700 dark:text-gray-200">
-        <a href="/" class="rounded-lg px-3 py-2 transition hover:bg-gray-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Über mich</a>
-        <a href="/projects/" class="rounded-lg px-3 py-2 transition hover:bg-gray-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Projekte</a>
-        <a href="/services/" class="rounded-lg px-3 py-2 transition hover:bg-gray-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Services</a>
-        <a href="mailto:post@bjoernkawecki.de" class="mt-2 inline-flex items-center justify-center rounded-lg bg-accent-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-700 dark:bg-accent-500 dark:hover:bg-accent-400">Kontakt</a>
+    <nav id="mobile-nav" class="hidden border-t border-brand-200/80 py-3 md:hidden dark:border-zinc-800" aria-label="Mobile Hauptnavigation">
+      <div class="flex flex-col gap-1 text-base font-medium text-gray-800 dark:text-gray-200">
+        <a href="/" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Blog</a>
+        <a href="/ueber-mich/" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Über mich</a>
+        <p class="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Fachgebiet</p>
+        <a href="/software-development/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Softwareentwicklung</a>
+        <a href="/knowledge-management/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Wissensmanagement</a>
+        <p class="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Projekte</p>
+        
+        <a href="/projects/filingo/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">Filingo</a>
+        
+        <a href="/projects/docs-ops/" class="rounded-lg px-3 py-2 pl-5 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400 ">DocsOps</a>
+        
+        <a href="mailto:post@bjoernkawecki.de" class="rounded-lg px-3 py-2 transition hover:bg-brand-100 hover:text-accent-600 dark:hover:bg-zinc-800 dark:hover:text-accent-400">Kontakt</a>
       </div>
     </nav>
   </div>
 </header>
 
-
-  <main id="main-content" class="flex flex-col gap-10 px-5 py-8 mx-auto max-w-6xl md:gap-16 md:px-8 md:py-12" aria-label="Content">
+  <main id="main-content" class="flex flex-col gap-16 px-5 py-10 mx-auto max-w-6xl md:gap-24 md:px-8 md:py-16" aria-label="Content">
     
     <article class="max-w-3xl prose prose-lg dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-gray-100">
       <h1 id="fehler-404">Fehler 404</h1>
@@ -290,53 +379,50 @@
 
 
 
-<footer class="mt-8 border-t border-gray-200 bg-gray-100/50 dark:border-zinc-800 dark:bg-zinc-900/50">
-  <div class="max-w-6xl px-5 py-8 mx-auto md:px-8">
-    <div class="grid gap-8 text-sm md:grid-cols-4">
-      <div class="space-y-3">
-        <p class="font-bold text-gray-900 dark:text-gray-100">Björn Kawecki</p>
-        <p class="text-gray-600 dark:text-gray-400">Full-Stack Webentwickler</p>
-        <p class="text-gray-600 dark:text-gray-400">Berlin</p>
-      </div>
-      <div class="space-y-3">
-        <p class="font-semibold text-gray-900 dark:text-gray-100">Seiten</p>
-        <div class="flex flex-col gap-2">
-          <a href="/services/" class="text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300">Services</a>
-          <a href="/projects/" class="text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300">Projekte</a>
-        </div>
-      </div>
-      <div class="space-y-3">
-        <p class="font-semibold text-gray-900 dark:text-gray-100">Kontakt</p>
-        <div class="flex flex-col gap-2">
-          <a href="mailto:post@bjoernkawecki.de" class="text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300">post@bjoernkawecki.de</a>
-        </div>
-      </div>
-      <div class="space-y-3">
-        <p class="font-semibold text-gray-900 dark:text-gray-100">Social</p>
-        <div class="flex gap-3">
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/bjkawecki" aria-label="GitHub-Profil von Björn Kawecki öffnen" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:border-gray-400 hover:text-gray-900 dark:border-zinc-700 dark:text-gray-400 dark:hover:border-zinc-600 dark:hover:text-gray-300">
-            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-  <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-</svg>
 
-          </a>
-          <a href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn-Profil von Björn Kawecki öffnen" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition hover:border-gray-400 hover:text-gray-900 dark:border-zinc-700 dark:text-gray-400 dark:hover:border-zinc-600 dark:hover:text-gray-300">
-            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-  <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
-</svg>
 
-          </a>
+<footer class="mt-20 border-t border-brand-200/80 dark:border-zinc-800">
+  <div class="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-16">
+    <div class="mx-auto w-fit max-w-full">
+      <div class="flex flex-col gap-12 text-sm sm:flex-row sm:gap-x-16 xl:gap-x-24">
+        <div class="min-w-[14rem] space-y-4">
+          <p class="font-medium text-gray-900 dark:text-gray-100">Björn Kawecki</p>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:post@bjoernkawecki.de" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" aria-label="E-Mail an Björn Kawecki schreiben">post@bjoernkawecki.de</a>
+            <a href="https://github.com/bjkawecki" target="_blank" rel="noopener noreferrer" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" aria-label="GitHub-Profil von Björn Kawecki öffnen">GitHub</a>
+            <a href="https://www.linkedin.com/in/bj%C3%B6rn-kawecki-937b97305/" target="_blank" rel="noopener noreferrer" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" aria-label="LinkedIn-Profil von Björn Kawecki öffnen">LinkedIn</a>
+          </div>
+        </div>
+        <div class="min-w-[14rem] space-y-4">
+          <p class="font-medium text-gray-900 dark:text-gray-100">Site</p>
+          <div class="flex flex-col gap-3">
+            <a href="/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Blog</a>
+            <a href="/ueber-mich/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Über mich</a>
+            <a href="/impressum/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Impressum</a>
+            <a href="/datenschutz/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Datenschutz</a>
+          </div>
+        </div>
+        <div class="min-w-[14rem] space-y-4">
+          <p class="font-medium text-gray-900 dark:text-gray-100">Schwerpunkte</p>
+          <div class="flex flex-col gap-3">
+            <a href="/software-development/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Softwareentwicklung</a>
+            <a href="/knowledge-management/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Wissensmanagement</a>
+            
+            <a href="/projects/docs-ops/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">DocsOps</a>
+            
+            <a href="/projects/filingo/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">Filingo</a>
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="mt-8 pt-4 dark:border-zinc-800">
-      <p class="text-xs text-gray-500 dark:text-gray-400">
+      <p class="mt-14 text-xs text-gray-500 dark:text-gray-400">
         &copy; 2026 Björn Kawecki · Erstellt mit Jekyll & GitHub Pages.
       </p>
     </div>
   </div>
 </footer>
 <script src="/assets/js/index.js"></script>
+
 </body>
 
 </html>
