@@ -3330,9 +3330,37 @@ ul, ol {
   color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
+.prose-headings\:mb-5 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 1.25rem;
+}
+
 .prose-headings\:text-gray-900 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+
+.prose-h1\:mb-5 :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 1.25rem;
+}
+
+.prose-h1\:mt-0 :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 0px;
+}
+
+.prose-h2\:mt-8 :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 2rem;
+}
+
+.prose-h3\:mt-8 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 2rem;
+}
+
+.prose-p\:mb-0 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 0px;
+}
+
+.prose-p\:mt-5 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 1.25rem;
 }
 
 .prose-p\:text-gray-700 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -3881,8 +3909,8 @@ ul, ol {
   color: var(--accent-700);
 }
 
-.\[\&_h2\]\:pt-3 h2 {
-  padding-top: 0.75rem;
+.\[\&_h2\]\:\!mt-8 h2 {
+  margin-top: 2rem !important;
 }
 
 .\[\&_h2\]\:text-xl h2 {
@@ -3906,6 +3934,14 @@ ul, ol {
 .dark\:\[\&_h2\]\:text-gray-100 h2:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+}
+
+.\[\&_p\+_p\]\:mt-5 p+ p {
+  margin-top: 1.25rem;
+}
+
+.\[\&_p\]\:m-0 p {
+  margin: 0px;
 }
 
 .\[\&_p\]\:text-base p {
