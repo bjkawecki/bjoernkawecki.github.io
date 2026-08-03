@@ -5,8 +5,13 @@ page_id: docs-ops
 title: DocsOps
 permalink: /projects/docs-ops/
 description: Self-hosted open-source platform for internal organisational knowledge with governance and a binding knowledge state.
-external_url: https://github.com/bjkawecki/DocsOps
-link_label: To GitHub repo
+external_links:
+  - url: https://docsops.de
+    label: To the website
+  - url: https://demo.docsops.de
+    label: To the demo
+  - url: https://github.com/bjkawecki/DocsOps
+    label: To the GitHub repo
 ---
 
 DocsOps is a **self-hosted open-source platform** for internal organisational knowledge.
@@ -15,4 +20,4 @@ The project grows from the same aim that drives my work on [knowledge management
 
 Many tools optimise a shared store and open collaboration. DocsOps builds governance into the software. Organisations already have structure and responsibility in day-to-day work; the system carries both. Roles define who works on the draft and who releases a binding state. Readers rely on the published edition.
 
-Development is already well advanced. Right now the public landing page and a live test version are taking shape.
+The public website is at [docsops.de](https://docsops.de), and a live demo at [demo.docsops.de](https://demo.docsops.de).
