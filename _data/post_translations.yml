@@ -1,6 +1,10 @@
 # Slug pro Sprache für den Sprachumschalter (page_id -> de/en slug)
 # Muss mit dem Dateinamen-Teil nach dem Datum übereinstimmen (z. B. 2026-02-01-SLUG.md)
 
+magie-des-dokumentierens:
+  de: die-magie-des-dokumentierens
+  en: the-magic-of-documenting
+
 dokumentationsschuld:
   de: dokumentationsschuld
   en: recognizing-documentation-debt
