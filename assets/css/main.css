@@ -3799,8 +3799,8 @@ ul, ol {
   border-color: var(--accent-500);
 }
 
-.dark\:hover\:bg-accent-500:hover:where(.dark, .dark *) {
-  background-color: var(--accent-500);
+.dark\:hover\:bg-accent-300:hover:where(.dark, .dark *) {
+  background-color: var(--accent-300);
 }
 
 .dark\:hover\:bg-white\/5:hover:where(.dark, .dark *) {
