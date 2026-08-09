@@ -24,6 +24,7 @@
           <div class="flex flex-col gap-3">
             <a href="{{ site.baseurl }}{{ lang_prefix }}/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">{{ nav.blog }}</a>
             <a href="{{ site.baseurl }}{{ lang_prefix }}/ueber-mich/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">{{ nav.about_me }}</a>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ lang_prefix }}/feed.xml" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400" type="application/atom+xml" aria-label="{{ footer.rss_label }}">{{ footer.rss }}</a>
             <a href="{{ site.baseurl }}{{ lang_prefix }}/impressum/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">{{ footer.impressum }}</a>
             <a href="{{ site.baseurl }}{{ lang_prefix }}/datenschutz/" class="text-gray-800 transition hover:text-accent-600 dark:text-gray-300 dark:hover:text-accent-400">{{ footer.datenschutz }}</a>
           </div>

@@ -80,9 +80,13 @@
     localStorage.theme = "light";
   }
 </script>
+{% assign feed_lang_prefix = '' %}
+{% unless site.active_lang == site.default_lang %}
+{% assign feed_lang_prefix = '/' | append: site.active_lang %}
+{% endunless %}
 <link
   type="application/atom+xml"
   rel="alternate"
-  href="http://bjoernkawecki.de/feed.xml"
+  href="{{ site.url }}{{ site.baseurl }}{{ feed_lang_prefix }}/feed.xml"
   title="{{ site.data[site.active_lang].strings.head.title }}"
 />

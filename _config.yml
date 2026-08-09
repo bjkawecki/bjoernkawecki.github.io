@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Björn Kawecki | Blog & Documentation Engineering
+title: Björn Kawecki
 email: post@bjoernkawecki.de
 url: "https://bjoernkawecki.de" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -29,7 +29,7 @@ github_username: bjkawecki
 # theme: minima
 
 theme_name: bluegreen
-description: "Blog und Gedanken zu Documentation Engineering, Software und Wissensstrukturen. Softwareentwickler in Berlin."
+description: "Dokumentation und Wissensstrukturen."
 author: Björn Kawecki
 plugins:
   - jekyll-feed
@@ -37,6 +37,10 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-archives
   - jekyll-polyglot
+
+feed:
+  path: /feed.xml
+  posts_limit: 20
 
 jekyll-archives:
   enabled:
@@ -108,7 +112,6 @@ exclude_from_localizations:
   - assets
   - images
   - favicon.ico
-  - feed.xml
   - robots.txt
   - sitemap.xml
   - node_modules

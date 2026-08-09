@@ -19,10 +19,12 @@ header:
   contact_cta_href: "mailto:post@bjoernkawecki.de"
   field_menu_label: "Open fields menu"
 head:
-  description: "Björn Kawecki – blog and notes on documentation engineering, software, and knowledge structures. Software developer in Berlin."
+  description: "Björn Kawecki – blog on documentation, software, and knowledge structures."
   og_locale: "en_US"
-  title: "Björn Kawecki | Blog & Documentation Engineering"
+  title: "Björn Kawecki"
   name: "Björn Kawecki"
+  feed_title: "Björn Kawecki"
+  feed_subtitle: "Documentation and knowledge structures."
 footer:
   pages: "Pages"
   site: "Site"
@@ -37,6 +39,8 @@ footer:
   theme_toggle_label: "Toggle color theme"
   language_label: "Switch language to"
   note: "Built with Jekyll & GitHub Pages."
+  rss: "RSS"
+  rss_label: "Atom feed of blog posts"
 language_name: "English"
 language_code: "EN"
 home:
