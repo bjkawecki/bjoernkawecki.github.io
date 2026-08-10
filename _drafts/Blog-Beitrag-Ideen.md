@@ -24,6 +24,8 @@ Wenn Mitarbeiter gehen, geht oft mehr als nur Arbeitskraft
 Warum Wissensverlust selten plötzlich passiert
 Wissen ist kein Dokument – sondern ein System
 Warum Wissensmanagement oft erst dann sichtbar wird, wenn es zu spät ist
+
+
 2. Dokumentation als Teil der Softwareentwicklung ⭐⭐⭐⭐⭐
 
 Hier kannst du deine Erfahrung als Entwickler einbringen.
@@ -35,6 +37,9 @@ Gute Dokumentation entsteht während der Entwicklung
 Warum Dokumentation selten am fehlenden Willen scheitert
 Documentation Engineering erklärt
 Wann README-Dateien nicht mehr ausreichen
+
+
+
 3. Informationssuche statt Informationsmangel ⭐⭐⭐⭐⭐
 
 Das finde ich extrem spannend.
