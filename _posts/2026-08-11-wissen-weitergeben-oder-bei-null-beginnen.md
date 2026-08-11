@@ -29,6 +29,6 @@ Da lag es in meinen Augen nahe, die Erfahrungen der letzten Jahre niederzuschrei
 
 Ironischerweise begann kurz darauf die Corona-Zeit. Ich war fertig mit dem Studium, und ich weiß ehrlich gesagt nicht, wie es dann weiterlief. Wahrscheinlich kam es zum Bruch, den ich vorausahnte, und der Stein rollte den Abhang hinunter.
 
-Die Dokumentation stellten wir leider auch nicht fertig. Aber ich kann mir sehr gut vorstellen, dass es mittlerweile jemanden am Slawischen Seminar gab, der sich gewünscht hat, etwas von seinen „Vorfahren“ vorzufinden. Vielleicht hätte diese Person dann nicht bei null anfangen müssen, sondern hätte auf den Erfahrungen der vorherigen Generationen aufbauen können.
+Die Dokumentation stellten wir leider auch nicht fertig. Aber ich kann mir sehr gut vorstellen, dass es mittlerweile jemanden am Slawischen Seminar gab, der sich gewünscht hat, etwas von seinen „Vorfahren“ vorzufinden. Vielleicht hätte diese Person dann nicht von vorne beginnen müssen, sondern hätte auf den Erfahrungen der vorherigen Generationen aufbauen können.
 
 Die erste Eigenschaft von Wissen, das nicht aufgeschrieben wird: Irgendwann ist es weg – und jemand muss wieder bei nahe null anfangen.

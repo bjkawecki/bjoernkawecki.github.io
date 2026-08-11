@@ -16,7 +16,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Golos Text"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         brand: {
