@@ -1,1 +1,1 @@
-beispiel erlebnis aus meiner studienzeit, emotionales beispiel, aufbau der fachschaft, aufbau von tradition oder verlust und neuanfang.
+Sinnbild: wie sysiphos
