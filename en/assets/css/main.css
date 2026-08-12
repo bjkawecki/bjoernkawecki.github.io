@@ -3395,26 +3395,8 @@ ul, ol {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:text-accent-600 {
-  color: var(--accent-600);
-}
-
-.group:hover .group-hover\:text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
-}
-
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
-}
-
-.group:focus-visible .group-focus-visible\:text-accent-600 {
-  color: var(--accent-600);
-}
-
-.group:focus-visible .group-focus-visible\:text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
 .prose-headings\:mb-5 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -3522,11 +3504,6 @@ ul, ol {
 
   .sm\:pt-4 {
     padding-top: 1rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
@@ -3953,24 +3930,6 @@ ul, ol {
 
 .dark\:focus-visible\:outline-accent-500:focus-visible:where(.dark, .dark *) {
   outline-color: var(--accent-500);
-}
-
-.group:hover .dark\:group-hover\:text-accent-400:where(.dark, .dark *) {
-  color: var(--accent-400);
-}
-
-.group:hover .dark\:group-hover\:text-gray-200:where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
-}
-
-.group:focus-visible .dark\:group-focus-visible\:text-accent-400:where(.dark, .dark *) {
-  color: var(--accent-400);
-}
-
-.group:focus-visible .dark\:group-focus-visible\:text-gray-200:where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
 }
 
 .dark\:prose-headings\:text-gray-100 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))):where(.dark, .dark *) {
