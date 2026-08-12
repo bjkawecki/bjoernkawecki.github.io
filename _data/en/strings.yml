@@ -4,7 +4,9 @@ aside:
   profile_alt: "Portrait of Björn Kawecki"
 navigation:
   start: "Blog"
-  about_me: "About"
+  about_me: "About me"
+  profile: "Profile"
+  thesis: "Thesis"
   field: "Fields"
   webentwicklung: "Software Development"
   documentation_engineering: "Knowledge Management"
@@ -17,6 +19,7 @@ header:
   menu_close: "Close menu"
   contact_cta: "Contact"
   contact_cta_href: "mailto:post@bjoernkawecki.de"
+  about_menu_label: "Open profile menu"
   field_menu_label: "Open fields menu"
 head:
   description: "Björn Kawecki – blog on documentation, software, and knowledge structures."
@@ -60,7 +63,7 @@ home:
   fachgebiete:
     title: "Fields"
     anchor: "fields"
-    intro: "Two areas, one shared goal: making systems and knowledge lastingly usable."
+    intro: "Two areas, one shared goal: making knowledge and systems lastingly usable."
     items:
       - title: "Software Development"
         description: "Building systems where decisions and knowledge matter as much as code."
@@ -180,6 +183,21 @@ docs_engineering:
   closing:
     text: "Want to know where your organisation stands on documentation and knowledge management? In a no-obligation conversation you will get an initial assessment and concrete next steps."
     cta_label: "Request a conversation"
+slavistik:
+  heading: "My thesis"
+  work_title: "Soviet Literature and Emigration"
+  subtitle: "The literary programme of the Posev publishing house in the Thaw period"
+  cover_alt: "Cover of the master's thesis Soviet Literature and Emigration"
+  download_label: "Download PDF"
+  download_aria: "Download the master's thesis as PDF"
+  enlarge_aria: "Enlarge cover"
+  close_aria: "Close"
+  intro:
+    - "From 2013 to 2021 I studied Russian studies at the University of Freiburg. Here I am making my master's thesis available in a revised edition."
+  overview:
+    - "How did a small émigré press become a voice of resistance against an empire? This thesis examines the history of Posev, which promoted Russian exile literature, smuggled banned texts into the Soviet Union, and was closely linked to the anti-communist NTS movement."
+    - "From refugee camps to global influence, it traces the development of a literary programme meant to cross political and cultural borders: the power of literature in the field of tension between ideology, history, and identity."
+  disclaimer: "Master's thesis, University of Freiburg, defended on 3 May 2021. This is the revised edition (as of August 2026) with linguistic and typographic corrections."
 pagination:
   previous_page: Previous page
   page: Page

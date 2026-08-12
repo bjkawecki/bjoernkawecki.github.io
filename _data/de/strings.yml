@@ -5,6 +5,8 @@ aside:
 navigation:
   start: "Blog"
   about_me: "Über mich"
+  profile: "Profil"
+  thesis: "Abschlussarbeit"
   field: "Fachgebiet"
   webentwicklung: "Softwareentwicklung"
   documentation_engineering: "Wissensmanagement"
@@ -17,6 +19,7 @@ header:
   menu_close: "Menü schließen"
   contact_cta: "Kontakt"
   contact_cta_href: "mailto:post@bjoernkawecki.de"
+  about_menu_label: "Profil öffnen"
   field_menu_label: "Fachgebiet öffnen"
 head:
   description: "Björn Kawecki – Blog zu Dokumentation, Software und Wissensstrukturen."
@@ -60,7 +63,7 @@ home:
   fachgebiete:
     title: "Fachgebiete"
     anchor: "fachgebiete"
-    intro: "Zwei Schwerpunkte, ein gemeinsamer Anspruch: Systeme und Wissen dauerhaft nutzbar machen."
+    intro: "Zwei Bereiche, ein gemeinsamer Anspruch: Wissen und Systeme dauerhaft nutzbar machen."
     items:
       - title: "Softwareentwicklung"
         description: "Systeme bauen, bei denen Entscheidungen und Wissen genauso zählen wie Code."
@@ -180,6 +183,21 @@ docs_engineering:
   closing:
     text: "Sie möchten wissen, wo Ihre Organisation beim Thema Dokumentation und Wissensmanagement steht? In einem unverbindlichen Gespräch erhalten Sie eine erste Einschätzung und konkrete nächste Schritte."
     cta_label: "Gespräch anfragen"
+slavistik:
+  heading: "Meine Abschlussarbeit"
+  work_title: "Sowjetische Literatur und Emigration"
+  subtitle: "Das literarische Programm des Posev-Verlags in der Periode des Tauwetters"
+  cover_alt: "Deckblatt der Masterarbeit Sowjetische Literatur und Emigration"
+  download_label: "PDF herunterladen"
+  download_aria: "Masterarbeit als PDF herunterladen"
+  enlarge_aria: "Cover vergrößern"
+  close_aria: "Schließen"
+  intro:
+    - "Von 2013 bis 2021 habe ich an der Albert-Ludwigs-Universität Freiburg Russlandstudien studiert. Hier stelle ich meine Masterarbeit in einer überarbeiteten Fassung bereit."
+  overview:
+    - "Wie wurde ein kleiner Emigrantenverlag zu einer Stimme des Widerstands gegen ein Weltreich? Diese Arbeit untersucht die Geschichte des Posev-Verlags, der russische Exilliteratur förderte, verbotene Texte in die Sowjetunion schmuggelte und eng mit der antikommunistischen Bewegung NTS verbunden war."
+    - "Von Flüchtlingslagern bis zu globaler Einflussnahme wird die Entwicklung eines literarischen Programms beleuchtet, das politische und kulturelle Grenzen überschreiten sollte. Es geht um die Macht von Literatur im Spannungsfeld von Ideologie, Geschichte und Identität."
+  disclaimer: "Masterarbeit, Albert-Ludwigs-Universität Freiburg, verteidigt am 3. Mai 2021. Hier die überarbeitete Fassung (Stand August 2026) mit sprachlichen und typografischen Korrekturen."
 pagination:
   previous_page: Vorherige Seite
   page: Seite

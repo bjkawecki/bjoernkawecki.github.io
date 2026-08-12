@@ -1,0 +1,99 @@
+{% assign current_lang = site.active_lang | default: site.default_lang | default: 'de' %}
+{% assign slavistik = site.data[current_lang].strings.slavistik %}
+{% assign pdf_href = site.baseurl | append: '/assets/files/kawecki-sowjetische-literatur-emigration-2021-rev-2026.pdf' %}
+{% assign cover_src = site.baseurl | append: '/assets/img/kawecki-sowjetische-literatur-emigration-cover.webp' %}
+<section class="mx-auto max-w-3xl" aria-labelledby="slavistik-heading">
+  <h1 id="slavistik-heading" class="mb-6 text-3xl font-medium tracking-tight text-gray-900 sm:mb-8 sm:text-4xl dark:text-gray-100">
+    {{ slavistik.heading }}
+  </h1>
+
+  <div class="space-y-5">
+  <div class="space-y-5 text-base leading-relaxed text-gray-800 dark:text-gray-200 [&_p]:m-0">
+    {% for paragraph in slavistik.intro %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+
+  <div class="flow-root">
+    <figure class="mx-auto mb-6 w-40 space-y-3 md:float-right md:mx-0 md:mb-4 md:ml-8 md:w-48">
+      <button
+        type="button"
+        id="slavistik-cover-open"
+        class="block w-full cursor-zoom-in rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 dark:focus-visible:outline-accent-400"
+        aria-haspopup="dialog"
+        aria-controls="slavistik-cover-dialog"
+        aria-label="{{ slavistik.enlarge_aria }}"
+      >
+        <img
+          src="{{ cover_src }}"
+          alt="{{ slavistik.cover_alt }}"
+          class="h-auto w-full rounded-lg transition hover:opacity-90"
+          width="192"
+          height="300"
+          loading="lazy"
+        />
+      </button>
+      <p class="text-center md:text-left">
+        <a
+          href="{{ pdf_href }}"
+          class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ slavistik.download_aria }}"
+        >
+          {{ slavistik.download_label }}
+          {% include icons/open-external.html class="ml-1.5 h-4 w-4" %}
+        </a>
+      </p>
+    </figure>
+
+    <div class="space-y-5">
+      <div class="space-y-2">
+        <h2 class="text-xl font-medium tracking-tight text-gray-900 dark:text-gray-100">
+          {{ slavistik.work_title }}
+        </h2>
+        <p class="text-base leading-relaxed text-gray-800 dark:text-gray-200">
+          {{ slavistik.subtitle }}
+        </p>
+      </div>
+
+      <div class="space-y-5 border-l-2 border-brand-200 pl-5 text-base leading-relaxed text-gray-700 dark:border-zinc-600 dark:text-gray-300 [&_p]:m-0">
+        {% for paragraph in slavistik.overview %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <p class="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+    {{ slavistik.disclaimer }}
+  </p>
+  </div>
+</section>
+
+<dialog
+  id="slavistik-cover-dialog"
+  class="m-auto max-h-[90vh] w-[min(100%-2rem,28rem)] rounded-lg border-0 bg-transparent p-0 shadow-xl backdrop:bg-zinc-950/75 open:flex open:flex-col"
+  aria-label="{{ slavistik.cover_alt }}"
+>
+  <div class="relative">
+    <button
+      type="button"
+      id="slavistik-cover-close"
+      class="absolute right-2 top-2 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-zinc-950/70 text-white transition hover:bg-zinc-950/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      aria-label="{{ slavistik.close_aria }}"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+    <img
+      src="{{ cover_src }}"
+      alt="{{ slavistik.cover_alt }}"
+      class="h-auto max-h-[90vh] w-full rounded-lg"
+      width="448"
+      height="700"
+      loading="lazy"
+    />
+  </div>
+</dialog>
