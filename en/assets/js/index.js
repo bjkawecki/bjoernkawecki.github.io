@@ -155,3 +155,25 @@ if (softwareDiagram) {
     if (event.key === "Escape") closeAllTips();
   });
 }
+
+const slavistikCoverDialog = document.getElementById("slavistik-cover-dialog");
+const slavistikCoverOpen = document.getElementById("slavistik-cover-open");
+const slavistikCoverClose = document.getElementById("slavistik-cover-close");
+
+if (slavistikCoverDialog && slavistikCoverOpen) {
+  slavistikCoverOpen.addEventListener("click", () => {
+    slavistikCoverDialog.showModal();
+  });
+
+  if (slavistikCoverClose) {
+    slavistikCoverClose.addEventListener("click", () => {
+      slavistikCoverDialog.close();
+    });
+  }
+
+  slavistikCoverDialog.addEventListener("click", (event) => {
+    if (event.target === slavistikCoverDialog) {
+      slavistikCoverDialog.close();
+    }
+  });
+}
