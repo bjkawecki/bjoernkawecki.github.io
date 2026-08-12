@@ -5,7 +5,7 @@ description: "Why sharing knowledge matters: so others can build on what came be
 date: 2026-08-11
 lang: en
 locale: en
-page_id: pass-knowledge-on-or-start-from-scratch
+page_id: wissen-weitergeben-oder-bei-null-beginnen
 category: Knowledge Culture
 ---
 
