@@ -1865,8 +1865,8 @@ ul, ol {
   height: 100%;
 }
 
-.max-h-\[90vh\] {
-  max-height: 90vh;
+.max-h-\[92vh\] {
+  max-height: 92vh;
 }
 
 .w-1\/2 {
@@ -1917,8 +1917,8 @@ ul, ol {
   width: 0.75em;
 }
 
-.w-\[min\(100\%-2rem\2c 28rem\)\] {
-  width: min(100% - 2rem, 28rem);
+.w-\[min\(100\%-1\.5rem\2c 40rem\)\] {
+  width: min(100% - 1.5rem, 40rem);
 }
 
 .w-fit {
@@ -2317,6 +2317,11 @@ ul, ol {
 
 .fill-slate-900 {
   fill: #0f172a;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
