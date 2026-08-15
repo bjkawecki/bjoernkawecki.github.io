@@ -33,18 +33,32 @@
           loading="lazy"
         />
       </button>
-      <p class="text-center md:text-left">
-        <a
-          href="{{ pdf_href }}"
-          class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="{{ slavistik.download_aria }}"
-        >
-          {{ slavistik.download_label }}
-          {% include icons/open-external.html class="ml-1.5 h-4 w-4" %}
-        </a>
-      </p>
+      <div class="space-y-1.5 text-center md:text-left">
+        <p>
+          <a
+            href="{{ pdf_href }}"
+            class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="{{ slavistik.download_aria }}"
+          >
+            {{ slavistik.download_label }}
+            {% include icons/open-external.html class="ml-1.5 h-4 w-4" %}
+          </a>
+        </p>
+        <p>
+          <a
+            href="{{ slavistik.amazon_href }}"
+            class="inline-flex items-center text-sm font-semibold text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="{{ slavistik.amazon_aria }}"
+          >
+            {{ slavistik.amazon_label }}
+            {% include icons/open-external.html class="ml-1.5 h-4 w-4" %}
+          </a>
+        </p>
+      </div>
     </figure>
 
     <div class="space-y-5">

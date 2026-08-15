@@ -190,6 +190,9 @@ slavistik:
   cover_alt: "Cover of the master's thesis Soviet Literature and Emigration"
   download_label: "Download PDF"
   download_aria: "Download the master's thesis as PDF"
+  amazon_label: "Book on Amazon"
+  amazon_aria: "Open the book on Amazon"
+  amazon_href: "https://www.amazon.de/dp/B0HFCWDCHB"
   enlarge_aria: "Enlarge cover"
   close_aria: "Close"
   intro:

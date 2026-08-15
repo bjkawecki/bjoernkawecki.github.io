@@ -190,6 +190,9 @@ slavistik:
   cover_alt: "Deckblatt der Masterarbeit Sowjetische Literatur und Emigration"
   download_label: "PDF herunterladen"
   download_aria: "Masterarbeit als PDF herunterladen"
+  amazon_label: "Als Buch bei Amazon"
+  amazon_aria: "Buch bei Amazon öffnen"
+  amazon_href: "https://www.amazon.de/dp/B0HFCWDCHB"
   enlarge_aria: "Cover vergrößern"
   close_aria: "Schließen"
   intro:
