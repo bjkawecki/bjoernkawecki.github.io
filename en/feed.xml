@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://bjoernkawecki.de/en/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bjoernkawecki.de/en/" rel="alternate" type="text/html" /><updated>2026-08-15T15:27:24+00:00</updated><id>https://bjoernkawecki.de/feed.xml</id><title type="html">Björn Kawecki</title><subtitle>Documentation and knowledge structures.</subtitle><author><name>Björn Kawecki</name></author><entry xml:lang="en"><title type="html">Pass Knowledge On – Or Start From Scratch</title><link href="https://bjoernkawecki.de/en/blog/pass-knowledge-on-or-start-from-scratch.html" rel="alternate" type="text/html" title="Pass Knowledge On – Or Start From Scratch" /><published>2026-08-11T00:00:00+00:00</published><updated>2026-08-11T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/pass-knowledge-on-or-start-from-scratch</id><content type="html" xml:base="https://bjoernkawecki.de/blog/pass-knowledge-on-or-start-from-scratch.html"><![CDATA[<p>My first blog post on documentation and knowledge management was deliberately romanticized. I wanted to point out that it is easier to document something, to put it into writing, when you can imagine someone on the other end who could benefit immensely from the knowledge you have put into writing and would probably be very grateful for it.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://bjoernkawecki.de/en/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bjoernkawecki.de/en/" rel="alternate" type="text/html" /><updated>2026-09-02T21:28:05+00:00</updated><id>https://bjoernkawecki.de/feed.xml</id><title type="html">Björn Kawecki</title><subtitle>Documentation and knowledge structures.</subtitle><author><name>Björn Kawecki</name></author><entry xml:lang="en"><title type="html">Knowledge as a Business Asset</title><link href="https://bjoernkawecki.de/en/blog/knowledge-as-a-business-asset.html" rel="alternate" type="text/html" title="Knowledge as a Business Asset" /><published>2026-09-02T00:00:00+00:00</published><updated>2026-09-02T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/knowledge-as-a-business-asset</id><content type="html" xml:base="https://bjoernkawecki.de/blog/knowledge-as-a-business-asset.html"><![CDATA[<p>Knowledge is everywhere in a company. In a simplified sense, everything starts with knowledge. An entrepreneur knows something, grasps a connection, or has a particular insight and turns it into a business model. He may know how a product is made. He may know a market, legal frameworks, or operational routines. The business model itself may even consist of selling knowledge, for example through consulting or training.</p>
+
+<p>That knowledge lives in books, products, software, and machines. It shows up in processes and work instructions. And it sits in employees’ heads: techniques, exceptions, connections. From the sum of these skills, something emerges that customers will pay for. For every company, knowledge is a fundamental resource.</p>
+
+<h2 id="what-is-a-company-actually-buying">What is a company actually buying?</h2>
+
+<p>Take a software developer. Why does a company hire him? Because it needs someone who builds software. What does that mean?</p>
+
+<p>The company is not only buying working time. It is buying the ability to solve certain problems with software: knowledge and experience. The developer knows how software is designed, programmed, tested, operated, and evolved.</p>
+
+<p>In return, the company provides capital, infrastructure, customers, sales channels, and organization. Out of these resources comes a product with economic value.</p>
+
+<p>The exchange looks simple at first. It becomes interesting during the collaboration. The developer does not only bring knowledge. He also acquires new knowledge.</p>
+
+<h2 id="knowledge-takes-shape-inside-the-company">Knowledge takes shape inside the company</h2>
+
+<p>At work, the developer learns the products, customers, industry, and internal routines. He learns which decisions were made in the past and why things are built the way they are today. Eventually he knows the codebase, the tools, the release and deployment flows, and the edge cases that only apply under a particular condition.</p>
+
+<p>Much of this arises on the side: in meetings, old tickets, conversations with colleagues. This knowledge is potentially valuable for the company. It emerged through shared work and is tightly bound to the company’s products and organization.</p>
+
+<p>So does this knowledge belong to the employee or to the company?</p>
+
+<h2 id="when-knowledge-lives-in-only-one-head">When knowledge lives in only one head</h2>
+
+<p>Imagine the developer leaves. Code, servers, and the development environment remain, of course. He may even have left solid documentation of his code. A gap still opens where knowledge was never written down: Why was one part of the application implemented this way? Why does a customer need a special arrangement? Which seemingly harmless change already caused problems in the past?</p>
+
+<p>The knowledge has not disappeared. It is scattered across emails, tickets, pull requests, or documents on a work computer. Above all, it often remains in the former developer’s memory, a place the company effectively cannot enter.</p>
+
+<p>The company paid for working time, infrastructure, and product development. Yet it may never have moved a substantial share of the knowledge created along the way into its own organizational sphere, and it can now take a hit. How is that possible?</p>
+
+<h2 id="an-unusual-way-to-treat-an-asset">An unusual way to treat an asset</h2>
+
+<p>With other resources, hardly anyone would accept this. A server an employee takes home after work. A machine with no inventory record, whose location no one knows after the person responsible has left. No one would entertain those ideas, because they would simply be negligent.</p>
+
+<p>With knowledge we behave differently, oddly enough, because we can grasp it only indirectly. That does not make it less valuable. On the contrary. Trouble begins when companies organize their intangible resources more poorly than their material ones.</p>
+
+<p>The decisive question is: <strong>Which knowledge is so relevant for the company that it must not remain tied to a single person indefinitely?</strong></p>
+
+<p>Put differently, a company must be able to run its critical processes even when individual people are missing. Without that kind of organizational resilience, knowledge loss hangs over every firm like a sword of Damocles.</p>]]></content><author><name>Björn Kawecki</name></author><category term="Knowledge Culture" /><summary type="html"><![CDATA[Companies hold knowledge assets, often without inventorying them. Why knowledge is a critical resource, and which question organizations need to settle first.]]></summary></entry><entry xml:lang="en"><title type="html">Pass Knowledge On – Or Start From Scratch</title><link href="https://bjoernkawecki.de/en/blog/pass-knowledge-on-or-start-from-scratch.html" rel="alternate" type="text/html" title="Pass Knowledge On – Or Start From Scratch" /><published>2026-08-11T00:00:00+00:00</published><updated>2026-08-11T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/pass-knowledge-on-or-start-from-scratch</id><content type="html" xml:base="https://bjoernkawecki.de/blog/pass-knowledge-on-or-start-from-scratch.html"><![CDATA[<p>My first blog post on documentation and knowledge management was deliberately romanticized. I wanted to point out that it is easier to document something, to put it into writing, when you can imagine someone on the other end who could benefit immensely from the knowledge you have put into writing and would probably be very grateful for it.</p>
 
 <p>Yes, where would we be as humanity if there weren’t always people who felt the urge to share their knowledge, to make it available to others, without even asking for anything in return?</p>
 

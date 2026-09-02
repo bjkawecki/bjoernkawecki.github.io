@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://bjoernkawecki.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bjoernkawecki.de/" rel="alternate" type="text/html" /><updated>2026-08-15T15:27:24+00:00</updated><id>https://bjoernkawecki.de/feed.xml</id><title type="html">Björn Kawecki</title><subtitle>Dokumentation und Wissensstrukturen.</subtitle><author><name>Björn Kawecki</name></author><entry xml:lang="de"><title type="html">Wissen weitergeben – oder bei Null beginnen</title><link href="https://bjoernkawecki.de/blog/wissen-weitergeben-oder-bei-null-beginnen.html" rel="alternate" type="text/html" title="Wissen weitergeben – oder bei Null beginnen" /><published>2026-08-11T00:00:00+00:00</published><updated>2026-08-11T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/wissen-weitergeben-oder-bei-null-beginnen</id><content type="html" xml:base="https://bjoernkawecki.de/blog/wissen-weitergeben-oder-bei-null-beginnen.html"><![CDATA[<p>Mein erster Blogpost zum Thema Dokumentieren und Wissensmanagement war bewusst romantisierend. Ich wollte darauf hinweisen, dass es einfacher ist, etwas zu dokumentieren, niederzuschreiben, wenn man sich ein Gegenüber vorstellen kann, das vom eigenen verschriftlichten Wissen immens profitieren kann und vermutlich sehr dankbar sein wird.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://bjoernkawecki.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bjoernkawecki.de/" rel="alternate" type="text/html" /><updated>2026-09-02T21:28:05+00:00</updated><id>https://bjoernkawecki.de/feed.xml</id><title type="html">Björn Kawecki</title><subtitle>Dokumentation und Wissensstrukturen.</subtitle><author><name>Björn Kawecki</name></author><entry xml:lang="de"><title type="html">Wissen als Unternehmensressource</title><link href="https://bjoernkawecki.de/blog/wissen-als-unternehmensressource.html" rel="alternate" type="text/html" title="Wissen als Unternehmensressource" /><published>2026-09-02T00:00:00+00:00</published><updated>2026-09-02T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/wissen-als-unternehmensressource</id><content type="html" xml:base="https://bjoernkawecki.de/blog/wissen-als-unternehmensressource.html"><![CDATA[<p>Wissen ist in einem Unternehmen überall. Vereinfacht gesagt, fängt mit Wissen sogar alles an. Ein Unternehmer weiß etwas, versteht einen Zusammenhang oder hat eine bestimmte Einsicht und entwickelt daraus ein Geschäftsmodell. Vielleicht weiß er, wie ein Produkt hergestellt wird. Vielleicht kennt er einen Markt, rechtliche Zusammenhänge oder Abläufe. Vielleicht besteht das Geschäftsmodell unmittelbar darin, Wissen zu verkaufen, etwa in Form von Beratung oder Schulungen.</p>
+
+<p>Dieses Wissen steckt in Büchern, Produkten, Software und Maschinen. Es zeigt sich in Prozessen und Arbeitsanweisungen. Und es sitzt in den Köpfen der Mitarbeiter: Handgriffe, Ausnahmen, Zusammenhänge. Aus der Summe dieser Kenntnisse entsteht etwas, für das Kunden bezahlen. Für jedes Unternehmen ist Wissen eine grundlegende Ressource.</p>
+
+<h2 id="was-kauft-ein-unternehmen-eigentlich-ein">Was kauft ein Unternehmen eigentlich ein?</h2>
+
+<p>Nehmen wir einen Softwareentwickler. Warum stellt ein Unternehmen ihn ein? Weil es jemanden braucht, der Software entwickelt. Was bedeutet das?</p>
+
+<p>Das Unternehmen kauft nicht nur Arbeitszeit. Es kauft die Fähigkeit, bestimmte Probleme mit Software zu lösen: Wissen und Erfahrung. Der Entwickler weiß, wie Software entworfen, programmiert, getestet, betrieben und weiterentwickelt wird.</p>
+
+<p>Im Gegenzug stellt das Unternehmen Kapital, Infrastruktur, Kunden, Vertriebswege und Organisation bereit. Aus diesen Ressourcen entsteht ein Produkt mit wirtschaftlichem Wert.</p>
+
+<p>Der Tausch wirkt zunächst einfach. Interessant wird er während der Zusammenarbeit. Denn der Entwickler bringt nicht nur Wissen mit. Er erwirbt auch neues.</p>
+
+<h2 id="das-wissen-entsteht-im-unternehmen">Das Wissen entsteht im Unternehmen</h2>
+
+<p>Während seiner Arbeit lernt der Entwickler Produkte, Kunden, Branche und interne Abläufe kennen. Er lernt, welche Entscheidungen früher getroffen wurden und warum Dinge so gebaut sind, wie sie heute sind. Er kennt irgendwann die Codebasis, die Werkzeuge, die Release- und Deployment-Abläufe und die Sonderfälle, die nur unter einer bestimmten Bedingung greifen.</p>
+
+<p>Vieles davon entsteht nebenbei: in Meetings, alten Tickets, Gesprächen mit Kollegen. Dieses Wissen ist für das Unternehmen potenziell wertvoll. Es entstand im Rahmen der gemeinsamen Arbeit und hängt eng mit dessen Produkten und Organisation zusammen.</p>
+
+<p>Gehört dieses Wissen nun dem Mitarbeiter oder dem Unternehmen?</p>
+
+<h2 id="wenn-wissen-nur-in-einem-kopf-existiert">Wenn Wissen nur in einem Kopf existiert</h2>
+
+<p>Stellen wir uns vor, der Entwickler verlässt das Unternehmen. Code, Server und Entwicklungsumgebung bleiben natürlich. Vielleicht hat der Entwickler sogar für eine ordentliche Dokumentation seines Codes gesorgt. Trotzdem entsteht nun eine Lücke, und zwar dort, wo Wissen nicht niedergeschrieben wurde: Warum zum Beispiel wurde ein Teil der Anwendung so implementiert? Warum braucht ein Kunde eine Sonderlösung? Welche scheinbar harmlose Änderung hat früher schon Probleme ausgelöst?</p>
+
+<p>Das Wissen ist nicht verschwunden. Es steckt verstreut in E-Mails, Tickets, Pull Requests oder Dokumenten auf dem Arbeitscomputer. Vor allem aber oft im Gedächtnis des ehemaligen Entwicklers, ein Ort, zu dem das Unternehmen praktisch keinen Zutritt hat.</p>
+
+<p>Das Unternehmen hat für Arbeitszeit, Infrastruktur und Produktentwicklung bezahlt. Und doch hat es einen beträchtlichen Teil des dabei entstandenen Wissens möglicherweise nie in die eigene organisatorische Sphäre übernommen und kann nun einen Schaden davontragen. Wie kann das sein?</p>
+
+<h2 id="ein-ungewöhnlicher-umgang-mit-einem-asset">Ein ungewöhnlicher Umgang mit einem Asset</h2>
+
+<p>Bei anderen Ressourcen würde man das kaum akzeptieren. Ein Server, den ein Mitarbeiter nach Feierabend mit nach Hause nimmt. Eine Maschine ohne Inventar, deren Standort nach dem Ausscheiden des Verantwortlichen niemand kennt. Auf diese Ideen würde niemand kommen, weil es einfach fahrlässig wäre.</p>
+
+<p>Bei Wissen verhalten wir uns merkwürdigerweise anders, weil wir es nur indirekt greifen können. Weniger wertvoll ist es deshalb selbstverständlich nicht. Im Gegenteil. Die Probleme fangen aber an, wenn Unternehmen ihre immateriellen Ressourcen schlechter organisieren als ihre materiellen.</p>
+
+<p>Entscheidend ist dabei die Frage: <strong>Welches Wissen ist für das Unternehmen so relevant, dass es nicht dauerhaft an eine einzelne Person gebunden sein darf?</strong></p>
+
+<p>Denn anders gesagt, muss ein Unternehmen seine kritischen Prozesse betreiben können, auch wenn einzelne Personen fehlen. Ohne diese Form organisatorischer Resilienz schwebt der Wissensverlust wie ein Damokles-Schwert über jeder Firma.</p>]]></content><author><name>Björn Kawecki</name></author><category term="Wissenskultur" /><summary type="html"><![CDATA[Unternehmen besitzen Wissensvermögen, oft ohne es zu inventarisieren. Warum Wissen eine kritische Ressource ist und welche Frage Organisationen zuerst klären.]]></summary></entry><entry xml:lang="de"><title type="html">Wissen weitergeben – oder bei Null beginnen</title><link href="https://bjoernkawecki.de/blog/wissen-weitergeben-oder-bei-null-beginnen.html" rel="alternate" type="text/html" title="Wissen weitergeben – oder bei Null beginnen" /><published>2026-08-11T00:00:00+00:00</published><updated>2026-08-11T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/wissen-weitergeben-oder-bei-null-beginnen</id><content type="html" xml:base="https://bjoernkawecki.de/blog/wissen-weitergeben-oder-bei-null-beginnen.html"><![CDATA[<p>Mein erster Blogpost zum Thema Dokumentieren und Wissensmanagement war bewusst romantisierend. Ich wollte darauf hinweisen, dass es einfacher ist, etwas zu dokumentieren, niederzuschreiben, wenn man sich ein Gegenüber vorstellen kann, das vom eigenen verschriftlichten Wissen immens profitieren kann und vermutlich sehr dankbar sein wird.</p>
 
 <p>Ja, wo wären wir als Menschheit, wenn es nicht immer wieder die gäbe, die den Drang verspüren, ihr Wissen zu teilen, anderen zur Verfügung zu stellen, auch ganz ohne das Verlangen nach einer Gegenleistung?</p>
 
