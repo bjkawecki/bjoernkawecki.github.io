@@ -24,6 +24,8 @@ Wenn Mitarbeiter gehen, geht oft mehr als nur Arbeitskraft
 Warum Wissensverlust selten plötzlich passiert
 Wissen ist kein Dokument – sondern ein System
 Warum Wissensmanagement oft erst dann sichtbar wird, wenn es zu spät ist
+
+
 2. Dokumentation als Teil der Softwareentwicklung ⭐⭐⭐⭐⭐
 
 Hier kannst du deine Erfahrung als Entwickler einbringen.
@@ -48,6 +50,8 @@ Warum Unternehmen mehr wissen als sie finden
 Slack ist keine Wissensdatenbank
 Warum Suchkosten unterschätzt werden
 Wissen suchen ist Arbeit
+
+
 4. Prozesse dokumentieren ⭐⭐⭐⭐☆
 
 Nicht nur Software.

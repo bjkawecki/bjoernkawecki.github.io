@@ -1,1 +1,0 @@
-Sinnbild: wie sysiphos

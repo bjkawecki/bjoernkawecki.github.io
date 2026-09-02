@@ -1,6 +1,10 @@
 # Slug pro Sprache für den Sprachumschalter (page_id -> de/en slug)
 # Muss mit dem Dateinamen-Teil nach dem Datum übereinstimmen (z. B. 2026-02-01-SLUG.md)
 
+wissen-als-unternehmensressource:
+  de: wissen-als-unternehmensressource
+  en: knowledge-as-a-business-asset
+
 wissen-weitergeben-oder-bei-null-beginnen:
   de: wissen-weitergeben-oder-bei-null-beginnen
   en: pass-knowledge-on-or-start-from-scratch
