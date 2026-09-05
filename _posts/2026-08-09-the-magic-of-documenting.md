@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The magic of documenting"
-description: "Documenting as time travel: turn experience into form, leave a trace, and invite someone unknown or not yet here to continue. In the large and in the small."
+description: "Documenting sounds like paperwork. I see it more as time travel: holding onto a moment so someone later can pick up where you left off."
 date: 2026-08-09
 lang: en
 locale: en

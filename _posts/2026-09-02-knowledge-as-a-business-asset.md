@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Knowledge as a Business Asset"
-description: "Companies hold knowledge assets, often without inventorying them. Why knowledge is a critical resource, and which question organizations need to settle first."
+description: "No one would let a server walk out untracked. Knowledge still often leaves only in someone's head. Does it belong to the employee or the company?"
 date: 2026-09-02
 lang: en
 locale: en

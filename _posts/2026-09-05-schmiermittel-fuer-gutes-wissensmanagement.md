@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Das Schmiermittel für gutes Wissensmanagement"
-description: "Wissen gatekeepen erzeugt Reibung, Wissen teilen mindert sie. Transparenz ist das Schmiermittel: klar, was existiert, wo es liegt und was man wissen darf."
+description: "Suchen, nachfragen, warten: Reibung um Wissen kostet Zeit. Transparenz glättet Abläufe, auch wenn sie Beschränkungen enthalten."
 date: 2026-09-05
 lang: de
 locale: de

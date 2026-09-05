@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pass Knowledge On – Or Start From Scratch"
-description: "Why sharing knowledge matters: so others can build on what came before instead of having to start from scratch all over again."
+description: "In our student association in Freiburg, hard-won know-how nearly left with graduating students. Leave nothing behind, and the next cohort starts at zero."
 date: 2026-08-11
 lang: en
 locale: en

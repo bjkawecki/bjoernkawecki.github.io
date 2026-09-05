@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wissen weitergeben – oder bei Null beginnen"
-description: "Warum wir Wissen dokumentieren: damit andere später darauf aufbauen können, statt dieselben Erfahrungen noch einmal machen zu müssen."
+description: "In der Freiburger Fachschaft Slawistik drohten Erfahrungen mit den Absolventen zu verschwinden. Wer nichts hinterlässt, lässt andere bei null starten."
 date: 2026-08-11
 lang: de
 locale: de

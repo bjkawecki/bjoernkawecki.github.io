@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Smooths Knowledge Work"
-description: "Gatekeeping knowledge creates friction; sharing reduces it. Transparency is what smooths the work: clear what exists, where it lives, and what you may know."
+description: "Search, ask, wait: friction around knowledge burns time. Transparency smooths the work, even when not everyone may know everything."
 date: 2026-09-05
 lang: en
 locale: en

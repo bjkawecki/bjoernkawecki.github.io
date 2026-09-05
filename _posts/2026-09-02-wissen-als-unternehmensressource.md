@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wissen als Unternehmensressource"
-description: "Unternehmen besitzen Wissensvermögen, oft ohne es zu inventarisieren. Warum Wissen eine kritische Ressource ist und welche Frage Organisationen zuerst klären."
+description: "Einen Server lässt niemand ohne Inventar. Wissen wandert trotzdem oft nur in Köpfen mit. Gehört es dem Mitarbeiter oder dem Unternehmen?"
 date: 2026-09-02
 lang: de
 locale: de

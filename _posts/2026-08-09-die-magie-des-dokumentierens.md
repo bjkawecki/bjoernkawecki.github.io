@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Die Magie des Dokumentierens"
-description: "Dokumentieren als Zeitreise: Wissen aus dem Moment holen, Spuren hinterlassen und andere einladen, hier weiterzumachen. Im Großen wie im Kleinen."
+description: "Dokumentieren klingt nach Pflicht. Ich sehe eher eine Zeitreise darin: einen Moment festhalten, damit jemand später hier weitermachen kann."
 date: 2026-08-09
 lang: de
 locale: de
