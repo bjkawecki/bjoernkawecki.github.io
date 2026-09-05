@@ -37,6 +37,8 @@ Gute Dokumentation entsteht während der Entwicklung
 Warum Dokumentation selten am fehlenden Willen scheitert
 Documentation Engineering erklärt
 Wann README-Dateien nicht mehr ausreichen
+
+
 3. Informationssuche statt Informationsmangel ⭐⭐⭐⭐⭐
 
 Das finde ich extrem spannend.
@@ -119,6 +121,31 @@ Warum ich Documentation Engineering spannend finde
 Was ich beim Entwickeln über Wissen gelernt habe
 Mein Lieblingsfehler in Dokumentationen
 Warum gute Systeme langweilig wirken
+
+9. Wissen gatekeepen oder teilen (Reibung) ⭐⭐⭐⭐⭐
+
+These: Wissen zurückhalten schafft Reibung. Wissen teilen mindert Reibung. Beides kann in einem Unternehmen gewollt sein. Es muss eine bewusste Entscheidung sein.
+
+Reibung hier: Koordinationsaufwand. Mehr Absprachen, Wartezeiten, Bottlenecks, weil Wissen nicht greifbar ist oder absichtlich hinter Personen, Freigaben oder Silos liegt.
+
+Öl, das Reibung mindert: Transparenz. Sichtbar, wer was weiß, wo es liegt und warum so entschieden wurde.
+
+Transparenz darüber, was man wissen darf und was nicht, reduziert Reibung, Stress und Suchwissen und erhöht damit die Effizienz in den Abläufen der Arbeit.
+
+Nicht gemeint: UX-Friction im Produkt oder bloße Trägheit gegen Veränderung.
+
+Spannung: Gatekeeping kann Schutz sein (Geheimhaltung, Qualität, Haftung). Teilen kann Tempo und Unabhängigkeit sein. Unbewusstes Gatekeeping erzeugt Reibung, ohne dass jemand sie gewählt hat.
+
+Artikel:
+
+Wissen gatekeepen schafft Reibung, Wissen teilen mindert sie
+Reibung im Unternehmen: Koordinationsaufwand durch unzugängliches Wissen
+Bewusstes Gatekeeping und versehentliche Wissensengpässe
+Wann Wissen hinter einer Person bleiben darf
+Teilen als Entscheidung, nicht als Reflex
+
+(Zweitidee / Herkunft: YouTuber, der in Japan Hosen herstellt, die wortwörtlich Reibung reduzieren. Wahrscheinlich nicht zufällig dort: Reduktion von Reibung in Kommunikation und Sitten ist in Japan allgegenwärtig. Reibung kann aber auch gut sein, z. B. direkt sein wie in Deutschland, das hilft Missverständnisse zu reduzieren.)
+
 Themen, die ich priorisieren würde
 
 Ich würde langfristig um drei große Säulen bauen.
