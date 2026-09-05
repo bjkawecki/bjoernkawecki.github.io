@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://bjoernkawecki.de/en/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bjoernkawecki.de/en/" rel="alternate" type="text/html" /><updated>2026-09-02T21:28:05+00:00</updated><id>https://bjoernkawecki.de/feed.xml</id><title type="html">Björn Kawecki</title><subtitle>Documentation and knowledge structures.</subtitle><author><name>Björn Kawecki</name></author><entry xml:lang="en"><title type="html">Knowledge as a Business Asset</title><link href="https://bjoernkawecki.de/en/blog/knowledge-as-a-business-asset.html" rel="alternate" type="text/html" title="Knowledge as a Business Asset" /><published>2026-09-02T00:00:00+00:00</published><updated>2026-09-02T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/knowledge-as-a-business-asset</id><content type="html" xml:base="https://bjoernkawecki.de/blog/knowledge-as-a-business-asset.html"><![CDATA[<p>Knowledge is everywhere in a company. In a simplified sense, everything starts with knowledge. An entrepreneur knows something, grasps a connection, or has a particular insight and turns it into a business model. He may know how a product is made. He may know a market, legal frameworks, or operational routines. The business model itself may even consist of selling knowledge, for example through consulting or training.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://bjoernkawecki.de/en/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bjoernkawecki.de/en/" rel="alternate" type="text/html" /><updated>2026-09-05T21:43:02+00:00</updated><id>https://bjoernkawecki.de/feed.xml</id><title type="html">Björn Kawecki</title><subtitle>Documentation and knowledge structures.</subtitle><author><name>Björn Kawecki</name></author><entry xml:lang="en"><title type="html">What Smooths Knowledge Work</title><link href="https://bjoernkawecki.de/en/blog/what-smooths-knowledge-work.html" rel="alternate" type="text/html" title="What Smooths Knowledge Work" /><published>2026-09-05T00:00:00+00:00</published><updated>2026-09-05T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/what-smooths-knowledge-work</id><content type="html" xml:base="https://bjoernkawecki.de/blog/what-smooths-knowledge-work.html"><![CDATA[<p>I got the idea for this piece from the trousers maker Fusein, who lives in Japan and develops trousers under the brand Fuseinatti.</p>
+
+<p>His products are classically cut and relatively wide. They are meant to look good and feel comfortable. The cut pays attention to what happens in typical body movements: Where does friction arise between skin and fabric? Where does the cloth pull or press unpleasantly?</p>
+
+<p>In that case, friction is unwanted. Tight trousers can already bother you when you sit down, because fabric moves more strongly against the skin. The cut can reduce that. Extra layers of suitable material can too.</p>
+
+<p>Engineering knows the same principle more clearly. Between moving parts of a machine, oil does the work. It lets components run against each other more easily and wastes less energy. What you need is an intermediate layer.</p>
+
+<p>The same applies to communication and to how companies handle knowledge. Friction there often means coordination cost: searching, asking, waiting. What smooths that, I will call transparency below.</p>
+
+<h2 id="friction-in-communication">Friction in communication</h2>
+
+<p>That Fusein pursues this principle in Japan may be no coincidence, at least if you stretch the idea a little.</p>
+
+<p>Japanese communication is often described as especially polite, careful, and considerate. Everyday forms aim to avoid open confrontation and thus social friction: refusal more indirect, criticism softer, meaning carried by gestures, pauses, or context rather than by the literal sentence.</p>
+
+<p>That can work well in social life. It has a downside. Anyone who wants to avoid friction at all costs can create new friction. What feels more polite can lead to misunderstandings for someone who does not know the conventions. Avoiding friction does not solve every problem.</p>
+
+<h2 id="friction-may-sometimes-arise">Friction may sometimes arise</h2>
+
+<p>In Germany, direct communication is often valued more highly by comparison, especially at work. Openness is seen as desirable, even when it feels uncomfortable at first. That can create conflict that leads to productive discussion.</p>
+
+<p>For communication, what matters is that the friction serves a purpose. Productive friction can be necessary. Avoidable friction is waste.</p>
+
+<p>Same metaphor, different type: with knowledge in companies, the issue is rarely productive confrontation. It is coordination friction. Employees hunt for information that sits somewhere in a system or in someone’s head, and they lose time. That ties in with <a href="/en/blog/knowledge-as-a-business-asset.html">Knowledge as a Business Asset</a>.</p>
+
+<h2 id="friction-as-a-cost-factor">Friction as a cost factor</h2>
+
+<p>Suppose an employee needs information for his work. The company has it. He still cannot get to it.</p>
+
+<p>Perhaps he lacks permission for a document. Perhaps nobody knows where the information is stored. Perhaps only one person knows the answer. Perhaps there is no documentation and he has to ask around among colleagues.</p>
+
+<p>In all these cases friction appears: send a request, wait, get forwarded, maybe the colleague is on leave. That is annoying and expensive.</p>
+
+<p><strong>Search costs</strong> appear, plus waiting time and dependencies. Mental load rises when someone again and again does not know where information lives or whom to ask. Across many employees and many tasks, that adds up to substantial effort.</p>
+
+<h2 id="what-smooths-the-work-is-transparency">What smooths the work is transparency</h2>
+
+<p>As oil sits between machine parts, handling knowledge needs an intermediate layer. For me that layer is <strong>transparency</strong>.</p>
+
+<p>For work to run with as little friction as possible, it must be clear which knowledge exists, where it lives, who can access it, why certain rules apply, and whom to ask when your own access is missing.</p>
+
+<h2 id="missing-access-needs-transparency-too">Missing access needs transparency too</h2>
+
+<p>That does not mean releasing every piece of information to everyone.</p>
+
+<p>Data protection, trade secrets, personnel data, and other sensitive content need boundaries. <strong>Restrictions can be transparent as well.</strong></p>
+
+<p>An employee should be able to see which kinds of knowledge his role can access and which areas stay closed. If information is unavailable, it should be clear, where sensible and safe, that this is a deliberate restriction and not an oversight.</p>
+
+<p>The goal is maximum clarity about openness and its limits. Not openness at any price.</p>
+
+<h2 id="not-every-friction-must-be-removed">Not every friction must be removed</h2>
+
+<p>Friction is not bad by default, neither in communication nor in engineering. It is also what lets a car brake.</p>
+
+<p>The same holds in companies. Not every question is unnecessary. Not every piece of information must be available to everyone at once. The problem is avoidable friction. Spotting it and removing it is a mark of good knowledge management.</p>]]></content><author><name>Björn Kawecki</name></author><category term="Knowledge Culture" /><summary type="html"><![CDATA[Gatekeeping knowledge creates friction; sharing reduces it. Transparency is what smooths the work: clear what exists, where it lives, and what you may know.]]></summary></entry><entry xml:lang="en"><title type="html">Knowledge as a Business Asset</title><link href="https://bjoernkawecki.de/en/blog/knowledge-as-a-business-asset.html" rel="alternate" type="text/html" title="Knowledge as a Business Asset" /><published>2026-09-02T00:00:00+00:00</published><updated>2026-09-02T00:00:00+00:00</updated><id>https://bjoernkawecki.de/blog/knowledge-as-a-business-asset</id><content type="html" xml:base="https://bjoernkawecki.de/blog/knowledge-as-a-business-asset.html"><![CDATA[<p>Knowledge is everywhere in a company. In a simplified sense, everything starts with knowledge. An entrepreneur knows something, grasps a connection, or has a particular insight and turns it into a business model. He may know how a product is made. He may know a market, legal frameworks, or operational routines. The business model itself may even consist of selling knowledge, for example through consulting or training.</p>
 
 <p>That knowledge lives in books, products, software, and machines. It shows up in processes and work instructions. And it sits in employees’ heads: techniques, exceptions, connections. From the sum of these skills, something emerges that customers will pay for. For every company, knowledge is a fundamental resource.</p>
 
