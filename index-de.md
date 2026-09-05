@@ -28,7 +28,7 @@ pagination:
         {{ post.title }}
       </h2>
       <p class="text-base leading-relaxed text-gray-700 transition group-hover:text-gray-800 group-focus-visible:text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-200 dark:group-focus-visible:text-gray-200">
-        {{ post.excerpt | strip_html | truncate: 200 }}
+        {{ post.description | default: post.excerpt | strip_html | truncate: 200 }}
       </p>
     </article>
   </a>
