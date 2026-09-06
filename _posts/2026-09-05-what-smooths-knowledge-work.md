@@ -9,27 +9,25 @@ page_id: schmiermittel-wissensmanagement
 category: Knowledge Culture
 ---
 
-I got the idea for this article from the trousers maker Fusein, who lives in Japan and makes trousers under the brand Fuseinatti.
+I got the idea for this article from the trousers maker Fusein, whom I first noticed in a YouTube Short.
 
-His products are classically cut and relatively wide. They are meant to look good and feel comfortable to wear. The cut pays attention to what happens in typical body movements: Where does friction arise between skin and fabric? Where does the cloth pull or press unpleasantly?
+His trousers in particular are cut relatively wide, the kind of cut that was common fashion about a hundred years ago. That “classic” cut is meant to look good and feel comfortable to wear.
 
-In that case, friction is unwanted.
+Fusein explains his return to this design by saying the trousers should follow the body’s natural movements. Friction between skin and fabric, as well as unpleasant pulling or pressing of the kind that is the rule with modern tight trousers, is meant to be avoided that way. Where trousers and skin often meet, Fusein adds extra layers of fabric to reduce the friction as far as possible.
 
-Tight trousers can already feel uncomfortable when you sit down, because fabric moves more strongly against the skin. Friction can be reduced through the cut or through extra layers of fabric.
+That principle is well known in engineering too, by the way.
 
-The same principle is even clearer in heavy industry.
+To reduce friction between moving parts of a machine, a lubricant is used. Greases or oils let the components move against each other. Without that intermediate layer, the parts would constantly rub and wear out quickly.
 
-To reduce friction between moving parts of a machine, oil is used. It lets the components move against each other more easily and wastes less energy. What you need, then, is an intermediate layer. The same idea shows up in clothing: an undershirt keeps skin from constantly rubbing directly against a shirt.
-
-And in communication, the same principle of reducing friction applies.
+And not least, the principle of avoiding friction shows up in human communication as well.
 
 ## Friction in communication
 
-That Fusein pursues the principle of avoiding friction in Japan may be no coincidence, at least if you stretch the idea a little further.
+That Fusein designs and makes his “low-friction” trousers in Japan may be no coincidence.
 
-Japanese communication is usually described as especially polite, careful, and considerate. In everyday interaction there are cultural forms meant to avoid open confrontation and thus social friction as far as possible.
+Japanese culture is usually described as especially polite, careful, and considerate – and rightly so. In everyday interaction there are cultural forms meant to avoid open confrontation as far as possible.
 
-That can include not stating a refusal directly, or putting criticism more indirectly. A “That could be difficult” can mean more than the literal words suggest. Gestures, pauses, or context can carry meaning that is never said outright.
+That can include not stating a refusal directly, or putting criticism more indirectly. Instead of a clear “no,” there is the stock phrase “That could be difficult.” Gestures, pauses, or context can also carry meaning that is never said outright (*kuuki wo yomu*, 空気を読む – literally “to read the air,” roughly: to sense the mood).
 
 That can work very well in social life. It also has a downside.
 
@@ -37,36 +35,34 @@ Anyone who wants to avoid friction at all costs can create new friction that way
 
 ## Productive friction
 
-In Germany, direct communication is often valued more highly by comparison, especially at work. Openness and honesty are seen as desirable, even when such communication can feel uncomfortable at first. That can cause conflict, which hopefully turns into productive discussion.
+In Germany, by contrast, direct communication is often valued more highly than indirect communication, especially at work. Openness and honesty are seen as desirable, even when such communication can feel uncomfortable. Once you know where you stand, though, an honest exchange can lead to highly productive discussion.
 
-For communication, what matters more is that the friction serves a purpose. Productive friction can be necessary. Avoidable friction, by contrast, is simply waste.
-
-The same metaphor also applies to knowledge in companies. There, avoidable coordination friction is what stands in the foreground.
+Friction, or the avoidance of friction, is therefore no end in itself in communication either; it should be used as purposefully as possible. Productive friction can be necessary. Avoidable friction, by contrast, is simply a waste of energy.
 
 ## Friction as a cost factor
 
-That brings us to companies and how they handle knowledge. Suppose an employee needs information to do his work. The company has that information. It is basically available. But the employee cannot get to it.
+That brings us to companies and how they handle knowledge. Suppose an employee needs information to do his work. The information is there, but he cannot get to it – for various reasons.
 
-Perhaps the information sits in an internal document he is not allowed to open. Perhaps nobody knows where it is stored. Perhaps only one person knows the answer. Or there is no documentation at all, and the path runs through several colleagues.
+Perhaps it sits in an internal document he knows nothing about. Perhaps he has no permission to open it and does not know whom to ask. Perhaps the information was never written down and lives only in a colleague’s memory.
 
-In all these cases, unnecessary friction appears. On the one hand there are immediate **search costs**: time the employee has to spend finding the information he needs. On the other hand, mental load rises when he again and again does not know where a piece of information lives or whom to ask.
+Whatever the reason, friction then arises in the company as a matter of course: on the one hand as **search costs**, the time the employee has to spend finding the information he needs. On the other hand, mental load rises when he again and again does not know where a piece of information lives or whom to ask.
 
 ## What smooths the work is transparency
 
 If friction between moving parts of a machine can be reduced with oil, handling knowledge also needs a matching intermediate layer.
 
-That layer is **transparency.** For work to run with as little friction as possible, it must be clear which knowledge exists and where it lives, who can access it, and why certain rules apply. If your own access is missing, it must be clear whom to turn to.
+That layer is **transparency.** For work to run with as little friction as possible, it must be clear which knowledge exists, where it lives, who is allowed to access it, or who must authorize access.
 
 That expressly does not mean releasing every piece of information to every employee.
 
-Of course there is knowledge that should not be open to everyone. Data protection, trade secrets, personnel information, and other sensitive content require limits. But **restrictions can be transparent too**.
+Of course there is knowledge that should not be open to everyone. Data protection, trade secrets, personnel information, and other sensitive content require limits. But **restrictions should be transparent too**.
 
-An employee should be able to see, as clearly as possible, which kinds of knowledge his role can access and which areas are closed to him. If information is missing, it should be clear that this is a deliberate access restriction and not an oversight. As far as that can be communicated sensibly and safely.
+An employee should be able to see, as clearly as possible, which kinds of knowledge his role can access and which areas are closed to him. If information is missing, it should be clear that this is a deliberate access restriction and not an oversight.
 
 So the goal is maximum clarity about the openness that exists and its limits. Not maximum openness at any price.
 
 ## Not every friction must be removed
 
-Friction is therefore not bad by default, not in communication and not in mechanical engineering (possibly not in fashion either, but we will leave that question to Fusein). It is also, for example, what lets a car brake at all.
+Friction is therefore not bad by default, not in communication and not in mechanical engineering, as long as it is deliberate. It is also, for example, what lets a car brake at all. (Where friction might be welcome in the world of fashion, we will leave that question to Fusein.)
 
 The same holds in companies. Not every question is unnecessary, and not every piece of information must be available to every employee at once. The problem is avoidable friction. Spotting it and removing it is a mark of good knowledge management.

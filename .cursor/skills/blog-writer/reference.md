@@ -43,7 +43,7 @@ Links im Markdown wie in bestehenden Drafts: absolute Pfade ab Root, z. B. `[Wis
 | Vermeiden | Stattdessen |
 |-----------|----------------|
 | Gedankenstrich `—` | Punkt, Komma, oder Bindestrich in Komposita |
-| „nicht X, sondern Y“ / „weniger X als Y“ | Zwei klare Aussagen oder eine positive Formulierung |
+| Umdeutung „Das ist nicht X, das ist Y“ / „weniger um X als um Y“ | Positive Formulierung oder zwei klare Aussagen; normales „nicht …, sondern …“ ohne Umdeutung ist ok |
 | „man“ / Genderstern / Doppelpunktinnen | Generisches Maskulinum |
 | Agentur-Floskeln, Feature-Listen als Verkauf | Konkrete Situation, Entscheidung, Folge |
 

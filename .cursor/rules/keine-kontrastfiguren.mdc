@@ -1,22 +1,30 @@
 ---
-description: Verbietet Kontrastfiguren wie „nicht X, sondern Y“ und „weniger X als Y“ in deutschsprachigen Texten
+description: Vermeidet die Umdeutungsfigur „Das ist nicht X, das ist Y“ in deutschsprachigen Texten
 globs: _posts/**/*.md,_drafts/**/*.md,_data/**/strings.yml
 alwaysApply: false
 ---
 
-# Keine Kontrastfiguren (nicht X / sondern Y)
+# Keine Umdeutungsfigur (nicht X / das ist Y)
 
-In Blogposts, Drafts und Site-Strings diese Satzfiguren **nicht** verwenden:
+In Blogposts, Drafts und Site-Strings diese **Umdeutung** vermeiden:
 
-- „nicht …, sondern …“
-- „weniger … als …“ (als Umschaltung von A nach B)
-- nahe Verwandte wie „kein X, sondern Y“, „nicht so sehr X als Y“
+- „Das ist nicht X, das ist Y.“
+- nahe Verwandte: „Es geht nicht um X, es geht um Y.“, „weniger um X als um Y“, „nicht maximale Offenheit, sondern maximale Klarheit“
 
-## Stattdessen
+Gemeint ist die Schablone, die einen Begriff umbenennt oder eine falsche Alternative aufbaut.
+
+## Erlaubt
+
+Normale „nicht …, sondern …“-Sätze ohne Umdeutung, z. B.:
+
+- *Reibung ist kein Selbstzweck, sondern sollte möglichst zielführend eingesetzt werden.*
+- *Das Ziel ist maximale Klarheit über Offenheit und ihre Grenzen. Nicht maximale Offenheit um jeden Preis.* (zwei getrennte Aussagen)
+
+## Stattdessen bei Umdeutungen
 
 Zwei klare Aussagen hintereinander, oder eine positive Formulierung ohne Gegenüberstellung.
 
-**Schlecht:** Bei Wissen geht es weniger um Konfrontation als um Koordinationsreibung.  
+**Schlecht:** Das ist nicht Konfrontation, das ist Koordinationsreibung.  
 **Gut:** Bei Wissen in Unternehmen steht vermeidbare Koordinationsreibung im Vordergrund.
 
 **Schlecht:** Das Ziel ist nicht maximale Offenheit, sondern maximale Klarheit.  
@@ -24,4 +32,4 @@ Zwei klare Aussagen hintereinander, oder eine positive Formulierung ohne Gegenü
 
 ## Warum
 
-Die Figur klingt schablonenhaft und oft KI-typisch. Sie verkürzt Argumente zu einer falschen Alternative.
+Die Umdeutungsfigur klingt schablonenhaft und oft KI-typisch. Sie verkürzt Argumente zu einer falschen Alternative.
