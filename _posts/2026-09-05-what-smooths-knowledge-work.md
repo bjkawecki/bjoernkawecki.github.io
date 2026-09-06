@@ -9,9 +9,7 @@ page_id: schmiermittel-wissensmanagement
 category: Knowledge Culture
 ---
 
-I got the idea for this article from the trousers maker Fusein, whom I first noticed in a YouTube Short.
-
-His trousers in particular are cut relatively wide, the kind of cut that was common fashion about a hundred years ago. That “classic” cut is meant to look good and feel comfortable to wear.
+I got the idea for this article from a YouTube Short by the trousers maker Fusein. In it he presents his design: relatively wide trousers of the kind that was common about a hundred years ago. That “classic” cut is meant to look good and feel comfortable to wear.
 
 Fusein explains his return to this design by saying the trousers should follow the body’s natural movements. Friction between skin and fabric, as well as unpleasant pulling or pressing of the kind that is the rule with modern tight trousers, is meant to be avoided that way. Where trousers and skin often meet, Fusein adds extra layers of fabric to reduce the friction as far as possible.
 

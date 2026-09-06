@@ -9,9 +9,7 @@ page_id: schmiermittel-wissensmanagement
 category: Wissenskultur
 ---
 
-Auf die Idee für diesen Artikel bin ich durch den Hosenhersteller Fusein gekommen, auf den ich wiederum über ein Short auf YouTube aufmerksam geworden war.
-
-Insbesondere seine Hosen zeichnen sich dadurch aus, dass sie vergleichsweise weit geschnitten sind, was vor rund 100 Jahren die übliche Mode war. Dieser „klassische“ Schnitt soll sowohl gut aussehen als auch angenehm zu tragen sein.
+Auf die Idee für diesen Artikel bin ich durch ein YouTube-Short des Hosenherstellers Fusein gekommen. Darin stellt er sein Design vor: vergleichsweise weite Hosen, wie sie vor rund 100 Jahren üblich waren. Dieser „klassische“ Schnitt soll sowohl gut aussehen als auch angenehm zu tragen sein.
 
 Seine Rückkehr zu diesem Design erklärt Fusein damit, dass sich die Hose den natürlichen Bewegungen des Körpers anpassen soll. Reibung zwischen Haut und Stoff, sowie unangenehmes Spannen oder Drücken, wie es bei modernen engen Hosen die Regel ist, soll so vermieden werden. Dort, wo Hose und Haut häufig in Kontakt kommen, fügt Fusein zusätzliche Stofflagen ein, um die Reibung möglichst zu verringern.
 
