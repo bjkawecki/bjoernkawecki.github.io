@@ -21,7 +21,7 @@ Kurz die drei Stufen nennen und fragen, ob der Workflow starten soll. Ablehnung 
 
 - Deutsch zuerst entwerfen; Englisch als Pendant, nicht als wörtliche Übersetzung
 - Kein Gedankenstrich `—` (Bindestrich oder Satz umbauen)
-- Kein „nicht …, sondern …“
+- Kein „nicht …, sondern …“ und kein „weniger … als …“ als Kontrastfigur (zwei klare Aussagen oder eine positive Formulierung)
 - Generisches Maskulinum (keine Doppelformen, kein Genderstern)
 - Fach-Essay: zeigen statt verkaufen; keine Landingpage-Blöcke, keine Lead-Magnet-CTAs
 - Kurze Absätze; eine Idee pro Absatz

@@ -1,0 +1,27 @@
+---
+description: Verbietet Kontrastfiguren wie „nicht X, sondern Y“ und „weniger X als Y“ in deutschsprachigen Texten
+globs: _posts/**/*.md,_drafts/**/*.md,_data/**/strings.yml
+alwaysApply: false
+---
+
+# Keine Kontrastfiguren (nicht X / sondern Y)
+
+In Blogposts, Drafts und Site-Strings diese Satzfiguren **nicht** verwenden:
+
+- „nicht …, sondern …“
+- „weniger … als …“ (als Umschaltung von A nach B)
+- nahe Verwandte wie „kein X, sondern Y“, „nicht so sehr X als Y“
+
+## Stattdessen
+
+Zwei klare Aussagen hintereinander, oder eine positive Formulierung ohne Gegenüberstellung.
+
+**Schlecht:** Bei Wissen geht es weniger um Konfrontation als um Koordinationsreibung.  
+**Gut:** Bei Wissen in Unternehmen steht vermeidbare Koordinationsreibung im Vordergrund.
+
+**Schlecht:** Das Ziel ist nicht maximale Offenheit, sondern maximale Klarheit.  
+**Gut:** Das Ziel ist maximale Klarheit über Offenheit und ihre Grenzen.
+
+## Warum
+
+Die Figur klingt schablonenhaft und oft KI-typisch. Sie verkürzt Argumente zu einer falschen Alternative.
