@@ -1,0 +1,37 @@
+---
+description: Vermeidet „nicht nur X“- und ähnliche Abgrenzungsfiguren in Site-Texten
+globs: _posts/**/*.md,_drafts/**/*.md,_projects/**/*.md,_data/**/strings.yml
+alwaysApply: false
+---
+
+# Keine „nicht nur X“-Abgrenzung
+
+In Blogposts, Drafts, Projektseiten und Site-Strings diese Figuren **nicht** verwenden:
+
+- „nicht nur X“ / „nicht bloß X“ (als Pointe oder Nachsatz)
+- „es geht um Y – nicht nur um X“
+- „mehr als nur X“
+- nahe Marketing-Verwandte: „nicht einfach nur …“, „weit mehr als …“
+
+Gemeint ist die Schablone, die eine eigene Position dadurch aufwertet, dass sie etwas Geringeres abwertet.
+
+## Erlaubt
+
+Sachliche Abgrenzung, wenn beide Seiten klar und nötig sind, ohne die Figur als Stilmittel:
+
+- Zwei getrennte Sätze mit positiver Aussage.
+- Konkreter Vergleich, wenn er informiert (z. B. Unterschied zu einem benannten Produkt).
+
+## Stattdessen
+
+Die eigene Aussage positiv und vollständig formulieren.
+
+**Schlecht:** Es geht um einen klaren Wissensstand – nicht nur um eine gemeinsame Ablage.  
+**Gut:** Es geht um einen klaren Wissensstand und um nachvollziehbare Zuständigkeit.
+
+**Schlecht:** DocsOps ist mehr als nur ein Wiki.  
+**Gut:** DocsOps knüpft Verbindlichkeit und Verantwortung an den Wissensstand.
+
+## Warum
+
+Die Figur klingt nach Pitch und KI-Marketing. Sie setzt Wissen voraus („Ablage“ als Gegenbild), das der Text oft gar nicht aufgebaut hat.

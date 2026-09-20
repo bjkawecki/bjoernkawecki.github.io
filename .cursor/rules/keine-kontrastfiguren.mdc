@@ -1,6 +1,6 @@
 ---
 description: Vermeidet die Umdeutungsfigur „Das ist nicht X, das ist Y“ in deutschsprachigen Texten
-globs: _posts/**/*.md,_drafts/**/*.md,_data/**/strings.yml
+globs: _posts/**/*.md,_drafts/**/*.md,_projects/**/*.md,_data/**/strings.yml
 alwaysApply: false
 ---
 

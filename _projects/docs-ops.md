@@ -4,7 +4,7 @@ lang: de
 page_id: docs-ops
 title: DocsOps
 permalink: /projects/docs-ops/
-description: Self-hosted Open-Source-Plattform für internes Organisationswissen mit Governance und verbindlichem Wissensstand.
+description: Open-Source-Plattform für verbindliches Organisationswissen, entstanden aus Überlegungen zum Wissensmanagement.
 external_links:
   - url: https://docsops.de
     label: Zur Website
@@ -14,10 +14,10 @@ external_links:
     label: Zum GitHub-Repo
 ---
 
-DocsOps ist eine **self-hosted Open-Source-Plattform** für internes Organisationswissen.
+**DocsOps** ist eine self-hosted Open-Source-Plattform für internes Organisationswissen.
 
-Das Projekt wächst aus dem Anspruch, der mich auch beim [Wissensmanagement](/knowledge-management/) beschäftigt: Wissen soll nicht immer wieder neu entstehen müssen. Es soll transparent sein und dort zugänglich, wo es gebraucht wird, nicht nur in einzelnen Köpfen und Chatverläufen.
+Sie soll helfen, wenn in einer Organisation unklar bleibt, welcher Wissensstand gilt und wer dafür einsteht. Dann fehlt in der täglichen Arbeit die Verlässlichkeit: Teams können denselben Sachverhalt unterschiedlich behandeln, weil niemand dieselbe maßgebliche Fassung voraussetzt.
 
-Viele Tools optimieren eine gemeinsame Ablage und offene Mitarbeit. DocsOps baut Governance in die Software ein. Organisationen haben im Alltag Struktur und Verantwortung; das System trägt beides mit. Rollen legen fest, wer am Entwurf mitarbeitet und wer einen verbindlichen Stand freigibt. Leser verlassen sich auf die veröffentlichte Fassung.
+DocsOps folgt drei Prinzipien. **Verbindlichkeit:** Es gibt einen Wissensstand, auf den man sich berufen kann. **Verantwortung:** Es ist nachvollziehbar, wer für diesen Stand einsteht. **Einbindung in die Organisation:** Zuständigkeiten und Struktur gehören zur Software, damit der geltende Stand im Arbeitsalltag tragfähig bleibt.
 
-Die öffentliche Website steht unter [docsops.de](https://docsops.de), eine Live-Demo unter [demo.docsops.de](https://demo.docsops.de).
+Das Projekt ist aus meinen Überlegungen zum [Wissensmanagement](/knowledge-management/) entstanden. Auf der Website ist das Modell ausführlicher beschrieben. Wer DocsOps ausprobieren oder den Quellcode einsehen möchte, findet Demo und Repository unter den Links darunter.

@@ -4,7 +4,7 @@ lang: en
 page_id: docs-ops
 title: DocsOps
 permalink: /projects/docs-ops/
-description: Self-hosted open-source platform for internal organisational knowledge with governance and a binding knowledge state.
+description: Open-source platform for binding organisational knowledge, grown from thinking about knowledge management.
 external_links:
   - url: https://docsops.de
     label: To the website
@@ -14,10 +14,10 @@ external_links:
     label: To the GitHub repo
 ---
 
-DocsOps is a **self-hosted open-source platform** for internal organisational knowledge.
+**DocsOps** is a self-hosted open-source platform for internal organisational knowledge.
 
-The project grows from the same aim that drives my work on [knowledge management](/knowledge-management/): knowledge should not have to be created from scratch over and over again. It should be transparent and accessible where it is needed, not only in individual heads and chat threads.
+It is meant to help when an organisation is unclear about which knowledge state counts and who stands behind it. Daily work then loses reliability: teams can treat the same matter differently because no one assumes the same authoritative version.
 
-Many tools optimise a shared store and open collaboration. DocsOps builds governance into the software. Organisations already have structure and responsibility in day-to-day work; the system carries both. Roles define who works on the draft and who releases a binding state. Readers rely on the published edition.
+DocsOps follows three principles. **Binding state:** There is a knowledge state people can rely on. **Responsibility:** It is clear who stands behind that state. **Fit to the organisation:** Ownership and structure belong in the software, so the authoritative state holds up in day-to-day work.
 
-The public website is at [docsops.de](https://docsops.de), and a live demo at [demo.docsops.de](https://demo.docsops.de).
+The project grew out of my thinking on [knowledge management](/knowledge-management/). The website describes the model in more detail. Anyone who wants to try DocsOps or look at the source code will find the demo and repository in the links below.
