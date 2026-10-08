@@ -54,7 +54,7 @@ home:
       - "My name is Björn. I live in Berlin and have been working as an application developer since 2025."
       - "After graduating in Russian studies I worked as an editor for a while and then moved into tech."
       - "I had already started programming during my studies. In 2020 I began a web app for learning Russian. It became a long-term project that continues today as [Filingo](/projects/filingo/)."
-      - "My thinking on knowledge management led to [DocsOps](/projects/docs-ops/). On [Knowledge Management](/knowledge-management/) I go deeper into the same questions and offer support."
+      - "My software project [DocsOps](/projects/docs-ops/) grew out of my thinking on knowledge management in companies. To companies that see problems of their own, I offer [support](/knowledge-management/)."
       - "For implementing my projects I rely heavily on AI. More about my approach is on the [Software Development](/software-development/) page."
     resume_label: "Resume (PDF)"
     resume_href: "/assets/files/bjoern-kawecki-resume-en.pdf"
