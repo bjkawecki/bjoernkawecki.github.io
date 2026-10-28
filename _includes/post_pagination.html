@@ -9,25 +9,57 @@
 {% endfor %}
 
 {% if current_index != nil %}
-<div class="not-prose mt-10 flex justify-between gap-6 text-sm font-semibold">
   {% assign next_index = current_index | minus: 1 %}
+  {% assign prev_index = current_index | plus: 1 %}
+  {% assign has_next = false %}
+  {% assign has_prev = false %}
   {% if next_index >= 0 %}
+    {% assign has_next = true %}
     {% assign next_post = all_posts[next_index] %}
-    <a
-      class="text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
-      href="{{ next_post.url }}"
-    >{{ site.data[current_lang].strings.pagination.next_post }}</a>
-  {% else %}
-    <span></span>
+  {% endif %}
+  {% if prev_index < all_posts.size %}
+    {% assign has_prev = true %}
+    {% assign prev_post = all_posts[prev_index] %}
   {% endif %}
 
-  {% assign prev_index = current_index | plus: 1 %}
-  {% if prev_index < all_posts.size %}
-    {% assign prev_post = all_posts[prev_index] %}
-    <a
-      class="ml-auto text-accent-600 transition hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-700"
-      href="{{ prev_post.url }}"
-    >{{ site.data[current_lang].strings.pagination.previous_post }}</a>
+  {% if has_next or has_prev %}
+  <nav
+    class="not-prose mx-auto mt-12 max-w-3xl border-t border-gray-200 pt-8 dark:border-zinc-700"
+    aria-label="{{ site.data[current_lang].strings.pagination.previous_post }} / {{ site.data[current_lang].strings.pagination.next_post }}"
+  >
+    <div class="flex flex-col gap-3 sm:flex-row sm:justify-between sm:gap-4">
+      {% if has_prev %}
+      <a
+        href="{{ prev_post.url }}"
+        class="inline-flex w-full flex-col gap-1 rounded-lg border border-gray-200 bg-white px-3 py-2.5 text-left text-accent-600 transition hover:border-accent-400 hover:text-accent-500 dark:border-zinc-700 dark:bg-brand-900 dark:text-accent-400 dark:hover:border-accent-500 dark:hover:text-accent-700 sm:max-w-[calc(50%-0.5rem)]"
+      >
+        <span class="inline-flex items-center gap-1 text-xs font-medium">
+          {% include icons/chevron-left.html class="h-4 w-4" %}
+          {{ site.data[current_lang].strings.pagination.previous_post }}
+        </span>
+        <span class="line-clamp-2 text-sm font-semibold text-gray-900 dark:text-gray-100">
+          {{ prev_post.title }}
+        </span>
+      </a>
+      {% else %}
+      <span class="hidden sm:block sm:w-0" aria-hidden="true"></span>
+      {% endif %}
+
+      {% if has_next %}
+      <a
+        href="{{ next_post.url }}"
+        class="inline-flex w-full flex-col items-end gap-1 rounded-lg border border-gray-200 bg-white px-3 py-2.5 text-right text-accent-600 transition hover:border-accent-400 hover:text-accent-500 dark:border-zinc-700 dark:bg-brand-900 dark:text-accent-400 dark:hover:border-accent-500 dark:hover:text-accent-700 sm:ml-auto sm:max-w-[calc(50%-0.5rem)]"
+      >
+        <span class="inline-flex w-full items-center justify-end gap-1 text-xs font-medium">
+          {{ site.data[current_lang].strings.pagination.next_post }}
+          {% include icons/chevron-right.html class="h-4 w-4" %}
+        </span>
+        <span class="w-full text-right text-sm font-semibold text-gray-900 line-clamp-2 dark:text-gray-100">
+          {{ next_post.title }}
+        </span>
+      </a>
+      {% endif %}
+    </div>
+  </nav>
   {% endif %}
-</div>
 {% endif %}
